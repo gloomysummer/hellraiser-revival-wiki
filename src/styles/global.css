@@ -2285,3 +2285,24 @@ article code {
   font-size: 1.09rem;
   line-height: 1.72;
 }
+
+/* 质感对齐（nivalis 式）：双 rail 卡片化 + 正文提亮增号收窄 */
+@media (min-width: 1200px) {
+  .article-toc-sidebar,
+  .article-wiki-rail {
+    background: var(--panel-card, rgba(255, 255, 255, 0.03));
+    border: 1px solid var(--line, rgba(255, 255, 255, 0.1));
+    border-radius: 12px;
+    padding: 18px 16px;
+  }
+  .article-layout {
+    grid-template-columns: minmax(0, 660px) 230px 260px;
+  }
+}
+.article-main p,
+.article-main ul li,
+.article-main ol li {
+  font-size: 1.125rem;
+  color: #e8edf5;
+  line-height: 1.6;
+}
