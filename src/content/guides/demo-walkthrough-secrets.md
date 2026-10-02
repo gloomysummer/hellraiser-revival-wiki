@@ -58,6 +58,8 @@ In the chapel nave, place the puzzle box upon the central obsidian pedestal:
 3. Align the lower quadrant **one notch counter-clockwise** until the bell chimes.
 4. The altar floor will recess, opening the subterranean staircase leading into the demo's final boss encounter chamber.
 
+The box you handle in the demo is the real deal — the [Genesis Configuration puzzle guide](/guide/genesis-configuration-puzzle-guide/) explains every facet and power it unlocks.
+
 ## Section 4: Surviving the Chapel Ambush
 
 Upon retrieving the altar key, three Scarlet Church acolytes will breach the stained glass doors:

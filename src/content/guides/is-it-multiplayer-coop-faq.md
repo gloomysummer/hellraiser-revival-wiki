@@ -53,3 +53,5 @@ Playing alone changes the risk math — the [demo walkthrough secrets](/guide/de
 ## Will Multiplayer Be Added in Future DLC?
 
 Saber Interactive has indicated no plans for multiplayer post-launch expansions. Post-launch support will focus on performance updates and potential single-player narrative chapters expanding on the *Bleeding Hearts* novella lore.
+
+Solo or co-op, hardware matters — the [PC system requirements guide](/guide/system-requirements-pc-specs/) lists the official minimum and recommended specs.

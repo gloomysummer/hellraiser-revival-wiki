@@ -44,6 +44,8 @@ The physical edition comes housed in an ornate magnetic-clasp box featuring embo
 4. **Art of the Labyrinth Artbook**: A 120-page hardcover volume containing production concept sketches, creature prosthetic photos, and environmental architectural plans.
 5. **Numbered Certificate of Authenticity**: Hand-stamped collector's card signed by the creative directors.
 
+The physical puzzle box replica pairs nicely with its digital counterpart — the [Genesis Configuration guide](/guide/genesis-configuration-puzzle-guide/) details what the in-game version unlocks.
+
 ## Digital Deluxe Edition Bonuses
 
 Players purchasing either the physical Collector's Edition or the digital Deluxe Edition receive instantaneous entitlement to the following in-game content:

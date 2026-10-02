@@ -56,3 +56,5 @@ Scattered throughout the Scarlet Church compound are maintenance workbenches. Pl
 
 * **Blunt Weapons (Hammers, Pipes, Crowbars)**: Deliver concussive force through leather vests, bone armor, and steel plates. Always use blunt tools first to strip enemy armor before finishing with sharp blades.
 * **Sharp Weapons (Machetes, Scalpels, Axes)**: Deal extreme bleed and dismemberment damage against exposed flesh, but suffer triple durability penalty when striking armored targets.
+
+Weapon choice only matters if you survive the hunt — the [Cenobite weaknesses guide](/guide/all-cenobites-weaknesses-guide/) breaks down what each entity punishes.

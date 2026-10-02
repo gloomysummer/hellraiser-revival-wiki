@@ -64,4 +64,6 @@ Characterized by wires pulling open the flesh of her throat, she acts as a psych
 * **Behavior**: Employs sonic screeches that invert Aidan's camera controls and deplete stamina reserves.
 * **Evasion Strategy**: Equip acoustic ear plugs found in cultist storage boxes and utilize smoke grenades to disrupt her dimensional gaze.
 
+Choosing the right tool for each entity matters too — the [weapons tier list](/guide/weapons-tier-list-durability/) ranks which weapons hold up against specific Cenobite behaviors.
+
 For a focused breakdown of the Scarlet Church's first major foe, see the dedicated [Bruno Keller boss guide](/guide/bruno-keller-boss-guide/).

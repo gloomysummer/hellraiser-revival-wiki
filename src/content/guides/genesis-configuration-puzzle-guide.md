@@ -47,6 +47,8 @@ The Genesis Configuration is held in first-person view, allowing players to rota
 
 Want to practice the sequences without burning in-game sanity? The [Genesis Configuration Puzzle Simulator](/tools/puzzle-simulator/) recreates the box's seal-alignment steps in your browser.
 
+Want a low-stakes rehearsal first? The [demo walkthrough](/guide/demo-walkthrough-secrets/) covers the same box mechanics in the free Steam build.
+
 ## Unlockable Supernatural Abilities
 
 As Aidan advances through the Scarlet Church hideout and unlocks deeper configurations, the box rewards the player with extradimensional combat tools:

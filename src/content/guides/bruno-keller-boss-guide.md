@@ -47,6 +47,8 @@ During the opening phase, Keller relies on stealth and sudden lunges from behind
 2. **Bait the Three-Slash Combo**: Wait for Keller to telegraph his three-hit scalpel slash. Step back on the second swing, then counter-attack with a heavy blunt overhead strike to crack his leather surgical harness.
 3. **Bleed Management**: If struck by his bone-saw, immediately consume a Tourniquet or Bandage to halt hemorrhage before your health bar degrades completely.
 
+Before the fight, sanity-check your loadout against the [weapons tier list and durability guide](/guide/weapons-tier-list-durability/) — broken tools mid-boss are a run-killer.
+
 ## Phase 2: Berserk Frenzy & Syringe Throwing
 
 Once reduced below 50% health, Keller douses his scalpels in adrenaline and retreats to elevated balconies.
