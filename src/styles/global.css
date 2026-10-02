@@ -2341,3 +2341,20 @@ article code {
     padding-right: 24px;
   }
 }
+
+/* 首页宽屏几何（同详情页外壳）：hero 与区块右贴边、左侧缩进 */
+@media (min-width: 1200px) {
+  .hero-split,
+  .container.home-page {
+    max-width: 1736px;
+    margin-left: clamp(0px, 12vw, 184px);
+    margin-right: 0;
+    padding-left: 12px;
+    padding-right: 24px;
+  }
+}
+/* 正文字重对齐 nivalis（400，长文更舒展） */
+.article-main p,
+.article-main li {
+  font-weight: 400;
+}
