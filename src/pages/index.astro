@@ -1,0 +1,121 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { siteConfig } from "../config/site.config";
+
+const guides = (await getCollection("guides", ({ data }) => !data.draft))
+  .sort((a, b) => (b.data.updated?.valueOf() ?? b.data.pubDate.valueOf()) - (a.data.updated?.valueOf() ?? a.data.pubDate.valueOf()));
+const codes = await getCollection("codes", ({ data }) => !data.draft);
+const activeCodesCount = codes.flatMap((c) => c.data.codes.filter((item) => item.status === "active")).length;
+
+const cardImageMap: Record<string, string> = {
+  "system-requirements-pc-specs": "/images/cards/ss_card_0.webp",
+  "is-it-multiplayer-coop-faq": "/images/cards/ss_card_1.webp",
+  "genesis-configuration-puzzle-guide": "/images/cards/ss_card_2.webp",
+  "bruno-keller-boss-guide": "/images/cards/ss_card_3.webp",
+  "how-to-save-sunny-endings-guide": "/images/cards/ss_card_4.webp",
+  "demo-walkthrough-secrets": "/images/cards/ss_card_5.webp",
+  "all-cenobites-weaknesses-guide": "/images/cards/ss_card_6.webp",
+  "weapons-tier-list-durability": "/images/cards/ss_card_7.webp",
+  "censorship-usk-regional-differences": "/images/cards/ss_card_8.webp",
+  "collectors-edition-contents-guide": "/images/cards/ss_card_9.webp",
+};
+
+const firstGuideSlug = guides[0]?.id ?? "system-requirements-pc-specs";
+---
+<BaseLayout>
+  <!-- Full-bleed Hero Section with Decoupled Split Grid -->
+  <section class="hero-wrapper" style="background-image: radial-gradient(ellipse at 50% 30%, rgba(32, 20, 35, 0.6) 0%, rgba(12, 9, 13, 0.98) 85%);">
+    <div class="hero-overlay">
+      <div class="hero-split">
+        <div class="hero-left">
+          <div class="badge-row">
+            <span class="badge gold">Tactical Database</span>
+            <span class="badge">Evidence-Led Wiki</span>
+            <span class="badge">{siteConfig.gameName}</span>
+          </div>
+          <h1>{siteConfig.siteName}</h1>
+          <p>The definitive evidence-led encyclopedia for <strong>{siteConfig.gameName}</strong>: discover verified strategy guides, core game loop mechanics, PC hardware requirements, and active reward codes.</p>
+          <div class="hero-cta-group">
+            <a href={`/guide/${firstGuideSlug}/`} class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+              <span>Start Day-1 Guide</span>
+            </a>
+            {codes.length > 0 && (
+              <a href="/codes/" class="btn btn-codes">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><rect width="20" height="5" x="2" y="7" rx="1"/></svg>
+                <span>Redeem Codes</span>
+                <span class="btn-badge">{activeCodesCount > 0 ? `${activeCodesCount} ACTIVE` : 'VERIFIED'}</span>
+              </a>
+            )}
+            <button type="button" class="btn btn-secondary search-trigger-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <span>Search Wiki</span>
+              <kbd>⌘K</kbd>
+            </button>
+          </div>
+        </div>
+        <div class="hero-poster-frame">
+          <img src="/og-cover.jpg" alt={`${siteConfig.gameName} Key Art`} width="460" height="215" loading="eager" />
+          <div class="poster-tag">TACTICAL DOSSIER · VERIFIED</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- Strategy Guides Grid -->
+    <section id="guides">
+      <div class="section-header">
+        <h2>Strategy Guides & Databases</h2>
+        <p>Every guide is evidence-led and strictly aligned with official announcements and tested game mechanics.</p>
+      </div>
+      <div class="cards-grid">
+        {guides.map((g, idx) => (
+          <article class="guide-card">
+            <div class="card-media">
+              <img
+                src={cardImageMap[g.id] ?? `/images/cards/ss_card_${idx % 10}.webp`}
+                alt={g.data.title}
+                width="800"
+                height="500"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-body">
+              <h3><a href={`/guide/${g.id}/`}>{g.data.title}</a></h3>
+              <p>{g.data.description}</p>
+              <div class="card-footer">
+                <time datetime={g.data.pubDate.toISOString()}>{g.data.pubDate.toISOString().slice(0, 10)}</time>
+                <span>Read Guide →</span>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <!-- Promo Codes Section -->
+    {codes.length > 0 && (
+      <section id="codes" style="margin-top: 56px;">
+        <div class="section-header">
+          <h2>Verified Codes & Rewards</h2>
+          <p>Active promo codes and redemption status verified directly from official developer channels.</p>
+        </div>
+        <div class="cards-grid">
+          {codes.map((c) => (
+            <article class="guide-card" style="grid-column: 1 / -1; max-width: 600px;">
+              <div class="card-body">
+                <h3><a href={`/codes/${c.id}/`}>{c.data.title}</a></h3>
+                <p>{c.data.summary}</p>
+                <div class="card-footer">
+                  <span>Check Code Ledger →</span>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+  </div>
+</BaseLayout>

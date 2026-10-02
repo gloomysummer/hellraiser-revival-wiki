@@ -1,0 +1,82 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { siteConfig } from "../../config/site.config";
+
+const guides = (await getCollection("guides", ({ data }) => !data.draft))
+  .sort((a, b) => (b.data.updated?.valueOf() ?? b.data.pubDate.valueOf()) - (a.data.updated?.valueOf() ?? a.data.pubDate.valueOf()));
+
+const cardImageMap: Record<string, string> = {
+  "system-requirements-pc-specs": "/images/cards/ss_card_0.webp",
+  "is-it-multiplayer-coop-faq": "/images/cards/ss_card_1.webp",
+  "genesis-configuration-puzzle-guide": "/images/cards/ss_card_2.webp",
+  "bruno-keller-boss-guide": "/images/cards/ss_card_3.webp",
+  "how-to-save-sunny-endings-guide": "/images/cards/ss_card_4.webp",
+  "demo-walkthrough-secrets": "/images/cards/ss_card_5.webp",
+  "all-cenobites-weaknesses-guide": "/images/cards/ss_card_6.webp",
+  "weapons-tier-list-durability": "/images/cards/ss_card_7.webp",
+  "censorship-usk-regional-differences": "/images/cards/ss_card_8.webp",
+  "collectors-edition-contents-guide": "/images/cards/ss_card_9.webp",
+};
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: `${siteConfig.gameName} Strategy Guides & Databases`,
+    description: `Comprehensive collection of evidence-led strategy guides, walkthroughs, and mechanics for ${siteConfig.gameName}.`,
+    url: `${siteConfig.siteUrl}/guide/`,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: siteConfig.siteUrl },
+      { '@type': 'ListItem', position: 2, name: 'Guides', item: `${siteConfig.siteUrl}/guide/` },
+    ],
+  },
+];
+---
+<BaseLayout
+  title="Hellraiser Revival Strategy Guides"
+  description="Comprehensive directory of verified Hellraiser: Revival strategy guides, puzzle box solutions, Cenobite bosses, and PC specs."
+  canonical="/guide/"
+  jsonLd={jsonLd}
+>
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumbs">
+      <a href="/">Home</a>
+      <span class="separator">/</span>
+      <span class="current">Guides</span>
+    </nav>
+
+    <div class="section-header" style="margin-top: 16px;">
+      <h1>Hellraiser Revival Strategy Guides</h1>
+      <p>Every guide is evidence-led and strictly aligned with official developer announcements and in-game testing. No fabricated claims, no speculative filler.</p>
+    </div>
+
+    <div class="cards-grid">
+      {guides.map((g, idx) => (
+        <article class="guide-card">
+          <div class="card-media">
+            <img
+              src={cardImageMap[g.id] ?? `/images/cards/ss_card_${idx % 10}.webp`}
+              alt={g.data.title}
+              width="800"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+          <div class="card-body">
+            <h3><a href={`/guide/${g.id}/`}>{g.data.title}</a></h3>
+            <p>{g.data.description}</p>
+            <div class="card-footer">
+              <time datetime={g.data.pubDate.toISOString()}>{g.data.pubDate.toISOString().slice(0, 10)}</time>
+              <span>Read Guide →</span>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

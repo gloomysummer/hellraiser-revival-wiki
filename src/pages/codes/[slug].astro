@@ -1,0 +1,56 @@
+---
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import QuickAnswer from "../../components/QuickAnswer.astro";
+import { siteConfig } from "../../config/site.config";
+
+export async function getStaticPaths() {
+  const pages = await getCollection("codes", ({ data }) => !data.draft);
+  return pages.map((page) => ({
+    params: { slug: page.id },
+    props: { page },
+  }));
+}
+
+const { page } = Astro.props;
+const { Content } = await render(page);
+const { data } = page;
+const active = data.codes.filter((c) => c.status === "active");
+const expired = data.codes.filter((c) => c.status === "expired");
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: data.title,
+    description: data.description,
+    dateModified: data.updated.toISOString(),
+    author: { '@type': 'Organization', name: siteConfig.siteName },
+  },
+];
+---
+<BaseLayout title={data.title} description={data.description} canonical={`/codes/${page.id}/`} jsonLd={jsonLd}>
+  <article>
+    <h1>{data.title}</h1>
+    <p>Last updated: <time datetime={data.updated.toISOString()}>{data.updated.toISOString().slice(0, 10)}</time></p>
+    <QuickAnswer summary={data.summary} />
+    <Content />
+    <h2>Active codes ({active.length})</h2>
+    <table>
+      <thead><tr><th>Code</th><th>Reward</th><th>Source</th></tr></thead>
+      <tbody>
+        {active.map((c) => (
+          <tr>
+            <td><code>{c.code}</code></td>
+            <td>{c.reward}</td>
+            <td><a href={c.sourceUrl} rel="noopener">source</a></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    {expired.length > 0 && <h2>Expired codes (kept for reference)</h2>}
+    <ul>
+      {expired.map((c) => (<li><code>{c.code}</code> — {c.reward}</li>))}
+    </ul>
+  </article>
+</BaseLayout>

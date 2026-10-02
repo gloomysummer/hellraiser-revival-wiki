@@ -1,0 +1,73 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { siteConfig } from "../../config/site.config";
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    name: `Contact ${siteConfig.siteName}`,
+    description: `Contact the editorial desk of ${siteConfig.siteName} for guide corrections, submissions, and inquiries.`,
+    url: `${siteConfig.siteUrl}/contact/`,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: siteConfig.siteUrl },
+      { '@type': 'ListItem', position: 2, name: 'Contact', item: `${siteConfig.siteUrl}/contact/` },
+    ],
+  },
+];
+---
+<BaseLayout
+  title="Contact Hellraiser Revival Wiki: Desk & Feedback"
+  description="Get in touch with the Hellraiser Revival Wiki editorial team for game guide corrections, puzzle solutions submissions, and DMCA inquiries."
+  canonical="/contact/"
+  jsonLd={jsonLd}
+>
+  <div class="container" style="max-width: var(--max); margin: 0 auto; padding: 2rem 1.5rem;">
+    <article>
+      <nav class="breadcrumbs" aria-label="Breadcrumbs" style="margin-bottom: 1.5rem; font-size: 0.85rem; color: var(--muted);">
+        <a href="/" style="color: var(--muted);">Home</a>
+        <span class="separator" style="margin: 0 0.5rem;">/</span>
+        <span class="current" style="color: var(--ink);">Contact</span>
+      </nav>
+
+      <h1 style="font-family: var(--font-display); font-size: 2.2rem; margin-bottom: 0.5rem;">Contact Hellraiser Revival Wiki</h1>
+      <div class="meta-bar" style="color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; border-bottom: 1px solid var(--line); padding-bottom: 1rem;">
+        <span>Direct Communication · Corrections & Feedback</span>
+      </div>
+
+      <p>
+        The <strong>Hellraiser Revival Wiki</strong> is maintained by an independent group of survival horror enthusiasts, dataminers, and guide writers. We welcome verified puzzle steps, weapon durability tests, and editorial corrections.
+      </p>
+
+      <div style="background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 24px; margin: 28px 0;">
+        <span style="font-size: 0.8rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 8px; font-weight: 700;">Direct Inquiries & Support</span>
+        <h3 style="margin: 0 0 12px; color: #fff; font-size: 1.3rem;">Editorial Team Email</h3>
+        <p style="margin: 0 0 16px; color: var(--muted); font-size: 0.95rem;">
+          For guide corrections, puzzle submissions, partnership requests, or general inquiries, reach us directly at:
+        </p>
+        <a href={`mailto:${siteConfig.contactEmail}`} style="display: inline-flex; align-items: center; gap: 8px; font-size: 1rem; color: var(--accent); background: rgba(212, 163, 115, 0.1); border: 1px solid rgba(212, 163, 115, 0.3); padding: 10px 18px; border-radius: 6px; font-weight: 700;">
+          ✉ {siteConfig.contactEmail}
+        </a>
+      </div>
+
+      <h2 style="font-family: var(--font-display); font-size: 1.5rem; margin-top: 2rem;">Submitting Verified Findings</h2>
+      <p>
+        When submitting puzzle box configurations, safe codes, or boss strategy findings, please include:
+      </p>
+      <ul>
+        <li>Current game client version or platform (PC, PS5, Xbox Series X|S).</li>
+        <li>Uncompressed in-game screenshots or clip links demonstrating reproducible mechanics.</li>
+        <li>Chapter title or specific room context within the Labyrinth.</li>
+      </ul>
+
+      <h2 style="font-family: var(--font-display); font-size: 1.5rem; margin-top: 2rem;">Copyright & DMCA Inquiries</h2>
+      <p>
+        Hellraiser Revival Wiki is an educational community informational resource. All official artwork and intellectual property belong to Saber Interactive and respective owners. If you are a copyright holder with questions regarding assets used on this site, email <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a> for prompt resolution.
+      </p>
+    </article>
+  </div>
+</BaseLayout>

@@ -1,0 +1,372 @@
+---
+// ============================================================
+// [Code 层] BaseLayout — 全站顶栏、SEO、搜索与设计系统底座
+// 继承自 frontend-design 与 ui-ux-pro-max 工业级规范
+// ============================================================
+import '../styles/global.css';
+import { getCollection } from 'astro:content';
+import { siteConfig } from '../config/site.config';
+import JsonLd from '../components/JsonLd.astro';
+
+const allGuides = await getCollection('guides', ({ data }) => !data.draft);
+const allCodes = await getCollection('codes', ({ data }) => !data.draft);
+
+const searchItems = [
+  ...allGuides.map((g) => ({
+    title: g.data.title,
+    description: g.data.description,
+    url: `/guide/${g.id}/`,
+    category: 'Guide',
+  })),
+  ...allCodes.map((c) => ({
+    title: c.data.title,
+    description: c.data.summary ?? c.data.title,
+    url: `/codes/${c.id}/`,
+    category: 'Codes',
+  })),
+];
+
+interface Props {
+  title?: string;
+  description?: string;
+  /** 相对路径，如 /guide/some-topic/ */
+  canonical?: string;
+  lang?: string;
+  /** 本页面实际存在翻译的语言（双轨 hreflang：只为物理存在的翻译输出 alternate） */
+  availableLocales?: string[];
+  /** 页面级 JSON-LD 对象（Article/BreadcrumbList/FAQPage…），BaseLayout 只管全站级 */
+  jsonLd?: Record<string, unknown>[];
+}
+
+const defaultDesc = `The definitive evidence-led encyclopedia for Hellraiser: Revival: verified strategy guides, puzzle solutions, and PC specs.`;
+
+const {
+  title,
+  description = defaultDesc,
+  canonical = Astro.url.pathname,
+  lang = siteConfig.defaultLocale,
+  availableLocales = [],
+  jsonLd = [],
+} = Astro.props;
+
+const siteUrl = siteConfig.siteUrl;
+const suffix = siteConfig.titleSuffix.startsWith(' ') ? siteConfig.titleSuffix : ` ${siteConfig.titleSuffix}`;
+const fullTitle = title
+  ? (title.endsWith(siteConfig.titleSuffix.trim()) ? title : `${title}${suffix}`)
+  : `${siteConfig.siteName}: Strategy Guides & Databases`;
+const ogImage = `${siteUrl}/og-cover.jpg`;
+
+// 双轨 hreflang：绝不生成指向 404 的备用语言标签。
+const stripLocale = (path: string) =>
+  path.replace(new RegExp(`^/(${availableLocales.join('|')})`), '') || '/';
+const isMultiLang = availableLocales.length > 1;
+
+// 动态将品牌词拆解为前缀高亮与后缀
+const brandWords = siteConfig.siteName.split(' ');
+const brandFirst = brandWords[0] || siteConfig.siteName;
+const brandRest = brandWords.slice(1).join(' ') || 'WIKI';
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href={`${siteUrl}${canonical}`} />
+
+    <!-- Favicon & Touch Icons (Google Search & Multi-device compliant) -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- Google Fonts for Tactical Typography (Cinzel Serif + Inter Sans + JetBrains Mono) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    {isMultiLang ? (
+      <>
+        <link rel="alternate" hreflang="x-default" href={`${siteUrl}${stripLocale(canonical)}`} />
+        {siteConfig.locales.map((loc) => (
+          <link
+            rel="alternate"
+            hreflang={loc}
+            href={loc === siteConfig.defaultLocale
+              ? `${siteUrl}${stripLocale(canonical)}`
+              : `${siteUrl}/${loc}${stripLocale(canonical)}`}
+          />
+        ))}
+      </>
+    ) : (
+      <>
+        <link rel="alternate" hreflang="x-default" href={`${siteUrl}${canonical}`} />
+        <link rel="alternate" hreflang={siteConfig.defaultLocale} href={`${siteUrl}${canonical}`} />
+      </>
+    )}
+
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={`${siteUrl}${canonical}`} />
+    <meta property="og:site_name" content={siteConfig.siteName} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="675" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    {siteConfig.ads.adsenseClient && (
+      <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${siteConfig.ads.adsenseClient}`} crossorigin="anonymous"></script>
+    )}
+
+    {siteConfig.ads.gaMeasurementId && (
+      <>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.ads.gaMeasurementId}`}></script>
+        <script is:inline define:vars={{ gaId: siteConfig.ads.gaMeasurementId }}>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', gaId);
+        </script>
+      </>
+    )}
+
+    <!-- 全站级 JSON-LD：Organization + WebSite -->
+    <JsonLd data={{
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: siteConfig.siteName,
+      url: siteUrl,
+      ...(siteConfig.officialLinks && Object.values(siteConfig.officialLinks).filter(Boolean).length > 0
+        ? { sameAs: Object.values(siteConfig.officialLinks).filter(Boolean) }
+        : {}),
+    }} />
+    <JsonLd data={{
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: siteConfig.siteName,
+      url: siteUrl,
+    }} />
+    {jsonLd.map((data) => <JsonLd data={data} />)}
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a href="/" class="brand">
+          <svg class="brand-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8" cy="8" r="1.5" fill="currentColor"/><circle cx="16" cy="8" r="1.5" fill="currentColor"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/><circle cx="8" cy="16" r="1.5" fill="currentColor"/><circle cx="16" cy="16" r="1.5" fill="currentColor"/></svg>
+          <span class="brand-accent">{brandFirst}</span> <span class="brand-text">{brandRest}</span>
+          <span class="brand-badge">TACTICAL DOSSIER</span>
+        </a>
+
+        <!-- 移动端汉堡切换按钮 -->
+        <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg class="hamburger-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          <svg class="close-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+
+        <nav class="nav-links" id="main-nav" aria-label="Main Navigation">
+          <!-- 1. Guides Dropdown (Mega Menu) -->
+          <div class="nav-item has-dropdown">
+            <a href="/guide/" class={`nav-trigger ${canonical.startsWith('/guide/') ? 'active' : ''}`} aria-haspopup="true">
+              <span>Guides</span>
+              <svg class="chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="dropdown-menu mega-menu" role="menu">
+              <div class="dropdown-col">
+                <div class="dropdown-col-title">WALKTHROUGHS & STARTERS</div>
+                {allGuides.slice(0, 3).map((g) => (
+                  <a href={`/guide/${g.id}/`} class="dropdown-card" role="menuitem">
+                    <div class="card-icon-svg">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-title">{g.data.title}</div>
+                      <div class="card-desc">{g.data.description}</div>
+                    </div>
+                  </a>
+                ))}
+                {allGuides.length === 0 && (
+                  <div class="card-desc" style="padding: 10px;">Guides will appear here.</div>
+                )}
+              </div>
+              <div class="dropdown-col">
+                <div class="dropdown-col-title">ARCHIVE & DISCOVERY</div>
+                {allGuides.slice(3, 6).map((g) => (
+                  <a href={`/guide/${g.id}/`} class="dropdown-card" role="menuitem">
+                    <div class="card-icon-svg">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"/><line x1="13" y1="19" x2="19" y2="13"/><line x1="16" y1="16" x2="20" y2="20"/><line x1="19" y1="21" x2="21" y2="19"/></svg>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-title">{g.data.title}</div>
+                      <div class="card-desc">{g.data.description}</div>
+                    </div>
+                  </a>
+                ))}
+                <div class="dropdown-footer">
+                  <a href="/guide/" class="dropdown-hub-link">Explore All Strategy Guides →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Codes & Rewards Dropdown -->
+          <div class="nav-item has-dropdown dropdown-right">
+            <a href="/codes/" class={`nav-trigger ${canonical.startsWith('/codes/') ? 'active' : ''}`} aria-haspopup="true">
+              <span>Codes</span>
+              <span class="nav-pill-badge">ACTIVE</span>
+              <svg class="chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="dropdown-menu single-menu" role="menu">
+              <div class="dropdown-col-title">REWARDS & PROMOTIONS</div>
+              {allCodes.slice(0, 3).map((c) => (
+                <a href={`/codes/${c.id}/`} class="dropdown-card" role="menuitem">
+                  <div class="card-icon-svg">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><rect width="20" height="5" x="2" y="7" rx="1"/></svg>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-title">{c.data.title}</div>
+                    <div class="card-desc">{c.data.summary ?? 'Verified redemption codes & status'}</div>
+                  </div>
+                </a>
+              ))}
+              <div class="dropdown-footer">
+                <a href="/codes/" class="dropdown-hub-link">All Active Rewards & Codes →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Global Search Trigger Button -->
+          <button type="button" class="search-btn search-trigger-btn" id="search-trigger" aria-label="Open search dialog">
+            <div class="search-btn-left">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <span>Search</span>
+            </div>
+            <kbd class="search-kbd">⌘K</kbd>
+          </button>
+
+          <!-- 4. Native Zero-JS Locale Switcher (Multi-language ready) -->
+          {isMultiLang && (
+            <details class="locale-switcher">
+              <summary aria-label="Select language">
+                <span>{lang.toUpperCase()}</span>
+                <svg class="chevron-icon" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </summary>
+              <div class="locale-dropdown">
+                <a href={stripLocale(canonical)} hreflang="en" class={lang === 'en' ? 'active' : ''}>
+                  <span class="locale-code">EN</span> English
+                </a>
+                {availableLocales.filter((loc) => loc !== 'en').map((loc) => (
+                  <a href={`/${loc}${stripLocale(canonical)}`} hreflang={loc} class={lang === loc ? 'active' : ''}>
+                    <span class="locale-code">{loc.toUpperCase()}</span> {loc === 'de' ? 'Deutsch' : loc === 'ja' ? '日本語' : loc}
+                  </a>
+                ))}
+              </div>
+            </details>
+          )}
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <slot />
+    </main>
+
+    <!-- Search Modal Dialog -->
+    <div class="search-modal-backdrop" id="search-modal" role="dialog" aria-modal="true" aria-label="Search Wiki">
+      <div class="search-modal">
+        <div class="search-modal-header">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="search-input" class="search-input" placeholder="Search guides, mechanics, codes..." autocomplete="off" />
+          <button type="button" class="search-close-btn" id="search-close" aria-label="Close search">✕</button>
+        </div>
+        <div class="search-results-list" id="search-results">
+          <!-- Injected via client script -->
+        </div>
+        <div class="search-footer-hints">
+          <span>Navigate with arrows · Press ESC to close</span>
+          <span>{searchItems.length} verified items indexed</span>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>© {new Date().getFullYear()} {siteConfig.siteName}. Tactical strategy guides and databases. Game content and materials are trademarks of their respective owners.</p>
+    </footer>
+
+    <script is:inline define:vars={{ searchItems }}>
+      const modal = document.getElementById('search-modal');
+      const trigger = document.getElementById('search-trigger');
+      const closeBtn = document.getElementById('search-close');
+      const input = document.getElementById('search-input');
+      const resultsContainer = document.getElementById('search-results');
+
+      function renderResults(q) {
+        const query = (q || '').toLowerCase().trim();
+        const filtered = query
+          ? searchItems.filter(item => item.title.toLowerCase().includes(query) || item.description.toLowerCase().includes(query))
+          : searchItems;
+
+        if (filtered.length === 0) {
+          resultsContainer.innerHTML = '<div style="padding: 24px; text-align: center; color: var(--muted); font-size: 0.9rem;">No matching guides found</div>';
+          return;
+        }
+
+        resultsContainer.innerHTML = filtered.map(item => `
+          <a href="${item.url}" class="search-result-item">
+            <div class="search-result-title">${item.title}</div>
+            <div class="search-result-desc">${item.description}</div>
+          </a>
+        `).join('');
+      }
+
+      function openSearch() {
+        if (!modal) return;
+        modal.classList.add('is-open');
+        input?.focus();
+        renderResults(input ? input.value : '');
+      }
+
+      function closeSearch() {
+        if (!modal) return;
+        modal.classList.remove('is-open');
+        if (input) input.value = '';
+      }
+
+      trigger?.addEventListener('click', openSearch);
+      document.querySelectorAll('.search-trigger-btn').forEach(btn => btn.addEventListener('click', openSearch));
+      closeBtn?.addEventListener('click', closeSearch);
+      modal?.addEventListener('click', (e) => {
+        if (e.target === modal) closeSearch();
+      });
+      input?.addEventListener('input', (e) => renderResults(e.target.value));
+
+      document.addEventListener('keydown', (e) => {
+        if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+          e.preventDefault();
+          modal?.classList.contains('is-open') ? closeSearch() : openSearch();
+        } else if (e.key === 'Escape' && modal?.classList.contains('is-open')) {
+          closeSearch();
+        }
+      });
+
+      // 移动端菜单切换
+      const navToggle = document.getElementById('mobile-nav-toggle');
+      const mainNav = document.getElementById('main-nav');
+      if (navToggle && mainNav) {
+        navToggle.addEventListener('click', () => {
+          const isOpen = mainNav.classList.toggle('mobile-open');
+          navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+          const hamburger = navToggle.querySelector('.hamburger-icon');
+          const close = navToggle.querySelector('.close-icon');
+          if (hamburger && close) {
+            hamburger.style.display = isOpen ? 'none' : 'block';
+            close.style.display = isOpen ? 'block' : 'none';
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

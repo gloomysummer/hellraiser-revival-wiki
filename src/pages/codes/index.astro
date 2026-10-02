@@ -1,0 +1,62 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { siteConfig } from "../../config/site.config";
+
+const codes = await getCollection("codes", ({ data }) => !data.draft);
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: `${siteConfig.gameName} Promo Codes & Redemption Ledger`,
+    description: `Official directory of verified promo codes, gift links, and reward ledgers for ${siteConfig.gameName}.`,
+    url: `${siteConfig.siteUrl}/codes/`,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: siteConfig.siteUrl },
+      { '@type': 'ListItem', position: 2, name: 'Promo Codes', item: `${siteConfig.siteUrl}/codes/` },
+    ],
+  },
+];
+---
+<BaseLayout
+  title="Hellraiser Revival Promo Codes & Rewards"
+  description="Verified Hellraiser Revival promo codes and reward redemption tracker. Check official status, developer gifts, and Deluxe bonuses."
+  canonical="/codes/"
+  jsonLd={jsonLd}
+>
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumbs">
+      <a href="/">Home</a>
+      <span class="separator">/</span>
+      <span class="current">Promo Codes</span>
+    </nav>
+
+    <div class="section-header" style="margin-top: 16px;">
+      <h1>Hellraiser Revival Codes & Rewards</h1>
+      <p>Direct tracking of verified developer gifts, event drops, and redemption features. We actively audit community channels to filter out fake generators and expired codes.</p>
+    </div>
+
+    <div class="cards-grid">
+      {codes.map((c) => (
+        <article class="guide-card" style="grid-column: 1 / -1; max-width: 680px;">
+          <div class="card-body">
+            <h2><a href={`/codes/${c.id}/`} style="color: inherit; text-decoration: none; font-size: 1.2rem; font-weight: 700;">{c.data.title}</a></h2>
+            <p>{c.data.summary ?? 'Active codes and redemption status'}</p>
+            <div class="card-footer">
+              <time datetime={c.data.updated.toISOString()}>Updated: {c.data.updated.toISOString().slice(0, 10)}</time>
+              <span>View Code Ledger →</span>
+            </div>
+          </div>
+        </article>
+      ))}
+      {codes.length === 0 && (
+        <p style="color: var(--muted);">No active promo codes at this time.</p>
+      )}
+    </div>
+  </div>
+</BaseLayout>

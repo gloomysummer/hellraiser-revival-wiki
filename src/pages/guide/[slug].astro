@@ -1,0 +1,272 @@
+---
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import QuickAnswer from "../../components/QuickAnswer.astro";
+import { siteConfig } from "../../config/site.config";
+
+export async function getStaticPaths() {
+  const guides = await getCollection("guides", ({ data }) => !data.draft);
+  const allCodes = await getCollection("codes", ({ data }) => !data.draft);
+
+  return guides.map((guide) => {
+    // 频道/系列归属计算（优先 category，次选首个 tag，兜底 Strategy Guides）
+    const categoryRaw = guide.data.category || (guide.data.tags && guide.data.tags[0]) || "Strategy Guides";
+    const categoryTitle = categoryRaw.charAt(0).toUpperCase() + categoryRaw.slice(1);
+
+    // 提取同属该频道/系列的连读文章列表
+    const seriesGuides = guides.filter((g) => {
+      const gCat = g.data.category || (g.data.tags && g.data.tags[0]) || "Strategy Guides";
+      return gCat.toLowerCase() === categoryRaw.toLowerCase();
+    });
+
+    // 活跃兑换码清单（跨 codes 文档聚合）
+    const activeCodesList = allCodes.flatMap((doc) =>
+      doc.data.codes.filter((c) => c.status === "active").map((c) => ({
+        ...c,
+        pageSlug: doc.id,
+      }))
+    );
+
+    return {
+      params: { slug: guide.id },
+      props: {
+        guide,
+        categoryTitle,
+        seriesGuides,
+        relatedGuides: guides.filter((g) => g.id !== guide.id).slice(0, 3),
+        activeCodesList,
+        hasCodesDoc: allCodes.length > 0,
+      },
+    };
+  });
+}
+
+const { guide, categoryTitle, seriesGuides, relatedGuides, activeCodesList, hasCodesDoc } = Astro.props;
+const { Content, headings } = await render(guide);
+const { data } = guide;
+const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
+
+// Article + BreadcrumbList JSON-LD（构建期生成）
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: data.title,
+    description: data.description,
+    datePublished: data.pubDate.toISOString(),
+    dateModified: (data.updated ?? data.pubDate).toISOString(),
+    author: { '@type': 'Organization', name: siteConfig.siteName },
+    publisher: { '@type': 'Organization', name: siteConfig.siteName },
+    mainEntityOfPage: `${siteConfig.siteUrl}/guide/${guide.id}/`,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: siteConfig.siteUrl },
+      { '@type': 'ListItem', position: 2, name: 'Guides', item: `${siteConfig.siteUrl}/guide/` },
+      { '@type': 'ListItem', position: 3, name: data.title },
+    ],
+  },
+];
+---
+<BaseLayout title={data.title} description={data.description} canonical={`/guide/${guide.id}/`} jsonLd={jsonLd}>
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumbs">
+      <a href="/">Home</a>
+      <span class="separator">/</span>
+      <a href="/guide/">Guides</a>
+      <span class="separator">/</span>
+      <span class="current">{data.title}</span>
+    </nav>
+
+    <div class="article-layout">
+      <!-- 主内容区 -->
+      <article class="article-main">
+        <h1>{data.title}</h1>
+        <div class="meta-bar">
+          <time datetime={data.pubDate.toISOString()}>Published: {data.pubDate.toISOString().slice(0, 10)}</time>
+          {data.updated && <span>· Updated: <time datetime={data.updated.toISOString()}>{data.updated.toISOString().slice(0, 10)}</time></span>}
+        </div>
+
+        <QuickAnswer summary={data.summary} />
+
+        {tocHeadings.length > 0 && (
+          <details class="mobile-toc">
+            <summary>
+              <span>Table of Contents ({tocHeadings.length} sections)</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </summary>
+            <div class="mobile-toc-inner">
+              <ul class="toc-list">
+                {tocHeadings.map((h) => (
+                  <li class={`toc-item depth-${h.depth}`}>
+                    <a href={`#${h.slug}`} class="toc-link">{h.text}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </details>
+        )}
+
+        <div class="article-body">
+          <Content />
+        </div>
+
+        {data.evidence.length > 0 && (
+          <section class="evidence-dossier" aria-label="Official Evidence Dossier">
+            <div class="evidence-header">
+              <h2>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+                <span>Official Evidence Dossier & Verification</span>
+              </h2>
+              <span class="evidence-seal">Verified Match</span>
+            </div>
+            <ul class="evidence-list">
+              {data.evidence.map((e) => (
+                <li class="evidence-item">
+                  <div class="evidence-claim-row">
+                    <span class="evidence-claim">{e.claim}</span>
+                    {e.verifiedPatch && <span class="evidence-patch">Build {e.verifiedPatch}</span>}
+                  </div>
+                  <div class="evidence-source">
+                    <span>Source:</span> <a href={e.sourceUrl} rel="noopener" target="_blank">{e.sourceUrl}</a>
+                  </div>
+                  {e.exactQuote && <blockquote class="evidence-quote">"{e.exactQuote}"</blockquote>}
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        <!-- 相关深度攻略推荐 -->
+        {relatedGuides.length > 0 && (
+          <section class="related-guides">
+            <h3>Related Strategy Guides</h3>
+            <div class="related-grid">
+              {relatedGuides.map((rel) => (
+                <a href={`/guide/${rel.id}/`} class="related-card">
+                  <div class="card-body">
+                    <h4>{rel.data.title}</h4>
+                    <p>{rel.data.description}</p>
+                    <span class="read-link">Read Guide →</span>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
+      </article>
+
+      <!-- 桌面端混合智能吸顶侧边栏 (Hybrid Sticky Sidebar V2) -->
+      {(tocHeadings.length > 0 || seriesGuides.length > 0 || relatedGuides.length > 0 || hasCodesDoc || data.evidence.length > 0) && (
+        <aside class="article-toc-sidebar" aria-label="Guide Navigation and Entity Ledger">
+          <!-- 模块 1: 正文目录大纲 (On This Page) -->
+          {tocHeadings.length > 0 && (
+            <div class="sidebar-section">
+              <div class="toc-title">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+                <span>On This Page</span>
+              </div>
+              <ul class="toc-list">
+                {tocHeadings.map((h) => (
+                  <li class={`toc-item depth-${h.depth}`}>
+                    <a href={`#${h.slug}`} class="toc-link">{h.text}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          <!-- 模块 2: 频道/系列连读展开树 (Active Category Reading Tree) -->
+          {seriesGuides.length > 0 && (
+            <div class="sidebar-section">
+              <div class="toc-title">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+                <span>{categoryTitle}</span>
+                <span class="sidebar-count-badge">{seriesGuides.length}</span>
+              </div>
+              <ul class="sidebar-tree-list">
+                {seriesGuides.map((item) => {
+                  const isCurrent = item.id === guide.id;
+                  return (
+                    <li class={`sidebar-tree-item ${isCurrent ? 'is-current' : ''}`}>
+                      <a href={`/guide/${item.id}/`} class="sidebar-tree-link" aria-current={isCurrent ? 'page' : undefined}>
+                        <span class="tree-bullet">{isCurrent ? '●' : '○'}</span>
+                        <span class="tree-text">{item.data.title}</span>
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          )}
+
+          <!-- 模块 3: 跨主题网状延展推荐 (Related Dossiers) -->
+          {relatedGuides.filter((rel) => !seriesGuides.some((sg) => sg.id === rel.id)).length > 0 && (
+            <div class="sidebar-section">
+              <div class="toc-title">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>Related Dossiers</span>
+              </div>
+              <ul class="sidebar-links-list">
+                {relatedGuides
+                  .filter((rel) => !seriesGuides.some((sg) => sg.id === rel.id))
+                  .map((rel) => (
+                    <li>
+                      <a href={`/guide/${rel.id}/`} class="sidebar-link-item">
+                        <span class="sidebar-link-bullet">→</span>
+                        <span class="sidebar-link-title">{rel.data.title}</span>
+                      </a>
+                    </li>
+                  ))}
+              </ul>
+            </div>
+          )}
+
+          <!-- 模块 4: 常驻微插件 (Active Codes Widget) -->
+          {hasCodesDoc && (
+            <div class="sidebar-section sidebar-codes-widget">
+              <div class="widget-header">
+                <div class="widget-title">
+                  <span class={`dot ${activeCodesList.length > 0 ? 'live pulse' : 'neutral'}`}></span>
+                  <span>REWARD CODES</span>
+                </div>
+                <span class={`widget-count-badge ${activeCodesList.length > 0 ? 'active' : ''}`}>
+                  {activeCodesList.length > 0 ? `${activeCodesList.length} ACTIVE` : 'VERIFIED'}
+                </span>
+              </div>
+              {activeCodesList.length > 0 ? (
+                <div class="widget-code-preview">
+                  <div class="code-snippet-box">
+                    <span class="code-val">{activeCodesList[0].code}</span>
+                  </div>
+                  <span class="code-reward-text">{activeCodesList[0].reward}</span>
+                </div>
+              ) : (
+                <p class="widget-empty-note">All expired or pending next official drop.</p>
+              )}
+              <a href="/codes/" class="widget-action-link">
+                <span>View All Working Codes</span>
+                <span class="action-arrow">→</span>
+              </a>
+            </div>
+          )}
+
+          <!-- 模块 5: 官方证据验证状态 (Evidence & Patch Ledger) -->
+          {data.evidence.length > 0 && (
+            <div class="sidebar-section sidebar-evidence-box">
+              <div class="evidence-pill">
+                <span class="dot live"></span>
+                <span>VERIFIED EVIDENCE</span>
+              </div>
+              <p class="sidebar-evidence-note">
+                Cross-checked with official patch data and gameplay records.
+              </p>
+            </div>
+          )}
+        </aside>
+      )}
+    </div>
+  </div>
+</BaseLayout>

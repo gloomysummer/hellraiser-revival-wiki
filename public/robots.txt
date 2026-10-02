@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hellraiserrevivalwiki.wiki/sitemap-index.xml

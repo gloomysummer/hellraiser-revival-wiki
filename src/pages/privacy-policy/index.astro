@@ -1,0 +1,83 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { siteConfig } from "../../config/site.config";
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: `Privacy Policy | ${siteConfig.siteName}`,
+    description: `Privacy policy and cookie disclosures for ${siteConfig.siteName}.`,
+    url: `${siteConfig.siteUrl}/privacy-policy/`,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: siteConfig.siteUrl },
+      { '@type': 'ListItem', position: 2, name: 'Privacy Policy', item: `${siteConfig.siteUrl}/privacy-policy/` },
+    ],
+  },
+];
+---
+<BaseLayout
+  title="Privacy Policy: Disclosures & Cookies"
+  description="Privacy policy and data collection disclosures for Hellraiser Revival Wiki, including Google AdSense cookies, analytics tracking, and user choices."
+  canonical="/privacy-policy/"
+  jsonLd={jsonLd}
+>
+  <div class="container" style="max-width: var(--max); margin: 0 auto; padding: 2rem 1.5rem;">
+    <article>
+      <nav class="breadcrumbs" aria-label="Breadcrumbs" style="margin-bottom: 1.5rem; font-size: 0.85rem; color: var(--muted);">
+        <a href="/" style="color: var(--muted);">Home</a>
+        <span class="separator" style="margin: 0 0.5rem;">/</span>
+        <span class="current" style="color: var(--ink);">Privacy Policy</span>
+      </nav>
+
+      <h1 style="font-family: var(--font-display); font-size: 2.2rem; margin-bottom: 0.5rem;">Privacy Policy</h1>
+      <div class="meta-bar" style="color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; border-bottom: 1px solid var(--line); padding-bottom: 1rem;">
+        <span>Last Updated: October 2, 2026 · Legal & Compliance</span>
+      </div>
+
+      <p>
+        At <strong>Hellraiser Revival Wiki</strong> (accessible from <a href={siteConfig.siteUrl}>{siteConfig.siteUrl}</a>), the privacy of our visitors is of paramount importance. This Privacy Policy document outlines the types of information collected and how it is utilized.
+      </p>
+
+      <p>
+        If you have additional questions or require more information about our Privacy Policy, contact us at <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a>.
+      </p>
+
+      <h2 style="font-family: var(--font-display); font-size: 1.5rem; margin-top: 2rem;">1. Log Files & Analytics</h2>
+      <p>
+        Hellraiser Revival Wiki follows a standard procedure of using log files. These files log visitors when they visit websites. The information collected by log files includes internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and number of clicks. These are not linked to any personally identifiable information.
+      </p>
+
+      <h2 style="font-family: var(--font-display); font-size: 1.5rem; margin-top: 2rem;">2. Cookies & Advertising Partners</h2>
+      <p>
+        Third-party vendors, including <strong>Google</strong>, use cookies to serve ads based on a user's prior visits to this website or other websites.
+      </p>
+      <ul>
+        <li>
+          <strong>DoubleClick DART Cookie</strong>: Google's use of advertising cookies enables it and its partners to serve ads to our visitors based on their visit to our site and other sites on the Internet.
+        </li>
+        <li>
+          <strong>Opt-Out of Personalized Advertising</strong>: Visitors may opt out of personalized advertising by visiting the <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer">Google Ads Settings</a> page. Alternatively, you can opt out of a third-party vendor's use of cookies by visiting <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener noreferrer">www.aboutads.info</a>.
+        </li>
+      </ul>
+
+      <div style="background: var(--panel); border-left: 4px solid var(--accent); padding: 16px 20px; margin: 24px 0; border-radius: 0 6px 6px 0;">
+        <strong style="color: var(--accent); display: block; margin-bottom: 6px; font-size: 0.9rem; text-transform: uppercase;">
+          Google Partner Disclosure
+        </strong>
+        <span style="font-size: 0.95rem; color: #eee7f2;">
+          To learn how Google manages data collected on partner websites, review the official policy: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">How Google uses information from sites or apps that use our services</a>.
+        </span>
+      </div>
+
+      <h2 style="font-family: var(--font-display); font-size: 1.5rem; margin-top: 2rem;">3. Third Party Privacy Policies</h2>
+      <p>
+        Hellraiser Revival Wiki's Privacy Policy does not apply to other advertisers or websites. We advise you to consult the respective Privacy Policies of these third-party ad servers for more detailed information.
+      </p>
+    </article>
+  </div>
+</BaseLayout>
