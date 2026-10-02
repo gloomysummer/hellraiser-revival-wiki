@@ -2222,8 +2222,8 @@ article code {
 /* 三栏 guide 布局：正文 + On This Page + Explore The Wiki（对标 nivalis） */
 @media (min-width: 1200px) {
   .article-layout {
-    grid-template-columns: minmax(0, 1fr) 220px 232px;
-    gap: 32px;
+    grid-template-columns: minmax(0, 716px) 220px 224px;
+    justify-content: space-between;
   }
 }
 .article-wiki-rail {
