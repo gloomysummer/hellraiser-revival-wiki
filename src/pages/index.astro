@@ -6,6 +6,13 @@ import { siteConfig } from "../config/site.config";
 
 const guides = (await getCollection("guides", ({ data }) => !data.draft))
   .sort((a, b) => (b.data.updated?.valueOf() ?? b.data.pubDate.valueOf()) - (a.data.updated?.valueOf() ?? a.data.pubDate.valueOf()));
+const latestUpdates = [...guides]
+  .sort((a, b) => {
+    const timeA = (a.data.updated ?? a.data.pubDate).valueOf();
+    const timeB = (b.data.updated ?? b.data.pubDate).valueOf();
+    return timeB - timeA;
+  })
+  .slice(0, 5);
 const codes = await getCollection("codes", ({ data }) => !data.draft);
 const activeCodesCount = codes.flatMap((c) => c.data.codes.filter((item) => item.status === "active")).length;
 
@@ -136,7 +143,7 @@ const firstGuideSlug = "demo-walkthrough-secrets";
                 <span class="rail-count">{walkthroughGuides.length}</span>
               </summary>
               <ul class="hero-rail-sublinks">
-                <li><a href="#walkthrough" class="silo-browse-all">Browse Section ↓</a></li>
+                <li><a href="#silos" class="silo-browse-all">Browse Field Dossiers ↓</a></li>
                 {walkthroughGuides.map((g) => (
                   <li><a href={`/guide/${g.id}/`}>{g.data.title}</a></li>
                 ))}
@@ -153,7 +160,7 @@ const firstGuideSlug = "demo-walkthrough-secrets";
                 <span class="rail-count">{bossGuides.length}</span>
               </summary>
               <ul class="hero-rail-sublinks">
-                <li><a href="#bosses" class="silo-browse-all">Browse Section ↓</a></li>
+                <li><a href="#silos" class="silo-browse-all">Browse Field Dossiers ↓</a></li>
                 {bossGuides.map((g) => (
                   <li><a href={`/guide/${g.id}/`}>{g.data.title}</a></li>
                 ))}
@@ -170,7 +177,7 @@ const firstGuideSlug = "demo-walkthrough-secrets";
                 <span class="rail-count">{systemGuides.length}</span>
               </summary>
               <ul class="hero-rail-sublinks">
-                <li><a href="#systems" class="silo-browse-all">Browse Section ↓</a></li>
+                <li><a href="#silos" class="silo-browse-all">Browse Field Dossiers ↓</a></li>
                 {systemGuides.map((g) => (
                   <li><a href={`/guide/${g.id}/`}>{g.data.title}</a></li>
                 ))}
@@ -187,7 +194,7 @@ const firstGuideSlug = "demo-walkthrough-secrets";
                 <span class="rail-count">{referenceGuides.length}</span>
               </summary>
               <ul class="hero-rail-sublinks">
-                <li><a href="#reference" class="silo-browse-all">Browse Section ↓</a></li>
+                <li><a href="#silos" class="silo-browse-all">Browse Field Dossiers ↓</a></li>
                 {referenceGuides.map((g) => (
                   <li><a href={`/guide/${g.id}/`}>{g.data.title}</a></li>
                 ))}
@@ -249,113 +256,46 @@ const firstGuideSlug = "demo-walkthrough-secrets";
       </div>
     </section>
 
-    <!-- Category 1: Walkthrough & Story (2-Col Featured Grid: 宽幅大图，沉浸视觉) -->
-    <section id="walkthrough" style="margin-top: 56px;">
+    <!-- Section: Latest Updates (Freshness Ledger: 紧凑时序列表) -->
+    <section id="updates" class="latest-updates-section">
       <div class="section-header">
-        <h2>Hellraiser Revival Walkthrough & Story Guides</h2>
-        <p>Step-by-step walkthroughs through the Scarlet Church, demo secret caches, and branching narrative paths to save Sunny.</p>
+        <div class="section-tag-row">
+          <span class="live-dot pulse"></span>
+          <span class="section-tag-text">FRESHNESS LEDGER</span>
+        </div>
+        <h2>Latest Field Updates & Guide Dossiers</h2>
+        <p>Recently verified mechanics, walkthrough chapters, and hardware benchmarks across the campaign.</p>
       </div>
-      <div class="cards-grid-2">
-        {walkthroughGuides.map((g) => (
-          <article class="guide-card card-featured">
-            <div class="card-media">
-              <span class="card-silo-badge">Story Dossier</span>
-              <img
-                src={cardImageMap[g.id] ?? `/images/cards/ss_card_0.webp`}
-                alt={g.data.title}
-                width="800"
-                height="500"
-                loading="lazy"
-              />
+      <div class="updates-list">
+        {latestUpdates.map((item) => (
+          <a href={`/guide/${item.id}/`} class="update-row">
+            <div class="update-row-left">
+              <time class="update-date" datetime={(item.data.updated ?? item.data.pubDate).toISOString()}>
+                {(item.data.updated ?? item.data.pubDate).toISOString().slice(0, 10)}
+              </time>
+              <span class="update-tag">{item.data.category || 'Guide'}</span>
+              <span class="update-title">{item.data.title}</span>
             </div>
-            <div class="card-body">
-              <h3><a href={`/guide/${g.id}/`}>{g.data.title}</a></h3>
-              <p>{g.data.description}</p>
-              <div class="card-footer">
-                <time datetime={g.data.pubDate.toISOString()}>{g.data.pubDate.toISOString().slice(0, 10)}</time>
-                <span>Read Walkthrough →</span>
-              </div>
+            <div class="update-row-right">
+              <span class="update-meta">{Math.max(1, Math.round(item.body.split(/\s+/).length / 220))} min read</span>
+              <span class="update-arrow">Read →</span>
             </div>
-          </article>
+          </a>
         ))}
       </div>
     </section>
 
-    <!-- Category 2: Bosses & Cenobites (2-Col Featured Grid: 宽幅大图，压迫感十足) -->
-    <section id="bosses" style="margin-top: 56px;">
+    <!-- Section: Explore Wiki Silos (3-Col Grid: 铺满居中 1180 容器，全部 10 篇 guide 矩阵) -->
+    <section id="silos" class="wiki-silos-section" style="margin-top: 56px;">
       <div class="section-header">
-        <h2>Hellraiser Revival Bosses & Cenobites Encounters</h2>
-        <p>Master evasion mechanics for the Order of the Gash and conquer lethal cult commanders within the Scarlet Church.</p>
-      </div>
-      <div class="cards-grid-2">
-        {bossGuides.map((g) => (
-          <article class="guide-card card-featured">
-            <div class="card-media">
-              <span class="card-silo-badge">Boss Encounter</span>
-              <img
-                src={cardImageMap[g.id] ?? `/images/cards/ss_card_0.webp`}
-                alt={g.data.title}
-                width="800"
-                height="500"
-                loading="lazy"
-              />
-            </div>
-            <div class="card-body">
-              <h3><a href={`/guide/${g.id}/`}>{g.data.title}</a></h3>
-              <p>{g.data.description}</p>
-              <div class="card-footer">
-                <time datetime={g.data.pubDate.toISOString()}>{g.data.pubDate.toISOString().slice(0, 10)}</time>
-                <span>Read Boss Guide →</span>
-              </div>
-            </div>
-          </article>
-        ))}
-      </div>
-    </section>
-
-    <!-- Category 3: Systems & Puzzles (2-Col Featured Grid: 宽幅大图，细节拉满) -->
-    <section id="systems" style="margin-top: 56px;">
-      <div class="section-header">
-        <h2>Hellraiser Revival Combat Systems & Puzzle Box</h2>
-        <p>Decouple the intricate brass gears of the Genesis Configuration and manage weapon durability across blunt and sharp arsenals.</p>
-      </div>
-      <div class="cards-grid-2">
-        {systemGuides.map((g) => (
-          <article class="guide-card card-featured">
-            <div class="card-media">
-              <span class="card-silo-badge">Game Systems</span>
-              <img
-                src={cardImageMap[g.id] ?? `/images/cards/ss_card_0.webp`}
-                alt={g.data.title}
-                width="800"
-                height="500"
-                loading="lazy"
-              />
-            </div>
-            <div class="card-body">
-              <h3><a href={`/guide/${g.id}/`}>{g.data.title}</a></h3>
-              <p>{g.data.description}</p>
-              <div class="card-footer">
-                <time datetime={g.data.pubDate.toISOString()}>{g.data.pubDate.toISOString().slice(0, 10)}</time>
-                <span>Read Mechanics Guide →</span>
-              </div>
-            </div>
-          </article>
-        ))}
-      </div>
-    </section>
-
-    <!-- Category 4: Reference & Technical (3-Col Compact Grid: 缩略图精致收敛，信息高密度) -->
-    <section id="reference" style="margin-top: 56px;">
-      <div class="section-header">
-        <h2>Hellraiser Revival System Specs & Technical Reference</h2>
-        <p>Verified hardware benchmarks, single-player mode rules, regional age rating differences, and collector's edition contents.</p>
+        <h2>Explore Wiki Silos & Field Dossiers</h2>
+        <p>Comprehensive tactical walkthroughs, Cenobite encounters, weapon analyses, and hardware benchmarks across the Hellraiser: Revival campaign.</p>
       </div>
       <div class="cards-grid-3">
-        {referenceGuides.map((g) => (
+        {guides.map((g) => (
           <article class="guide-card card-compact">
             <div class="card-media">
-              <span class="card-silo-badge">Reference</span>
+              <span class="card-silo-badge">{g.data.category || 'Guide'}</span>
               <img
                 src={cardImageMap[g.id] ?? `/images/cards/ss_card_0.webp`}
                 alt={g.data.title}
@@ -369,7 +309,7 @@ const firstGuideSlug = "demo-walkthrough-secrets";
               <p>{g.data.description}</p>
               <div class="card-footer">
                 <time datetime={g.data.pubDate.toISOString()}>{g.data.pubDate.toISOString().slice(0, 10)}</time>
-                <span>Read Reference →</span>
+                <span>Read Dossier →</span>
               </div>
             </div>
           </article>
