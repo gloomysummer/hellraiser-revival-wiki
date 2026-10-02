@@ -2569,3 +2569,23 @@ h1, h2, h3, h4 {
   font-family: var(--font-display);
   letter-spacing: 0.03em;
 }
+
+/* 文字精致度对齐（对标 nivalis）：正文柔和青灰 + 抗锯齿渲染 + 400 字重 */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+.article-main p,
+.article-main li,
+.article-main td,
+.article-main th {
+  color: #a8b3c4;
+  font-weight: 400;
+}
+.article-main h2 + p,
+.article-main h3 + p,
+.article-main p strong,
+.article-main li strong {
+  color: #d7dee9;
+}
