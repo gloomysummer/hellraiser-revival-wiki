@@ -2272,7 +2272,7 @@ article code {
 
 /* 文章页舒展度对齐（对标 nivalis 716px/18px）：容器加宽 + 正文字号上调 */
 @media (min-width: 1200px) {
-  .article-page .container {
+  .container.article-page {
     max-width: 1320px;
   }
   .article-layout {
