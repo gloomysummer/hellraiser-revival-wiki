@@ -7,6 +7,7 @@ summary: 'The Hellraiser: Revival demo covers Aidan''s tense infiltration throug
   the heavy tire iron, unlocking the vestry safe combination with code 0719, solving
   the initial altar box alignment, and surviving the sudden cult ambush.'
 pubDate: 2026-10-02
+updated: '2026-10-02'
 category: Walkthrough
 tags:
 - demo
@@ -62,3 +63,5 @@ In the chapel nave, place the puzzle box upon the central obsidian pedestal:
 Upon retrieving the altar key, three Scarlet Church acolytes will breach the stained glass doors:
 * **Tactics**: Use the shotgun on the lead charging fanatic to stagger him instantly.
 * **Conserving Durability**: Switch back to the tire iron for unarmored followers to save precious ammunition for the full release.
+
+Your demo choices ripple into the full game: the [Sunny endings guide](/guide/how-to-save-sunny-endings-guide/) maps every branch that carries over on October 8.

@@ -7,6 +7,7 @@ summary: 'Clive Barker''s Hellraiser: Revival received an uncut USK 18 rating in
   and body horror without regional cuts or censored visual assets, while offering
   an optional streamer filter for public broadcasters.'
 pubDate: 2026-10-02
+updated: '2026-10-02'
 category: FAQ
 tags:
 - usk
@@ -46,3 +47,5 @@ Developer Saber Interactive maintained strict adherence to Clive Barker's uncomp
 * **Decapitation & Dismemberment**: Physics-based limb severance remains active across all platforms (PC, PS5, Xbox Series X|S, Nintendo Switch 2).
 * **BDSM & Piercing Motifs**: Authentic iconography, including hooked chains, skin flaying, and surgical mutilations depicted in the Scarlet Church, remain unaltered.
 * **Streamer & Content Creator Mode**: For streamers on Twitch and YouTube, an optional **"Streamer Safe" visual toggle** is provided in the options menu to blur explicit nudity and prevent copyright flag warnings.
+
+Hardware planning is unaffected by regional cuts — check the [PC system requirements](/guide/system-requirements-pc-specs/) for the uncut build's official specs.

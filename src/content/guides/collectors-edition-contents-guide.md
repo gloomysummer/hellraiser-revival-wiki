@@ -7,6 +7,7 @@ summary: 'The Hellraiser: Revival Collector''s Edition produced alongside Boss T
   Bleeding Hearts novella co-authored by Clive Barker, steelbook packaging, and deluxe
   digital DLC items including the retro 1980s VHS visual filter.'
 pubDate: 2026-10-02
+updated: '2026-10-02'
 category: News
 tags:
 - collectors-edition
@@ -58,3 +59,5 @@ Players purchasing either the physical Collector's Edition or the digital Deluxe
 | **Standard Digital** | $49.99 | £44.99 | Steam, PlayStation Store, Xbox Store |
 | **Deluxe Digital** | $59.99 | £52.99 | Steam, PlayStation Store, Xbox Store |
 | **Collector's Edition** | $149.99 | £129.99 | Boss Team Games Store & Select Retailers |
+
+Still deciding whether to pre-order? Track [active promo codes and rewards](/codes/october-2026/) — launch-window bonuses stack on top of edition content.

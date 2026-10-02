@@ -7,6 +7,7 @@ summary: 'Cenobites in Hellraiser: Revival cannot be eliminated with conventiona
   audio distractions, and Genesis Configuration dimensional locks to repel Pinhead,
   the sightless Chatterer, the immovable Butterball, and the shrieking Deepthroat.'
 pubDate: 2026-10-02
+updated: '2026-10-02'
 category: Enemies
 tags:
 - cenobites
@@ -62,3 +63,5 @@ Characterized by wires pulling open the flesh of her throat, she acts as a psych
 
 * **Behavior**: Employs sonic screeches that invert Aidan's camera controls and deplete stamina reserves.
 * **Evasion Strategy**: Equip acoustic ear plugs found in cultist storage boxes and utilize smoke grenades to disrupt her dimensional gaze.
+
+For a focused breakdown of the Scarlet Church's first major foe, see the dedicated [Bruno Keller boss guide](/guide/bruno-keller-boss-guide/).

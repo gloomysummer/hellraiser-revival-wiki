@@ -7,6 +7,7 @@ summary: Bruno Keller, the sadistic surgeon known as the Picasso of the Scalpel,
   lunge attacks, utilizing heavy blunt weapons to shatter his armored apron, and staying
   clear of hanging flesh traps.
 pubDate: 2026-10-02
+updated: '2026-10-02'
 category: Bosses
 tags:
 - bruno-keller
@@ -57,3 +58,5 @@ Once reduced below 50% health, Keller douses his scalpels in adrenaline and retr
 ## Key Encounter Rewards
 
 Defeating Bruno Keller unlocks the **Dissection Key**, access to the embalming wing's weapon upgrade bench, and drops rare crafting materials for upgraded trauma kits.
+
+This fight is one encounter in a larger roster — the [all Cenobites weaknesses guide](/guide/all-cenobites-weaknesses-guide/) covers every entity's evasion patterns.

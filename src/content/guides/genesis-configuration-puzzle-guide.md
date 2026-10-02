@@ -8,6 +8,7 @@ summary: 'The Genesis Configuration serves as both an extradimensional puzzle bo
   chain summoning against hostile cultists while demanding careful sanity meter management
   throughout exploration.'
 pubDate: 2026-10-02
+updated: '2026-10-02'
 category: Mechanics
 tags:
 - genesis-configuration
@@ -44,6 +45,8 @@ The Genesis Configuration is held in first-person view, allowing players to rota
 2. **Spring Mechanism Compression**: Depress the opposing circular pins simultaneously to expose the internal brass lattice.
 3. **Harmonic Resonance**: Use tactile controller feedback (DualSense haptic triggers) or visual shimmering effects to stop plate rotation at peak harmonic frequency.
 
+Want to practice the sequences without burning in-game sanity? The [Genesis Configuration Puzzle Simulator](/tools/puzzle-simulator/) recreates the box's seal-alignment steps in your browser.
+
 ## Unlockable Supernatural Abilities
 
 As Aidan advances through the Scarlet Church hideout and unlocks deeper configurations, the box rewards the player with extradimensional combat tools:
@@ -54,6 +57,8 @@ As Aidan advances through the Scarlet Church hideout and unlocks deeper configur
 | **Kinetic Repulsion** | Configuration II | Emits a violent shockwave pushing cultists back and breaking fragile barricades | Moderate Sanity |
 | **Hellbound Chains** | Configuration III | Summons hooked chains from dimensional tears to pin aggressive enemies temporarily | High Sanity |
 | **Telekinesis** | Configuration IV | Manipulates heavy environmental levers, thrown objects, and dislodges distant keys | Sustained Sanity drain |
+
+Pair these solutions with the [weapons tier list](/guide/weapons-tier-list-durability/) to decide which tool is worth your durability budget after each unlock.
 
 ## Managing Sanity & Corruption
 

@@ -7,6 +7,7 @@ summary: 'Rescuing Sunny in Clive Barker''s Hellraiser: Revival depends strictly
   the Genesis Configuration to Pinhead. Key narrative endings range from Eternal Damnation
   to Cenobite Ascension and the harrowing True Escape.'
 pubDate: 2026-10-02
+updated: '2026-10-02'
 category: Story
 tags:
 - sunny
@@ -43,6 +44,8 @@ In true Clive Barker fashion, salvation in the Cenobite dimension rarely resembl
 1. **Aidan's Corruption Index**: Overusing the Genesis Configuration's supernatural powers accumulates permanent Corruption. High corruption distorts Aidan's perception, preventing clear discernment during final dialogue confrontations.
 2. **The Leviathan Offering**: Sacrificing human cultist leaders (such as Bruno Keller) directly to the puzzle box grants immediate power but damns both Aidan and Sunny deeper into the realm.
 3. **The Final Pact with Pinhead**: Facing the Hell Priest in the heart of the Labyrinth forces a definitive moral resolution.
+
+If you haven't cleared the prologue yet, the [demo walkthrough](/guide/demo-walkthrough-secrets/) covers all hidden rooms and safe codes first.
 
 ## Overview of Game Endings
 

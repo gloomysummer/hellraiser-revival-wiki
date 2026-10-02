@@ -7,6 +7,7 @@ summary: 'Clive Barker''s Hellraiser: Revival requires a 64-bit Windows 10/11 op
   1660 or RX Vega 64 graphics card, and 80 GB of SSD storage for minimum 1080p 30fps
   gameplay.'
 pubDate: 2026-10-02
+updated: '2026-10-02'
 category: Technical
 tags:
 - system-requirements
@@ -53,6 +54,8 @@ For high visual fidelity at 1080p 60fps or 1440p 30fps with maximum shadow and f
 ## Storage & SSD Advisory
 
 The game requires **80 GB of disk space**. Due to seamless streaming between physical reality and the Cenobites' extradimensional Labyrinth, installing on an SSD is vital to prevent hitching, asset pop-in, and delayed sound triggers during tense stealth sequences.
+
+Before launch day, pressure-test your setup with the [demo walkthrough](/guide/demo-walkthrough-secrets/) — it runs on the same build branch as the full release.
 
 ## Controller & Haptic Feedback Support
 
