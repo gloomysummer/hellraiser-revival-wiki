@@ -2330,3 +2330,14 @@ article code {
     margin-right: auto;
   }
 }
+
+/* 面包屑与正文同缩进对齐（宽屏三栏几何下） */
+@media (min-width: 1200px) {
+  .container.article-page > .breadcrumbs {
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: 0;
+    padding-left: calc(12px + max(0px, (min(1080px, 1800px - 300px - 260px - 76px) - 780px) / 2));
+    padding-right: 24px;
+  }
+}
