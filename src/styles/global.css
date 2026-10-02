@@ -2318,8 +2318,8 @@ article code {
   .article-layout {
     grid-template-columns: minmax(0, 1080px) 300px 260px;
     gap: 38px;
-    max-width: 1800px;
-    margin-left: auto;
+    max-width: 1736px;
+    margin-left: clamp(0px, 12vw, 184px);
     margin-right: 0;
     padding-left: 12px;
     padding-right: 24px;
