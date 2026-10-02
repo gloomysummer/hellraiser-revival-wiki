@@ -737,6 +737,12 @@ main {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* 首页类目分区：两列居中，避免 3 列网格空槽位偏左 */
+.cards-grid.narrow {
+  max-width: 880px;
+  margin-inline: auto;
+}
 @media (min-width: 1024px) {
   .cards-grid {
     grid-template-columns: repeat(3, 1fr);

@@ -44,7 +44,7 @@ const firstGuideSlug = "demo-walkthrough-secrets";
 ---
 <BaseLayout>
   <!-- Full-bleed Hero Section with Decoupled Split Grid -->
-  <section class="hero-wrapper" style="background-image: radial-gradient(ellipse at 50% 30%, rgba(32, 20, 35, 0.6) 0%, rgba(12, 9, 13, 0.98) 85%);">
+  <section class="hero-wrapper" style="background-image: radial-gradient(ellipse at 50% 30%, rgba(32, 20, 35, 0.55) 0%, rgba(12, 9, 13, 0.88) 85%), url('/images/screenshots/ss_6.jpg');">
     <div class="hero-overlay">
       <div class="hero-split">
         <div class="hero-left">
@@ -104,7 +104,7 @@ const firstGuideSlug = "demo-walkthrough-secrets";
         <h2>Hellraiser Revival Walkthrough & Story Guides</h2>
         <p>Step-by-step walkthroughs through the Scarlet Church, demo secret caches, and branching narrative paths to save Sunny.</p>
       </div>
-      <div class="cards-grid">
+      <div class="cards-grid narrow">
         {walkthroughGuides.map((g) => (
           <article class="guide-card">
             <div class="card-media">
@@ -135,7 +135,7 @@ const firstGuideSlug = "demo-walkthrough-secrets";
         <h2>Hellraiser Revival Bosses & Cenobites Encounters</h2>
         <p>Master evasion mechanics for the Order of the Gash and conquer lethal cult commanders within the Scarlet Church.</p>
       </div>
-      <div class="cards-grid">
+      <div class="cards-grid narrow">
         {bossGuides.map((g) => (
           <article class="guide-card">
             <div class="card-media">
@@ -166,7 +166,7 @@ const firstGuideSlug = "demo-walkthrough-secrets";
         <h2>Hellraiser Revival Combat Systems & Puzzle Box</h2>
         <p>Decouple the intricate brass gears of the Genesis Configuration and manage weapon durability across blunt and sharp arsenals.</p>
       </div>
-      <div class="cards-grid">
+      <div class="cards-grid narrow">
         {systemGuides.map((g) => (
           <article class="guide-card">
             <div class="card-media">
@@ -197,7 +197,7 @@ const firstGuideSlug = "demo-walkthrough-secrets";
         <h2>Hellraiser Revival System Specs & Technical Reference</h2>
         <p>Verified hardware benchmarks, single-player mode rules, regional age rating differences, and collector's edition contents.</p>
       </div>
-      <div class="cards-grid">
+      <div class="cards-grid narrow">
         {referenceGuides.map((g) => (
           <article class="guide-card">
             <div class="card-media">
@@ -229,7 +229,7 @@ const firstGuideSlug = "demo-walkthrough-secrets";
           <h2>Hellraiser Revival Codes & Rewards Ledger</h2>
           <p>Active promo codes and redemption status verified directly from official developer channels.</p>
         </div>
-        <div class="cards-grid">
+        <div class="cards-grid narrow">
           {codes.map((c) => (
             <article class="guide-card" style="grid-column: 1 / -1; max-width: 680px;">
               <div class="card-body">
