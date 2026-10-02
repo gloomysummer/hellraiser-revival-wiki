@@ -2311,15 +2311,22 @@ article code {
 @media (min-width: 1200px) {
   .container.article-page {
     max-width: none;
-    padding-left: 32px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* nivalis 双层结构：外壳右贴边 + 正文在自己的宽列内居中 */
+  .article-layout {
+    grid-template-columns: minmax(0, 1080px) 300px 260px;
+    gap: 38px;
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: 0;
+    padding-left: 12px;
     padding-right: 24px;
   }
-  .article-layout {
-    grid-template-columns: minmax(0, 1fr) 300px 260px;
-    gap: 32px;
-    justify-content: start;
-  }
   .article-main {
-    max-width: clamp(620px, 46vw, 800px);
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
