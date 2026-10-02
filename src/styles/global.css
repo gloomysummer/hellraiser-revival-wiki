@@ -2201,3 +2201,20 @@ article code {
 
 
 
+
+/* 阅读排版黄金参数：正文列 ~740px/17px（≈79ch），右栏不变 */
+.article-main {
+  max-width: 740px;
+  font-size: 1.0625rem;
+}
+.article-main table,
+.article-main figure {
+  max-width: 100%;
+}
+
+/* 导航防横向溢出：中等宽度下收紧间距与徽章 */
+@media (max-width: 1360px) {
+  .nav-links { gap: 3px; font-size: 0.84rem; }
+  .nav-trigger { padding: 8px 9px; gap: 4px; }
+  .nav-links .nav-pill-badge { display: none; }
+}
