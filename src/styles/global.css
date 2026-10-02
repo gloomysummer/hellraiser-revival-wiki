@@ -525,52 +525,214 @@ main {
   padding: 32px 20px 80px;
 }
 
-/* Hero 通栏区域 */
+/* Hero 通栏区域 (Cinematic Full-Width Banner with Immersive Atmosphere) */
 .hero-wrapper {
   position: relative;
   width: 100%;
   border-bottom: 1px solid var(--line);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   overflow: hidden;
+  background-color: var(--bg);
 }
+
+/* 沉浸式宽幅全景背景图层 (Atmospheric Backdrop with Multi-Directional Fog Gradients) */
+.hero-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.hero-backdrop-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  opacity: 0.28;
+  filter: contrast(1.15) brightness(0.9);
+}
+.hero-backdrop-vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 20%, rgba(32, 20, 35, 0.4) 0%, rgba(12, 9, 13, 0.95) 90%),
+              linear-gradient(180deg, rgba(12, 9, 13, 0.4) 0%, rgba(12, 9, 13, 0.8) 60%, var(--bg) 100%),
+              linear-gradient(90deg, var(--bg) 0%, transparent 20%, transparent 80%, var(--bg) 100%);
+}
+
 .hero-overlay {
-  background: linear-gradient(180deg, rgba(12, 9, 13, 0.75) 0%, rgba(12, 9, 13, 0.95) 100%);
-  padding: 48px 20px;
+  position: relative;
+  z-index: 1;
+  padding: 56px 20px 48px;
 }
-.hero-split {
+.hero-layout-grid {
   max-width: var(--max);
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 32px;
-  align-items: center;
+  gap: 36px;
+  align-items: start;
 }
-@media (min-width: 860px) {
-  .hero-split {
-    grid-template-columns: 1.25fr 0.75fr;
+@media (min-width: 960px) {
+  .hero-layout-grid {
+    grid-template-columns: minmax(0, 1fr) 260px;
+    gap: 40px;
   }
 }
 
-.hero-left h1 {
-  font-size: clamp(2rem, 4vw, 3rem);
-  line-height: 1.15;
+.hero-center {
+  text-align: left;
+}
+.hero-center h1 {
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  line-height: 1.12;
   margin: 0 0 16px;
   color: #fff;
   font-weight: 800;
+  letter-spacing: 0.02em;
 }
-.hero-left p {
+.hero-center h1 .brand-highlight {
+  color: var(--accent);
+  text-shadow: 0 0 24px rgba(212, 163, 115, 0.35);
+}
+.hero-center p {
   font-size: 1.05rem;
   color: var(--muted);
-  max-width: 600px;
-  margin: 0 0 24px;
+  max-width: 680px;
+  margin: 0 0 28px;
+  line-height: 1.65;
 }
-.badge-row {
+
+/* Hero 右侧全站速查索引导览轨 (Explore The Wiki Rail) */
+.hero-rail {
+  background: rgba(20, 16, 23, 0.7);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 18px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+}
+.hero-rail-title {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin: 0 0 14px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 24px;
+  align-items: center;
+  gap: 8px;
+}
+.hero-rail-title svg {
+  color: var(--accent);
+}
+.hero-rail-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.hero-rail-item a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-radius: 6px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: all 0.15s ease;
+}
+.hero-rail-item a:hover {
+  background: rgba(212, 163, 115, 0.1);
+  color: #fff;
+  padding-left: 14px;
+}
+.hero-rail-item a .rail-item-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.hero-rail-item a .rail-count {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.hero-rail-item a:hover .rail-count {
+  color: var(--accent);
+  background: rgba(212, 163, 115, 0.15);
+}
+
+/* 核心发售与关键情报横幅 (Pre-Launch Confirmed Intel Panel) */
+.intel-banner {
+  margin-top: 36px;
+  background: rgba(20, 16, 23, 0.65);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 20px 24px;
+  backdrop-filter: blur(10px);
+}
+.intel-banner-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 12px;
+}
+.intel-banner-title {
+  font-size: 0.82rem;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.intel-banner-source {
+  font-size: 0.75rem;
+  color: var(--muted);
+  font-family: var(--font-mono);
+}
+.intel-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+@media (min-width: 768px) {
+  .intel-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+}
+.intel-card {
+  background: rgba(24, 19, 28, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 8px;
+  padding: 12px 14px;
+  transition: border-color 0.15s ease;
+}
+.intel-card:hover {
+  border-color: rgba(212, 163, 115, 0.3);
+}
+.intel-card .intel-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+  font-family: var(--font-mono);
+  margin-bottom: 4px;
+}
+.intel-card .intel-val {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #fff;
 }
 .badge {
   font-size: 0.75rem;
@@ -727,36 +889,71 @@ main {
 }
 
 /* 攻略卡片网格 */
+/* 攻略卡片网格系统 (Differentiated 2-Col vs 3-Col Architecture) */
 .cards-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
+}
+
+/* 两排/两列布局 (Featured 2-Column Grid)：缩略图更大、气势更足、高质感 */
+.cards-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: 960px;
+  margin-inline: auto;
+}
+@media (min-width: 680px) {
+  .cards-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+}
+
+/* 三排/三列布局 (Catalog 3-Column Grid)：缩略图精致收敛、信息密度更紧凑 */
+.cards-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+@media (min-width: 640px) {
+  .cards-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 990px) {
+  .cards-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+
+/* 通用 fallback */
+.cards-grid.narrow {
+  max-width: 960px;
+  margin-inline: auto;
 }
 @media (min-width: 640px) {
   .cards-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-/* 首页类目分区：两列居中，避免 3 列网格空槽位偏左 */
-.cards-grid.narrow {
-  max-width: 880px;
-  margin-inline: auto;
-}
 @media (min-width: 1024px) {
-  .cards-grid {
+  .cards-grid:not(.cards-grid-2):not(.narrow) {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
+/* 卡片基类 */
 .guide-card {
   background: var(--panel-card);
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease, box-shadow 0.25s ease;
   position: relative;
 }
 
@@ -770,25 +967,114 @@ main {
 }
 .guide-card:hover {
   transform: translateY(-4px);
-  border-color: var(--line-light);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  border-color: rgba(212, 163, 115, 0.5);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.55), 0 0 20px rgba(212, 163, 115, 0.08);
 }
+
+/* 缩略图媒介容器差异化处理 */
 .card-media {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 10;
-  background: #110d14;
+  background: #080609;
   overflow: hidden;
 }
 .card-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .guide-card:hover .card-media img {
-  transform: scale(1.04);
+  transform: scale(1.05);
 }
+
+/* 两列大卡模式 (Card Featured: 16:9 / 240px 阔绰大图 + 渐变遮罩 + 徽标) */
+.card-featured .card-media {
+  aspect-ratio: 16 / 9;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.card-featured .card-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 60%, rgba(12, 9, 13, 0.75) 100%);
+  pointer-events: none;
+}
+.card-featured .card-body {
+  padding: 22px 24px;
+}
+.card-featured .card-body h3 {
+  font-size: 1.25rem;
+  line-height: 1.3;
+  margin: 0 0 10px;
+  color: #fff;
+  font-weight: 700;
+  transition: color 0.15s ease;
+}
+.guide-card:hover .card-body h3 {
+  color: var(--accent-hover);
+}
+.card-featured .card-body p {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0 0 18px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 三列紧凑模式 (Card Compact: 16:10 / 160px 精致收敛图 + 更高信息密度) */
+.card-compact {
+  border-radius: 10px;
+}
+.card-compact .card-media {
+  aspect-ratio: 16 / 10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+.card-compact .card-body {
+  padding: 16px 18px;
+}
+.card-compact .card-body h3 {
+  font-size: 1.05rem;
+  line-height: 1.35;
+  margin: 0 0 8px;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+.card-compact .card-body p {
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: var(--muted);
+  margin: 0 0 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 卡片内部浮动分类 Tag */
+.card-silo-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: rgba(12, 9, 13, 0.85);
+  border: 1px solid rgba(212, 163, 115, 0.35);
+  color: var(--accent);
+  backdrop-filter: blur(6px);
+}
+
 .card-body {
   padding: 18px;
   display: flex;

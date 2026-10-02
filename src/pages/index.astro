@@ -43,22 +43,34 @@ const cardImageMap: Record<string, string> = {
 const firstGuideSlug = "demo-walkthrough-secrets";
 ---
 <BaseLayout>
-  <!-- Full-bleed Hero Section with Decoupled Split Grid -->
-  <section class="hero-wrapper" style="background-image: radial-gradient(ellipse at 50% 30%, rgba(32, 20, 35, 0.55) 0%, rgba(12, 9, 13, 0.88) 85%), url('/images/screenshots/ss_6.jpg');">
+  <!-- Full-bleed Cinematic Hero Section with Broad Atmospheric Backdrop & Wiki Explore Rail -->
+  <section class="hero-wrapper">
+    <div class="hero-backdrop">
+      <img
+        src="/images/screenshots/ss_6.jpg"
+        alt={`${siteConfig.gameName} Scarlet Church Atmosphere`}
+        class="hero-backdrop-img"
+        loading="eager"
+      />
+      <div class="hero-backdrop-vignette"></div>
+    </div>
+
     <div class="hero-overlay">
-      <div class="hero-split">
-        <div class="hero-left">
+      <div class="hero-layout-grid">
+        <!-- Hero 主引导区 -->
+        <div class="hero-center">
           <div class="badge-row">
             <span class="badge gold">Tactical Database</span>
             <span class="badge">Evidence-Led Wiki</span>
             <span class="badge">{siteConfig.gameName}</span>
           </div>
-          <h1>{siteConfig.siteName}</h1>
-          <p>The definitive evidence-led encyclopedia for <strong>{siteConfig.gameName}</strong>: discover verified strategy guides, core game loop mechanics, PC hardware requirements, and active reward codes.</p>
+          <h1>{siteConfig.gameName} <span class="brand-highlight">WIKI</span></h1>
+          <p>The definitive evidence-led encyclopedia for <strong>{siteConfig.gameName}</strong>: master the Scarlet Church infiltration, solve the Genesis Configuration puzzle box, evade the Order of the Gash, and verify official PC hardware specs.</p>
+          
           <div class="hero-cta-group">
             <a href={`/guide/${firstGuideSlug}/`} class="btn btn-primary">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
-              <span>Start Day-1 Guide</span>
+              <span>Explore All Guides →</span>
             </a>
             <a href="https://store.steampowered.com/app/1551980" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
@@ -66,15 +78,86 @@ const firstGuideSlug = "demo-walkthrough-secrets";
             </a>
             <button type="button" class="btn btn-secondary search-trigger-btn">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-              <span>Search Wiki</span>
+              <span>Search Database</span>
               <kbd>⌘K</kbd>
             </button>
           </div>
+
+          <!-- 核心情报横幅 (Pre-Launch Confirmed Intel) -->
+          <div class="intel-banner">
+            <div class="intel-banner-header">
+              <span class="intel-banner-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>Pre-Launch Confirmed Intel</span>
+              </span>
+              <span class="intel-banner-source">Direct from Saber Interactive / Steam</span>
+            </div>
+            <div class="intel-grid">
+              <div class="intel-card">
+                <div class="intel-label">Release Window</div>
+                <div class="intel-val">October 8, 2026</div>
+              </div>
+              <div class="intel-card">
+                <div class="intel-label">Platforms</div>
+                <div class="intel-val">PC · PS5 · XSX · Switch 2</div>
+              </div>
+              <div class="intel-card">
+                <div class="intel-label">Age Rating</div>
+                <div class="intel-val">USK 18 (Uncut) / PEGI 18</div>
+              </div>
+              <div class="intel-card">
+                <div class="intel-label">Multiplayer Mode</div>
+                <div class="intel-val">100% Single-Player Horror</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="hero-poster-frame">
-          <img src="/og-cover-hellraiser.jpg" alt={`${siteConfig.gameName} Key Art`} width="460" height="215" loading="eager" />
-          <div class="poster-tag">TACTICAL DOSSIER · VERIFIED</div>
-        </div>
+
+        <!-- Hero 右侧快捷频道导览轨 (Explore The Wiki Rail) -->
+        <aside class="hero-rail" aria-label="Explore the wiki silos">
+          <p class="hero-rail-title">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            <span>Explore The Wiki</span>
+          </p>
+          <ul class="hero-rail-list">
+            <li class="hero-rail-item">
+              <a href="#walkthrough">
+                <span class="rail-item-label">▶ Walkthrough</span>
+                <span class="rail-count">{walkthroughGuides.length}</span>
+              </a>
+            </li>
+            <li class="hero-rail-item">
+              <a href="#bosses">
+                <span class="rail-item-label">▶ Bosses & Cenobites</span>
+                <span class="rail-count">{bossGuides.length}</span>
+              </a>
+            </li>
+            <li class="hero-rail-item">
+              <a href="#systems">
+                <span class="rail-item-label">▶ Combat & Puzzles</span>
+                <span class="rail-count">{systemGuides.length}</span>
+              </a>
+            </li>
+            <li class="hero-rail-item">
+              <a href="#reference">
+                <span class="rail-item-label">▶ Technical & Specs</span>
+                <span class="rail-count">{referenceGuides.length}</span>
+              </a>
+            </li>
+            <li class="hero-rail-item">
+              <a href="#codes">
+                <span class="rail-item-label">▶ Active Codes</span>
+                <span class="rail-count">{activeCodesCount}</span>
+              </a>
+            </li>
+            <li class="hero-rail-item">
+              <a href="#faq">
+                <span class="rail-item-label">▶ FAQ Hub</span>
+                <span class="rail-count">6</span>
+              </a>
+            </li>
+          </ul>
+        </aside>
       </div>
     </div>
   </section>
@@ -98,16 +181,17 @@ const firstGuideSlug = "demo-walkthrough-secrets";
       </div>
     </section>
 
-    <!-- Category 1: Walkthrough & Story -->
-    <section id="walkthrough" style="margin-top: 48px;">
+    <!-- Category 1: Walkthrough & Story (2-Col Featured Grid: 宽幅大图，沉浸视觉) -->
+    <section id="walkthrough" style="margin-top: 56px;">
       <div class="section-header">
         <h2>Hellraiser Revival Walkthrough & Story Guides</h2>
         <p>Step-by-step walkthroughs through the Scarlet Church, demo secret caches, and branching narrative paths to save Sunny.</p>
       </div>
-      <div class="cards-grid narrow">
+      <div class="cards-grid-2">
         {walkthroughGuides.map((g) => (
-          <article class="guide-card">
+          <article class="guide-card card-featured">
             <div class="card-media">
+              <span class="card-silo-badge">Story Dossier</span>
               <img
                 src={cardImageMap[g.id] ?? `/images/cards/ss_card_0.webp`}
                 alt={g.data.title}
@@ -129,16 +213,17 @@ const firstGuideSlug = "demo-walkthrough-secrets";
       </div>
     </section>
 
-    <!-- Category 2: Bosses & Cenobites -->
+    <!-- Category 2: Bosses & Cenobites (2-Col Featured Grid: 宽幅大图，压迫感十足) -->
     <section id="bosses" style="margin-top: 56px;">
       <div class="section-header">
         <h2>Hellraiser Revival Bosses & Cenobites Encounters</h2>
         <p>Master evasion mechanics for the Order of the Gash and conquer lethal cult commanders within the Scarlet Church.</p>
       </div>
-      <div class="cards-grid narrow">
+      <div class="cards-grid-2">
         {bossGuides.map((g) => (
-          <article class="guide-card">
+          <article class="guide-card card-featured">
             <div class="card-media">
+              <span class="card-silo-badge">Boss Encounter</span>
               <img
                 src={cardImageMap[g.id] ?? `/images/cards/ss_card_0.webp`}
                 alt={g.data.title}
@@ -160,16 +245,17 @@ const firstGuideSlug = "demo-walkthrough-secrets";
       </div>
     </section>
 
-    <!-- Category 3: Systems & Puzzles -->
+    <!-- Category 3: Systems & Puzzles (2-Col Featured Grid: 宽幅大图，细节拉满) -->
     <section id="systems" style="margin-top: 56px;">
       <div class="section-header">
         <h2>Hellraiser Revival Combat Systems & Puzzle Box</h2>
         <p>Decouple the intricate brass gears of the Genesis Configuration and manage weapon durability across blunt and sharp arsenals.</p>
       </div>
-      <div class="cards-grid narrow">
+      <div class="cards-grid-2">
         {systemGuides.map((g) => (
-          <article class="guide-card">
+          <article class="guide-card card-featured">
             <div class="card-media">
+              <span class="card-silo-badge">Game Systems</span>
               <img
                 src={cardImageMap[g.id] ?? `/images/cards/ss_card_0.webp`}
                 alt={g.data.title}
@@ -191,16 +277,17 @@ const firstGuideSlug = "demo-walkthrough-secrets";
       </div>
     </section>
 
-    <!-- Category 4: Reference & Technical -->
+    <!-- Category 4: Reference & Technical (3-Col Compact Grid: 缩略图精致收敛，信息高密度) -->
     <section id="reference" style="margin-top: 56px;">
       <div class="section-header">
         <h2>Hellraiser Revival System Specs & Technical Reference</h2>
         <p>Verified hardware benchmarks, single-player mode rules, regional age rating differences, and collector's edition contents.</p>
       </div>
-      <div class="cards-grid narrow">
+      <div class="cards-grid-3">
         {referenceGuides.map((g) => (
-          <article class="guide-card">
+          <article class="guide-card card-compact">
             <div class="card-media">
+              <span class="card-silo-badge">Reference</span>
               <img
                 src={cardImageMap[g.id] ?? `/images/cards/ss_card_0.webp`}
                 alt={g.data.title}
@@ -229,9 +316,9 @@ const firstGuideSlug = "demo-walkthrough-secrets";
           <h2>Hellraiser Revival Codes & Rewards Ledger</h2>
           <p>Active promo codes and redemption status verified directly from official developer channels.</p>
         </div>
-        <div class="cards-grid narrow">
+        <div class="cards-grid-2">
           {codes.map((c) => (
-            <article class="guide-card" style="grid-column: 1 / -1; max-width: 680px;">
+            <article class="guide-card card-featured" style="grid-column: 1 / -1; max-width: 760px; margin: 0 auto; width: 100%;">
               <div class="card-body">
                 <h3><a href={`/codes/${c.id}/`}>{c.data.title}</a></h3>
                 <p>{c.data.summary}</p>
