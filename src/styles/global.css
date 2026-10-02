@@ -2382,3 +2382,10 @@ article code {
     margin-right: auto;
   }
 }
+
+/* 首页类目卡片铺满居中容器（nivalis silo 卡铺满节奏），去掉 880 窄格 */
+@media (min-width: 1200px) {
+  .container.home-page .cards-grid.narrow {
+    max-width: none;
+  }
+}
