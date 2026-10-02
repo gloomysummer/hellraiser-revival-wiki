@@ -2358,3 +2358,21 @@ article code {
 .article-main li {
   font-weight: 400;
 }
+
+/* 首页 hero 内部网格同用宽屏外壳（Explore 栏钉右） */
+@media (min-width: 1200px) {
+  .hero-layout-grid {
+    max-width: 1736px;
+    margin-left: clamp(0px, 12vw, 184px);
+    margin-right: 0;
+    padding-left: 12px;
+    padding-right: 24px;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 38px;
+  }
+  .hero-center {
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
