@@ -1,18 +1,23 @@
 /* ============================================================
-   [Code 层] Invokyr Wiki — Dark Tactical Psychological Horror Theme
+   [Code 层] Hellraiser: Revival Wiki — Clive Barker Horror Aesthetic DNA
    ============================================================ */
 :root {
-  --bg: #0c090d;
-  --panel: #141017;
+  --bg: #090709;
+  --panel: #130f16;
   --panel-card: #18131c;
-  --panel-hover: #221b27;
-  --line: #2b2230;
-  --line-light: #44374b;
+  --panel-hover: #231926;
+  --line: #2b202e;
+  --line-light: #443249;
+  --steel-line: #382c3c;
   --ink: #f0eaf4;
-  --muted: #ab9eb0;
+  --muted: #a698ab;
+  --brass: #c8965a;
   --accent: #d4a373;
   --accent-hover: #e5b98d;
-  --accent-glow: rgba(212, 163, 115, 0.2);
+  --accent-glow: rgba(212, 163, 115, 0.22);
+  --crimson: #8b0000;
+  --flesh-red: #a8202a;
+  --flesh-glow: rgba(168, 32, 42, 0.35);
   --danger: #b91c1c;
   --max: 1180px;
   --font-display: 'Cinzel', Georgia, serif;
@@ -553,9 +558,9 @@ main {
   position: absolute;
   inset: 0;
   background: 
-    radial-gradient(circle at 45% 35%, rgba(60, 25, 45, 0.25) 0%, rgba(12, 9, 13, 0.72) 80%, rgba(12, 9, 13, 0.95) 100%),
-    linear-gradient(180deg, rgba(12, 9, 13, 0.35) 0%, rgba(12, 9, 13, 0.45) 50%, rgba(12, 9, 13, 0.92) 88%, var(--bg) 100%),
-    linear-gradient(90deg, rgba(12, 9, 13, 0.75) 0%, transparent 25%, transparent 75%, rgba(12, 9, 13, 0.85) 100%);
+    radial-gradient(circle at 45% 35%, rgba(139, 0, 0, 0.22) 0%, rgba(15, 8, 14, 0.65) 75%, rgba(9, 7, 9, 0.95) 100%),
+    linear-gradient(180deg, rgba(9, 7, 9, 0.25) 0%, rgba(9, 7, 9, 0.4) 50%, rgba(9, 7, 9, 0.9) 85%, var(--bg) 100%),
+    linear-gradient(90deg, rgba(9, 7, 9, 0.75) 0%, transparent 20%, transparent 80%, rgba(9, 7, 9, 0.85) 100%);
 }
 
 .hero-overlay {

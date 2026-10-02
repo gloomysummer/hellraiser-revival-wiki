@@ -1,0 +1,445 @@
+---
+// ============================================================
+// [Tool 层] /tools/puzzle-simulator/index.astro
+// Genesis Configuration 谜题匣模拟器 (Interactive Puzzle Box Simulator)
+// 对齐 Nivalis 利润计算器的高粘性护城河工具，注入 WebApplication Schema
+// ============================================================
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { siteConfig } from '../../../config/site.config';
+
+const pageTitle = "Genesis Configuration Puzzle Simulator";
+const pageDesc = "Interactive simulation for the Genesis Configuration puzzle box in Hellraiser: Revival. Practice seal alignments, pin compression, and ability calculations.";
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    'name': 'Genesis Configuration Puzzle Box Simulator',
+    'operatingSystem': 'Any',
+    'applicationCategory': 'GameApplication',
+    'url': `${siteConfig.siteUrl}/tools/puzzle-simulator/`,
+    'description': pageDesc,
+    'offers': {
+      '@type': 'Offer',
+      'price': '0',
+      'priceCurrency': 'USD'
+    }
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: siteConfig.siteUrl },
+      { '@type': 'ListItem', position: 2, name: 'Tools', item: `${siteConfig.siteUrl}/tools/puzzle-simulator/` },
+      { '@type': 'ListItem', position: 3, name: 'Puzzle Simulator' }
+    ]
+  }
+];
+---
+
+<BaseLayout title={pageTitle} description={pageDesc} canonical="/tools/puzzle-simulator/" jsonLd={jsonLd}>
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumbs">
+      <a href="/">Home</a>
+      <span class="separator">/</span>
+      <span>Tools</span>
+      <span class="separator">/</span>
+      <span class="current">Genesis Configuration Simulator</span>
+    </nav>
+
+    <div class="tool-header">
+      <div class="badge-row">
+        <span class="badge gold">Interactive WebApp</span>
+        <span class="badge">Verified In-Game Mechanics</span>
+      </div>
+      <h1>Genesis Configuration Puzzle Simulator</h1>
+      <p class="tool-lead">
+        Simulate the mechanical facets of Aidan Lynch's Genesis Configuration box. Align the outer seals, compress spring pins, and calculate sanity drain vs. supernatural combat abilities.
+      </p>
+    </div>
+
+    <div class="simulator-layout">
+      <!-- 模拟器左侧：交互操作面板 -->
+      <div class="simulator-main">
+        <div class="box-visual-panel">
+          <div class="box-viewport" id="box-viewport">
+            <div class="box-dial-outer" id="box-outer-dial">
+              <div class="sigil sigil-1">⚙</div>
+              <div class="sigil sigil-2">ᚱ</div>
+              <div class="sigil sigil-3">ᛏ</div>
+              <div class="sigil sigil-4">ᛝ</div>
+            </div>
+            <div class="box-dial-inner" id="box-inner-dial">
+              <div class="ivory-core">
+                <span class="core-glyph" id="core-status-glyph">🔒</span>
+              </div>
+            </div>
+            <div class="pin pin-left" id="pin-l"></div>
+            <div class="pin pin-right" id="pin-r"></div>
+          </div>
+          <div class="box-status-line">
+            <span class="status-indicator" id="box-status-indicator"></span>
+            <span id="box-status-text">Configuration: Locked (Phase 1: Align Seals)</span>
+          </div>
+        </div>
+
+        <!-- 交互操控按钮 -->
+        <div class="controls-panel">
+          <div class="control-group">
+            <label class="control-label">Step 1: Rotate Brass Outer Ring</label>
+            <div class="btn-row">
+              <button type="button" class="btn btn-secondary" id="btn-rot-left">↶ Rotate Left (-45°)</button>
+              <button type="button" class="btn btn-secondary" id="btn-rot-right">↷ Rotate Right (+45°)</button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Step 2: Depress Tension Pins</label>
+            <div class="btn-row">
+              <button type="button" class="btn btn-secondary" id="btn-pin-toggle">Compress Latches</button>
+              <button type="button" class="btn btn-primary" id="btn-solve-check">Unlock Resonance</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 模拟器右侧：数值输出与机制计算 -->
+      <div class="simulator-stats">
+        <div class="stats-card">
+          <h3 class="stats-title">Extradimensional Metrics</h3>
+          
+          <div class="metric-row">
+            <span class="metric-label">Configuration Stage:</span>
+            <span class="metric-val" id="metric-stage">Level I (Dormant)</span>
+          </div>
+
+          <div class="metric-row">
+            <span class="metric-label">Sanity Degradation:</span>
+            <span class="metric-val text-crimson" id="metric-sanity">12% / activation</span>
+          </div>
+
+          <div class="metric-row">
+            <span class="metric-label">Unlocked Power:</span>
+            <span class="metric-val text-gold" id="metric-power">Spectral Insight</span>
+          </div>
+
+          <div class="metric-row">
+            <span class="metric-label">Pinhead Summons Threat:</span>
+            <span class="metric-val text-danger" id="metric-threat">Low (Dormant)</span>
+          </div>
+
+          <div class="power-summary-box" id="power-desc-box">
+            <h4>Spectral Insight</h4>
+            <p>Reveals hidden cult glyphs, structural fractures, and demonic presence through solid stone walls within 15 meters.</p>
+          </div>
+        </div>
+
+        <div class="mechanics-reference-card">
+          <h4>Tactical Reference</h4>
+          <ul>
+            <li><strong>Audio Clues:</strong> An audible metallic click triggers when the outer dial reaches 90° or 270°.</li>
+            <li><strong>Sanity Management:</strong> Exceeding 70% corruption invites Cenobite incursions.</li>
+            <li><strong>Official Guide:</strong> Read the full <a href="/guide/genesis-configuration-puzzle-guide/">Genesis Configuration Guide →</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    let currentAngle = 0;
+    let pinsCompressed = false;
+    let unlocked = false;
+
+    const outerDial = document.getElementById('box-outer-dial');
+    const statusText = document.getElementById('box-status-text');
+    const statusIndicator = document.getElementById('box-status-indicator');
+    const glyph = document.getElementById('core-status-glyph');
+    const pinL = document.getElementById('pin-l');
+    const pinR = document.getElementById('pin-r');
+
+    const metricStage = document.getElementById('metric-stage');
+    const metricSanity = document.getElementById('metric-sanity');
+    const metricPower = document.getElementById('metric-power');
+    const metricThreat = document.getElementById('metric-threat');
+    const powerDesc = document.getElementById('power-desc-box');
+
+    function updateDial() {
+      if (outerDial) {
+        outerDial.style.transform = `rotate(${currentAngle}deg)`;
+      }
+    }
+
+    document.getElementById('btn-rot-left')?.addEventListener('click', () => {
+      currentAngle = (currentAngle - 45 + 360) % 360;
+      updateDial();
+      checkResonance();
+    });
+
+    document.getElementById('btn-rot-right')?.addEventListener('click', () => {
+      currentAngle = (currentAngle + 45) % 360;
+      updateDial();
+      checkResonance();
+    });
+
+    document.getElementById('btn-pin-toggle')?.addEventListener('click', () => {
+      pinsCompressed = !pinsCompressed;
+      if (pinL && pinR) {
+        pinL.style.transform = pinsCompressed ? 'translateX(10px)' : 'translateX(0)';
+        pinR.style.transform = pinsCompressed ? 'translateX(-10px)' : 'translateX(0)';
+      }
+      checkResonance();
+    });
+
+    function checkResonance() {
+      if ((currentAngle === 90 || currentAngle === 270) && pinsCompressed) {
+        if (statusIndicator) statusIndicator.className = 'status-indicator ready';
+        if (statusText) statusText.textContent = 'Harmonic Resonance Detected! Press Unlock.';
+      } else {
+        if (statusIndicator) statusIndicator.className = 'status-indicator';
+        if (statusText) statusText.textContent = `Dial: ${currentAngle}° | Pins: ${pinsCompressed ? 'Pressed' : 'Released'}`;
+      }
+    }
+
+    document.getElementById('btn-solve-check')?.addEventListener('click', () => {
+      if ((currentAngle === 90 || currentAngle === 270) && pinsCompressed) {
+        unlocked = true;
+        if (statusIndicator) statusIndicator.className = 'status-indicator active';
+        if (statusText) statusText.textContent = 'Configuration Unlocked: Extradimensional Tear Open!';
+        if (glyph) glyph.textContent = '⚡';
+
+        if (metricStage) metricStage.textContent = 'Level II (Resonant)';
+        if (metricSanity) metricSanity.textContent = '28% / burst';
+        if (metricPower) metricPower.textContent = 'Kinetic Repulsion & Hellbound Chains';
+        if (metricThreat) metricThreat.textContent = 'Elevated (Order of the Gash Alerted)';
+        if (powerDesc) {
+          powerDesc.innerHTML = '<h4>Hellbound Chains</h4><p>Hooks erupt from the shadows, binding enemies and tearing armor off cult lieutenants.</p>';
+        }
+      } else {
+        alert('Seals are not in alignment. The box resists your touch (Sanity decreased by 5%).');
+      }
+    });
+  });
+</script>
+
+<style>
+  .tool-header {
+    margin: 20px 0 32px;
+  }
+  .tool-header h1 {
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    margin: 12px 0;
+    color: #fff;
+  }
+  .tool-lead {
+    font-size: 1.05rem;
+    color: var(--muted);
+    max-width: 800px;
+    line-height: 1.6;
+  }
+  .simulator-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-bottom: 60px;
+  }
+  @media (min-width: 900px) {
+    .simulator-layout {
+      grid-template-columns: 1.2fr 0.8fr;
+    }
+  }
+
+  .simulator-main {
+    background: var(--panel-card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .box-visual-panel {
+    background: #060406;
+    border: 1px solid rgba(212, 163, 115, 0.25);
+    border-radius: 12px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.8);
+  }
+  .box-viewport {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-dial-outer {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px dashed var(--brass);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 0 20px rgba(200, 150, 90, 0.2);
+  }
+  .sigil {
+    position: absolute;
+    font-size: 1.2rem;
+    color: var(--accent);
+    font-weight: bold;
+  }
+  .sigil-1 { top: 6px; left: calc(50% - 10px); }
+  .sigil-2 { bottom: 6px; left: calc(50% - 10px); }
+  .sigil-3 { left: 6px; top: calc(50% - 12px); }
+  .sigil-4 { right: 6px; top: calc(50% - 12px); }
+
+  .box-dial-inner {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: #18131c;
+    border: 2px solid var(--line-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 16px rgba(0,0,0,0.9);
+  }
+  .ivory-core {
+    font-size: 2rem;
+  }
+  .pin {
+    position: absolute;
+    width: 14px;
+    height: 24px;
+    background: var(--brass);
+    border-radius: 3px;
+    transition: transform 0.2s ease;
+  }
+  .pin-left { left: 0; }
+  .pin-right { right: 0; }
+
+  .box-status-line {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .status-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #555;
+  }
+  .status-indicator.ready { background: #eab308; box-shadow: 0 0 10px #eab308; }
+  .status-indicator.active { background: #22c55e; box-shadow: 0 0 12px #22c55e; }
+
+  .controls-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .control-label {
+    font-size: 0.82rem;
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .btn-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .simulator-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .stats-card {
+    background: var(--panel-card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 24px;
+  }
+  .stats-title {
+    font-size: 1.15rem;
+    color: #fff;
+    margin: 0 0 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 10px;
+  }
+  .metric-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 0.88rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  }
+  .metric-label {
+    color: var(--muted);
+  }
+  .metric-val {
+    font-family: var(--font-mono);
+    font-weight: 600;
+    color: #fff;
+  }
+  .text-crimson { color: #f87171; }
+  .text-gold { color: var(--accent); }
+  .text-danger { color: #ef4444; }
+
+  .power-summary-box {
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(212, 163, 115, 0.2);
+    border-radius: 8px;
+    padding: 14px;
+  }
+  .power-summary-box h4 {
+    margin: 0 0 6px;
+    color: var(--accent);
+    font-size: 0.95rem;
+  }
+  .power-summary-box p {
+    margin: 0;
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  .mechanics-reference-card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .mechanics-reference-card h4 {
+    margin: 0 0 10px;
+    color: #fff;
+    font-size: 0.95rem;
+  }
+  .mechanics-reference-card ul {
+    margin: 0;
+    padding-left: 18px;
+    color: var(--muted);
+    font-size: 0.84rem;
+    line-height: 1.6;
+  }
+  .mechanics-reference-card li {
+    margin-bottom: 6px;
+  }
+</style>

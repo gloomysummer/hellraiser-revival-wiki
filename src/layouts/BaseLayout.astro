@@ -75,8 +75,11 @@ const fullTitle = title
 const ogImage = `${siteUrl}/og-cover-hellraiser.jpg`;
 
 // 双轨 hreflang：绝不生成指向 404 的备用语言标签。
-const stripLocale = (path: string) =>
-  path.replace(new RegExp(`^/(${availableLocales.join('|')})`), '') || '/';
+const stripLocale = (path: string) => {
+  if (!availableLocales.length) return path.startsWith('/') ? path : `/${path}`;
+  const stripped = path.replace(new RegExp(`^/(${availableLocales.join('|')})`), '') || '/';
+  return stripped.startsWith('/') ? stripped : `/${stripped}`;
+};
 const isMultiLang = availableLocales.length > 1;
 
 // 动态将品牌词拆解为前缀高亮与后缀
@@ -312,7 +315,15 @@ const brandRest = brandWords.slice(1).join(' ') || 'WIKI';
             </div>
           </div>
 
-          <!-- 6. Global Search Trigger Button -->
+          <!-- 6. Interactive Tools (Genesis Box Simulator) -->
+          <div class="nav-item">
+            <a href="/tools/puzzle-simulator/" class={`nav-trigger ${canonical.startsWith('/tools/') ? 'active' : ''}`}>
+              <span>Tools</span>
+              <span class="nav-pill-badge" style="border-color: rgba(212, 163, 115, 0.4); background: rgba(212, 163, 115, 0.15); color: var(--accent);">SIMULATOR</span>
+            </a>
+          </div>
+
+          <!-- 7. Global Search Trigger Button -->
           <button type="button" class="search-btn search-trigger-btn" id="search-trigger" aria-label="Open search dialog">
             <div class="search-btn-left">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
@@ -321,25 +332,21 @@ const brandRest = brandWords.slice(1).join(' ') || 'WIKI';
             <kbd class="search-kbd">⌘K</kbd>
           </button>
 
-          <!-- 7. Native Zero-JS Locale Switcher (Multi-language ready) -->
-          {isMultiLang && (
-            <details class="locale-switcher">
-              <summary aria-label="Select language">
-                <span>{lang.toUpperCase()}</span>
-                <svg class="chevron-icon" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-              </summary>
-              <div class="locale-dropdown">
-                <a href={stripLocale(canonical)} hreflang="en" class={lang === 'en' ? 'active' : ''}>
-                  <span class="locale-code">EN</span> English
-                </a>
-                {availableLocales.filter((loc) => loc !== 'en').map((loc) => (
-                  <a href={`/${loc}${stripLocale(canonical)}`} hreflang={loc} class={lang === loc ? 'active' : ''}>
-                    <span class="locale-code">{loc.toUpperCase()}</span> {loc === 'de' ? 'Deutsch' : loc === 'ja' ? '日本語' : loc}
-                  </a>
-                ))}
+          <!-- 8. Native Zero-JS Locale Switcher (Multi-language ready structure) -->
+          <details class="locale-switcher">
+            <summary aria-label="Select language">
+              <span style="font-size: 0.82rem; font-weight: 700;">🌐 {lang.toUpperCase()}</span>
+              <svg class="chevron-icon" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </summary>
+            <div class="locale-dropdown">
+              <a href={stripLocale(canonical)} hreflang="en" class={lang === 'en' ? 'active' : ''}>
+                <span class="locale-code">EN</span> English (Primary)
+              </a>
+              <div style="padding: 6px 12px; font-size: 0.72rem; color: var(--muted); border-top: 1px solid rgba(255, 255, 255, 0.05); font-family: var(--font-mono);">
+                Additional locales coming soon
               </div>
-            </details>
-          )}
+            </div>
+          </details>
         </nav>
       </div>
     </header>
@@ -397,6 +404,7 @@ const brandRest = brandWords.slice(1).join(' ') || 'WIKI';
           <div class="footer-col">
             <div class="footer-col-title">Combat & Systems</div>
             <ul class="footer-links">
+              <li><a href="/tools/puzzle-simulator/">Genesis Box Simulator</a></li>
               <li><a href="/guide/genesis-configuration-puzzle-guide/">Genesis Configuration Guide</a></li>
               <li><a href="/guide/weapons-tier-list-durability/">Weapons Tier List & Durability</a></li>
               <li><a href="/codes/">Codes & Rewards Ledger</a></li>
