@@ -2218,3 +2218,54 @@ article code {
   .nav-trigger { padding: 8px 9px; gap: 4px; }
   .nav-links .nav-pill-badge { display: none; }
 }
+
+/* 三栏 guide 布局：正文 + On This Page + Explore The Wiki（对标 nivalis） */
+@media (min-width: 1200px) {
+  .article-layout {
+    grid-template-columns: minmax(0, 1fr) 220px 232px;
+    gap: 32px;
+  }
+}
+.article-wiki-rail {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .article-wiki-rail {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: sticky;
+    top: 84px;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+  }
+}
+@media (max-width: 1199px) {
+  .article-toc-sidebar { display: none; }
+}
+.wiki-group { margin-bottom: 14px; }
+.wiki-group-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+.wiki-group-list { list-style: none; margin: 0; padding: 0; }
+.wiki-group-item { margin-bottom: 2px; }
+.wiki-group-link {
+  display: block;
+  font-size: 0.72rem;
+  line-height: 1.45;
+  color: var(--muted);
+  text-decoration: none;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+.wiki-group-link:hover { color: var(--text); background: rgba(212, 163, 115, 0.08); }
+.wiki-group-item.is-current .wiki-group-link {
+  color: var(--accent);
+  background: rgba(212, 163, 115, 0.12);
+  font-weight: 600;
+}

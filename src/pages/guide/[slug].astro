@@ -5,6 +5,18 @@ import QuickAnswer from "../../components/QuickAnswer.astro";
 import VideoEmbed from "../../components/VideoEmbed.astro";
 import { siteConfig } from "../../config/site.config";
 
+const allGuidesCache = (await getCollection("guides", ({ data }) => !data.draft))
+  .sort((a, b) => a.data.title.localeCompare(b.data.title));
+const CATEGORY_BUCKETS = [
+  { label: 'Walkthrough & Story', match: ['Walkthrough', 'Story'] },
+  { label: 'Bosses & Cenobites', match: ['Bosses', 'Enemies'] },
+  { label: 'Systems & Combat', match: ['Mechanics', 'Equipment'] },
+  { label: 'Reference & Specs', match: ['Technical', 'FAQ', 'News'] },
+];
+const wikiGroups = CATEGORY_BUCKETS
+  .map((b) => ({ label: b.label, items: allGuidesCache.filter((g) => b.match.includes(g.data.category ?? '')) }))
+  .filter((b) => b.items.length > 0);
+
 export async function getStaticPaths() {
   const guides = await getCollection("guides", ({ data }) => !data.draft);
   const allCodes = await getCollection("codes", ({ data }) => !data.draft);
@@ -196,30 +208,6 @@ const jsonLd = [
             </div>
           )}
 
-          <!-- 模块 2: 频道/系列连读展开树 (Active Category Reading Tree) -->
-          {seriesGuides.length > 0 && (
-            <div class="sidebar-section">
-              <div class="toc-title">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
-                <span>{categoryTitle}</span>
-                <span class="sidebar-count-badge">{seriesGuides.length}</span>
-              </div>
-              <ul class="sidebar-tree-list">
-                {seriesGuides.map((item) => {
-                  const isCurrent = item.id === guide.id;
-                  return (
-                    <li class={`sidebar-tree-item ${isCurrent ? 'is-current' : ''}`}>
-                      <a href={`/guide/${item.id}/`} class="sidebar-tree-link" aria-current={isCurrent ? 'page' : undefined}>
-                        <span class="tree-bullet">{isCurrent ? '●' : '○'}</span>
-                        <span class="tree-text">{item.data.title}</span>
-                      </a>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          )}
-
           <!-- 模块 3: 跨主题网状延展推荐 (Related Dossiers) -->
           {relatedGuides.filter((rel) => !seriesGuides.some((sg) => sg.id === rel.id)).length > 0 && (
             <div class="sidebar-section">
@@ -242,7 +230,47 @@ const jsonLd = [
             </div>
           )}
 
-          <!-- 模块 4: 常驻微插件 (Active Codes Widget) -->
+          <!-- 模块 5: 官方证据验证状态 (Evidence & Patch Ledger) -->
+          {data.evidence.length > 0 && (
+            <div class="sidebar-section sidebar-evidence-box">
+              <div class="evidence-pill">
+                <span class="dot live"></span>
+                <span>VERIFIED EVIDENCE</span>
+              </div>
+              <p class="sidebar-evidence-note">
+                Cross-checked with official patch data and gameplay records.
+              </p>
+            </div>
+          )}
+        </aside>
+      )}
+        <aside class="article-wiki-rail" aria-label="Explore The Wiki">
+          <div class="sidebar-section">
+            <div class="toc-title">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <span>Explore The Wiki</span>
+            </div>
+            {wikiGroups.map((group) => (
+              <div class="wiki-group">
+                <div class="wiki-group-label">{group.label}</div>
+                <ul class="wiki-group-list">
+                  {group.items.map((item) => (
+                    <li class={`wiki-group-item ${item.id === guide.id ? 'is-current' : ''}`}>
+                      <a href={`/guide/${item.id}/`} class="wiki-group-link" aria-current={item.id === guide.id ? 'page' : undefined}>{item.data.title}</a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+            <div class="wiki-group">
+              <div class="wiki-group-label">Tools</div>
+              <ul class="wiki-group-list">
+                <li class="wiki-group-item"><a href="/tools/puzzle-simulator/" class="wiki-group-link">Genesis Configuration Puzzle Simulator</a></li>
+              </ul>
+            </div>
+          </div>
+
+
           {hasCodesDoc && (
             <div class="sidebar-section sidebar-codes-widget">
               <div class="widget-header">
@@ -270,21 +298,7 @@ const jsonLd = [
               </a>
             </div>
           )}
-
-          <!-- 模块 5: 官方证据验证状态 (Evidence & Patch Ledger) -->
-          {data.evidence.length > 0 && (
-            <div class="sidebar-section sidebar-evidence-box">
-              <div class="evidence-pill">
-                <span class="dot live"></span>
-                <span>VERIFIED EVIDENCE</span>
-              </div>
-              <p class="sidebar-evidence-note">
-                Cross-checked with official patch data and gameplay records.
-              </p>
-            </div>
-          )}
         </aside>
-      )}
-    </div>
+      </div>
   </div>
 </BaseLayout>
