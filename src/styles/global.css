@@ -2269,3 +2269,19 @@ article code {
   background: rgba(212, 163, 115, 0.12);
   font-weight: 600;
 }
+
+/* 文章页舒展度对齐（对标 nivalis 716px/18px）：容器加宽 + 正文字号上调 */
+@media (min-width: 1200px) {
+  .article-page .container {
+    max-width: 1320px;
+  }
+  .article-layout {
+    gap: 36px;
+  }
+}
+.article-main p,
+.article-main ul li,
+.article-main ol li {
+  font-size: 1.09rem;
+  line-height: 1.72;
+}
