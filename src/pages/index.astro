@@ -8,6 +8,24 @@ const guides = (await getCollection("guides", ({ data }) => !data.draft))
 const codes = await getCollection("codes", ({ data }) => !data.draft);
 const activeCodesCount = codes.flatMap((c) => c.data.codes.filter((item) => item.status === "active")).length;
 
+const walkthroughGuides = guides.filter((g) =>
+  ['demo-walkthrough-secrets', 'how-to-save-sunny-endings-guide'].includes(g.id)
+);
+const bossGuides = guides.filter((g) =>
+  ['bruno-keller-boss-guide', 'all-cenobites-weaknesses-guide'].includes(g.id)
+);
+const systemGuides = guides.filter((g) =>
+  ['genesis-configuration-puzzle-guide', 'weapons-tier-list-durability'].includes(g.id)
+);
+const referenceGuides = guides.filter((g) =>
+  [
+    'system-requirements-pc-specs',
+    'is-it-multiplayer-coop-faq',
+    'censorship-usk-regional-differences',
+    'collectors-edition-contents-guide',
+  ].includes(g.id)
+);
+
 const cardImageMap: Record<string, string> = {
   "system-requirements-pc-specs": "/images/cards/ss_card_0.webp",
   "is-it-multiplayer-coop-faq": "/images/cards/ss_card_1.webp",
@@ -21,7 +39,7 @@ const cardImageMap: Record<string, string> = {
   "collectors-edition-contents-guide": "/images/cards/ss_card_9.webp",
 };
 
-const firstGuideSlug = guides[0]?.id ?? "system-requirements-pc-specs";
+const firstGuideSlug = "demo-walkthrough-secrets";
 ---
 <BaseLayout>
   <!-- Full-bleed Hero Section with Decoupled Split Grid -->
@@ -41,13 +59,10 @@ const firstGuideSlug = guides[0]?.id ?? "system-requirements-pc-specs";
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
               <span>Start Day-1 Guide</span>
             </a>
-            {codes.length > 0 && (
-              <a href="/codes/" class="btn btn-codes">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><rect width="20" height="5" x="2" y="7" rx="1"/></svg>
-                <span>Redeem Codes</span>
-                <span class="btn-badge">{activeCodesCount > 0 ? `${activeCodesCount} ACTIVE` : 'VERIFIED'}</span>
-              </a>
-            )}
+            <a href="https://store.steampowered.com/app/1551980" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              <span>Wishlist on Steam</span>
+            </a>
             <button type="button" class="btn btn-secondary search-trigger-btn">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
               <span>Search Wiki</span>
@@ -56,7 +71,7 @@ const firstGuideSlug = guides[0]?.id ?? "system-requirements-pc-specs";
           </div>
         </div>
         <div class="hero-poster-frame">
-          <img src="/og-cover.jpg" alt={`${siteConfig.gameName} Key Art`} width="460" height="215" loading="eager" />
+          <img src="/og-cover-hellraiser.jpg" alt={`${siteConfig.gameName} Key Art`} width="460" height="215" loading="eager" />
           <div class="poster-tag">TACTICAL DOSSIER · VERIFIED</div>
         </div>
       </div>
@@ -64,18 +79,18 @@ const firstGuideSlug = guides[0]?.id ?? "system-requirements-pc-specs";
   </section>
 
   <div class="container">
-    <!-- Strategy Guides Grid -->
-    <section id="guides">
+    <!-- Category 1: Walkthrough & Story -->
+    <section id="walkthrough" style="margin-top: 48px;">
       <div class="section-header">
-        <h2>Strategy Guides & Databases</h2>
-        <p>Every guide is evidence-led and strictly aligned with official announcements and tested game mechanics.</p>
+        <h2>Hellraiser Revival Walkthrough & Story Guides</h2>
+        <p>Step-by-step walkthroughs through the Scarlet Church, demo secret caches, and branching narrative paths to save Sunny.</p>
       </div>
       <div class="cards-grid">
-        {guides.map((g, idx) => (
+        {walkthroughGuides.map((g) => (
           <article class="guide-card">
             <div class="card-media">
               <img
-                src={cardImageMap[g.id] ?? `/images/cards/ss_card_${idx % 10}.webp`}
+                src={cardImageMap[g.id] ?? `/images/cards/ss_card_0.webp`}
                 alt={g.data.title}
                 width="800"
                 height="500"
@@ -87,7 +102,7 @@ const firstGuideSlug = guides[0]?.id ?? "system-requirements-pc-specs";
               <p>{g.data.description}</p>
               <div class="card-footer">
                 <time datetime={g.data.pubDate.toISOString()}>{g.data.pubDate.toISOString().slice(0, 10)}</time>
-                <span>Read Guide →</span>
+                <span>Read Walkthrough →</span>
               </div>
             </div>
           </article>
@@ -95,20 +110,114 @@ const firstGuideSlug = guides[0]?.id ?? "system-requirements-pc-specs";
       </div>
     </section>
 
-    <!-- Promo Codes Section -->
+    <!-- Category 2: Bosses & Cenobites -->
+    <section id="bosses" style="margin-top: 56px;">
+      <div class="section-header">
+        <h2>Hellraiser Revival Bosses & Cenobites Encounters</h2>
+        <p>Master evasion mechanics for the Order of the Gash and conquer lethal cult commanders within the Scarlet Church.</p>
+      </div>
+      <div class="cards-grid">
+        {bossGuides.map((g) => (
+          <article class="guide-card">
+            <div class="card-media">
+              <img
+                src={cardImageMap[g.id] ?? `/images/cards/ss_card_0.webp`}
+                alt={g.data.title}
+                width="800"
+                height="500"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-body">
+              <h3><a href={`/guide/${g.id}/`}>{g.data.title}</a></h3>
+              <p>{g.data.description}</p>
+              <div class="card-footer">
+                <time datetime={g.data.pubDate.toISOString()}>{g.data.pubDate.toISOString().slice(0, 10)}</time>
+                <span>Read Boss Guide →</span>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <!-- Category 3: Systems & Puzzles -->
+    <section id="systems" style="margin-top: 56px;">
+      <div class="section-header">
+        <h2>Hellraiser Revival Combat Systems & Puzzle Box</h2>
+        <p>Decouple the intricate brass gears of the Genesis Configuration and manage weapon durability across blunt and sharp arsenals.</p>
+      </div>
+      <div class="cards-grid">
+        {systemGuides.map((g) => (
+          <article class="guide-card">
+            <div class="card-media">
+              <img
+                src={cardImageMap[g.id] ?? `/images/cards/ss_card_0.webp`}
+                alt={g.data.title}
+                width="800"
+                height="500"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-body">
+              <h3><a href={`/guide/${g.id}/`}>{g.data.title}</a></h3>
+              <p>{g.data.description}</p>
+              <div class="card-footer">
+                <time datetime={g.data.pubDate.toISOString()}>{g.data.pubDate.toISOString().slice(0, 10)}</time>
+                <span>Read Mechanics Guide →</span>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <!-- Category 4: Reference & Technical -->
+    <section id="reference" style="margin-top: 56px;">
+      <div class="section-header">
+        <h2>Hellraiser Revival System Specs & Technical Reference</h2>
+        <p>Verified hardware benchmarks, single-player mode rules, regional age rating differences, and collector's edition contents.</p>
+      </div>
+      <div class="cards-grid">
+        {referenceGuides.map((g) => (
+          <article class="guide-card">
+            <div class="card-media">
+              <img
+                src={cardImageMap[g.id] ?? `/images/cards/ss_card_0.webp`}
+                alt={g.data.title}
+                width="800"
+                height="500"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-body">
+              <h3><a href={`/guide/${g.id}/`}>{g.data.title}</a></h3>
+              <p>{g.data.description}</p>
+              <div class="card-footer">
+                <time datetime={g.data.pubDate.toISOString()}>{g.data.pubDate.toISOString().slice(0, 10)}</time>
+                <span>Read Reference →</span>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <!-- Category 5: Promo Codes & Rewards Ledger -->
     {codes.length > 0 && (
       <section id="codes" style="margin-top: 56px;">
         <div class="section-header">
-          <h2>Verified Codes & Rewards</h2>
+          <h2>Hellraiser Revival Codes & Rewards Ledger</h2>
           <p>Active promo codes and redemption status verified directly from official developer channels.</p>
         </div>
         <div class="cards-grid">
           {codes.map((c) => (
-            <article class="guide-card" style="grid-column: 1 / -1; max-width: 600px;">
+            <article class="guide-card" style="grid-column: 1 / -1; max-width: 680px;">
               <div class="card-body">
                 <h3><a href={`/codes/${c.id}/`}>{c.data.title}</a></h3>
                 <p>{c.data.summary}</p>
                 <div class="card-footer">
+                  <time datetime={c.data.updated.toISOString()}>Updated: {c.data.updated.toISOString().slice(0, 10)}</time>
                   <span>Check Code Ledger →</span>
                 </div>
               </div>
@@ -117,5 +226,55 @@ const firstGuideSlug = guides[0]?.id ?? "system-requirements-pc-specs";
         </div>
       </section>
     )}
+
+    <!-- Category 6: Frequently Asked Questions -->
+    <section id="faq" style="margin-top: 56px;">
+      <div class="section-header">
+        <h2>Hellraiser Revival Frequently Asked Questions</h2>
+        <p>Direct, verified answers to the most common questions asked by players exploring the game.</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-card">
+          <div class="faq-question">When is the official release date for Hellraiser: Revival?</div>
+          <p class="faq-answer">Clive Barker's Hellraiser: Revival is scheduled for release on October 8, 2026, across PC (Steam), PlayStation 5, Xbox Series X|S, and Nintendo Switch 2.</p>
+        </div>
+        <div class="faq-card">
+          <div class="faq-question">Does Hellraiser: Revival support multiplayer or online co-op?</div>
+          <p class="faq-answer">No. The game is strictly a single-player narrative survival horror campaign. Developer Saber Interactive built the experience solely around solitary first-person psychological horror.</p>
+        </div>
+        <div class="faq-card">
+          <div class="faq-question">Can you kill Cenobites like Pinhead, Chatterer, or Butterball?</div>
+          <p class="faq-answer">No. Cenobites cannot be permanently eliminated with conventional firearms or melee weapons. Players must exploit sensory vulnerabilities, audio distractions, and puzzle box dimensional locks to evade them.</p>
+        </div>
+        <div class="faq-card">
+          <div class="faq-question">What are the minimum PC hardware requirements?</div>
+          <p class="faq-answer">Minimum specifications require Windows 10/11 64-bit, an AMD Ryzen 5 1500X or Intel Core i5-8400 CPU, 8 GB RAM, an NVIDIA GTX 1660 or AMD RX Vega 64 GPU, and 80 GB of SSD storage.</p>
+        </div>
+        <div class="faq-card">
+          <div class="faq-question">Is Hellraiser: Revival censored in Germany or Europe?</div>
+          <p class="faq-answer">No. The game has received an uncut USK 18 rating in Germany and PEGI 18 in Europe, retaining identical extreme gore, dismemberment, and torture sequences globally.</p>
+        </div>
+        <div class="faq-card">
+          <div class="faq-question">What is the vestry safe code in the demo?</div>
+          <p class="faq-answer">The safe code hidden behind the painting in the church vestry is 0-7-1-9, which yields shotgun ammunition and an emergency syringe.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category 7: Ending Call to Action Banner -->
+    <section class="cta-banner">
+      <h2>Prepare to Enter the Labyrinth</h2>
+      <p>Step into Clive Barker's uncompromised world of visceral terror. Track verified puzzle solutions, boss weaknesses, and game updates on Hellraiser Revival Wiki.</p>
+      <div class="cta-actions">
+        <a href="https://store.steampowered.com/app/1551980" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          <span>Wishlist on Steam</span>
+        </a>
+        <a href="/guide/" class="btn btn-secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+          <span>Browse All Guides</span>
+        </a>
+      </div>
+    </section>
   </div>
 </BaseLayout>

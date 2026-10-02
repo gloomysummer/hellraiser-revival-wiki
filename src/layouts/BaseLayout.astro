@@ -11,6 +11,24 @@ import JsonLd from '../components/JsonLd.astro';
 const allGuides = await getCollection('guides', ({ data }) => !data.draft);
 const allCodes = await getCollection('codes', ({ data }) => !data.draft);
 
+const walkthroughGuides = allGuides.filter((g) =>
+  ['demo-walkthrough-secrets', 'how-to-save-sunny-endings-guide'].includes(g.id)
+);
+const bossGuides = allGuides.filter((g) =>
+  ['bruno-keller-boss-guide', 'all-cenobites-weaknesses-guide'].includes(g.id)
+);
+const systemGuides = allGuides.filter((g) =>
+  ['genesis-configuration-puzzle-guide', 'weapons-tier-list-durability'].includes(g.id)
+);
+const referenceGuides = allGuides.filter((g) =>
+  [
+    'system-requirements-pc-specs',
+    'is-it-multiplayer-coop-faq',
+    'censorship-usk-regional-differences',
+    'collectors-edition-contents-guide',
+  ].includes(g.id)
+);
+
 const searchItems = [
   ...allGuides.map((g) => ({
     title: g.data.title,
@@ -54,7 +72,7 @@ const suffix = siteConfig.titleSuffix.startsWith(' ') ? siteConfig.titleSuffix :
 const fullTitle = title
   ? (title.endsWith(siteConfig.titleSuffix.trim()) ? title : `${title}${suffix}`)
   : `${siteConfig.siteName}: Strategy Guides & Databases`;
-const ogImage = `${siteUrl}/og-cover.jpg`;
+const ogImage = `${siteUrl}/og-cover-hellraiser.jpg`;
 
 // 双轨 hreflang：绝不生成指向 404 的备用语言标签。
 const stripLocale = (path: string) =>
@@ -168,51 +186,107 @@ const brandRest = brandWords.slice(1).join(' ') || 'WIKI';
         </button>
 
         <nav class="nav-links" id="main-nav" aria-label="Main Navigation">
-          <!-- 1. Guides Dropdown (Mega Menu) -->
+          <!-- 1. Walkthrough & Demo Dropdown -->
           <div class="nav-item has-dropdown">
-            <a href="/guide/" class={`nav-trigger ${canonical.startsWith('/guide/') ? 'active' : ''}`} aria-haspopup="true">
-              <span>Guides</span>
+            <a href="/guide/#walkthrough" class={`nav-trigger ${canonical.includes('demo') || canonical.includes('sunny') ? 'active' : ''}`} aria-haspopup="true">
+              <span>Walkthrough</span>
               <svg class="chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </a>
-            <div class="dropdown-menu mega-menu" role="menu">
-              <div class="dropdown-col">
-                <div class="dropdown-col-title">WALKTHROUGHS & STARTERS</div>
-                {allGuides.slice(0, 3).map((g) => (
-                  <a href={`/guide/${g.id}/`} class="dropdown-card" role="menuitem">
-                    <div class="card-icon-svg">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
-                    </div>
-                    <div class="card-body">
-                      <div class="card-title">{g.data.title}</div>
-                      <div class="card-desc">{g.data.description}</div>
-                    </div>
-                  </a>
-                ))}
-                {allGuides.length === 0 && (
-                  <div class="card-desc" style="padding: 10px;">Guides will appear here.</div>
-                )}
-              </div>
-              <div class="dropdown-col">
-                <div class="dropdown-col-title">ARCHIVE & DISCOVERY</div>
-                {allGuides.slice(3, 6).map((g) => (
-                  <a href={`/guide/${g.id}/`} class="dropdown-card" role="menuitem">
-                    <div class="card-icon-svg">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"/><line x1="13" y1="19" x2="19" y2="13"/><line x1="16" y1="16" x2="20" y2="20"/><line x1="19" y1="21" x2="21" y2="19"/></svg>
-                    </div>
-                    <div class="card-body">
-                      <div class="card-title">{g.data.title}</div>
-                      <div class="card-desc">{g.data.description}</div>
-                    </div>
-                  </a>
-                ))}
-                <div class="dropdown-footer">
-                  <a href="/guide/" class="dropdown-hub-link">Explore All Strategy Guides →</a>
-                </div>
+            <div class="dropdown-menu single-menu" role="menu">
+              <div class="dropdown-col-title">WALKTHROUGH & STORY</div>
+              {walkthroughGuides.map((g) => (
+                <a href={`/guide/${g.id}/`} class="dropdown-card" role="menuitem">
+                  <div class="card-icon-svg">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-title">{g.data.title}</div>
+                    <div class="card-desc">{g.data.description}</div>
+                  </div>
+                </a>
+              ))}
+              <div class="dropdown-footer">
+                <a href="/guide/#walkthrough" class="dropdown-hub-link">All Walkthroughs & Endings →</a>
               </div>
             </div>
           </div>
 
-          <!-- 2. Codes & Rewards Dropdown -->
+          <!-- 2. Bosses & Cenobites Dropdown -->
+          <div class="nav-item has-dropdown">
+            <a href="/guide/#bosses" class={`nav-trigger ${canonical.includes('boss') || canonical.includes('cenobite') ? 'active' : ''}`} aria-haspopup="true">
+              <span>Bosses</span>
+              <svg class="chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="dropdown-menu single-menu" role="menu">
+              <div class="dropdown-col-title">CENOBITES & BOSS TACTICS</div>
+              {bossGuides.map((g) => (
+                <a href={`/guide/${g.id}/`} class="dropdown-card" role="menuitem">
+                  <div class="card-icon-svg">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-title">{g.data.title}</div>
+                    <div class="card-desc">{g.data.description}</div>
+                  </div>
+                </a>
+              ))}
+              <div class="dropdown-footer">
+                <a href="/guide/#bosses" class="dropdown-hub-link">All Boss Guides & Strategies →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Systems & Puzzles Dropdown -->
+          <div class="nav-item has-dropdown">
+            <a href="/guide/#systems" class={`nav-trigger ${canonical.includes('puzzle') || canonical.includes('weapon') ? 'active' : ''}`} aria-haspopup="true">
+              <span>Systems</span>
+              <svg class="chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="dropdown-menu single-menu" role="menu">
+              <div class="dropdown-col-title">PUZZLES & COMBAT</div>
+              {systemGuides.map((g) => (
+                <a href={`/guide/${g.id}/`} class="dropdown-card" role="menuitem">
+                  <div class="card-icon-svg">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"/><line x1="13" y1="19" x2="19" y2="13"/><line x1="16" y1="16" x2="20" y2="20"/><line x1="19" y1="21" x2="21" y2="19"/></svg>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-title">{g.data.title}</div>
+                    <div class="card-desc">{g.data.description}</div>
+                  </div>
+                </a>
+              ))}
+              <div class="dropdown-footer">
+                <a href="/guide/#systems" class="dropdown-hub-link">All Systems & Combat Mechanics →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Reference & Specs Dropdown -->
+          <div class="nav-item has-dropdown dropdown-right">
+            <a href="/guide/#reference" class={`nav-trigger ${canonical.includes('spec') || canonical.includes('multiplayer') || canonical.includes('usk') || canonical.includes('collector') ? 'active' : ''}`} aria-haspopup="true">
+              <span>Reference</span>
+              <svg class="chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="dropdown-menu single-menu" role="menu">
+              <div class="dropdown-col-title">SYSTEM SPECS & EDITIONS</div>
+              {referenceGuides.map((g) => (
+                <a href={`/guide/${g.id}/`} class="dropdown-card" role="menuitem">
+                  <div class="card-icon-svg">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-title">{g.data.title}</div>
+                    <div class="card-desc">{g.data.description}</div>
+                  </div>
+                </a>
+              ))}
+              <div class="dropdown-footer">
+                <a href="/guide/#reference" class="dropdown-hub-link">All Reference Guides & Specs →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Codes Dropdown -->
           <div class="nav-item has-dropdown dropdown-right">
             <a href="/codes/" class={`nav-trigger ${canonical.startsWith('/codes/') ? 'active' : ''}`} aria-haspopup="true">
               <span>Codes</span>
@@ -238,7 +312,7 @@ const brandRest = brandWords.slice(1).join(' ') || 'WIKI';
             </div>
           </div>
 
-          <!-- 3. Global Search Trigger Button -->
+          <!-- 6. Global Search Trigger Button -->
           <button type="button" class="search-btn search-trigger-btn" id="search-trigger" aria-label="Open search dialog">
             <div class="search-btn-left">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
@@ -247,7 +321,7 @@ const brandRest = brandWords.slice(1).join(' ') || 'WIKI';
             <kbd class="search-kbd">⌘K</kbd>
           </button>
 
-          <!-- 4. Native Zero-JS Locale Switcher (Multi-language ready) -->
+          <!-- 7. Native Zero-JS Locale Switcher (Multi-language ready) -->
           {isMultiLang && (
             <details class="locale-switcher">
               <summary aria-label="Select language">
@@ -292,8 +366,62 @@ const brandRest = brandWords.slice(1).join(' ') || 'WIKI';
       </div>
     </div>
 
-    <footer>
-      <p>© {new Date().getFullYear()} {siteConfig.siteName}. Tactical strategy guides and databases. Game content and materials are trademarks of their respective owners.</p>
+    <!-- 对称全案页脚 -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h3>{siteConfig.siteName}</h3>
+            <p>The definitive evidence-led encyclopedia and strategy guide for <em>Clive Barker's Hellraiser: Revival</em>. Verified puzzle solutions, Cenobite encounters, and combat systems.</p>
+            <div class="badge-row" style="margin-top: 12px;">
+              <span class="badge gold">VERIFIED WIKI</span>
+              <span class="badge">EVIDENCE-LED</span>
+            </div>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Walkthrough & Story</div>
+            <ul class="footer-links">
+              <li><a href="/guide/demo-walkthrough-secrets/">Demo Walkthrough & Secrets</a></li>
+              <li><a href="/guide/how-to-save-sunny-endings-guide/">How to Save Sunny & Endings</a></li>
+              <li><a href="/guide/#walkthrough">All Story Guides</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Bosses & Cenobites</div>
+            <ul class="footer-links">
+              <li><a href="/guide/bruno-keller-boss-guide/">Bruno Keller Boss Guide</a></li>
+              <li><a href="/guide/all-cenobites-weaknesses-guide/">All Cenobites Weaknesses</a></li>
+              <li><a href="/guide/#bosses">Scarlet Church Bosses</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Combat & Systems</div>
+            <ul class="footer-links">
+              <li><a href="/guide/genesis-configuration-puzzle-guide/">Genesis Configuration Guide</a></li>
+              <li><a href="/guide/weapons-tier-list-durability/">Weapons Tier List & Durability</a></li>
+              <li><a href="/codes/">Codes & Rewards Ledger</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Reference & Legal</div>
+            <ul class="footer-links">
+              <li><a href="/guide/system-requirements-pc-specs/">PC System Requirements</a></li>
+              <li><a href="/guide/is-it-multiplayer-coop-faq/">Multiplayer & Co-op FAQ</a></li>
+              <li><a href="/guide/censorship-usk-regional-differences/">USK Rating & Censorship</a></li>
+              <li><a href="/guide/collectors-edition-contents-guide/">Collector's Edition Breakdown</a></li>
+              <li><a href="/about/">About & Editorial Mission</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© {new Date().getFullYear()} {siteConfig.siteName}. All rights reserved. <em>Clive Barker's Hellraiser: Revival</em> and associated characters are trademarks of Saber Interactive and respective copyright holders.</p>
+          <div class="footer-legal-links">
+            <a href="/privacy-policy/">Privacy Policy</a>
+            <a href="/about/">About Us</a>
+            <a href="/contact/">Contact Desk</a>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script is:inline define:vars={{ searchItems }}>
