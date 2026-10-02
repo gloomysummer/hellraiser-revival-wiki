@@ -171,6 +171,17 @@ const brandRest = brandWords.slice(1).join(' ') || 'WIKI';
       name: siteConfig.siteName,
       url: siteUrl,
     }} />
+    <!-- VideoGame 实体信号（对标 nivalis 打法）：事实仅取自站内 Confirmed Intel / FAQ 已证实口径 -->
+    <JsonLd data={{
+      '@context': 'https://schema.org',
+      '@type': 'VideoGame',
+      name: 'Clive Barker\u0027s Hellraiser: Revival',
+      author: { '@type': 'Organization', name: 'Saber Interactive' },
+      genre: 'Survival Horror',
+      gamePlatform: ['PC (Steam)', 'PlayStation 5', 'Xbox Series X|S', 'Nintendo Switch 2'],
+      playMode: 'SinglePlayer',
+      datePublished: '2026-10-08',
+    }} />
     {jsonLd.map((data) => <JsonLd data={data} />)}
   </head>
   <body>

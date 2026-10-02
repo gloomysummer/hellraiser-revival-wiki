@@ -88,6 +88,7 @@ const jsonLd = [
         <div class="meta-bar">
           <time datetime={data.pubDate.toISOString()}>Published: {data.pubDate.toISOString().slice(0, 10)}</time>
           {data.updated && <span>· Updated: <time datetime={data.updated.toISOString()}>{data.updated.toISOString().slice(0, 10)}</time></span>}
+          <span>· {Math.max(1, Math.round(guide.body.split(/\s+/).length / 220))} min read</span>
         </div>
 
         <QuickAnswer summary={data.summary} />
