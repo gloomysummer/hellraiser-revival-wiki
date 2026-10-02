@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import VideoEmbed from "../components/VideoEmbed.astro";
 import { siteConfig } from "../config/site.config";
 
 const guides = (await getCollection("guides", ({ data }) => !data.draft))
@@ -79,6 +80,24 @@ const firstGuideSlug = "demo-walkthrough-secrets";
   </section>
 
   <div class="container">
+    <!-- Official Reveal Trailer Feature -->
+    <section class="official-trailer-section" style="margin-top: 48px; margin-bottom: 24px;">
+      <div class="section-header">
+        <h2>Clive Barker's Hellraiser: Revival Official Gameplay Reveal Trailer</h2>
+        <p>Watch the verified official gameplay trailer showcasing the Scarlet Church, Pinhead's summoning rite, and psychological survival horror mechanics.</p>
+      </div>
+      <div style="max-width: 860px; margin: 0 auto;">
+        <VideoEmbed
+          id="0rA40lqttO8"
+          title="Clive Barker's Hellraiser: Revival - Official Gameplay Reveal Trailer"
+          channel="GameSpot"
+          channelTitle="GameSpot"
+          uploadDate="2026-06-10"
+          description="Official gameplay reveal trailer for Clive Barker's Hellraiser: Revival showcasing real-time combat, Genesis Configuration puzzle interactions, and the Order of the Gash."
+        />
+      </div>
+    </section>
+
     <!-- Category 1: Walkthrough & Story -->
     <section id="walkthrough" style="margin-top: 48px;">
       <div class="section-header">

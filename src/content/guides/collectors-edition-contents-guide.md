@@ -21,6 +21,12 @@ evidence:
   sourceUrl: https://store.steampowered.com/app/1551980
   exactQuote: Wield the powers of the Genesis Configuration puzzle box to survive
     your bargain with the infamous Pinhead.
+guide_video:
+  id: "1pzEhOjaF3s"
+  title: "Clive Barker's Hellraiser: Revival - Pre-Order Trailer | PS5 Games"
+  channel: "PlayStation"
+  uploadDate: "2026-06-10"
+  description: "Official Pre-Order trailer showcasing physical editions, digital deluxe bonuses, and PlayStation exclusive items."
 ---
 
 ## Hellraiser: Revival Collector's Edition & Pre-Order Breakdown

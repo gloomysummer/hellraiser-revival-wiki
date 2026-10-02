@@ -17,6 +17,12 @@ tags:
 evidence:
 - claim: Steam public demo build gameplay steps verified by hands-on testing.
   level: Personal in-game test
+guide_video:
+  id: "Iu2qKieTnSo"
+  title: "Clive Barker's Hellraiser: Revival - Official Scarlet Church Trailer"
+  channel: "IGN"
+  uploadDate: "2026-06-10"
+  description: "Official Scarlet Church gameplay trailer showcasing the cultist ambush, underground labyrinth, and survival horror combat loop."
 ---
 
 ## Hellraiser: Revival Demo Walkthrough, Safe Codes & Secrets

@@ -20,6 +20,12 @@ evidence:
   level: Official
   sourceUrl: https://store.steampowered.com/app/1551980
   exactQuote: survive your bargain with the infamous Pinhead
+guide_video:
+  id: "R88QdlIlg-E"
+  title: "Clive Barker's Hellraiser: Revival - Official Red Band Announcement Trailer"
+  channel: "IGN"
+  uploadDate: "2026-06-10"
+  description: "Official Red Band story trailer introducing Aidan Lynch's descent into darkness to save Sunny and confronting the Order of the Gash."
 ---
 
 ## How to Save Sunny: Story Branches & All Endings Guide

@@ -44,6 +44,16 @@ const guides = defineCollection({
         )
       )
       .default([]),
+    /** 视频嵌入槽位：遵循 youtube_video_to_guide_sop.md 规范 */
+    guide_video: z
+      .object({
+        id: z.string(),
+        title: z.string(),
+        channel: z.string(),
+        uploadDate: z.string().optional(),
+        description: z.string().optional(),
+      })
+      .optional(),
     draft: z.boolean().default(false),
   }),
 });

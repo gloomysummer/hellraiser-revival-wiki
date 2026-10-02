@@ -19,6 +19,12 @@ evidence:
   level: Official
   sourceUrl: https://store.steampowered.com/app/1551980
   exactQuote: Experience a new chapter in the legendary horror series like never before.
+guide_video:
+  id: "0rA40lqttO8"
+  title: "Clive Barker's Hellraiser: Revival - Official Gameplay Reveal Trailer"
+  channel: "GameSpot"
+  uploadDate: "2026-06-10"
+  description: "Official gameplay reveal trailer featuring visceral combat encounters, butcher cultists, and survival melee mechanics."
 ---
 
 ## How to Beat Bruno Keller (The Picasso of the Scalpel)

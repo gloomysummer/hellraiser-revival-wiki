@@ -22,6 +22,12 @@ evidence:
   sourceUrl: https://store.steampowered.com/app/1551980
   exactQuote: Wield the powers of the Genesis Configuration puzzle box to survive
     your bargain with the infamous Pinhead.
+guide_video:
+  id: "-6qr8F_yGF8"
+  title: "Clive Barker's Hellraiser: Revival - Official Gameplay Overview Trailer"
+  channel: "IGN"
+  uploadDate: "2026-06-10"
+  description: "Official gameplay overview trailer showcasing the Genesis Configuration mechanics, telekinetic puzzles, and dimensional powers."
 ---
 
 ## Genesis Configuration Puzzle Box: Solutions & Supernatural Abilities

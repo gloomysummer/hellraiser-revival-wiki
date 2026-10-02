@@ -2,6 +2,7 @@
 import { getCollection, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import QuickAnswer from "../../components/QuickAnswer.astro";
+import VideoEmbed from "../../components/VideoEmbed.astro";
 import { siteConfig } from "../../config/site.config";
 
 export async function getStaticPaths() {
@@ -90,6 +91,22 @@ const jsonLd = [
         </div>
 
         <QuickAnswer summary={data.summary} />
+
+        {data.guide_video && (
+          <section id="official-video-showcase" class="guide-video-section">
+            <div class="video-section-header">
+              <h2>Official Video Reference & Tactical Walkthrough</h2>
+              <p>Verified gameplay footage illustrating core mechanics, threat management, and extraction routes analyzed in this dossier.</p>
+            </div>
+            <VideoEmbed
+              id={data.guide_video.id}
+              title={data.guide_video.title}
+              channelTitle={data.guide_video.channel}
+              uploadDate={data.guide_video.uploadDate}
+              description={data.guide_video.description}
+            />
+          </section>
+        )}
 
         {tocHeadings.length > 0 && (
           <details class="mobile-toc">

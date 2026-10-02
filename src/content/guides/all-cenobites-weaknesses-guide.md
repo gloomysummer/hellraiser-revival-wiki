@@ -21,6 +21,12 @@ evidence:
   level: Official
   sourceUrl: https://store.steampowered.com/app/1551980
   exactQuote: survive your bargain with the infamous Pinhead.
+guide_video:
+  id: "5k7tg4eUaro"
+  title: "Clive Barker's Hellraiser: Revival - Official Trailer"
+  channel: "IGN"
+  uploadDate: "2026-06-10"
+  description: "Official trailer spotlighting the Order of the Gash, Cenobite encounters, and Clive Barker's iconic dark fantasy realm."
 ---
 
 ## All Cenobites Encounters, Behaviors & Evasion Tactics
