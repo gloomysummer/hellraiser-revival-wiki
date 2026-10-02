@@ -2306,3 +2306,20 @@ article code {
   color: #e8edf5;
   line-height: 1.6;
 }
+
+/* 宽屏几何对齐 nivalis（1920 实测：右栏贴视口右缘 24px、正文 ~780、中间大 gutter） */
+@media (min-width: 1200px) {
+  .container.article-page {
+    max-width: none;
+    padding-left: 32px;
+    padding-right: 24px;
+  }
+  .article-layout {
+    grid-template-columns: minmax(0, 1fr) 300px 260px;
+    gap: 32px;
+    justify-content: start;
+  }
+  .article-main {
+    max-width: clamp(620px, 46vw, 800px);
+  }
+}
