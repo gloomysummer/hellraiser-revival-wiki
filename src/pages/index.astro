@@ -113,50 +113,112 @@ const firstGuideSlug = "demo-walkthrough-secrets";
           </div>
         </div>
 
-        <!-- Hero 右侧快捷频道导览轨 (Explore The Wiki Rail) -->
+        <!-- Hero 右侧快捷频道导览轨 (Explore The Wiki Rail - Collapsible Accordion Hubs) -->
         <aside class="hero-rail" aria-label="Explore the wiki silos">
           <p class="hero-rail-title">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
             <span>Explore The Wiki</span>
           </p>
-          <ul class="hero-rail-list">
-            <li class="hero-rail-item">
-              <a href="#walkthrough">
-                <span class="rail-item-label">▶ Walkthrough</span>
+          <nav class="hero-rail-nav">
+            <!-- Silo 1: Walkthrough -->
+            <details class="hero-rail-details" open>
+              <summary class="hero-rail-summary">
+                <span class="rail-summary-label">
+                  <span class="rail-toggle-arrow">▶</span>
+                  <span>Walkthrough</span>
+                </span>
                 <span class="rail-count">{walkthroughGuides.length}</span>
-              </a>
-            </li>
-            <li class="hero-rail-item">
-              <a href="#bosses">
-                <span class="rail-item-label">▶ Bosses & Cenobites</span>
+              </summary>
+              <ul class="hero-rail-sublinks">
+                <li><a href="#walkthrough" class="silo-browse-all">Browse Section ↓</a></li>
+                {walkthroughGuides.map((g) => (
+                  <li><a href={`/guide/${g.id}/`}>{g.data.title}</a></li>
+                ))}
+              </ul>
+            </details>
+
+            <!-- Silo 2: Bosses -->
+            <details class="hero-rail-details">
+              <summary class="hero-rail-summary">
+                <span class="rail-summary-label">
+                  <span class="rail-toggle-arrow">▶</span>
+                  <span>Bosses & Cenobites</span>
+                </span>
                 <span class="rail-count">{bossGuides.length}</span>
-              </a>
-            </li>
-            <li class="hero-rail-item">
-              <a href="#systems">
-                <span class="rail-item-label">▶ Combat & Puzzles</span>
+              </summary>
+              <ul class="hero-rail-sublinks">
+                <li><a href="#bosses" class="silo-browse-all">Browse Section ↓</a></li>
+                {bossGuides.map((g) => (
+                  <li><a href={`/guide/${g.id}/`}>{g.data.title}</a></li>
+                ))}
+              </ul>
+            </details>
+
+            <!-- Silo 3: Systems -->
+            <details class="hero-rail-details">
+              <summary class="hero-rail-summary">
+                <span class="rail-summary-label">
+                  <span class="rail-toggle-arrow">▶</span>
+                  <span>Combat & Puzzles</span>
+                </span>
                 <span class="rail-count">{systemGuides.length}</span>
-              </a>
-            </li>
-            <li class="hero-rail-item">
-              <a href="#reference">
-                <span class="rail-item-label">▶ Technical & Specs</span>
+              </summary>
+              <ul class="hero-rail-sublinks">
+                <li><a href="#systems" class="silo-browse-all">Browse Section ↓</a></li>
+                {systemGuides.map((g) => (
+                  <li><a href={`/guide/${g.id}/`}>{g.data.title}</a></li>
+                ))}
+              </ul>
+            </details>
+
+            <!-- Silo 4: Reference -->
+            <details class="hero-rail-details">
+              <summary class="hero-rail-summary">
+                <span class="rail-summary-label">
+                  <span class="rail-toggle-arrow">▶</span>
+                  <span>Technical & Specs</span>
+                </span>
                 <span class="rail-count">{referenceGuides.length}</span>
-              </a>
-            </li>
-            <li class="hero-rail-item">
-              <a href="#codes">
-                <span class="rail-item-label">▶ Active Codes</span>
+              </summary>
+              <ul class="hero-rail-sublinks">
+                <li><a href="#reference" class="silo-browse-all">Browse Section ↓</a></li>
+                {referenceGuides.map((g) => (
+                  <li><a href={`/guide/${g.id}/`}>{g.data.title}</a></li>
+                ))}
+              </ul>
+            </details>
+
+            <!-- Silo 5: Codes -->
+            <details class="hero-rail-details">
+              <summary class="hero-rail-summary">
+                <span class="rail-summary-label">
+                  <span class="rail-toggle-arrow">▶</span>
+                  <span>Active Codes</span>
+                </span>
                 <span class="rail-count">{activeCodesCount}</span>
-              </a>
-            </li>
-            <li class="hero-rail-item">
-              <a href="#faq">
-                <span class="rail-item-label">▶ FAQ Hub</span>
+              </summary>
+              <ul class="hero-rail-sublinks">
+                <li><a href="/codes/" class="silo-browse-all">Open Codes Ledger →</a></li>
+                {codes.map((c) => (
+                  <li><a href={`/codes/${c.id}/`}>{c.data.title}</a></li>
+                ))}
+              </ul>
+            </details>
+
+            <!-- Silo 6: FAQ Hub -->
+            <details class="hero-rail-details">
+              <summary class="hero-rail-summary">
+                <span class="rail-summary-label">
+                  <span class="rail-toggle-arrow">▶</span>
+                  <span>FAQ Hub</span>
+                </span>
                 <span class="rail-count">6</span>
-              </a>
-            </li>
-          </ul>
+              </summary>
+              <ul class="hero-rail-sublinks">
+                <li><a href="#faq" class="silo-browse-all">View All 6 FAQs ↓</a></li>
+              </ul>
+            </details>
+          </nav>
         </aside>
       </div>
     </div>
