@@ -27,7 +27,7 @@ export const siteConfig = {
   /** 广告与统计（全部默认关闭——env/config 门控，模板升级不会自动开启） */
   ads: {
     adsenseClient: "", // 例: "ca-pub-XXXXXXXXXXXXXXXX"，留空 = 不渲染广告位
-    gaMeasurementId: "", // 例: "G-XXXXXXXXXX"，留空 = 不加载 GA4
+    gaMeasurementId: "G-DQQY1KGEP3", // GA4 衡量 ID
   },
   /** 收录提交（可选） */
   indexing: {
