@@ -256,35 +256,6 @@ const firstGuideSlug = "demo-walkthrough-secrets";
       </div>
     </section>
 
-    <!-- Section: Latest Updates (Freshness Ledger: 紧凑时序列表) -->
-    <section id="updates" class="latest-updates-section">
-      <div class="section-header">
-        <div class="section-tag-row">
-          <span class="live-dot pulse"></span>
-          <span class="section-tag-text">FRESHNESS LEDGER</span>
-        </div>
-        <h2>Latest Field Updates & Guide Dossiers</h2>
-        <p>Recently verified mechanics, walkthrough chapters, and hardware benchmarks across the campaign.</p>
-      </div>
-      <div class="updates-list">
-        {latestUpdates.map((item) => (
-          <a href={`/guide/${item.id}/`} class="update-row">
-            <div class="update-row-left">
-              <time class="update-date" datetime={(item.data.updated ?? item.data.pubDate).toISOString()}>
-                {(item.data.updated ?? item.data.pubDate).toISOString().slice(0, 10)}
-              </time>
-              <span class="update-tag">{item.data.category || 'Guide'}</span>
-              <span class="update-title">{item.data.title}</span>
-            </div>
-            <div class="update-row-right">
-              <span class="update-meta">{Math.max(1, Math.round(item.body.split(/\s+/).length / 220))} min read</span>
-              <span class="update-arrow">Read →</span>
-            </div>
-          </a>
-        ))}
-      </div>
-    </section>
-
     <!-- Section: Explore Wiki Silos (3-Col Grid: 铺满居中 1180 容器，全部 10 篇 guide 矩阵) -->
     <section id="silos" class="wiki-silos-section" style="margin-top: 56px;">
       <div class="section-header">
@@ -372,6 +343,35 @@ const firstGuideSlug = "demo-walkthrough-secrets";
           <div class="faq-question">What is the vestry safe code in the demo?</div>
           <p class="faq-answer">The safe code hidden behind the painting in the church vestry is 0-7-1-9, which yields shotgun ammunition and an emergency syringe.</p>
         </div>
+      </div>
+    </section>
+
+    <!-- Section: Latest Updates (Freshness Ledger: 紧凑时序列表) -->
+    <section id="updates" class="latest-updates-section">
+      <div class="section-header">
+        <div class="section-tag-row">
+          <span class="live-dot pulse"></span>
+          <span class="section-tag-text">FRESHNESS LEDGER</span>
+        </div>
+        <h2>Latest Field Updates & Guide Dossiers</h2>
+        <p>Recently verified mechanics, walkthrough chapters, and hardware benchmarks across the campaign.</p>
+      </div>
+      <div class="updates-list">
+        {latestUpdates.map((item) => (
+          <a href={`/guide/${item.id}/`} class="update-row">
+            <div class="update-row-left">
+              <time class="update-date" datetime={(item.data.updated ?? item.data.pubDate).toISOString()}>
+                {(item.data.updated ?? item.data.pubDate).toISOString().slice(0, 10)}
+              </time>
+              <span class="update-tag">{item.data.category || 'Guide'}</span>
+              <span class="update-title">{item.data.title}</span>
+            </div>
+            <div class="update-row-right">
+              <span class="update-meta">{Math.max(1, Math.round(item.body.split(/\s+/).length / 220))} min read</span>
+              <span class="update-arrow">Read →</span>
+            </div>
+          </a>
+        ))}
       </div>
     </section>
 
