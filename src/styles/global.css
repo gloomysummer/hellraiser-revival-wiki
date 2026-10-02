@@ -2342,15 +2342,28 @@ article code {
   }
 }
 
-/* 首页宽屏几何（同详情页外壳）：hero 与区块右贴边、左侧缩进 */
+/* 首页几何：hero 用宽外壳（Explore 栏钉右）；下方区块用居中容器（对标 nivalis 1152） */
 @media (min-width: 1200px) {
-  .hero-split,
-  .container.home-page {
+  .hero-split {
     max-width: 1736px;
     margin-left: clamp(0px, 12vw, 184px);
     margin-right: 0;
     padding-left: 12px;
     padding-right: 24px;
+  }
+  .container.home-page {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .container.home-page .section-header,
+  .container.home-page > section > .section-header {
+    text-align: center;
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /* 正文字重对齐 nivalis（400，长文更舒展） */
