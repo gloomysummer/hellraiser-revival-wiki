@@ -22,13 +22,24 @@ const uniqueId = `yt-${id}-${Math.random().toString(36).substring(2, 7)}`;
 const embedUrl = `https://www.youtube.com/embed/${id}`;
 const thumbnailUrl = `https://img.youtube.com/vi/${id}/maxresdefault.jpg`;
 
+// Google requires a FULL ISO 8601 datetime WITH timezone for VideoObject.uploadDate.
+// Date-only values ("2026-06-10") are rejected with:
+//   "Invalid datetime value for uploadDate"
+//   "Datetime property uploadDate is missing a timezone"
+// which suppresses the Video rich result entirely. Normalize date-only input by
+// appending midnight UTC. Frontmatter may still be written as a plain date.
+const rawUploadDate = uploadDate;
+const uploadDateIso = /^\d{4}-\d{2}-\d{2}$/.test(rawUploadDate.trim())
+  ? `${rawUploadDate.trim()}T00:00:00+00:00`
+  : rawUploadDate;
+
 const schema = {
   "@context": "https://schema.org",
   "@type": "VideoObject",
   "name": title,
   "description": description,
   "thumbnailUrl": [thumbnailUrl],
-  "uploadDate": uploadDate,
+  "uploadDate": uploadDateIso,
   "embedUrl": embedUrl
 };
 ---
