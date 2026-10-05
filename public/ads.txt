@@ -1,0 +1,11 @@
+# ads.txt — hellraiserrevivalwiki.wiki
+#
+# 说明（SOP：game-wiki-builder/references/adsterra_monetization_sop.md 七.3 红线）
+# 本文件必须存在（404 会被爬虫与广告平台视为硬伤），当前为占位。
+#
+# 老大在 Adsterra 后台完成 hellraiserrevivalwiki.wiki 的站点审核后，
+# 后台会提供可一键复制的完整 ads.txt 代码块（含 Adsterra 官方及关联 SSP/DSP
+# 的 DIRECT / RESELLER 声明行）——届时把内容全量贴到本文件即可，无需自行拼装。
+#
+# 本站已定案：纯 Adsterra 变现，不申请 Google AdSense（2026-10-05 老大定案），
+# 因此无需 google.com 的 pub- 授权行。

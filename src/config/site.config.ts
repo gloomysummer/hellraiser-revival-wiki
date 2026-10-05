@@ -28,6 +28,20 @@ export const siteConfig = {
   ads: {
     adsenseClient: "", // 例: "ca-pub-XXXXXXXXXXXXXXXX"，留空 = 不渲染广告位
     gaMeasurementId: "G-DQQY1KGEP3", // GA4 衡量 ID
+    // Adsterra v2 自托管 iframe 架构（规范：game-wiki-builder/references/adsterra_monetization_sop.md）
+    // ⚠️ key 为空或非 32 位 hex 时，AdSlot 组件整槽不渲染，对线上零影响。
+    // ⚠️ 同页同 Zone Key 只计一次展示（Adsterra 去重，GK2 commit cba0189 佐证）——每个尺寸必须独立 Key。
+    // ⚠️ SocialBar / Popunder 永久关闭（老大 2026-10-05 定案：体验差、怕影响排名），不配置。
+    adsterra: {
+      enabled: true,
+      // 反嵌套探针伪装开关说明：伪装代码硬编码在 public/ads/banner-*.html 的 <head>（SOP 六.2）。
+      // 撤回方式 = 还原对应静态文件（git revert 单文件，约 1 分钟），文件头有回滚命令注释。
+      banners: {
+        "banner-300x250": { key: "", enabled: true }, // TODO: Adsterra 后台建 300x250 Zone 后填入
+        "banner-728x90": { key: "", enabled: true }, // TODO: Adsterra 后台建 728x90 Zone 后填入
+        "banner-320x50": { key: "", enabled: true }, // TODO: Adsterra 后台建 320x50 Zone 后填入
+      },
+    },
   },
   /** 收录提交（可选） */
   indexing: {

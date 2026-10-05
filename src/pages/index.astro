@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import VideoEmbed from "../components/VideoEmbed.astro";
+import AdSlot from "../components/AdSlot.astro";
 import { siteConfig } from "../config/site.config";
 
 const guides = (await getCollection("guides", ({ data }) => !data.draft))
@@ -287,6 +288,13 @@ const firstGuideSlug = "demo-walkthrough-secrets";
         ))}
       </div>
     </section>
+
+    {/* ── 首页唯一广告位：728x90 ──
+        放在 silos 导航区之后（非首屏上方），新站起步期只挂 1 位，避免低质内容判定。
+        与文章页的 300x250 不同尺寸/Key，无去重冲突。 */}
+    <div class="ad-bottom-row">
+      <AdSlot zone="banner-728x90" label="Sponsored Field Intel" />
+    </div>
 
     <!-- Category 5: Promo Codes & Rewards Ledger -->
     {codes.length > 0 && (

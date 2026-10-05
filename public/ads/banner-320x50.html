@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advertisement</title>
+  <!--
+    ═══════════════════════════════════════════════════════════════════
+    [GREY FEATURE] 反嵌套探针伪装（SOP 六.2）
+    作用：让 invoke.js 的 iframe 自检（window.top === window.self）恒为真，
+          按"顶层原生页"全价出价，而不是 iframe 降级价。
+    它不伪造展示/点击/统计数字，只改广告脚本对自身环境的判断 —— 条款灰区。
+
+    ▶ 秒级撤回（SOP 要求的 Feature Flag 用 git 实现）：
+        git checkout HEAD~1 -- public/ads/banner-320x50.html && git commit -m "revert anti-frame bypass" && git push
+      （或直接删掉下面 <script> 块即为纯净直出版本）
+    ═══════════════════════════════════════════════════════════════════
+  -->
+  <script>
+    try {
+      Object.defineProperty(window, 'top', { get: function() { return window.self; } });
+      Object.defineProperty(window, 'parent', { get: function() { return window.self; } });
+      Object.defineProperty(window, 'frameElement', { get: function() { return null; } });
+    } catch (e) {}
+  </script>
+  <style>
+    body {
+      margin: 0; padding: 0; overflow: hidden; background: transparent;
+      display: flex; justify-content: center; align-items: center;
+      width: 320px; height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <!--
+    ⚠️ Adsterra Zone Key 尚未申请。老大在后台建好 320x50 Zone 拿到 key 后：
+       1) 把下面注释块解开，把后台『Get Code』给出的整段代码（atOptions + invoke.js 两行）原样贴进来
+       2) 同步把 key 填进 src/config/site.config.ts 的 adsterra.banners["banner-320x50"].key
+          （两处必须一致，否则组件层校验不过、槽位不渲染）
+    ═══════════════════════════════════════════════════════════════════
+    <script type="text/javascript">
+      atOptions = {
+        'key': '<从后台 Get Code 整段复制，勿手填>',
+        'format': 'iframe',
+        'height': 50,
+        'width': 320,
+        'params': {}
+      };
+    </script>
+    <script type="text/javascript" src="https://www.highperformanceformat.com/<ZONE_KEY>/invoke.js"></script>
+    ═══════════════════════════════════════════════════════════════════
+  -->
+</body>
+</html>

@@ -2589,3 +2589,12 @@ body {
 .article-main li strong {
   color: #d7dee9;
 }
+
+/* ── Adsterra 广告位（AdSlot.astro，v2 自托管 iframe 架构）────────────── */
+.ad-bottom-row { margin: 2rem 0 0; }
+.ad-desktop-only { display: none; }
+.ad-mobile-only { display: block; }
+@media (min-width: 990px) {
+  .ad-desktop-only { display: block; }
+  .ad-mobile-only { display: none; }
+}
