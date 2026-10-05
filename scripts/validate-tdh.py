@@ -31,6 +31,12 @@ def validate_dist(dist_dir: Path, strict: bool = True) -> bool:
 
     html_files = []
     for root, _, files in os.walk(dist_dir):
+        # Skip /ads/ delivery files (self-hosted ad iframes): <title>Advertisement</title>,
+        # no H1/meta description by design — they are not SEO pages and must not be
+        # evaluated against SERP TDH standards (they are also robots.txt-disallowed).
+        rel_root = os.path.relpath(root, dist_dir)
+        if rel_root == "ads" or rel_root.startswith("ads" + os.sep):
+            continue
         for f in files:
             if f.endswith(".html") and not f.startswith("google") and f != "404.html":
                 html_files.append(Path(root) / f)
