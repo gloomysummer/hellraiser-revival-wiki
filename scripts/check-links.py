@@ -22,7 +22,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse, unquote
 
-ATTR_RE = re.compile(r'(?:href|src)\s*=\s*["\']([^"\']+)["\']', re.IGNORECASE)
+# (?<!\.) excludes JS property assignments like `f.src = '/x/'` inside inline
+# scripts (they are not HTML attributes; the concatenated first segment would
+# false-positive as a broken internal link). Real HTML attributes are always
+# preceded by whitespace, never a dot.
+ATTR_RE = re.compile(r'(?<!\.)(?:href|src)\s*=\s*["\']([^"\']+)["\']', re.IGNORECASE)
 SKIP_PREFIXES = ("mailto:", "tel:", "javascript:", "data:", "#")
 EXTERNAL_RE = re.compile(r"^(https?:)?//", re.IGNORECASE)
 
