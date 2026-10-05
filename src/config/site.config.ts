@@ -37,9 +37,9 @@ export const siteConfig = {
       // 反嵌套探针伪装开关说明：伪装代码硬编码在 public/ads/banner-*.html 的 <head>（SOP 六.2）。
       // 撤回方式 = 还原对应静态文件（git revert 单文件，约 1 分钟），文件头有回滚命令注释。
       banners: {
-        "banner-300x250": { key: "", enabled: true }, // TODO: Adsterra 后台建 300x250 Zone 后填入
-        "banner-728x90": { key: "", enabled: true }, // TODO: Adsterra 后台建 728x90 Zone 后填入
-        "banner-320x50": { key: "", enabled: true }, // TODO: Adsterra 后台建 320x50 Zone 后填入
+        "banner-300x250": { key: "dfd0f4f10063376108f08d6409ab0450", enabled: true },
+        "banner-728x90": { key: "0a8d21e288f7ecfcbddfa01482f7243b", enabled: true },
+        "banner-320x50": { key: "e01788d25d901b9a6a27c189b9470b5e", enabled: true },
       },
     },
   },

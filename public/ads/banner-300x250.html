@@ -32,23 +32,17 @@
   </style>
 </head>
 <body>
-  <!--
-    ⚠️ Adsterra Zone Key 尚未申请。老大在后台建好 300x250 Zone 拿到 key 后：
-       1) 把下面注释块解开，把后台『Get Code』给出的整段代码（atOptions + invoke.js 两行）原样贴进来
-       2) 同步把 key 填进 src/config/site.config.ts 的 adsterra.banners["banner-300x250"].key
-          （两处必须一致，否则组件层校验不过、槽位不渲染）
-    ═══════════════════════════════════════════════════════════════════
-    <script type="text/javascript">
-      atOptions = {
-        'key': '<从后台 Get Code 整段复制，勿手填>',
-        'format': 'iframe',
-        'height': 250,
-        'width': 300,
-        'params': {}
-      };
-    </script>
-    <script type="text/javascript" src="https://www.highperformanceformat.com/<ZONE_KEY>/invoke.js"></script>
-    ═══════════════════════════════════════════════════════════════════
-  -->
+  <!-- Zone: hellraiserrevivalwiki.wiki · 300x250 · key=dfd0f4f10063376108f08d6409ab0450
+       同步位置：src/config/site.config.ts → ads.adsterra.banners["banner-300x250"].key（两处必须一致） -->
+  <script type="text/javascript">
+    atOptions = {
+      'key': 'dfd0f4f10063376108f08d6409ab0450',
+      'format': 'iframe',
+      'height': 250,
+      'width': 300,
+      'params': {}
+    };
+  </script>
+  <script type="text/javascript" src="https://www.highrevenueformat.com/dfd0f4f10063376108f08d6409ab0450/invoke.js"></script>
 </body>
 </html>
