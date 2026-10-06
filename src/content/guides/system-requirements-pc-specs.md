@@ -60,3 +60,5 @@ Before launch day, pressure-test your setup with the [demo walkthrough](/guide/d
 ## Controller & Haptic Feedback Support
 
 The PC version features native DualShock and DualSense controller integration, complete with adaptive trigger feedback when solving the mechanical gears of the Genesis Configuration puzzle box.
+
+Deciding whether the Deluxe tier is worth the extra storage footprint? The [Collector's Edition contents guide](/guide/collectors-edition-contents-guide/) breaks down every physical and digital bonus before you commit.

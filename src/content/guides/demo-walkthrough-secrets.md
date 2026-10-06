@@ -1,5 +1,5 @@
 ---
-title: Hellraiser Revival Demo Walkthrough & All Secrets
+title: "Hellraiser Revival Demo Walkthrough & Secret Codes"
 description: 'Complete walkthrough for the Hellraiser: Revival Steam demo. Discover
   all hidden rooms, safe codes, puzzle solutions, and church escape steps.'
 summary: 'The Hellraiser: Revival demo covers Aidan''s tense infiltration through
@@ -66,4 +66,4 @@ Upon retrieving the altar key, three Scarlet Church acolytes will breach the sta
 * **Tactics**: Use the shotgun on the lead charging fanatic to stagger him instantly.
 * **Conserving Durability**: Switch back to the tire iron for unarmored followers to save precious ammunition for the full release.
 
-Your demo choices ripple into the full game: the [Sunny endings guide](/guide/how-to-save-sunny-endings-guide/) maps every branch that carries over on October 8.
+Your demo choices ripple into the full game: the [Sunny endings guide](/guide/how-to-save-sunny-endings-guide/) maps every branch that carries over on October 8. Reward entitlements carry over too — the [October 2026 codes ledger](/codes/october-2026/) tracks every bonus and Deluxe perk, and if you plan to suffer alone, yes: [Hellraiser Revival is strictly single-player](/guide/is-it-multiplayer-coop-faq/), with no co-op or PvP of any kind.
