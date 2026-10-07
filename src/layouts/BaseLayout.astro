@@ -54,6 +54,8 @@ interface Props {
   availableLocales?: string[];
   /** 页面级 JSON-LD 对象（Article/BreadcrumbList/FAQPage…），BaseLayout 只管全站级 */
   jsonLd?: Record<string, unknown>[];
+  /** 当 true 时输出 noindex,follow（用于 404 等不应被搜索引擎收录的页面） */
+  noIndex?: boolean;
 }
 
 const defaultDesc = `The definitive evidence-led encyclopedia for Hellraiser: Revival: verified strategy guides, puzzle solutions, and PC specs.`;
@@ -65,6 +67,7 @@ const {
   lang = siteConfig.defaultLocale,
   availableLocales = [],
   jsonLd = [],
+  noIndex = false,
 } = Astro.props;
 
 const siteUrl = siteConfig.siteUrl;
@@ -94,7 +97,7 @@ const brandRest = brandWords.slice(1).join(' ') || 'WIKI';
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
-    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="robots" content={noIndex ? 'noindex, follow, max-image-preview:large' : 'index, follow, max-image-preview:large'} />
     <link rel="canonical" href={`${siteUrl}${canonical}`} />
 
     <!-- Favicon & Touch Icons (Google Search & Multi-device compliant) -->

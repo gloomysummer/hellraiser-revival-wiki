@@ -1,0 +1,138 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "Page Not Found (404)";
+const description = "The page you're looking for doesn't exist. Return to the Hellraiser Revival Wiki homepage or explore our verified guides.";
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonical="/404"
+  noIndex={true}
+>
+  <div class="container-404">
+    <div class="error-content">
+      <div class="error-code">404</div>
+      <h1>Page Not Found</h1>
+      <p class="error-message">
+        The page you're looking for doesn't exist or has been moved.
+      </p>
+      <div class="help-links">
+        <p class="help-intro">Here are some helpful links to get you back on track:</p>
+        <ul class="help-list">
+          <li><a href="/">← Back to Homepage</a></li>
+          <li><a href="/guide/">Browse All Guides</a></li>
+          <li><a href="/guide/weapons-tier-list-durability/">Weapons Tier List & Durability</a></li>
+          <li><a href="/guide/bruno-keller-boss-guide/">Bruno Keller Boss Guide</a></li>
+          <li><a href="/codes/">Codes & Rewards Ledger</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .container-404 {
+      min-height: calc(100vh - 400px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+      background: var(--bg);
+    }
+
+    .error-content {
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .error-code {
+      font-family: var(--font-mono);
+      font-size: clamp(5rem, 15vw, 8rem);
+      font-weight: 800;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 30px rgba(212, 163, 115, 0.3);
+    }
+
+    h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      font-weight: 700;
+      color: var(--text);
+      margin: 0 0 1.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .error-message {
+      font-size: 1.1rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin: 0 0 2.5rem;
+    }
+
+    .help-links {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: left;
+    }
+
+    .help-intro {
+      font-size: 0.95rem;
+      color: var(--text);
+      margin: 0 0 1.2rem;
+      font-weight: 600;
+    }
+
+    .help-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .help-list li {
+      margin: 0;
+    }
+
+    .help-list a {
+      display: block;
+      padding: 0.875rem 1.25rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    .help-list a:hover {
+      border-color: var(--accent);
+      background: var(--surface);
+      transform: translateX(4px);
+    }
+
+    .help-list a::after {
+      content: ' →';
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    @media (max-width: 640px) {
+      .container-404 {
+        padding: 2rem 1rem;
+      }
+
+      .help-links {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</BaseLayout>
