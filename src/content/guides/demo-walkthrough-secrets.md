@@ -64,6 +64,6 @@ The box you handle in the demo is the real deal — the [Genesis Configuration p
 
 Upon retrieving the altar key, three Scarlet Church acolytes will breach the stained glass doors:
 * **Tactics**: Use the shotgun on the lead charging fanatic to stagger him instantly.
-* **Conserving Durability**: Switch back to the tire iron for unarmored followers to save precious ammunition for the full release.
+* **Conserving Durability**: Switch back to the tire iron for unarmored followers to save precious ammunition for the full game.
 
 Your demo choices ripple into the full game: the [Sunny endings guide](/guide/how-to-save-sunny-endings-guide/) maps every branch that carries over on October 8. Reward entitlements carry over too — the [October 2026 codes ledger](/codes/october-2026/) tracks every bonus and Deluxe perk, and if you plan to suffer alone, yes: [Hellraiser Revival is strictly single-player](/guide/is-it-multiplayer-coop-faq/), with no co-op or PvP of any kind.

@@ -1,6 +1,6 @@
 ---
 title: "Hellraiser Revival Release Time & Unlock Times"
-description: 'Hellraiser: Revival unlocks on October 8, 2026. See the confirmed release date, regional unlock times by timezone, and what to check before launch.'
+description: 'Hellraiser: Revival is out now — released October 8, 2026. See the confirmed release date, regional unlock times by timezone, and live post-launch checks.'
 summary: 'Clive Barker''s Hellraiser: Revival launches on October 8, 2026 for PC via Steam, PlayStation 5 and Xbox Series X|S, with a Nintendo Switch 2 version dated the same day. The PlayStation Store listing indicates an ET morning unlock; UK and Central Europe times follow in the afternoon. Steam has published no separate hour.'
 pubDate: 2026-10-07
 updated: '2026-10-07'
@@ -23,7 +23,7 @@ evidence:
   level: Community-reported
   sourceUrl: https://game8.co/articles/release-dates/clive-barkers-hellraiser-revival-release-date-and-time
   exactQuote: expected to launch on October 8, 2026, at 9:00 A.M. ET / 6:00 A.M. PT
-- claim: A free playable demo remains available on Steam ahead of the full release.
+- claim: A free playable demo is available on Steam alongside the full release.
   level: Community-reported
   sourceUrl: https://www.game-news.co.uk/news/UK/129306/Clive-Barker-s-Hellraiser-Revival-unveils-brutal-gameplay-trailer-ahead-of-October-release
   exactQuote: A free playable demo is currently available on Steam
@@ -62,7 +62,7 @@ Read the table as a **PlayStation Store** schedule, not a universal one — the 
 Saber Interactive has not published a separate Steam unlock hour, and Steam does not list one on the store page. Two practical consequences:
 
 1. **Do not repost the ET time as a Steam time.** If your region's Steam counter says something different, the counter is the authority for your account.
-2. **The Steam page is the live source.** A countdown appears there once the store flips the game from pre-release to released — that change is the unlock signal, not a third-party table.
+2. **The Steam page is the live source.** The store flipped the game from pre-release to released at unlock — that store change was the unlock signal, not a third-party table.
 
 ## What Is Still Unconfirmed
 
@@ -73,7 +73,7 @@ Consistent with this wiki's evidence policy, these items are **not** asserted an
 * Trophy and achievement lists — these appear at unlock, not before.
 * Any unlock hour that contradicts the storefront that sold you the license.
 
-## How to Prepare Before the Labyrinth Opens
+## Before You Enter the Labyrinth
 
 * **Still on the demo?** The free Steam demo runs on the same build branch as the full release — the [demo walkthrough and secrets guide](/guide/demo-walkthrough-secrets/) covers every code, safe combination and the first Genesis Configuration alignment.
 * **Checking you can run it:** the [PC system requirements guide](/guide/system-requirements-pc-specs/) lists the 80 GB SSD footprint and the GPU floor before you commit the disk space.
