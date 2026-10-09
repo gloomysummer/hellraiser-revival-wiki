@@ -122,7 +122,7 @@ Because locks 1 through 5 appear in early narrative chapters (Red Hallway throug
 If you are exploring the public Steam demo version rather than the full commercial release, keypad progression differs:
 
 * **Vestry Safe Combination**: The church vestry safe hidden behind the Saint Sebastian painting uses code **`0719`**.
-* **Demo Cabinet / Locker Queries**: Players frequently search for demo cabinet combinations; however, verified testing confirms **no additional functional keypad lockers exist in the demo slice**. All other padlocked security gates in the demo require physical keys or the Heavy Tire Iron.
+* **Demo Cabinet / Locker Queries**: Players frequently search for demo cabinet combinations. We have **not found a verified working keypad code in the demo beyond the vestry safe above**, and the demo's other padlocked gates open with physical keys or the Heavy Tire Iron. If you hit a demo keypad that takes a four-digit code we have missed, send it through our contact page and we will verify and add it.
 * For the full walkthrough of the prologue chapter, consult our [Hellraiser Revival Demo Walkthrough & Secret Codes](/guide/demo-walkthrough-secrets/).
 
 ## Frequently Asked Questions
