@@ -6,6 +6,7 @@
 // ============================================================
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { siteConfig } from '../../../config/site.config';
+import AdSlot from '../../../components/AdSlot.astro';
 
 const pageTitle = "Genesis Configuration Puzzle Simulator";
 const pageDesc = "Interactive simulation for the Genesis Configuration puzzle box in Hellraiser: Revival. Practice seal alignments, pin compression, and ability calculations.";
@@ -142,6 +143,22 @@ const jsonLd = [
             <li><strong>Official Guide:</strong> Read the full <a href="/guide/genesis-configuration-puzzle-guide/">Genesis Configuration Guide →</a></li>
           </ul>
         </div>
+      </div>
+    </div>
+
+    {/* ── 广告位 1/3：300x250（2026-10-09 P0 补齐零位页，工具交互区之后）──
+        工具页"一次操作 = 一次曝光"效率低，故位放在交互区下方与页尾，随滚动触发。 */}
+    <div class="ad-bottom-row">
+      <AdSlot zone="banner-300x250" label="Sponsored Field Intel" />
+    </div>
+
+    {/* ── 广告位 2/3 与 3/3：页尾横幅（桌面 728x90 / 移动 320x50，异 Key）── */}
+    <div class="ad-bottom-row">
+      <div class="ad-desktop-only">
+        <AdSlot zone="banner-728x90" label="Sponsored Archive Intel" />
+      </div>
+      <div class="ad-mobile-only">
+        <AdSlot zone="banner-320x50" label="Sponsored Archive Intel" />
       </div>
     </div>
   </div>

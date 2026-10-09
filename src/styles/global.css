@@ -2598,3 +2598,115 @@ body {
   .ad-desktop-only { display: block; }
   .ad-mobile-only { display: none; }
 }
+
+/* ── 广告布局 P0/P1/P2（2026-10-09，审计后实施）────────────────────────── */
+/* 侧栏 160x300 位（P1）：跨页同一位置，侧栏 <1200px 隐藏时自然不加载 */
+.sidebar-ad-slot {
+  margin: 0 0 22px;
+  display: flex;
+  justify-content: center;
+}
+/* 同频道上下篇连读导航（P2：提升 PV/UV） */
+.series-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 28px 0 8px;
+}
+.series-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel-card);
+  text-decoration: none;
+  transition: border-color .18s ease, background .18s ease;
+}
+.series-card:hover {
+  border-color: var(--accent);
+  background: var(--panel-hover);
+}
+.series-dir {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.series-title {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.35;
+}
+.series-next { text-align: right; }
+.series-empty {
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  background: transparent;
+  border-style: dashed;
+}
+@media (max-width: 640px) {
+  .series-nav { grid-template-columns: 1fr; }
+  .series-next { text-align: left; }
+}
+
+/* ── 广告布局 P0/P1/P2（2026-10-09，审计后实施）────────────────────────── */
+/* 侧栏 160x300 位（P1）：跨页同一位置，侧栏 <1200px 隐藏时自然不加载 */
+.sidebar-ad-slot {
+  margin: 0 0 22px;
+  display: flex;
+  justify-content: center;
+}
+/* 同频道上下篇连读导航（P2：提升 PV/UV） */
+.series-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 28px 0 8px;
+}
+.series-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel-card);
+  text-decoration: none;
+  transition: border-color .18s ease, background .18s ease;
+}
+.series-card:hover {
+  border-color: var(--accent);
+  background: var(--panel-hover);
+}
+.series-dir {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.series-title {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.35;
+}
+.series-next { text-align: right; }
+.series-empty {
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  background: transparent;
+  border-style: dashed;
+}
+@media (max-width: 640px) {
+  .series-nav { grid-template-columns: 1fr; }
+  .series-next { text-align: left; }
+}

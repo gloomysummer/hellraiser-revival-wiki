@@ -267,6 +267,13 @@ const firstGuideSlug = "demo-walkthrough-secrets";
       </div>
     </section>
 
+    {/* ── 首页广告位 1/3：300x250（2026-10-09 P0 补齐）──
+        放在官方预告片之后 = 第二屏位置，与下方 silos 之后的 728x90/320x50 错开屏，
+        避免两三个位挤在同一屏（技能红线：错开屏，不堆叠）。 */}
+    <div class="ad-bottom-row">
+      <AdSlot zone="banner-300x250" label="Sponsored Field Intel" />
+    </div>
+
     <!-- Section: Explore Wiki Silos (3-Col Grid: 铺满居中 1180 容器，全部 10 篇 guide 矩阵) -->
     <section id="silos" class="wiki-silos-section" style="margin-top: 56px;">
       <div class="section-header">
@@ -299,11 +306,15 @@ const firstGuideSlug = "demo-walkthrough-secrets";
       </div>
     </section>
 
-    {/* ── 首页唯一广告位：728x90 ──
-        放在 silos 导航区之后（非首屏上方），新站起步期只挂 1 位，避免低质内容判定。
-        与文章页的 300x250 不同尺寸/Key，无去重冲突。 */}
+    {/* ── 首页广告位 2/3 与 3/3：silos 之后的横幅（桌面 728x90 / 移动 320x50，异 Key）──
+        728x90 宽 728px 在 <990px 视口会横向溢出，故与 320x50 按断点互斥显示。 */}
     <div class="ad-bottom-row">
-      <AdSlot zone="banner-728x90" label="Sponsored Field Intel" />
+      <div class="ad-desktop-only">
+        <AdSlot zone="banner-728x90" label="Sponsored Field Intel" />
+      </div>
+      <div class="ad-mobile-only">
+        <AdSlot zone="banner-320x50" label="Sponsored Field Intel" />
+      </div>
     </div>
 
     <!-- Category 5: Promo Codes & Rewards Ledger -->

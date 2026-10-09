@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { siteConfig } from "../../config/site.config";
+import AdSlot from "../../components/AdSlot.astro";
 
 const codes = await getCollection("codes", ({ data }) => !data.draft);
 
@@ -41,6 +42,11 @@ const jsonLd = [
       <p>Direct tracking of verified developer gifts, event drops, and redemption features. We actively audit community channels to filter out fake generators and expired codes.</p>
     </div>
 
+    {/* ── 广告位 1/3：300x250（2026-10-09 P0 补齐零位页，第二屏）── */}
+    <div class="ad-bottom-row">
+      <AdSlot zone="banner-300x250" label="Sponsored Field Intel" />
+    </div>
+
     <div class="cards-grid">
       {codes.map((c) => (
         <article class="guide-card" style="grid-column: 1 / -1; max-width: 680px;">
@@ -57,6 +63,16 @@ const jsonLd = [
       {codes.length === 0 && (
         <p style="color: var(--muted);">No active promo codes at this time.</p>
       )}
+    </div>
+
+    {/* ── 广告位 2/3 与 3/3：页尾横幅（桌面 728x90 / 移动 320x50，异 Key）── */}
+    <div class="ad-bottom-row">
+      <div class="ad-desktop-only">
+        <AdSlot zone="banner-728x90" label="Sponsored Archive Intel" />
+      </div>
+      <div class="ad-mobile-only">
+        <AdSlot zone="banner-320x50" label="Sponsored Archive Intel" />
+      </div>
     </div>
   </div>
 </BaseLayout>

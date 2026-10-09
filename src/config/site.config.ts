@@ -40,6 +40,9 @@ export const siteConfig = {
         "banner-300x250": { key: "dfd0f4f10063376108f08d6409ab0450", enabled: true },
         "banner-728x90": { key: "0a8d21e288f7ecfcbddfa01482f7243b", enabled: true },
         "banner-320x50": { key: "e01788d25d901b9a6a27c189b9470b5e", enabled: true },
+        // 160x300：2026-10-09 接入（P1）。后台 zone id 31566561。跨页铺同一位置（文章页右栏顶部），
+        // 攒够 100 展示再判 CPM；同页只放一个（老大 2026-10-07 裁决）。
+        "banner-160x300": { key: "f960016e3cd9562a30cb41c95078510f", enabled: true },
       },
     },
   },
