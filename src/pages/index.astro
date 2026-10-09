@@ -24,7 +24,7 @@ const bossGuides = guides.filter((g) =>
   ['bruno-keller-boss-guide', 'all-cenobites-weaknesses-guide'].includes(g.id)
 );
 const systemGuides = guides.filter((g) =>
-  ['genesis-configuration-puzzle-guide', 'weapons-tier-list-durability'].includes(g.id)
+  ['genesis-configuration-puzzle-guide', 'weapons-tier-list-durability', 'all-keypad-codes-safes-lockers'].includes(g.id)
 );
 const referenceGuides = guides.filter((g) =>
   [
@@ -38,6 +38,7 @@ const referenceGuides = guides.filter((g) =>
 );
 
 const cardImageMap: Record<string, string> = {
+  "all-keypad-codes-safes-lockers": "/images/cards/ss_card_2.webp",
   "pc-crash-black-screen-fixes": "/images/cards/ss_card_0.webp",
   "system-requirements-pc-specs": "/images/cards/ss_card_0.webp",
   "is-it-multiplayer-coop-faq": "/images/cards/ss_card_1.webp",
@@ -370,7 +371,7 @@ const firstGuideSlug = "demo-walkthrough-secrets";
         </div>
         <div class="faq-card">
           <div class="faq-question">What is the vestry safe code in the demo?</div>
-          <p class="faq-answer">The safe code hidden behind the painting in the church vestry is 0-7-1-9, which yields shotgun ammunition and an emergency syringe.</p>
+          <p class="faq-answer">The safe code hidden behind the painting in the church vestry is 0-7-1-9, which yields shotgun ammunition and an emergency syringe. For all 10 full campaign door, safe, and locker codes, see our <a href="/guide/all-keypad-codes-safes-lockers/">keypad and locker codes guide</a>.</p>
         </div>
       </div>
     </section>

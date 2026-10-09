@@ -21,6 +21,8 @@ This ledger tracks all verified developer promotional gifts, community redemptio
 
 That matters for how you search: any site showing a "code list" for this game with working strings is either recycling another game's codes or generating them. The launch-day unlock schedule itself is covered in the [release time and unlock times guide](/guide/release-time-unlock-times-guide/).
 
+If you are searching for **in-game puzzle combinations, locker codes, and safe codes** to open locked containers across the campaign, refer directly to our full guide: [Hellraiser Revival All Codes: Safes & Lockers](/guide/all-keypad-codes-safes-lockers/).
+
 ## How Deluxe & Pre-Order Rewards Unlock
 
 1. **Install and launch the game**: the release is live on PC via Steam, PlayStation 5, Xbox Series X|S and Nintendo Switch 2 — the entitlement shows up as soon as your account holds the license.
