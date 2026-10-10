@@ -2204,7 +2204,8 @@ article code {
 
 /* 阅读排版黄金参数：正文列 ~740px/17px（≈79ch），右栏不变 */
 .article-main {
-  max-width: 740px;
+  /* min(...) 防止正文宽于其网格列（2026-10-10：中等视口列宽 660 < 740 会残留溢出） */
+  max-width: min(740px, 100%);
   font-size: 1.0625rem;
 }
 .article-main table,
@@ -2307,8 +2308,11 @@ article code {
   line-height: 1.6;
 }
 
-/* 宽屏几何对齐 nivalis（1920 实测：右栏贴视口右缘 24px、正文 ~780、中间大 gutter） */
-@media (min-width: 1200px) {
+/* 宽屏几何对齐 nivalis（1920 实测：右栏贴视口右缘 24px、正文 ~780、中间大 gutter）
+   ⚠️ 2026-10-10 修正：门槛原为 1200px，但该结构需容器 ≥1716px（1080+300+260+间距76）
+   —— 1200~1719 视口下第一列被压到 454px，而正文 max-width 740/780 溢出压住侧栏
+   （实测 29 个文字元素被覆盖）。门槛提到 1720px，中等视口回落上一档三列。 */
+@media (min-width: 1720px) {
   .container.article-page {
     max-width: none;
     padding-left: 0;
