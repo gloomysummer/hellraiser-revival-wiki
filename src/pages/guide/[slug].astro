@@ -241,12 +241,12 @@ const jsonLd = [
       <!-- 桌面端混合智能吸顶侧边栏 (Hybrid Sticky Sidebar V2) -->
       {(tocHeadings.length > 0 || seriesGuides.length > 0 || relatedGuides.length > 0 || hasCodesDoc || data.evidence.length > 0) && (
         <aside class="article-toc-sidebar" aria-label="Guide Navigation and Entity Ledger">
-          <!-- ── 广告位：160x300 侧栏主打位（2026-10-09 P1 接入）──
-               技能"160x300 主力位策略"：跨页面在**同一位置**重复（右栏顶部），
-               让每个位攒够样本再判 CPM；同页只放一个（老大 2026-10-07 裁决）。
-               侧栏 <1200px 隐藏，故移动端不会加载此位。 -->
+          <!-- ── 广告位 1：160x600 侧栏顶部（2026-10-10 接入，站长指令）──
+               位置理由：侧栏是"固定容器 + 内容超屏时内部滚动"，只有排在**最上**的
+               广告才常驻可见（曝光最大化）。160x300 因此下移至目录之后。
+               zone id 31566560；侧栏 <980px 隐藏，故移动端不加载此位。 -->
           <div class="sidebar-ad-slot">
-            <AdSlot zone="banner-160x300" label="Sponsored" />
+            <AdSlot zone="banner-160x600" label="Sponsored" />
           </div>
 
           <!-- 模块 1: 正文目录大纲 (On This Page) -->
@@ -265,6 +265,13 @@ const jsonLd = [
               </ul>
             </div>
           )}
+
+          <!-- ── 广告位 2：160x300 侧栏次位（2026-10-09 接入，2026-10-10 下移至目录之后）──
+               技能"160x300 主力位策略"：跨页面在**同一位置**重复，攒样本判 CPM；
+               同页只放一个 160x300（老大 2026-10-07 裁决）。 -->
+          <div class="sidebar-ad-slot">
+            <AdSlot zone="banner-160x300" label="Sponsored" />
+          </div>
 
           <!-- 模块 3: 跨主题网状延展推荐 (Related Dossiers) -->
           {relatedGuides.filter((rel) => !seriesGuides.some((sg) => sg.id === rel.id)).length > 0 && (
