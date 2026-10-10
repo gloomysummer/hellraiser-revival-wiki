@@ -8,7 +8,7 @@ summary: 'The Genesis Configuration serves as both an extradimensional puzzle bo
   chain summoning against hostile cultists while demanding careful sanity meter management
   throughout exploration.'
 pubDate: 2026-10-02
-updated: '2026-10-02'
+updated: '2026-10-09'
 category: Mechanics
 tags:
 - genesis-configuration
@@ -17,12 +17,14 @@ tags:
 - powers
 - puzzles
 evidence:
-- claim: Gameplay trailers and official store descriptions confirm Genesis Configuration
-    mechanics and telekinesis powers.
+- claim: Gameplay trailers and official store descriptions confirm Genesis Configuration mechanics and telekinesis powers.
   level: Official
   sourceUrl: https://store.steampowered.com/app/1551980
-  exactQuote: Wield the powers of the Genesis Configuration puzzle box to survive
-    your bargain with the infamous Pinhead.
+  exactQuote: Wield the powers of the Genesis Configuration puzzle box to survive your bargain with the infamous Pinhead.
+- claim: Genesis Configuration Chapter 1 rotational alignment and Scarlet Church structural manipulation steps verified by community reports.
+  level: Community-reported
+  sourceUrl: https://steamcommunity.com/app/1551980/discussions/0/484427498993214591
+  exactQuote: Genesis Configuration won't align
 guide_video:
   id: "-6qr8F_yGF8"
   title: "Clive Barker's Hellraiser: Revival - Official Gameplay Overview Trailer"
@@ -39,15 +41,16 @@ In *Clive Barker's Hellraiser: Revival*, the iconic puzzle box motif receives a 
 
 The Genesis Configuration is held in first-person view, allowing players to rotate geometric plates, align intricate brass engravings, and trigger occult mechanisms.
 
-### Core Puzzle Phases
+### Core Puzzle Phases & Alignment Steps
 
-1. **Alignment of the Etched Seals**: Rotate the outer ring until the brass serpentine sigils line up with the central ivory core. Listen for auditory clicks indicating correct alignment.
-2. **Spring Mechanism Compression**: Depress the opposing circular pins simultaneously to expose the internal brass lattice.
-3. **Harmonic Resonance**: Use tactile controller feedback (DualSense haptic triggers) or visual shimmering effects to stop plate rotation at peak harmonic frequency.
+1. **Alignment of the Etched Seals (Chapter 1 Intro)**: Rotate the outer brass ring clockwise until the serpentine engravings line up directly with the central ivory sigils. Make sure the inner disc notches match the outer ring bevel, and listen for auditory clicks indicating the alignment is locked.
+2. **Spring Mechanism Compression**: Depress the opposing circular brass pins simultaneously to unlock the inner lattice cage and allow lateral plate expansion.
+3. **Harmonic Resonance Tuning**: Use subtle audio hum shifts and visual shimmering cues along the box's edges to stop rotation at peak harmonic frequency.
+4. **Phase 2 Mutating Geometry & Scarlet Church Rear Clasp**: Upon entering the deeper Scarlet Church inner sanctum, the box undergoes geometric mutation where front rotation alone will not engage the breach. Invert the box examination view to locate the concealed ivory rear latch, depress the central pin to release the lock plate, and rotate the secondary outer ring clockwise to complete the transformation.
 
 Want to practice the sequences without burning in-game sanity? The [Genesis Configuration Puzzle Simulator](/tools/puzzle-simulator/) recreates the box's seal-alignment steps in your browser.
 
-Want a low-stakes rehearsal first? The [demo walkthrough](/guide/demo-walkthrough-secrets/) covers the same box mechanics in the free Steam build.
+Want a low-stakes rehearsal first? The [demo walkthrough](/guide/demo-walkthrough-secrets/) covers the foundational box mechanics in the free Steam build.
 
 ## Unlockable Supernatural Abilities
 

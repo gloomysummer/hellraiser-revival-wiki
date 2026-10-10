@@ -8,7 +8,7 @@ summary: 'Combat in Hellraiser: Revival demands tactical management of weapon du
   and the Sawed-off Shotgun for emergency crowd-control stagger during intense ambush
   encounters.'
 pubDate: 2026-10-02
-updated: '2026-10-02'
+updated: '2026-10-09'
 category: Equipment
 tags:
 - weapons
@@ -49,8 +49,14 @@ Every melee hit directly degrades your weapon's structural integrity:
 2. **Yellow Condition (49% - 15%)**: 20% reduced damage; weapons emit rattling metallic audio upon impact.
 3. **Red Condition (< 15%)**: Critical structural fracture. The next heavy attack has a 50% probability of shattering the weapon completely into useless scrap iron.
 
-### Workbench Maintenance & Sharpening Kits
-Scattered throughout the Scarlet Church compound are maintenance workbenches. Players can consume **Scrap Metal** and **Grindstone Oil** to restore weapon condition back to pristine status before challenging boss territories.
+### Workbench Maintenance & Field Durability Preservation
+
+Scattered throughout the Scarlet Church compound are maintenance workbenches and temporary salvage stations. Players can consume **Scrap Metal** and **Grindstone Oil** to restore weapon condition back to pristine status before challenging boss territories.
+
+To avoid running completely empty-handed during early exploration:
+* **Reserve Heavy Blunt Weapons for Armored Foes**: Do not burn Crowbar or Tire Iron durability on wooden crates or fragile environment barricades; use your bare hands or kick mechanics where prompt icons appear.
+* **Avoid Striking Stone & Metal Surfaces**: Missing an enemy and striking masonry or steel doors inflicts double durability degradation. Keep your swings centered when fighting inside narrow church hallways.
+* **Stagger with Genesis Repulsion**: When facing swarming Cultist Runners, lead with **Kinetic Repulsion** or dimensional shockwaves to stagger enemies without expending weapon durability hits.
 
 ## Armor Penetration vs. Flesh Damage Rule
 
