@@ -1,26 +1,22 @@
 ---
-title: How to Save Sunny & All Endings in Hellraiser
-description: 'Learn how to rescue Sunny and unlock all secret endings in Hellraiser:
-  Revival. Choice branches, Pinhead bargains, and Labyrinth escape criteria.'
-summary: 'Rescuing Sunny in Clive Barker''s Hellraiser: Revival depends strictly on
-  keeping Aidan''s corruption meter below thirty percent and deciding whether to surrender
-  the Genesis Configuration to Pinhead. Key narrative endings range from Eternal Damnation
-  to Cenobite Ascension and the harrowing True Escape.'
+title: "Hellraiser Revival All Endings & How to Save Sunny"
+description: "Complete Hellraiser: Revival all endings guide. Compare every ending condition, Corruption meter choice, Scarlet Church bargain, and how to save Sunny."
+summary: "Rescuing Sunny in Clive Barker's Hellraiser: Revival depends strictly on keeping Aidan's corruption meter low and deciding how to wield the Genesis Configuration during the final confrontation with Pinhead. Key campaign endings range from Mortal Salvation and Cenobite Ascension to Eternal Damnation inside the Labyrinth."
 pubDate: 2026-10-02
-updated: '2026-10-02'
+updated: '2026-10-09'
 category: Story
 tags:
 - sunny
 - endings
+- all-endings
 - pinhead
 - story-choices
 - lore
 evidence:
-- claim: Narrative preview details Aidan Lynch's core motivation to retrieve Sunny
-    from the Cenobites' extradimensional realm.
+- claim: Official launch announcement confirms Aidan descends into the darkness and wields the cursed power of the Genesis Configuration to get his beloved back from Hell.
   level: Official
   sourceUrl: https://store.steampowered.com/app/1551980
-  exactQuote: survive your bargain with the infamous Pinhead
+  exactQuote: Your beloved lies beyond its threshold. To get her back, you must descend into the darkness and wield the cursed power of the Genesis Configuration.
 guide_video:
   id: "R88QdlIlg-E"
   title: "Clive Barker's Hellraiser: Revival - Official Red Band Announcement Trailer"
@@ -29,34 +25,43 @@ guide_video:
   description: "Official Red Band story trailer introducing Aidan Lynch's descent into darkness to save Sunny and confronting the Order of the Gash."
 ---
 
-## How to Save Sunny: Story Branches & All Endings Guide
+## Hellraiser: Revival All Endings & How to Save Sunny
 
-The driving narrative core of *Clive Barker's Hellraiser: Revival* is biker protagonist **Aidan Lynch** seeking to rescue his girlfriend, **Sunny**. In the opening prologue, Aidan inadvertently solves the Genesis Configuration puzzle box, prompting Pinhead to offer an insidious pact that Sunny accepts—pulling her into the depths of Hell.
+The driving narrative core of *Clive Barker's Hellraiser: Revival* follows protagonist **Aidan** descending into the darkness after opening the **Genesis Configuration** puzzle box. With his beloved **Sunny** held beyond the threshold of Hell, every bargain struck with **Marlowe's Scarlet Church** and the **Cenobites** shapes the campaign's final resolution.
+
+## Quick Summary: All Endings Comparison Table
+
+| Ending Name | Target Outcome | Corruption Threshold | Scarlet Church & Boss Choices | Final Configuration Action |
+| :--- | :--- | :--- | :--- | :--- |
+| **Ending 1: Mortal Salvation** | **True Escape (Save Sunny)** | Keep Corruption low | Reject cultist blood offerings | Solve the inverted Genesis Configuration |
+| **Ending 2: The Flesh Transfigured** | **Cenobite Ascension** | High Corruption accumulated | Embrace Suffering harvesting & altar pacts | Accept Pinhead's gift of transfiguration |
+| **Ending 3: The Broken Covenant** | **Eternal Damnation (Bad Ending)** | Any Corruption level | Surrender the box or fail final sequence | Attempt to flee without sealing the threshold |
 
 ## Can Sunny Be Saved?
 
-**Yes, Sunny can be retrieved, but her survival and physical form depend strictly on your choices and Corruption Meter management throughout the campaign.**
+**Yes, Sunny can be retrieved, but her survival and physical form depend strictly on your choices and Corruption management throughout the campaign.**
 
-In true Clive Barker fashion, salvation in the Cenobite dimension rarely resembles conventional happy endings. Decisions made at altar chambers dictate whether Sunny returns as a human, transforms into a disciple of Leviathan, or remains chained forever.
+In true Clive Barker fashion, salvation in the Cenobite dimension rarely resembles conventional happy endings. Decisions made at Scarlet Church altars and during boss confrontations dictate whether Sunny returns to the mortal world, transforms into a disciple of the Labyrinth, or remains chained forever.
 
-## Core Factors Dictating the Ending
+## Core Mechanics Dictating Your Ending
 
-1. **Aidan's Corruption Index**: Overusing the Genesis Configuration's supernatural powers accumulates permanent Corruption. High corruption distorts Aidan's perception, preventing clear discernment during final dialogue confrontations.
-2. **The Leviathan Offering**: Sacrificing human cultist leaders (such as Bruno Keller) directly to the puzzle box grants immediate power but damns both Aidan and Sunny deeper into the realm.
-3. **The Final Pact with Pinhead**: Facing the Hell Priest in the heart of the Labyrinth forces a definitive moral resolution.
+1. **Aidan's Corruption & Suffering**: Wielding the supernatural powers of the [Genesis Configuration](/guide/genesis-configuration-puzzle-guide/) to hurl objects, scorch enemies with fire, or summon Hell Chains gathers **Suffering** and builds permanent Corruption. Relying on conventional melee tools and firearms from our [weapons tier list](/guide/weapons-tier-list-durability/) preserves Aidan's humanity for the True Escape route.
+2. **Bargaining with the Scarlet Church**: Throughout the campaign, Marlowe and his unholy priests offer temptations in exchange for blood sacrifices. Refusing their blasphemous gifts keeps the Mortal Salvation path open, whereas indulging their rituals accelerates your descent toward Cenobite Ascension.
+3. **Major Boss Resolutions**: How you handle key cult leaders—including the [Bruno Keller boss encounter](/guide/bruno-keller-boss-guide/)—and whether you thoroughly explore locked supply caches using [all 10 keypad and safe codes](/guide/all-keypad-codes-safes-lockers/) determines whether you have enough conventional ammunition to survive the final chapters without overusing cursed box powers.
 
-If you haven't cleared the prologue yet, the [demo walkthrough](/guide/demo-walkthrough-secrets/) covers all hidden rooms and safe codes first.
+If you haven't cleared the opening chapters yet, the [demo walkthrough](/guide/demo-walkthrough-secrets/) covers the early Scarlet Church infiltration and puzzle mechanics.
 
-## Overview of Game Endings
+## Detailed Breakdown of All Endings
 
 ### Ending 1: Mortal Salvation (The Pure Escape)
-* **Conditions**: Complete the campaign with Corruption below 25%, refuse all voluntary blood sacrifices, and solve the inverted Genesis configuration during the final encounter.
-* **Outcome**: Aidan severs Sunny's dimensional bindings, collapsing the portal behind them. Both escape back to the mortal world, though scarred permanently by what they witnessed.
+* **Unlock Conditions**: Complete the campaign while keeping Corruption restrained, refuse voluntary blood sacrifices at Scarlet Church altars, and solve the inverted Genesis Configuration sequence during the final confrontation.
+* **Narrative Outcome**: Aidan severs the dimensional chains binding Sunny and collapses the threshold behind them. Both escape back to the mortal world, though forever haunted by the price of opening the box.
 
 ### Ending 2: The Flesh Transfigured (Cenobite Ascension)
-* **Conditions**: Maximize Aidan's Corruption meter (above 80%) and accept Pinhead's philosophy of exquisite suffering.
-* **Outcome**: Sunny willingly joins the Order of the Gash alongside Aidan, shedding their mortal agony to take their place among the Cenobites as new heralds of the labyrinth.
+* **Unlock Conditions**: Heavily utilize the Genesis Configuration's dark abilities to harvest Suffering, embrace the Scarlet Church's temptations, and accept Pinhead's philosophy of pleasures beyond pain.
+* **Narrative Outcome**: Rather than fleeing the Labyrinth, Aidan and Sunny shed their mortal flesh to join the Cenobites, becoming new heralds of exquisite suffering.
 
 ### Ending 3: The Broken Covenant (Eternal Damnation)
-* **Conditions**: Surrender the puzzle box without solving its inverted sequence, attempting to flee without addressing the pact.
-* **Outcome**: Pinhead summons the hook chains, dragging Aidan and Sunny into separate wings of Leviathan's maze to suffer solitary torment for eternity.
+* **Unlock Conditions**: Surrender the Genesis Configuration or fail to complete the final seal alignment when confronting the Cenobites at the threshold.
+* **Narrative Outcome**: Hell does not surrender its treasures easily. Pinhead summons the hooked Hell Chains, dragging Aidan and Sunny into separate corridors of the Labyrinth for solitary torment.
+
