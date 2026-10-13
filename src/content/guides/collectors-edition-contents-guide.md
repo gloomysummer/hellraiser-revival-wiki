@@ -1,11 +1,7 @@
 ---
-title: Hellraiser Revival Collector's Edition Breakdown
-description: 'Full contents breakdown for the Hellraiser: Revival Collector''s Edition.
-  Includes puzzle box replica details, Bleeding Hearts novella, and pricing.'
-summary: 'The Hellraiser: Revival Collector''s Edition produced alongside Boss Team
-  Games includes a die-cast Genesis Configuration puzzle box replica, an exclusive
-  Bleeding Hearts novella co-authored by Clive Barker, steelbook packaging, and deluxe
-  digital DLC items including the retro 1980s VHS visual filter.'
+title: "Hellraiser Revival Collector's Edition: Full List"
+description: 'Hellraiser Revival Collector''s Edition has: SteelBook case, 120-page artbook, Clive Barker novella, puzzle box replica, and bonus DLC. Full contents breakdown.'
+summary: 'The Hellraiser: Revival Collector''s Edition produced alongside Boss Team Games includes a die-cast Genesis Configuration puzzle box replica, an exclusive Bleeding Hearts novella co-authored by Clive Barker, a 120-page hardcover artbook, steelbook packaging, and deluxe digital DLC items including the retro 1980s VHS visual filter and melee weapon skins.'
 pubDate: 2026-10-02
 updated: '2026-10-02'
 category: News
