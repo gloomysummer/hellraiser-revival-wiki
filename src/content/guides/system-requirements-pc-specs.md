@@ -1,11 +1,7 @@
 ---
-title: Hellraiser Revival PC System Requirements & Specs
-description: 'Official minimum and recommended PC system requirements for Clive Barker''s
-  Hellraiser: Revival. Check 80 GB SSD space, GPU specs, and RAM limits.'
-summary: 'Clive Barker''s Hellraiser: Revival requires a 64-bit Windows 10/11 operating
-  system, an Intel Core i5-8400 or AMD Ryzen 5 1500X processor, 8 GB of RAM, a GTX
-  1660 or RX Vega 64 graphics card, and 80 GB of SSD storage for minimum 1080p 30fps
-  gameplay.'
+title: "Hellraiser Revival PC Specs: 80GB SSD, GTX 1660 Min"
+description: 'Hellraiser Revival PC specs: 80GB SSD mandatory, GTX 1660 / RX Vega 64 minimum, 8GB RAM. Full minimum + recommended specs and performance tips for 1080p 60fps.'
+summary: 'Hellraiser: Revival requires a 64-bit Windows 10/11 OS, Intel Core i5-8400 or AMD Ryzen 5 1500X CPU, 8GB RAM, GTX 1660 or RX Vega 64 GPU, and 80GB SSD storage for minimum 1080p 30fps gameplay. Full minimum and recommended specs with performance optimization tips included.'
 pubDate: 2026-10-02
 updated: '2026-10-02'
 category: Technical
