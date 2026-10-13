@@ -1,11 +1,7 @@
 ---
-title: "Hellraiser Revival Demo Walkthrough & Secret Codes"
-description: 'Complete walkthrough for the Hellraiser: Revival Steam demo. Discover
-  all hidden rooms, safe codes, puzzle solutions, and church escape steps.'
-summary: 'The Hellraiser: Revival demo covers Aidan''s tense infiltration through
-  the rainy Scarlet Church perimeter. Essential walkthrough steps include locating
-  the heavy tire iron, unlocking the vestry safe combination with code 0719, solving
-  the initial altar box alignment, and surviving the sudden cult ambush.'
+title: "Hellraiser Demo: Full Walkthrough + Safe Code 0719"
+description: 'Complete Hellraiser demo walkthrough: unlock vestry safe code 0719, restore basement power fuse, align Genesis Configuration box, and survive chapel ambush.'
+summary: 'Complete step-by-step walkthrough for the Hellraiser: Revival Steam demo: retrieve the heavy tire iron, restore basement power with the 15A fuse, unlock the vestry safe using code 0719, solve the altar Genesis Configuration puzzle, and survive the three-cultist chapel ambush with our combat tactics.'
 pubDate: 2026-10-02
 updated: '2026-10-02'
 category: Walkthrough
