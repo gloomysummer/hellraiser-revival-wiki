@@ -1,11 +1,7 @@
 ---
-title: 'How to Beat Bruno Keller in Hellraiser: Revival'
-description: 'Defeat Bruno Keller in Clive Barker''s Hellraiser: Revival. Boss attack
-  patterns, scalpel avoidance, weak points, and Scarlet Church arena strategy.'
-summary: Bruno Keller, the sadistic surgeon known as the Picasso of the Scalpel, is
-  the primary human boss inside the Scarlet Church. Defeat him by baiting his wide
-  lunge attacks, utilizing heavy blunt weapons to shatter his armored apron, and staying
-  clear of hanging flesh traps.
+title: 'Bruno Keller Boss Guide: 2 Phases & Weak Points'
+description: 'Bruno Keller''s 2-phase fight in Scarlet Church: bait his scalpel lunge, shatter his armored apron with blunt weapons, and hit his 2 weak points. Full strategy.'
+summary: 'Bruno Keller, the sadistic surgeon known as the Picasso of the Scalpel, is the primary human boss inside the Scarlet Church. Defeat him in 2 phases: bait his wide lunge attacks, utilize heavy blunt weapons to shatter his armored apron, exploit his 2 weak points (nape and head), and stay clear of hanging flesh traps.'
 pubDate: 2026-10-02
 updated: '2026-10-09'
 category: Bosses
