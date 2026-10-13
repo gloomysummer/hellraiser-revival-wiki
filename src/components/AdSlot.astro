@@ -63,7 +63,7 @@ const uniqueId = `ad-${zone}-${Math.random().toString(36).substring(2, 9)}`;
     </div>
     <div
       class="ad-slot-container"
-      style={`min-height:${dim.h}px;min-width:${dim.w}px;`}
+      style={`min-height:${dim.h}px;width:${dim.w}px;max-width:100%;`}
       id={`box-${uniqueId}`}
     >
       <!-- 客户端视口触达后注入同域 iframe（/ads/banner-<size>.html） -->
@@ -89,6 +89,8 @@ const uniqueId = `ad-${zone}-${Math.random().toString(36).substring(2, 9)}`;
       var injected = false;
       function loadAd() {
         if (injected) return;
+        // 断点隐藏守卫：父级或自身 display:none 时绝不注入 iframe，杜绝跨端无效请求与同页去重
+        if (el.offsetParent === null) return;
         injected = true;
         var f = document.createElement('iframe');
         f.src = '/ads/' + zone + '.html';
@@ -109,7 +111,7 @@ const uniqueId = `ad-${zone}-${Math.random().toString(36).substring(2, 9)}`;
       if ('IntersectionObserver' in window) {
         var io = new IntersectionObserver(function (entries) {
           entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
+            if (entry.isIntersecting && el.offsetParent !== null) {
               io.disconnect();
               loadAd();
             }
@@ -129,8 +131,8 @@ const uniqueId = `ad-${zone}-${Math.random().toString(36).substring(2, 9)}`;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 2rem auto;
-    padding: 0.85rem 1rem;
+    margin: 1.5rem auto;
+    padding: 0.75rem 0.75rem;
     background: rgba(18, 20, 22, 0.7);
     border: 1px solid var(--line, rgba(255, 255, 255, 0.07));
     border-radius: 8px;
@@ -138,11 +140,14 @@ const uniqueId = `ad-${zone}-${Math.random().toString(36).substring(2, 9)}`;
     overflow: hidden;
     position: relative;
   }
+  .ad-slot-banner-728x90 {
+    padding: 0.65rem 0.4rem;
+  }
   .ad-slot-header {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.45rem;
   }
   .ad-slot-tag {
     font-size: 0.62rem;
@@ -164,4 +169,6 @@ const uniqueId = `ad-${zone}-${Math.random().toString(36).substring(2, 9)}`;
   .ad-slot-banner-300x250 .ad-slot-container { width: 300px; height: 250px; }
   .ad-slot-banner-728x90 .ad-slot-container { width: 728px; height: 90px; max-width: 100%; }
   .ad-slot-banner-320x50 .ad-slot-container { width: 320px; height: 50px; max-width: 100%; }
+  .ad-slot-banner-160x300 .ad-slot-container { width: 160px; height: 300px; }
+  .ad-slot-banner-160x600 .ad-slot-container { width: 160px; height: 600px; }
 </style>

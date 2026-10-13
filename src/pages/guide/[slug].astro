@@ -120,11 +120,21 @@ const jsonLd = [
 
         <QuickAnswer summary={data.summary} />
 
-        {/* ── 广告位 1/4：300x250「首屏下一屏」位（2026-10-09 P0 挪位）──
-            原位置在正文结束之后（实测 0.70 展示/会话，达成率仅 ~35%）。
-            技能口径"错开屏：首屏1 + 内容中1 + 内容尾1"——用户读攻略几乎必然滚过第二屏，
-            故把 300x250 上移到 QuickAnswer 之后，与页尾 728x90/320x50 形成真错开。 */}
-        <AdSlot zone="banner-300x250" label="Sponsored Field Intel" />
+        {/* ── 广告位 1（首屏直答下方黄金位，2026-10-13 提收重构）──
+            桌面端：将全站单价王 728x90（实测 CPM $10.11）从页脚谷底提拔至 QuickAnswer 正下方；
+            移动端：有视频页挂紧凑型 320x50（将 300x250 留给视频正下方），无视频页直接挂主力 300x250。 */}
+        <div class="ad-top-row">
+          <div class="ad-desktop-only">
+            <AdSlot zone="banner-728x90" label="Sponsored Field Intel" />
+          </div>
+          <div class="ad-mobile-only">
+            {data.guide_video ? (
+              <AdSlot zone="banner-320x50" label="Sponsored Field Intel" />
+            ) : (
+              <AdSlot zone="banner-300x250" label="Sponsored Field Intel" />
+            )}
+          </div>
+        </div>
 
         {data.guide_video && (
           <section id="official-video-showcase" class="guide-video-section">
@@ -160,8 +170,24 @@ const jsonLd = [
           </details>
         )}
 
+        {/* ── 广告位 2（第二屏视频高停留锚点位，2026-10-13 提收重构）──
+            GA4 实测 77% 访客触发 video_start，在视频与正文交界处承接双端主力 300x250（CPM $2.59），
+            与首屏 728x90/320x50 天然隔开一整屏视频区。 */}
+        {data.guide_video && (
+          <div class="ad-mid-row">
+            <AdSlot zone="banner-300x250" label="Sponsored Field Intel" />
+          </div>
+        )}
+
         <div class="article-body">
           <Content />
+        </div>
+
+        {/* ── 广告位 3（正文阅读终点黄金结算位，2026-10-13 提收重构）──
+            原 160x300 被压在桌面侧边栏内部滚动区（y=925px）且对 67.3% 移动端隐藏，日均仅 1~4 曝光。
+            现移至正文刚结束、Evidence Dossier 之前（比原页脚高出 1000px+），桌面+移动全端共享曝光。 */}
+        <div class="ad-mid-row">
+          <AdSlot zone="banner-160x300" label="Sponsored Tactical Intel" />
         </div>
 
         {data.evidence.length > 0 && (
@@ -226,25 +252,23 @@ const jsonLd = [
           </nav>
         )}
 
-        {/* ── 广告位 3/4 与 4/4：页脚横幅（桌面 728x90 / 移动 320x50，异 Zone Key）──
-            同页同 Key 会被 Adsterra 去重（只计一次展示），故与其余尺寸用不同 Key。 */}
-        <div class="ad-bottom-row">
-          <div class="ad-desktop-only">
-            <AdSlot zone="banner-728x90" label="Sponsored Archive Intel" />
+        {/* ── 广告位 4（无视频文章的尾部错屏补位：桌面 300x250 / 移动 320x50，异 Zone Key）── */}
+        {!data.guide_video && (
+          <div class="ad-bottom-row">
+            <div class="ad-desktop-only">
+              <AdSlot zone="banner-300x250" label="Sponsored Archive Intel" />
+            </div>
+            <div class="ad-mobile-only">
+              <AdSlot zone="banner-320x50" label="Sponsored Archive Intel" />
+            </div>
           </div>
-          <div class="ad-mobile-only">
-            <AdSlot zone="banner-320x50" label="Sponsored Archive Intel" />
-          </div>
-        </div>
+        )}
       </article>
 
       <!-- 桌面端混合智能吸顶侧边栏 (Hybrid Sticky Sidebar V2) -->
       {(tocHeadings.length > 0 || seriesGuides.length > 0 || relatedGuides.length > 0 || hasCodesDoc || data.evidence.length > 0) && (
         <aside class="article-toc-sidebar" aria-label="Guide Navigation and Entity Ledger">
-          <!-- ── 广告位 1：160x600 侧栏顶部（2026-10-10 接入，站长指令）──
-               位置理由：侧栏是"固定容器 + 内容超屏时内部滚动"，只有排在**最上**的
-               广告才常驻可见（曝光最大化）。160x300 因此下移至目录之后。
-               zone id 31566560；侧栏 <980px 隐藏，故移动端不加载此位。 -->
+          <!-- ── 侧栏常驻位：160x600 侧栏最顶部（y=0 常驻可见）── -->
           <div class="sidebar-ad-slot">
             <AdSlot zone="banner-160x600" label="Sponsored" />
           </div>
@@ -265,13 +289,6 @@ const jsonLd = [
               </ul>
             </div>
           )}
-
-          <!-- ── 广告位 2：160x300 侧栏次位（2026-10-09 接入，2026-10-10 下移至目录之后）──
-               技能"160x300 主力位策略"：跨页面在**同一位置**重复，攒样本判 CPM；
-               同页只放一个 160x300（老大 2026-10-07 裁决）。 -->
-          <div class="sidebar-ad-slot">
-            <AdSlot zone="banner-160x300" label="Sponsored" />
-          </div>
 
           <!-- 模块 3: 跨主题网状延展推荐 (Related Dossiers) -->
           {relatedGuides.filter((rel) => !seriesGuides.some((sg) => sg.id === rel.id)).length > 0 && (

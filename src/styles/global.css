@@ -2271,13 +2271,13 @@ article code {
   font-weight: 600;
 }
 
-/* 文章页舒展度对齐（对标 nivalis 716px/18px）：容器加宽 + 正文字号上调 */
+/* 文章页舒展度对齐（对标 nivalis 748px/18px）：容器加宽 + 正文字号上调，确保 728x90 零裁切 */
 @media (min-width: 1200px) {
   .container.article-page {
-    max-width: 1320px;
+    max-width: 1360px;
   }
   .article-layout {
-    gap: 36px;
+    gap: 24px;
   }
 }
 .article-main p,
@@ -2297,7 +2297,7 @@ article code {
     padding: 18px 16px;
   }
   .article-layout {
-    grid-template-columns: minmax(0, 660px) 230px 260px;
+    grid-template-columns: minmax(0, 748px) 220px 236px;
   }
 }
 .article-main p,
@@ -2595,6 +2595,8 @@ body {
 }
 
 /* ── Adsterra 广告位（AdSlot.astro，v2 自托管 iframe 架构）────────────── */
+.ad-top-row { margin: 1.25rem 0 1.5rem; }
+.ad-mid-row { margin: 1.75rem 0; }
 .ad-bottom-row { margin: 2rem 0 0; }
 .ad-desktop-only { display: none; }
 .ad-mobile-only { display: block; }
@@ -2603,64 +2605,7 @@ body {
   .ad-mobile-only { display: none; }
 }
 
-/* ── 广告布局 P0/P1/P2（2026-10-09，审计后实施）────────────────────────── */
-/* 侧栏 160x300 位（P1）：跨页同一位置，侧栏 <1200px 隐藏时自然不加载 */
-.sidebar-ad-slot {
-  margin: 0 0 22px;
-  display: flex;
-  justify-content: center;
-}
-/* 同频道上下篇连读导航（P2：提升 PV/UV） */
-.series-nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin: 28px 0 8px;
-}
-.series-card {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  padding: 14px 16px;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  background: var(--panel-card);
-  text-decoration: none;
-  transition: border-color .18s ease, background .18s ease;
-}
-.series-card:hover {
-  border-color: var(--accent);
-  background: var(--panel-hover);
-}
-.series-dir {
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  letter-spacing: .04em;
-  text-transform: uppercase;
-  color: var(--accent);
-}
-.series-title {
-  font-size: 0.92rem;
-  font-weight: 600;
-  color: var(--ink);
-  line-height: 1.35;
-}
-.series-next { text-align: right; }
-.series-empty {
-  justify-content: center;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--muted);
-  background: transparent;
-  border-style: dashed;
-}
-@media (max-width: 640px) {
-  .series-nav { grid-template-columns: 1fr; }
-  .series-next { text-align: left; }
-}
-
-/* ── 广告布局 P0/P1/P2（2026-10-09，审计后实施）────────────────────────── */
-/* 侧栏 160x300 位（P1）：跨页同一位置，侧栏 <1200px 隐藏时自然不加载 */
+/* ── 广告布局 P0/P1/P2（2026-10-13 提收重构：高 CPM 上移 + 移动端三屏补盲）── */
 .sidebar-ad-slot {
   margin: 0 0 22px;
   display: flex;
