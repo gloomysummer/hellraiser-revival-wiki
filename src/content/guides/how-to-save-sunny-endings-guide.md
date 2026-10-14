@@ -12,6 +12,7 @@ tags:
 - pinhead
 - story-choices
 - lore
+- secret-ending
 evidence:
 - claim: Official launch announcement confirms Aidan descends into the darkness and wields the cursed power of the Genesis Configuration to get his beloved back from Hell.
   level: Official
@@ -64,4 +65,15 @@ If you haven't cleared the opening chapters yet, the [demo walkthrough](/guide/d
 ### Ending 3: The Broken Covenant (Eternal Damnation)
 * **Unlock Conditions**: Surrender the Genesis Configuration or fail to complete the final seal alignment when confronting the Cenobites at the threshold.
 * **Narrative Outcome**: Hell does not surrender its treasures easily. Pinhead summons the hooked Hell Chains, dragging Aidan and Sunny into separate corridors of the Labyrinth for solitary torment.
+
+## Is There a Secret Ending in Hellraiser: Revival?
+
+**Yes — Ending 1 (Mortal Salvation) functions as the campaign's secret true ending.**
+
+Because normal gameplay heavily tempts players to use the Genesis Configuration's supernatural powers to survive horde encounters, standard playthroughs naturally drift toward high Corruption (Ending 2: Cenobite Ascension) or failure to seal the threshold (Ending 3: Eternal Damnation). Unlocking the secret Mortal Salvation resolution requires deliberate restraint:
+
+* **Reject Every Blood Altar**: Decline every pact offered by Marlowe and his priests across the Scarlet Church.
+* **Preserve Aidan's Humanity**: Limit puzzle box Suffering harvesting and rely primarily on conventional firearms and melee weapons.
+* **Complete the Inverted Genesis Alignment**: In the final confrontation, inspect the reverse facet of the puzzle box to release the hidden ivory latch before Pinhead seals the chamber.
+
 
