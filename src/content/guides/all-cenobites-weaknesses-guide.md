@@ -1,11 +1,7 @@
 ---
-title: All Cenobites Weaknesses & Encounters Guide
-description: 'Encounter tactics for every Cenobite in Hellraiser: Revival. Detailed
-  weaknesses, evasion strategies, and Pinhead negotiation mechanics analyzed.'
-summary: 'Cenobites in Hellraiser: Revival cannot be eliminated with conventional
-  firearms or melee weapons. Players must exploit environmental sacred relics, acoustic
-  audio distractions, and Genesis Configuration dimensional locks to repel Pinhead,
-  the sightless Chatterer, the immovable Butterball, and the shrieking Deepthroat.'
+title: "All Cenobites in Hellraiser: Revival — Full List"
+description: 'All Cenobites in Hellraiser: Revival: Pinhead, Chatterer, Butterball, Deepthroat. Full list, lore, sensory evasion tactics, and puzzle locks to repel them.'
+summary: 'The full list of Cenobites in Hellraiser: Revival cannot be eliminated with conventional firearms or melee weapons. Surviving players must exploit environmental sacred relics, acoustic audio distractions, and Genesis Configuration dimensional locks to repel Pinhead, the sightless Chatterer, the immovable Butterball, and the shrieking Deepthroat across the campaign.'
 pubDate: 2026-10-02
 updated: '2026-10-02'
 category: Enemies
