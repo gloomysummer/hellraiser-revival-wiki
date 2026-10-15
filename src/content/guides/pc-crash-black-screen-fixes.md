@@ -3,7 +3,7 @@ title: Hellraiser Revival PC Crash & Black Screen Fixes
 description: "Fix Hellraiser: Revival PC launch crashes, black screen startup errors, shader stuttering, and gamma settings. Verified troubleshooting steps for Steam."
 summary: "Resolve Clive Barker's Hellraiser: Revival PC startup crashes, fatal error dialogs, black screen freezes, shader compilation stutter, and elevated black level gamma discrepancies on Steam using verified launch options, display adapter configurations, updated graphics drivers, and Steam cache integrity verification methods."
 pubDate: 2026-10-08
-updated: '2026-10-09'
+updated: '2026-10-15'
 category: Technical
 tags:
 - crash-fix
@@ -76,6 +76,17 @@ If the game crashes with a fatal error dialog during chapter transitions or when
 2. Select **Installed Files**.
 3. Click **Verify integrity of game files**.
 4. Allow Steam to scan the local cache (typically 3–5 minutes for the 80 GB install footprint) and redownload any mismatched packages.
+
+---
+
+## 5. Driver Warnings & Level Streaming Softlocks
+
+Official patch updates introduced key technical safeguards and progression fixes addressing startup checks and environmental softlocks:
+
+* **GPU Driver Out-of-Date Startup Notice**: An automated startup check alerts players when their graphics driver is outdated and requires an update before rendering DirectX 12 assets.
+* **Sewer Ladder Floor Collision Fix**: Resolved an issue where Aidan could fall through the world collision floor immediately after climbing the ladder out of the sewers.
+* **Labyrinth Level Streaming Hang**: Fixed terrain and room streaming delays following Sunny's pillar teleportation, preventing players from dropping through the labyrinth void during asset streaming. See the [Sunny story choices guide](/guide/how-to-save-sunny-endings-guide/) for chapter context.
+* **Corpse Puzzle Lever State**: Corrected a persistence issue where the Flooded Room lever failed to spawn if saving and reloading midway through the corpse puzzle sequence.
 
 ---
 
