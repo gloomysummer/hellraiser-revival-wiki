@@ -1,9 +1,9 @@
 ---
-title: "Hellraiser Revival Release Time & Unlock Times"
-description: 'Hellraiser: Revival is out now — released October 8, 2026. See the confirmed release date, regional unlock times by timezone, and live post-launch checks.'
+title: "Hellraiser Revival Released Oct 8 — Unlock Times"
+description: "Hellraiser: Revival released October 8, 2026 on Steam, PS5 & Xbox Series X|S. See regional unlock times, timezone breakdowns and live post-launch status."
 summary: 'Clive Barker''s Hellraiser: Revival launches on October 8, 2026 for PC via Steam, PlayStation 5 and Xbox Series X|S, with a Nintendo Switch 2 version dated the same day. The PlayStation Store listing indicates an ET morning unlock; UK and Central Europe times follow in the afternoon. Steam has published no separate hour.'
 pubDate: 2026-10-07
-updated: '2026-10-07'
+updated: '2026-10-16'
 category: News
 tags:
 - release-time
