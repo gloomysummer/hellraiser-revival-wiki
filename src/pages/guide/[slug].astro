@@ -41,13 +41,44 @@ export async function getStaticPaths() {
       }))
     );
 
+    // 计算相关推荐（基于标签匹配度、同分类与高价值留存枢纽权重的智能推荐）
+    const HIGH_VALUE_HUBS: Record<string, number> = {
+      'all-keypad-codes-safes-lockers': 2.0,
+      'how-to-save-sunny-endings-guide': 1.8,
+      'weapons-tier-list-durability': 1.5,
+      'bruno-keller-boss-guide': 1.2,
+      'genesis-configuration-puzzle-guide': 1.2,
+      'demo-walkthrough-secrets': 1.0,
+    };
+
+    const currentTags = new Set(guide.data.tags || []);
+    const currentCategory = (guide.data.category || '').toLowerCase();
+
+    const scoredRelated = guides
+      .filter((g) => g.id !== guide.id)
+      .map((other) => {
+        let score = 0;
+        const otherTags = other.data.tags || [];
+        for (const tag of otherTags) {
+          if (currentTags.has(tag)) score += 3.0;
+        }
+        if (currentCategory && (other.data.category || '').toLowerCase() === currentCategory) {
+          score += 2.0;
+        }
+        score += HIGH_VALUE_HUBS[other.id] ?? 0.5;
+        return { guide: other, score };
+      })
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 3)
+      .map((item) => item.guide);
+
     return {
       params: { slug: guide.id },
       props: {
         guide,
         categoryTitle,
         seriesGuides,
-        relatedGuides: guides.filter((g) => g.id !== guide.id).slice(0, 3),
+        relatedGuides: scoredRelated,
         activeCodesList,
         hasCodesDoc: allCodes.length > 0,
       },
@@ -219,14 +250,22 @@ const jsonLd = [
         <!-- 相关深度攻略推荐 -->
         {relatedGuides.length > 0 && (
           <section class="related-guides">
-            <h3>Related Strategy Guides</h3>
+            <div class="related-header-wrap" style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 16px;">
+              <h3 style="margin: 0;">Related Tactical Guides</h3>
+              <span style="font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em;">Continue Exploration</span>
+            </div>
             <div class="related-grid">
               {relatedGuides.map((rel) => (
                 <a href={`/guide/${rel.id}/`} class="related-card">
                   <div class="card-body">
+                    {rel.data.category && (
+                      <span class="card-cat-badge" style="font-size: 0.72rem; color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px; display: inline-block;">
+                        {rel.data.category}
+                      </span>
+                    )}
                     <h4>{rel.data.title}</h4>
                     <p>{rel.data.description}</p>
-                    <span class="read-link">Read Guide →</span>
+                    <span class="read-link">Read Field Dossier →</span>
                   </div>
                 </a>
               ))}
