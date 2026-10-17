@@ -1,0 +1,63 @@
+{
+  "topic_slug": "steam",
+  "source_url": "https://www.youtube.com/watch?v=_xqF916sZeg&pp=ygUmSGVsbHJhaXNlcjogUmV2aXZhbCBTdGVhbSDnpL7ljLrmiavmj48%3D",
+  "page_title": "(7) How To Fix Clive Barker's Hellraiser: Revival Crashing On Steam - YouTube",
+  "harvested_at": "2026-10-18T04:40:50.766233",
+  "authenticated": true,
+  "verified": true,
+  "verification_notes": "Static Frame Sampling for YouTube ID: _xqF916sZeg; Sampled steam-frame-15s.jpg (73 KB, detail score 35.528764634941616); Sampled steam-frame-51s.jpg (67 KB, detail score 27.125137532244032); Sampled steam-frame-82s.jpg (68 KB, detail score 27.28494493602042)",
+  "images": [
+    {
+      "filename": "steam-frame-15s.jpg",
+      "relative_path": "steam-frame-15s.jpg",
+      "source_url": "https://www.youtube.com/watch?v=_xqF916sZeg&pp=ygUmSGVsbHJhaXNlcjogUmV2aXZhbCBTdGVhbSDnpL7ljLrmiavmj48%3D&t=15s",
+      "width": 880,
+      "height": 495,
+      "size_bytes": 74828,
+      "description": "Authentic in-game gameplay frame at 15s from YouTube review",
+      "downloaded": true,
+      "authenticated": true,
+      "content_kind": "JPEG",
+      "sha256": "0a984e00ca8d3ed127edd7aea7e291142164ca1b64c8a39068c5dceb9b6c23ec",
+      "duplicate_of": null,
+      "visual_score": 35.528764634941616,
+      "content_check": "ok",
+      "verified": true
+    },
+    {
+      "filename": "steam-frame-82s.jpg",
+      "relative_path": "steam-frame-82s.jpg",
+      "source_url": "https://www.youtube.com/watch?v=_xqF916sZeg&pp=ygUmSGVsbHJhaXNlcjogUmV2aXZhbCBTdGVhbSDnpL7ljLrmiavmj48%3D&t=82s",
+      "width": 880,
+      "height": 495,
+      "size_bytes": 70530,
+      "description": "Authentic in-game gameplay frame at 82s from YouTube review",
+      "downloaded": true,
+      "authenticated": true,
+      "content_kind": "JPEG",
+      "sha256": "09174c9b8abe61e556b15b93fb6846c8c2e7e658cea63b9bc5745b1e2fd49a15",
+      "duplicate_of": null,
+      "visual_score": 27.28494493602042,
+      "content_check": "ok",
+      "verified": true
+    },
+    {
+      "filename": "steam-frame-51s.jpg",
+      "relative_path": "steam-frame-51s.jpg",
+      "source_url": "https://www.youtube.com/watch?v=_xqF916sZeg&pp=ygUmSGVsbHJhaXNlcjogUmV2aXZhbCBTdGVhbSDnpL7ljLrmiavmj48%3D&t=51s",
+      "width": 880,
+      "height": 495,
+      "size_bytes": 68820,
+      "description": "Authentic in-game gameplay frame at 51s from YouTube review",
+      "downloaded": true,
+      "authenticated": true,
+      "content_kind": "JPEG",
+      "sha256": "7fba767848af36b70bd860bc05406184ad473c4b866cb751e3f4f152d80e4a31",
+      "duplicate_of": null,
+      "visual_score": 27.125137532244032,
+      "content_check": "ok",
+      "verified": true
+    }
+  ],
+  "text_preview": "Fix Clive Barker's Hellraiser: Revival crashing on Steam fast. This guide resolves startup crashes, black screens, and random freezes so you can return to the game. Get the exact steps to stabilize your session and stop the crash loop for good. #HellraiserRevival #SteamFix #GameCrash #PCGaming …\n..."
+}
