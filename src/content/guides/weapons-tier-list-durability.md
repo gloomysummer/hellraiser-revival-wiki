@@ -37,7 +37,7 @@ Combat in *Clive Barker's Hellraiser: Revival* is brutal, tactile, and deliberat
 | **A** | **Rusty Fireaxe** | Two-Handed Sharp | 18 hits | High (8/10) | Slicing through unarmored fanatics and limbs |
 | **A** | **Service Revolver (.38)** | Firearm (Handgun) | Infinite (Ammo based) | Moderate (6/10) | Precise headshots against ranged cult snipers |
 | **B** | **Heavy Tire Iron** | One-Handed Blunt | 32 hits | Moderate (5/10) | Early-game scouting and breaking padlocks |
-| **B** | **Bone-Saw Scalpel** | One-Handed Sharp | 12 hits | Low (3/10) | Fast stealth executions from behind |
+| **B** | [**Bone-Saw Scalpel (Bruno's Scalpel)**](/guide/brunos-scalpel-weapon-guide/) | One-Handed Sharp | 12 hits | Low (3/10) | Fast stealth executions from behind |
 | **C** | **Wrenched Pipe** | One-Handed Blunt | 15 hits | Low (4/10) | Emergency improvised backup tool |
 
 Durability is only half the equation — the [Genesis Configuration puzzle box guide](/guide/genesis-configuration-puzzle-guide/) explains the supernatural abilities that complement each weapon class.
@@ -51,7 +51,7 @@ Every melee hit directly degrades your weapon's structural integrity:
 
 ### Workbench Maintenance & Field Durability Preservation
 
-Scattered throughout the Scarlet Church compound are maintenance workbenches and temporary salvage stations. Players can consume **Scrap Metal** and **Grindstone Oil** to restore weapon condition back to pristine status before challenging boss territories.
+Scattered throughout the Scarlet Church compound are maintenance workbenches and temporary salvage stations. Players can consume **Scrap Metal** and **Grindstone Oil** to restore weapon condition back to pristine status before challenging boss territories. Spare scrap materials and high-tier ammunition can frequently be scavenged from locked caches detailed in our [all keypad and safe codes guide](/guide/all-keypad-codes-safes-lockers/) and our [codes archive](/codes/).
 
 To avoid running completely empty-handed during early exploration:
 * **Reserve Heavy Blunt Weapons for Armored Foes**: Do not burn Crowbar or Tire Iron durability on wooden crates or fragile environment barricades; use your bare hands or kick mechanics where prompt icons appear.

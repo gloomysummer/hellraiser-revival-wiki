@@ -67,4 +67,4 @@ Pair these solutions with the [weapons tier list](/guide/weapons-tier-list-durab
 
 ## Managing Sanity & Corruption
 
-Wielding the Genesis Configuration comes with a severe price. Prolonged usage accelerates Aidan's **Corruption Meter**, warping the screen with auditory hallucinations, bleeding walls, and increasing the probability of summoning Pinhead's immediate presence. Reserve powerful chain attacks for lethal encounters with cult champions and elite foes.
+Wielding the Genesis Configuration comes with a severe price. Prolonged usage accelerates Aidan's **Corruption Meter**, which directly impacts your campaign outcome in our [Sunny all endings guide](/guide/how-to-save-sunny-endings-guide/), warping the screen with auditory hallucinations, bleeding walls, and increasing the probability of summoning Pinhead's immediate presence. Reserve powerful chain attacks for lethal encounters with cult champions and elite foes.

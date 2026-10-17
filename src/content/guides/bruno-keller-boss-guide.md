@@ -34,7 +34,7 @@ Within the fanatical hierarchy of the **Scarlet Church**, few figures are as ter
 ## Boss Profile: Bruno Keller
 
 * **Arena**: The Dissection Gallery (Scarlet Church Sub-level 2)
-* **Primary Weapons**: Dual Bone-Saw Scalpels & Embalming Fluid Syringes
+* **Primary Weapons**: Dual [Bone-Saw Scalpels (Bruno's Scalpel)](/guide/brunos-scalpel-weapon-guide/) & Embalming Fluid Syringes
 * **Damage Type**: Fast Piercing Melee & Stacking Bleed Damage
 * **Recommended Weaponry**: Heavy Pipe / Sledgehammer (Blunt Armor Break), Shotgun (Close Range Stagger)
 
@@ -45,7 +45,7 @@ During the opening phase, Keller relies on stealth and sudden lunges from behind
 1. **Avoid Frontal Armor Sponging**: Firing firearms or swinging light blades directly into Keller's reinforced leather and steel apron wastes precious ammunition. Keller's front torso deflects light damage with high damage reduction.
 2. **Environmental Chain Restraint Mechanic**: Interact with the heavy hanging winch chains stationed near the arena pillars. When Keller charges forward with his lunging grab, activate the winch release to drop hanging meat hooks and chains onto his path, entangling his limbs for 4–5 seconds.
 3. **Exposing the Nape & Spine Weak Point**: While entangled by environmental chains or staggered from behind, bypass his chest plate entirely by targeting the unarmored flesh at his nape and upper spine with heavy blunt strikes or shotgun blasts.
-4. **Bait the Three-Slash Combo**: Wait for Keller to telegraph his three-hit scalpel slash. Step back on the second swing, then counter-attack with a heavy blunt overhead strike to crack his surgical harness.
+4. **Bait the Three-Slash Combo**: Wait for Keller to telegraph his three-hit scalpel slash. Step back on the second swing, then counter-attack with a heavy blunt overhead strike to crack his surgical harness. Review attack speed and handling in our [Bruno's Scalpel weapon guide](/guide/brunos-scalpel-weapon-guide/).
 5. **Bleed Management**: If struck by his bone-saw, immediately consume a Tourniquet or Bandage to halt hemorrhage before your health bar degrades completely.
 
 Before the fight, sanity-check your loadout against the [weapons tier list and durability guide](/guide/weapons-tier-list-durability/) — broken tools mid-boss are a run-killer.
