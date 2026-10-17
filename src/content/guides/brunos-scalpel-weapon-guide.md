@@ -1,9 +1,9 @@
 ---
 title: "Bruno's Scalpel: Hellraiser Revival Weapon Guide"
-description: "Bruno's Bone-Saw Scalpel is a B-tier sharp melee weapon in Hellraiser: Revival featuring 12 durability hits, high bleed damage, and rapid stealth executions."
+description: "Bruno's Scalpel (Bone-Saw Scalpel) in Hellraiser: Revival — B-tier one-handed weapon with 12 durability hits, high bleed buildup, and silent stealth executions."
 summary: "Bruno's signature Bone-Saw Scalpel in Clive Barker's Hellraiser: Revival is a B-tier one-handed sharp weapon wielded by boss Bruno Keller in the Scarlet Church. Featuring 12 durability hits and rapid bleed infliction, it excels at silent stealth takedowns against unarmored cultists while suffering low durability against heavy armor plating."
 pubDate: 2026-10-17
-updated: '2026-10-17'
+updated: '2026-10-18'
 category: Equipment
 tags:
 - weapons
@@ -76,6 +76,20 @@ While the Bone-Saw Scalpel delivers high burst damage against flesh, its fragile
 * **Salvation & Corruption Balance**: Preserving Aidan's humanity for the Mortal Salvation ending in our [Sunny all endings guide](/guide/how-to-save-sunny-endings-guide/) requires relying on clean conventional weapons like the scalpel rather than over-expending cursed Genesis Configuration powers.
 
 ---
+
+## Bruno's Scalpel FAQ
+
+### How many durability hits does Bruno's Scalpel have?
+
+The Bone-Saw Scalpel has a maximum of **12 durability hits** — a Low (3/10) durability score and the shortest melee lifespan in the tier list. Reserve it for instant stealth executions, which consume only a single durability charge.
+
+### What tier is Bruno's Scalpel?
+
+It ranks as a **B-tier one-handed sharp weapon**, the same bracket as the Heavy Tire Iron. It trades stagger power (Low, 3/10) for slicing speed and rapid bleed buildup on unarmored targets.
+
+### Is Bruno's Scalpel good against armored enemies?
+
+No. Striking heavy iron aprons or masonry walls triggers double durability penalties, so switch to a heavy blunt tool such as the Sledgehammer when facing plated enforcers — and keep the scalpel for backstab executions on unarmored cultists.
 
 ## Related Tactical Dossiers & Weapons
 
