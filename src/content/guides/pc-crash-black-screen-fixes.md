@@ -81,7 +81,7 @@ If the game crashes with a fatal error dialog during chapter transitions or when
 
 ## 5. Driver Warnings & Level Streaming Softlocks
 
-Official patch updates introduced key technical safeguards and progression fixes addressing startup checks and environmental softlocks:
+Official patch updates, cataloged in detail within our [Update 1.1 patch notes guide](/guide/update-1-1-patch-notes/), introduced key technical safeguards and progression fixes addressing startup checks and environmental softlocks:
 
 * **GPU Driver Out-of-Date Startup Notice**: An automated startup check alerts players when their graphics driver is outdated and requires an update before rendering DirectX 12 assets.
 * **Sewer Ladder Floor Collision Fix**: Resolved an issue where Aidan could fall through the world collision floor immediately after climbing the ladder out of the sewers.
@@ -92,6 +92,7 @@ Official patch updates introduced key technical safeguards and progression fixes
 
 ## Related Field Guides & Systems
 
+* **Patch Notes & Updates**: Inspect the complete list of developer fixes in the [Hellraiser Revival Update 1.1 patch notes guide](/guide/update-1-1-patch-notes/).
 * **Hardware Verification**: Review minimum vs recommended specifications in the [PC system requirements and specs guide](/guide/system-requirements-pc-specs/).
 * **Mechanical Solutions**: Once inside the game client, master puzzle manipulation with our [Genesis Configuration puzzle box guide](/guide/genesis-configuration-puzzle-guide/).
 * **Campaign Survival**: Encountering heavy boss aggression? Check the [Bruno Keller boss strategy dossier](/guide/bruno-keller-boss-guide/) for combat weak points.

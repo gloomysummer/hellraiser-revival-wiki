@@ -69,7 +69,7 @@ Saber Interactive has not published a separate Steam unlock hour, and Steam does
 Consistent with this wiki's evidence policy, these items are **not** asserted anywhere on this page because no first-party statement exists yet:
 
 * Preload windows for any platform.
-* Day-one patch size and patch notes — a patch-notes page is only worth publishing once the publisher ships the text.
+* Day-one patch & post-launch updates — the first post-launch patch is live; read our verified [Update 1.1 patch notes guide](/guide/update-1-1-patch-notes/) for driver and crash fixes.
 * Trophy and achievement lists — these appear at unlock, not before.
 * Any unlock hour that contradicts the storefront that sold you the license.
 
