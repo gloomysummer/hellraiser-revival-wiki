@@ -40,7 +40,7 @@ Combat in *Clive Barker's Hellraiser: Revival* is brutal, tactile, and deliberat
 | **B** | [**Bone-Saw Scalpel (Bruno's Scalpel)**](/guide/brunos-scalpel-weapon-guide/) | One-Handed Sharp | 12 hits | Low (3/10) | Fast stealth executions from behind |
 | **C** | **Wrenched Pipe** | One-Handed Blunt | 15 hits | Low (4/10) | Emergency improvised backup tool |
 
-Durability is only half the equation — the [Genesis Configuration puzzle box guide](/guide/genesis-configuration-puzzle-guide/) explains the supernatural abilities that complement each weapon class.
+Durability is only half the equation — the [Genesis Configuration puzzle box guide](/guide/genesis-configuration-puzzle-guide/) explains the supernatural abilities that complement each weapon class. Low-durability entries such as [Bruno's Scalpel](/guide/brunos-scalpel-weapon-guide/) reward disciplined target selection: its full stat breakdown, boss-phase behavior, and sharpening loop are covered in the dedicated weapon guide.
 
 ## Weapon Durability & Repair Mechanics
 
