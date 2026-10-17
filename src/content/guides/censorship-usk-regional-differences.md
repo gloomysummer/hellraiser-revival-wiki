@@ -1,13 +1,12 @@
 ---
-title: Hellraiser Revival USK Rating & Censorship FAQ
-description: 'Review regional censorship differences and German USK 18 ratings for
-  Hellraiser: Revival. Check gore effects, uncut versions, and global compliance.'
+title: "Hellraiser Revival Uncut — USK 18, No Regional Cuts"
+description: "Verified: Hellraiser: Revival ships uncut with USK 18 in Germany — no regional cuts. See gore effects, the optional streamer filter & regional differences."
 summary: 'Clive Barker''s Hellraiser: Revival received an uncut USK 18 rating in Germany,
   confirming that European and global versions retain identical extreme gore, dismemberment,
   and body horror without regional cuts or censored visual assets, while offering
   an optional streamer filter for public broadcasters.'
 pubDate: 2026-10-02
-updated: '2026-10-02'
+updated: '2026-10-17'
 category: FAQ
 tags:
 - usk
