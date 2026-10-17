@@ -66,6 +66,9 @@ If you haven't cleared the opening chapters yet, the [demo walkthrough](/guide/d
 * **Unlock Conditions**: Surrender the Genesis Configuration or fail to complete the final seal alignment when confronting the Cenobites at the threshold.
 * **Narrative Outcome**: Hell does not surrender its treasures easily. Pinhead summons the hooked Hell Chains, dragging Aidan and Sunny into separate corridors of the Labyrinth for solitary torment.
 
+### Update 1.1 Fixed a Labyrinth Fall After Sunny's Pillar Teleport
+The October 15, 2026 patch resolved levels failing to load in time after Sunny's pillar teleportation — the bug that could send Aidan falling through the world inside the Labyrinth. The full official change list, including the Flooded Room lever and Charlotte chase fixes, is in our [Update 1.1 patch notes](/guide/update-1-1-patch-notes/).
+
 ## Is There a Secret Ending in Hellraiser: Revival?
 
 **Yes — Ending 1 (Mortal Salvation) functions as the campaign's secret true ending.**

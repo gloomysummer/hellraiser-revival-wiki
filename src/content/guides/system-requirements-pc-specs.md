@@ -47,6 +47,10 @@ For high visual fidelity at 1080p 60fps or 1440p 30fps with maximum shadow and f
 | **DirectX** | Version 12 |
 | **Storage** | 80 GB available space (**High-speed NVMe SSD**) |
 
+## GPU Driver Advisory (Update 1.1)
+
+Update 1.1 (**October 15, 2026**) added a startup notice that tells you when your GPU driver is out of date and needs updating. If the notice appears at boot, update your display drivers before continuing into the Labyrinth. The complete official change list is in our [Update 1.1 patch notes](/guide/update-1-1-patch-notes/), and startup failures after a patch or driver update are covered in the [PC crash and black screen guide](/guide/pc-crash-black-screen-fixes/).
+
 ## Storage & SSD Advisory
 
 The game requires **80 GB of disk space**. Due to seamless streaming between physical reality and the Cenobites' extradimensional Labyrinth, installing on an SSD is vital to prevent hitching, asset pop-in, and delayed sound triggers during tense stealth sequences.
