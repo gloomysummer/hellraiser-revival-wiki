@@ -1,12 +1,9 @@
 ---
-title: "Hellraiser Revival Uncut — USK 18, No Regional Cuts"
-description: "Verified: Hellraiser: Revival ships uncut with USK 18 in Germany — no regional cuts. See gore effects, the optional streamer filter & regional differences."
-summary: 'Clive Barker''s Hellraiser: Revival received an uncut USK 18 rating in Germany,
-  confirming that European and global versions retain identical extreme gore, dismemberment,
-  and body horror without regional cuts or censored visual assets, while offering
-  an optional streamer filter for public broadcasters.'
+title: "Hellraiser Revival Uncut: USK 18 & Uncensored FAQ"
+description: "Verified: Hellraiser: Revival ships 100% uncut with USK 18 — all cutscenes, extreme gore, and campaign walkthrough sequences remain completely uncensored."
+summary: "Clive Barker's Hellraiser: Revival is 100% uncut globally with a USK 18 rating, featuring fully uncensored campaign walkthrough scenes, unaltered narrative cutscenes, and extreme body horror gore across all platforms without requiring external uncut patches, while providing an optional in-game streamer mode toggle for public broadcasts."
 pubDate: 2026-10-02
-updated: '2026-10-17'
+updated: '2026-10-18'
 category: FAQ
 tags:
 - usk
@@ -14,6 +11,8 @@ tags:
 - age-rating
 - regional-differences
 - germany
+- uncensored
+- cutscenes
 evidence:
 - claim: German USK rating board classification confirmed 100% uncut 18+ release across
     all European and global storefronts.
@@ -46,6 +45,23 @@ Developer Saber Interactive maintained strict adherence to Clive Barker's uncomp
 * **Decapitation & Dismemberment**: Physics-based limb severance remains active across all platforms (PC, PS5, Xbox Series X|S, Nintendo Switch 2).
 * **BDSM & Piercing Motifs**: Authentic iconography, including hooked chains, skin flaying, and surgical mutilations depicted in the Scarlet Church, remain unaltered.
 * **Streamer & Content Creator Mode**: For streamers on Twitch and YouTube, an optional **"Streamer Safe" visual toggle** is provided in the options menu to blur explicit nudity and prevent copyright flag warnings.
+
+---
+
+## Uncensored Walkthrough & Story Cutscene FAQs
+
+### Are Any Story Cutscenes or Campaign Sequences Censored?
+No. Every regional edition and digital storefront version (Steam, PlayStation 5, Xbox Series X|S) provides the exact same master build. All narrative cutscenes—including Aidan's encounters with the Cenobites, Marlowe's ceremonies, and the intense climax in our [Sunny all endings guide](/guide/how-to-save-sunny-endings-guide/)—are completely intact and uncensored.
+
+### Is an External "Uncensored Patch" Needed for Full Gore?
+No third-party patch, community mod, or regional unlocker is required. Unlike older horror releases that received edited cuts in Germany or Australia, *Hellraiser: Revival* secured full adult classifications (USK 18 and ACB R18+) for its raw cut without cuts. Players following our [demo walkthrough and secrets guide](/guide/demo-walkthrough-secrets/) or playing through the full release experience the uncompromised artistic vision out of the box.
+
+### Streamer Safe Mode vs. Full Uncut Presentation
+For content creators streaming a playthrough on Twitch or YouTube, the game includes a manual "Streamer Mode" under **Options > Display / Gameplay**. This toggle blurs explicit non-consensual nudity to comply with platform terms of service without altering visceral combat executions or dismemberment physics detailed in the [weapons tier list](/guide/weapons-tier-list-durability/).
+
+---
+
+## Related Field Guides & Systems
 
 The gore that these ratings confirm is produced by the melee moveset itself: the backstab executions and bleed buildup of the [Bruno's Scalpel weapon guide](/guide/brunos-scalpel-weapon-guide/) are among the physics-based effects left uncut in every region.
 

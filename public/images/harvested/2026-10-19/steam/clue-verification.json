@@ -1,0 +1,12 @@
+{
+  "clue_title": "Steam 社区扫描",
+  "source_url": "https://store.steampowered.com/app/1551980/Clive_Barkers_Hellraiser_Revival/",
+  "fetched_page_title": "Clive Barker's Hellraiser: Revival on Steam",
+  "relevance_ok": true,
+  "matched_keywords": [],
+  "missing_keywords": [],
+  "required_hits": 0,
+  "score": "0/0",
+  "reason": "clue title yielded no discriminative keywords; relevance check skipped",
+  "verified_at": "2026-10-19T04:40:13.913381"
+}

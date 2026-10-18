@@ -1,9 +1,9 @@
 ---
-title: "Hellraiser Revival Keypad Codes — Safes & Lockers"
-description: "All 10 verified keypad codes, safe combinations & locker solutions in Hellraiser: Revival — clue locations, container contents & the Codebreaker achievement."
+title: "Hellraiser Revival Codes: Safes, Keypads & Lockers"
+description: "All 10 verified Hellraiser: Revival codes — keypad combinations, safe solutions, locker clues, container loot & the Codebreaker achievement walkthrough."
 summary: "Hellraiser: Revival contains 10 progression keypad codes for locked cupboards, safes, and security doors across the campaign, with opening 5 unlocking the Codebreaker achievement. The first hallway cabinet features two community variants (0199 or 9901). Below is the verified breakdown of combinations, clues, and container contents."
 pubDate: 2026-10-09
-updated: '2026-10-17'
+updated: '2026-10-18'
 category: Mechanics
 tags:
 - keypad-codes
@@ -11,6 +11,8 @@ tags:
 - locker-codes
 - cabinet-codes
 - codebreaker
+- hellraiser-revival-codes
+- all-codes
 evidence:
 - claim: There are 10 locked doors and containers throughout the game requiring a 4-digit keypad combination.
   level: Community-reported
@@ -29,6 +31,9 @@ evidence:
 ## All 10 Keypad Codes
 
 Locked keypad doors, lockers, and cupboards in *Clive Barker's Hellraiser: Revival* protect vital crafting items, weapon attachments, and ammunition. Opening any five locked containers awards the **Codebreaker** achievement.
+
+> [!NOTE] **In-Game Lock Codes vs. Promotional Gift Codes**
+> Searching for promotional rewards or pre-order bonuses? Visit our separate [Hellraiser Revival Promo Codes Ledger](/codes/). The directory below covers all permanent campaign puzzle combinations.
 
 *Disclaimer: The following combinations come from cross-verified launch-day reporting across multiple gaming media outlets. If any code differs in your current build or playthrough, rely on the environmental clue notes documented below.*
 
