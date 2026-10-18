@@ -63,7 +63,7 @@ As Aidan advances through the Scarlet Church hideout and unlocks deeper configur
 | **Hellbound Chains** | Configuration III | Summons hooked chains from dimensional tears to pin aggressive enemies temporarily | High Sanity |
 | **Telekinesis** | Configuration IV | Manipulates heavy environmental levers, thrown objects, and dislodges distant keys | Sustained Sanity drain |
 
-Pair these solutions with the [weapons tier list](/guide/weapons-tier-list-durability/) to decide which tool is worth your durability budget after each unlock.
+Pair these solutions with the [weapons tier list](/guide/weapons-tier-list-durability/) to decide which tool is worth your durability budget after each unlock — short-lived entries such as [Bruno's Scalpel](/guide/brunos-scalpel-weapon-guide/) need that budgeting most, since every hit counts against a fixed durability pool.
 
 ## Managing Sanity & Corruption
 
