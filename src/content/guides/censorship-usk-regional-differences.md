@@ -47,6 +47,8 @@ Developer Saber Interactive maintained strict adherence to Clive Barker's uncomp
 * **BDSM & Piercing Motifs**: Authentic iconography, including hooked chains, skin flaying, and surgical mutilations depicted in the Scarlet Church, remain unaltered.
 * **Streamer & Content Creator Mode**: For streamers on Twitch and YouTube, an optional **"Streamer Safe" visual toggle** is provided in the options menu to blur explicit nudity and prevent copyright flag warnings.
 
+The gore that these ratings confirm is produced by the melee moveset itself: the backstab executions and bleed buildup of the [Bruno's Scalpel weapon guide](/guide/brunos-scalpel-weapon-guide/) are among the physics-based effects left uncut in every region.
+
 Regional cuts do not change the early game — the [demo walkthrough](/guide/demo-walkthrough-secrets/) reflects the same content rules across regions.
 
 Hardware planning is unaffected by regional cuts — check the [PC system requirements](/guide/system-requirements-pc-specs/) for the uncut build's official specs.

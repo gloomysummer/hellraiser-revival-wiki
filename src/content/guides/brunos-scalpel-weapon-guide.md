@@ -3,7 +3,7 @@ title: "Bruno's Scalpel: Hellraiser Revival Weapon Guide"
 description: "Bruno's Scalpel (Bone-Saw Scalpel) in Hellraiser: Revival — B-tier one-handed weapon with 12 durability hits, high bleed buildup, and silent stealth executions."
 summary: "Bruno's signature Bone-Saw Scalpel in Clive Barker's Hellraiser: Revival is a B-tier one-handed sharp weapon wielded by boss Bruno Keller in the Scarlet Church. Featuring 12 durability hits and rapid bleed infliction, it excels at silent stealth takedowns against unarmored cultists while suffering low durability against heavy armor plating."
 pubDate: 2026-10-17
-updated: '2026-10-18'
+updated: '2026-10-19'
 category: Equipment
 tags:
 - weapons
@@ -90,6 +90,18 @@ It ranks as a **B-tier one-handed sharp weapon**, the same bracket as the Heavy 
 ### Is Bruno's Scalpel good against armored enemies?
 
 No. Striking heavy iron aprons or masonry walls triggers double durability penalties, so switch to a heavy blunt tool such as the Sledgehammer when facing plated enforcers — and keep the scalpel for backstab executions on unarmored cultists.
+
+### What is the Bone-Saw Scalpel in Hellraiser: Revival?
+
+It is Bruno Keller's signature one-handed sharp weapon, carried into inventory as the **Bone-Saw Scalpel** and searched for by most players under the name **Bruno's Scalpel**. It is classified as a B-tier specialist tool rather than a primary damage dealer: fast swings, high bleed buildup, and instant silent executions, traded against a Low (3/10) stagger rating.
+
+### Is Bruno's Scalpel worth using?
+
+Yes, as a specialist pick rather than a main weapon. Its instant silent executions kill unarmored cultists without consuming firearm ammunition or raising an alarm, which is the strongest argument for carrying it; its weaknesses — 12 durability hits, double penalties on armor, and a Low (3/10) stagger rating — mean it should never be your first swing in a fair fight.
+
+### How do you repair Bruno's Scalpel?
+
+Sharpen it at a Scarlet Church maintenance workbench using **Scrap Metal** and **Grindstone Oil**, the same consumables that restore other melee tools. Because it degrades on non-flesh impacts, repair it after a clean stealth route rather than after a brawl, and use our [keypad and safe codes directory](/guide/all-keypad-codes-safes-lockers/) to reach the locked doors behind which spare repair kits are stashed.
 
 ## Related Tactical Dossiers & Weapons
 
