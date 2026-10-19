@@ -23,8 +23,8 @@ tier_snapshot:
   weapon: "Rusty Fireaxe · Service Revolver (.38)"
   durability: "Fireaxe: 18 hits; Revolver: infinite (ammo-based)"
 - tier: B
-  weapon: "Heavy Tire Iron · Bone-Saw Scalpel"
-  durability: "Tire Iron: 32 hits; Scalpel: 12 hits"
+  weapon: "Heavy Tire Iron"
+  durability: "Tire Iron: 32 hits"
 - tier: C
   weapon: "Wrenched Pipe"
   durability: "15 hits"
@@ -53,10 +53,9 @@ Combat in *Clive Barker's Hellraiser: Revival* is brutal, tactile, and deliberat
 | **A** | **Rusty Fireaxe** | Two-Handed Sharp | 18 hits | High (8/10) | Slicing through unarmored fanatics and limbs |
 | **A** | **Service Revolver (.38)** | Firearm (Handgun) | Infinite (Ammo based) | Moderate (6/10) | Precise headshots against ranged cult snipers |
 | **B** | **Heavy Tire Iron** | One-Handed Blunt | 32 hits | Moderate (5/10) | Early-game scouting and breaking padlocks |
-| **B** | [**Bone-Saw Scalpel (Bruno's Scalpel)**](/guide/brunos-scalpel-weapon-guide/) | One-Handed Sharp | 12 hits | Low (3/10) | Fast stealth executions from behind |
 | **C** | **Wrenched Pipe** | One-Handed Blunt | 15 hits | Low (4/10) | Emergency improvised backup tool |
 
-Durability is only half the equation — the [Genesis Configuration puzzle box guide](/guide/genesis-configuration-puzzle-guide/) explains the supernatural abilities that complement each weapon class. Low-durability entries such as [Bruno's Scalpel](/guide/brunos-scalpel-weapon-guide/) reward disciplined target selection: its full stat breakdown, boss-phase behavior, and sharpening loop are covered in the dedicated weapon guide.
+Durability is only half the equation — the [Genesis Configuration puzzle box guide](/guide/genesis-configuration-puzzle-guide/) explains the supernatural abilities that complement each weapon class. Low-durability melee entries reward disciplined target selection, and repairs are covered in the durability section below. Not every blade you find is a weapon, though: [Bruno's Scalpel](/guide/brunos-scalpel-weapon-guide/), dropped by Bruno Keller, is a Treasure item you sell to Zora rather than equip — it has no durability rating because it was never a usable weapon.
 
 ## Weapon Durability & Repair Mechanics
 
@@ -86,11 +85,11 @@ To maximize your Scrap Metal efficiency:
 ## Armor Penetration vs. Flesh Damage Rule
 
 * **Blunt Weapons (Hammers, Pipes, Crowbars)**: Deliver concussive force through leather vests, bone armor, and steel plates. Always use blunt tools first to strip enemy armor before finishing with sharp blades.
-* **Sharp Weapons (Machetes, Scalpels, Axes)**: Deal extreme bleed and dismemberment damage against exposed flesh, but suffer triple durability penalty when striking armored targets.
+* **Sharp Weapons (Machetes, Cleavers, Messers)**: Deal extreme bleed and dismemberment damage against exposed flesh, but suffer triple durability penalty when striking armored targets.
 
 ### Enemy-Specific Combat Matching Protocols
 
-* **Demonic Entities (Limb Dismemberment)**: Slicing blades such as the Rusty Fireaxe or [Bruno's Scalpel](/guide/brunos-scalpel-weapon-guide/) sever demonic limbs rapidly, cancelling lunging grabs and reducing crawl speeds.
+* **Demonic Entities (Limb Dismemberment)**: Slicing blades such as the Rusty Fireaxe sever demonic limbs rapidly, cancelling lunging grabs and reducing crawl speeds.
 * **Human Cultists (Ranged Firearm Control)**: Human cultists lack supernatural posture regeneration; eliminate ranged snipers and patrol guards with handgun headshots to preserve melee tool durability.
 * **Armored Enforcers (Faceplate Shatter Protocol)**: Enforcers wearing scrap iron masks deflect pistol rounds entirely. Lead with an overhead blunt strike (Heavy Sledgehammer or Tire Iron) to shatter the faceplate, then finish with a firearm headshot.
 * **Firearm Stagger to Protect Weapon Integrity**: Discharging a firearm round into a charging enemy triggers an immediate stagger frame, providing a safe window for follow-up melee executions without absorbing counter-damage.

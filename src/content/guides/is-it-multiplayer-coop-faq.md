@@ -42,7 +42,7 @@ The game is engineered from the ground up as a focused, story-driven single-play
 In interviews and community Q&As, the design team emphasized that introducing multiplayer would dilute the psychological dread intrinsic to Clive Barker's universe:
 
 1. **Puzzle Box Manipulation**: Operating the Genesis Configuration demands deep mechanical concentration and spatial puzzle-solving that breaks down in chaotic multiplayer environments.
-2. **Limited Resource Scarcity**: Survival horror balances fragile weapon durability against relentless Cenobite pursuit. Multiplayer economies disrupt this delicate scarcity balance — a short-lived weapon such as [Bruno's Scalpel](/guide/brunos-scalpel-weapon-guide/) depends on one player rationing every durability charge.
+2. **Limited Resource Scarcity**: Survival horror balances fragile weapon durability against relentless Cenobite pursuit. Multiplayer economies disrupt this delicate scarcity balance — [melee weapons wear out with use](/guide/weapons-tier-list-durability/), so durable tools have to be rationed across the group.
 3. **Pacing and Atmosphere**: Exploring the Scarlet Church and the subterranean Labyrinth requires solitary immersion to evoke genuine terror.
 
 Playing alone changes the risk math — the [demo walkthrough secrets](/guide/demo-walkthrough-secrets/) include solo-safe routes through the Scarlet Church.
