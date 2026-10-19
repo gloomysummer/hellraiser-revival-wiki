@@ -96,4 +96,4 @@ Official patch updates, cataloged in detail within our [Update 1.1 patch notes g
 * **Hardware Verification**: Review minimum vs recommended specifications in the [PC system requirements and specs guide](/guide/system-requirements-pc-specs/).
 * **Mechanical Solutions**: Once inside the game client, master puzzle manipulation with our [Genesis Configuration puzzle box guide](/guide/genesis-configuration-puzzle-guide/).
 * **Campaign Survival**: Encountering heavy boss aggression? Check the [Bruno Keller boss strategy dossier](/guide/bruno-keller-boss-guide/) for combat weak points.
-* **Weapon Dossiers**: Keller's dual-wielded Bone-Saw Scalpel — its 12-hit durability profile and stealth-execution role — is detailed in the [Bruno's Scalpel weapon guide](/guide/brunos-scalpel-weapon-guide/).
+* **Weapon Dossiers**: How to grab [Bruno's Scalpel](/guide/brunos-scalpel-weapon-guide/) — the Treasure item Bruno Keller leaves on the floor after his boss fight — is detailed in the dedicated drop guide.

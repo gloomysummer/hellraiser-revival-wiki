@@ -1,6 +1,6 @@
 ---
 title: 'Bruno Keller Boss Guide: 2 Phases & Weak Points'
-description: 'Bruno Keller''s 2-phase fight in Scarlet Church: bait his scalpel lunge, shatter his armored apron with blunt weapons, and hit his 2 weak points. Full strategy.'
+description: 'Bruno Keller''s fight in Hellraiser: Revival — bait his lunging grabs, stagger him with blunt weapons, banish him at blue glow, and loot his scalpel drop.'
 summary: 'Bruno Keller, the sadistic surgeon known as the Picasso of the Scalpel, is the primary human boss inside the Scarlet Church. Defeat him in 2 phases: bait his wide lunge attacks, utilize heavy blunt weapons to shatter his armored apron, exploit his 2 weak points (nape and head), and stay clear of hanging flesh traps.'
 pubDate: 2026-10-02
 updated: '2026-10-09'
@@ -34,9 +34,10 @@ Within the fanatical hierarchy of the **Scarlet Church**, few figures are as ter
 ## Boss Profile: Bruno Keller
 
 * **Arena**: The Dissection Gallery (Scarlet Church Sub-level 2)
-* **Primary Weapons**: Dual [Bone-Saw Scalpels (Bruno's Scalpel)](/guide/brunos-scalpel-weapon-guide/) & Embalming Fluid Syringes
-* **Damage Type**: Fast Piercing Melee & Stacking Bleed Damage
-* **Recommended Weaponry**: Heavy Pipe / Sledgehammer (Blunt Armor Break), Shotgun (Close Range Stagger)
+* **Primary Attacks**: Telegraphed slaps and punches, lunging grabs, blood-pool repositioning, and thrown bottles
+* **Damage Type**: Direct melee strikes and stagger-inducing grabs
+* **Recommended Weaponry**: Heavy Pipe / Sledgehammer (Blunt stagger), Shotgun (Close Range finish)
+* **Reward**: [Bruno's Scalpel](/guide/brunos-scalpel-weapon-guide/) — a Treasure item left on the arena floor after the banish; sell it to Zora Beckett.
 
 ## Phase 1: Operating Room Stalker & Armor Stagger
 
@@ -45,14 +46,14 @@ During the opening phase, Keller relies on stealth and sudden lunges from behind
 1. **Avoid Frontal Armor Sponging**: Firing firearms or swinging light blades directly into Keller's reinforced leather and steel apron wastes precious ammunition. Keller's front torso deflects light damage with high damage reduction.
 2. **Environmental Chain Restraint Mechanic**: Interact with the heavy hanging winch chains stationed near the arena pillars. When Keller charges forward with his lunging grab, activate the winch release to drop hanging meat hooks and chains onto his path, entangling his limbs for 4–5 seconds.
 3. **Exposing the Nape & Spine Weak Point**: While entangled by environmental chains or staggered from behind, bypass his chest plate entirely by targeting the unarmored flesh at his nape and upper spine with heavy blunt strikes or shotgun blasts.
-4. **Bait the Three-Slash Combo**: Wait for Keller to telegraph his three-hit scalpel slash. Step back on the second swing, then counter-attack with a heavy blunt overhead strike to crack his surgical harness. Review attack speed and handling in our [Bruno's Scalpel weapon guide](/guide/brunos-scalpel-weapon-guide/).
-5. **Bleed Management**: If struck by his bone-saw, immediately consume a Tourniquet or Bandage to halt hemorrhage before your health bar degrades completely.
+4. **Bait His Single Strikes**: Keller's main damage comes from telegraphed slaps and punches plus lunging grabs. Time your dodge, then answer with a blunt swing — repeated blunt hits to the head stagger him quickly. What he leaves behind after the banish is covered in the [Bruno's Scalpel drop guide](/guide/brunos-scalpel-weapon-guide/).
+5. **Recovery**: If Keller grabs you, mash R2/RT to break free, then create distance and heal with a Bandage before re-engaging.
 
 Before the fight, sanity-check your loadout against the [weapons tier list and durability guide](/guide/weapons-tier-list-durability/) — broken tools mid-boss are a run-killer.
 
 ## Phase 2: Berserk Frenzy & Syringe Throwing
 
-Once reduced below 50% health, Keller douses his scalpels in adrenaline and retreats to elevated balconies.
+Once his health is low, the fight becomes a straight damage race: a shotgun or pistol closes out the final stretch faster, though blunt melee remains viable throughout.
 
 * **Dodge Acidic Injections**: Keller will lob embalming syringes across the room. Roll laterally behind metal surgical trays to absorb the projectiles.
 * **Exploiting the Genesis Configuration**: Activate **Spectral Insight** to detect his thermal footprint before he drops down. When he leaps, trigger **Kinetic Repulsion** or a shotgun blast mid-air to send him into a vulnerable knocked-down state.

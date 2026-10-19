@@ -63,7 +63,7 @@ For content creators streaming a playthrough on Twitch or YouTube, the game incl
 
 ## Related Field Guides & Systems
 
-The gore that these ratings confirm is produced by the melee moveset itself: the backstab executions and bleed buildup of the [Bruno's Scalpel weapon guide](/guide/brunos-scalpel-weapon-guide/) are among the physics-based effects left uncut in every region.
+The gore that these ratings confirm is produced by the melee moveset itself: the backstab executions and bleed buildup of bladed weapons, catalogued in the [weapons tier list](/guide/weapons-tier-list-durability/), are among the physics-based effects left uncut in every region.
 
 Regional cuts do not change the early game — the [demo walkthrough](/guide/demo-walkthrough-secrets/) reflects the same content rules across regions.
 
