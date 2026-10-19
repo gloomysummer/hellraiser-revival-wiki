@@ -105,4 +105,4 @@ Yes. The announcement closes with "More patches are to come…", so Update 1.1 i
 * **Technical Troubleshooting**: Resolve shader compilation stutter and Direct3D boot errors in the [Hellraiser Revival PC crash and black screen guide](/guide/pc-crash-black-screen-fixes/).
 * **System Requirements**: Check recommended hardware thresholds and SSD requirements in the [PC specs guide](/guide/system-requirements-pc-specs/).
 * **Global Launch & Timeline**: Review original release time schedules in our [release time and platform guide](/guide/release-time-unlock-times-guide/).
-* **Combat & Arsenal**: Equip your character for post-patch challenges with our [weapons tier list and durability guide](/guide/weapons-tier-list-durability/) and the dedicated [Bruno's Scalpel weapon guide](/guide/brunos-scalpel-weapon-guide/).
+* **Combat & Arsenal**: Equip your character for post-patch challenges with our [weapons tier list and durability guide](/guide/weapons-tier-list-durability/) and the [Bruno's Scalpel boss drop guide](/guide/brunos-scalpel-weapon-guide/).

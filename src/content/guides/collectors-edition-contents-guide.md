@@ -50,7 +50,7 @@ Players purchasing either the physical Collector's Edition or the digital Deluxe
 * **Cultist Slayer Melee Skins**: Ornate engraved brass textures for the Tire Iron, Fireaxe, and Sledgehammer.
 * **Digital Soundtrack**: High-fidelity FLAC audio files of the complete orchestral dark-ambient game score.
 
-The skin pack reskins the physical melee set only; for how each of those tools — and the silent-kill [Bruno's Scalpel](/guide/brunos-scalpel-weapon-guide/) — actually performs, compare base damage, stagger and durability in our [weapons tier list](/guide/weapons-tier-list-durability/).
+The skin pack reskins the physical melee set only; for how each of those tools actually performs, compare base damage, stagger and durability in our [weapons tier list](/guide/weapons-tier-list-durability/). (Boss drops such as [Bruno's Scalpel](/guide/brunos-scalpel-weapon-guide/) are Treasure items rather than part of the melee arsenal.)
 
 ## Pricing & Regional Retailers
 

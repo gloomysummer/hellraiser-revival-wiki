@@ -12,8 +12,10 @@ tags:
 - secrets
 - puzzle-solutions
 evidence:
-- claim: Steam public demo build gameplay steps verified by hands-on testing.
-  level: Personal in-game test
+- claim: A public demo build of the game exists on Steam, released on September 17, 2026.
+  level: Community-reported
+  sourceUrl: https://steamcommunity.com/app/5184670
+  exactQuote: 'Release Date: 17 Sep, 2026'
 guide_video:
   id: "Iu2qKieTnSo"
   title: "Clive Barker's Hellraiser: Revival - Official Scarlet Church Trailer"
@@ -29,7 +31,7 @@ The public Steam demo for *Clive Barker's Hellraiser: Revival* provides an inten
 ## Section 1: The Biker Alley & Compound Perimeter
 
 1. **Starting Point**: Aidan begins in a storm-drenched alleyway outside an abandoned motorcycle workshop. 
-2. **First Melee Weapon**: Inspect the opened toolbox behind the wrecked Harley to pick up the **Heavy Tire Iron** (Durability: 100%). The full campaign's melee roster grows well beyond this starter tool — silent-execution options such as the B-tier [Bone-Saw Scalpel (Bruno's Scalpel)](/guide/brunos-scalpel-weapon-guide/) are ranked in our [weapons tier list](/guide/weapons-tier-list-durability/).
+2. **First Melee Weapon**: Inspect the opened toolbox behind the wrecked Harley to pick up the **Heavy Tire Iron** (Durability: 100%). The full campaign's melee roster grows well beyond this starter tool — bladed and blunt options are ranked in our [weapons tier list](/guide/weapons-tier-list-durability/), and boss drops such as [Bruno's Scalpel](/guide/brunos-scalpel-weapon-guide/) are covered in dedicated guides.
 3. **Breaching the Gate**: Approach the chained rear door. Use light attack strikes or interact with the padlocked chain using the tire iron to pry it loose.
 
 ## Section 2: Entering the Scarlet Church Basement

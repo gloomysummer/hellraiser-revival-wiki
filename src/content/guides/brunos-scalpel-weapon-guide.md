@@ -1,110 +1,120 @@
 ---
-title: "Bruno's Scalpel: Hellraiser Revival Weapon Guide"
-description: "Bruno's Scalpel (Bone-Saw Scalpel) in Hellraiser: Revival — B-tier one-handed weapon with 12 durability hits, high bleed buildup, and silent stealth executions."
-summary: "Bruno's signature Bone-Saw Scalpel in Clive Barker's Hellraiser: Revival is a B-tier one-handed sharp weapon wielded by boss Bruno Keller in the Scarlet Church. Featuring 12 durability hits and rapid bleed infliction, it excels at silent stealth takedowns against unarmored cultists while suffering low durability against heavy armor plating."
+title: "Bruno's Scalpel: Hellraiser Revival Boss Drop"
+description: "Bruno's Scalpel in Hellraiser: Revival is a boss-drop Treasure item from Bruno Keller, not an equipable weapon. Pick it off the floor and sell it to Zora."
+summary: "Bruno's Scalpel in Clive Barker's Hellraiser: Revival is the Treasure item boss Bruno Keller leaves on the arena floor when you banish him in the cult compound basement fight. It cannot be equipped, swung, or repaired: its only purpose is to be sold to the merchant Zora Beckett for coins spent on ammo recipes, upgrades, and lockpicks."
 pubDate: 2026-10-17
 updated: '2026-10-19'
 category: Equipment
 tags:
-- weapons
 - brunos-scalpel
-- bone-saw-scalpel
 - bruno-keller
-- combat
-- durability
+- treasure
+- collectibles
+- boss-drops
 evidence:
-- claim: Gameplay mechanics confirm durability degradation, blunt armor-break, and firearm ammo constraints.
+- claim: Saber Interactive's official Update 1.1 patch notes (October 15, 2026) contain
+    no entry describing Bruno's Scalpel as an equippable weapon or changing melee durability.
   level: Official
-  sourceUrl: https://store.steampowered.com/app/1551980
-  exactQuote: first-person action horror survival
-- claim: Bruno Keller environmental chain restraint tactics and nape weak point exploitation reported by community players.
+  sourceUrl: https://steamcommunity.com/games/1551980/announcements/detail/760703279879422174
+  exactQuote: Added a startup notice that tells you when your GPU driver is out of date and
+    needs updating.
+- claim: After Bruno is banished in the boss fight, his body can be looted for the scalpel
+    item.
   level: Community-reported
-  sourceUrl: https://steamcommunity.com/app/1551980/discussions/0/484427498993214592
-  exactQuote: Bruno Keller boss fight too tanky
+  sourceUrl: https://www.thegamer.com/hellraiser-revival-bruno-boss-first-encounter-easy-how-to-beat-walkthrough-guide
+  exactQuote: you can loot his body for the scalpel item
+- claim: Bruno's Scalpel is a post-fight floor pickup that is meant to be sold to the merchant
+    Zora Beckett.
+  level: Community-reported
+  sourceUrl: https://gmtreks.com/hellraiser-revival/page/01M4JE2VSEKZ8AMC45Z9NNNQS5
+  exactQuote: You can pick up Bruno's Scalpel after defeating him. Sell it to Zora Beckett.
+- claim: In recorded full-game footage the narrator describes Bruno dropping the scalpel as
+    a valuable artifact to sell.
+  level: Community-reported
+  sourceUrl: https://www.youtube.com/watch?v=FgaQhZMcqjw
+  exactQuote: Artifact here. Bruno's scalpel. That's worth a decent amount of money.
+- claim: 'Shop items marked as Treasure in Hellraiser: Revival exist only to be sold for coins.'
+  level: Community-reported
+  sourceUrl: https://www.powerpyx.com/clive-barkers-hellraiser-revival-all-collectible-locations-guide
+  exactQuote: 'At shops you can sell any items that are marked as “Treasure”, these have no purpose other than to sell.'
+- claim: The scalpel is left on the floor of the boss arena among Bruno's remains and is easy
+    to walk past.
+  level: Community-reported
+  sourceUrl: https://thethumbwars.com/how-to-beat-bruno-in-hellraiser-revival
+  exactQuote: make sure you pick up Bruno's Scalpel from the bubbling mess of viscera on the
+    floor!
 ---
 
-## Bruno's Scalpel (Bone-Saw Scalpel) Weapon Analysis
+## Bruno's Scalpel: What It Actually Is
 
-In *Clive Barker's Hellraiser: Revival*, the **Bone-Saw Scalpel**—widely searched by players as **Bruno's Scalpel**—is the terrifying trademark weapon of **Bruno Keller**, the fanatical surgeon known as the "Picasso of the Scalpel" in the **Scarlet Church**.
-
-This one-handed surgical blade offers exceptional slicing velocity and silent lethality, serving as a lethal close-quarters option when maneuvering through the church's darkened corridors.
-
----
-
-## Quick Answer: What Is Bruno's Scalpel & How Is It Used?
-
-* **Weapon Classification**: **B-Tier One-Handed Sharp Weapon**.
-* **Combat Role**: Tailored for high-speed sneak executions and rapid bleed infliction on unarmored cultists.
-* **Durability Rating**: **12 hits maximum** (Low 3/10 durability score), requiring regular field sharpening and disciplined target selection.
-* **Core Advantage**: Silent execution animations prevent audio propagation, allowing Aidan to clear rooms without alerting neighboring patrols.
-
----
-
-## Bruno's Scalpel Numerical Stats & Tier Breakdown
-
-As cataloged in our comprehensive [weapons tier list and durability guide](/guide/weapons-tier-list-durability/), the Bone-Saw Scalpel occupies a specialized combat niche:
-
-| Attribute | Verified Value | Tactical Context |
-| :--- | :--- | :--- |
-| **Official Designation** | Bone-Saw Scalpel | In-game inventory name for Keller's blade |
-| **Tier Placement** | **B-Tier** | Specialized assassin tool |
-| **Handling Class** | One-Handed Sharp | Rapid swing speed, minimal stamina drain |
-| **Durability Capacity** | **12 Hits** | Degrades rapidly on non-flesh impacts |
-| **Stagger Impact** | **3 / 10 (Low)** | Cannot interrupt heavy attack windups |
-| **Bleed Potency** | High Hemorrhage | Inflicts stacking laceration damage |
-| **Optimal Targets** | Unarmored Cultists | Backstab takedowns and unshielded limbs |
+In *Clive Barker's Hellraiser: Revival*, **Bruno's Scalpel** is the **Treasure (valuable) item** that boss **Bruno Keller** leaves behind when you banish him during the boss fight in the basement of the cult compound. It is **not an equipable weapon**: you cannot add it to your loadout, swing it at enemies, or repair it. Its only purpose in the game economy is to be **sold to the merchant Zora Beckett** for coins.
 
 ---
 
-## Encountering the Scalpel: Bruno Keller Boss Mechanics
+## Quick Answer: How to Get Bruno's Scalpel & What to Do With It
 
-During the climactic confrontation in the Dissection Gallery detailed in our [Bruno Keller boss strategy guide](/guide/bruno-keller-boss-guide/), Keller dual-wields these elongated surgical blades with terrifying efficiency:
-
-1. **The Three-Hit Flurry**: Keller telegraphs a wide horizontal three-slash combination. Attempting to parry or block these strikes with light weapons burns stamina and causes immediate hemorrhage. Step back laterally during the second swing, then counter-attack.
-2. **Phase 2 Adrenaline Dosing**: Once Keller drops below 50% health, he retreats to elevated catwalks and coats his scalpels in adrenaline and toxic embalming fluid, substantially increasing bleed buildup per landed strike.
-3. **Countering the Blade**: Do not engage Bruno's scalpels with light sharp tools. Heavy concussive blunt tools—such as the Sledgehammer or Heavy Pipe—are mandatory to shatter his armored apron and break his attack momentum.
+* **What it is**: A Treasure-class valuable dropped by Bruno Keller — a sellable collectible, not gear.
+* **How to get it**: Beat the Bruno boss fight, interact at the blue glow to **banish** him, then pick the scalpel up off the floor where his remains bubble.
+* **What it does in combat**: Nothing. It cannot be equipped or used as a weapon, and it has no durability stats.
+* **What to do with it**: Sell it to **Zora Beckett** at her next shop for coins — the standard fate of every "Treasure"-marked item.
+* **Do not leave it behind**: Walkthroughs flag it as an easy miss before you move on to the Statue's Missing Part objective, so grab it during the fight wrap-up.
 
 ---
 
-## Tactical Usage & Durability Management
+## How the Boss Fight Plays Out (Verified)
 
-While the Bone-Saw Scalpel delivers high burst damage against flesh, its fragile structural integrity demands disciplined field maintenance:
+The first Bruno encounter is a deliberately scrappy, melee-focused fight in a cramped room. Independent walkthroughs agree on the shape of it:
 
-* **Reserve for Silent Executions**: Sneaking behind unarmored cultist sentries triggers an instant-kill execution that consumes only 1 durability charge while preserving valuable firearm ammunition.
-* **Never Strike Armored Plates**: Striking heavy iron aprons or masonry walls causes immediate double durability penalties. If an enforcer wears body plating, switch to a blunt tool immediately.
-* **Workbench Sharpening & Supply Lockers**: Restore dulled scalpels using **Scrap Metal** and **Grindstone Oil** at Scarlet Church maintenance workbenches. You can locate spare repair kits and ammunition behind locked security doors using our [all keypad and safe codes directory](/guide/all-keypad-codes-safes-lockers/) and check our [reward codes hub](/codes/).
-* **Salvation & Corruption Balance**: Preserving Aidan's humanity for the Mortal Salvation ending in our [Sunny all endings guide](/guide/how-to-save-sunny-endings-guide/) requires relying on clean conventional weapons like the scalpel rather than over-expending cursed Genesis Configuration powers.
+1. **Prep the room**: Break the bottles in the table room before starting, and drop spare weapons in the elevator corridor so a broken weapon never leaves you empty-handed (a blunt weapon is the recommended main tool; a shotgun or pistol speeds up the final stretch).
+2. **Bait and counter**: Bruno's main attacks are telegraphed slaps and punches, plus lunging grabs and blood-pool repositioning. Blunt weapons stagger him with repeated head hits.
+3. **Banish him**: When he takes enough damage he glows blue — interact (X on PlayStation / A on Xbox) to banish him back to the Labyrinth.
+4. **Loot the scalpel**: After the banish, his remains stay on the arena floor with the scalpel in the gore. Pick it up before leaving the room.
+
+Once you next reach **Zora Beckett**, sell the scalpel alongside your other Treasure items and put the coins toward ammo recipes, weapon upgrades, or lockpicks.
+
+---
+
+## Fact-Check Note: Why This Page No Longer Calls It a Weapon
+
+Earlier revisions of this page — and the [weapons tier list](/guide/weapons-tier-list-durability/) — described an equipable "Bone-Saw Scalpel" B-tier one-handed weapon with 12 durability hits and stealth executions. That description was **incorrect** and has been removed after fact-checking on 2026-10-19:
+
+* No official patch note or developer announcement describes such a weapon; Saber Interactive's only published patch notes to date never mention Bruno's Scalpel.
+* In-game footage and every independent walkthrough describe the same thing: a post-fight pickup dropped on the floor and sold to Zora.
+* The name "Bone-Saw Scalpel" does not appear in any coverage of the game — players and guides call it **Bruno's Scalpel**.
+* The game's actual bladed melee weapons are the **Machete**, **Cleaver**, and **Jagged Messer** (sold by Zora); its melee weapons do wear out with use — the starting knife is the exception — but the scalpel is not one of them.
 
 ---
 
 ## Bruno's Scalpel FAQ
 
-### How many durability hits does Bruno's Scalpel have?
+### Can you use Bruno's Scalpel as a weapon?
 
-The Bone-Saw Scalpel has a maximum of **12 durability hits** — a Low (3/10) durability score and the shortest melee lifespan in the tier list. Reserve it for instant stealth executions, which consume only a single durability charge.
+No. Bruno's Scalpel is a Treasure item with no combat use. It cannot be equipped, does not appear in your weapon wheel, and has no durability or damage values. If you want a blade for the fight, use the Machete, Cleaver, or the unbreakable starting knife.
 
-### What tier is Bruno's Scalpel?
+### How do you get Bruno's Scalpel?
 
-It ranks as a **B-tier one-handed sharp weapon**, the same bracket as the Heavy Tire Iron. It trades stagger power (Low, 3/10) for slicing speed and rapid bleed buildup on unarmored targets.
+Defeat Bruno Keller in the boss fight in the basement of the cult compound, interact at the blue glow to banish him, then pick the scalpel up off the floor where his remains are left behind.
 
-### Is Bruno's Scalpel good against armored enemies?
+### How much is Bruno's Scalpel worth?
 
-No. Striking heavy iron aprons or masonry walls triggers double durability penalties, so switch to a heavy blunt tool such as the Sledgehammer when facing plated enforcers — and keep the scalpel for backstab executions on unarmored cultists.
+Recorded playthroughs describe it as "worth a decent amount of money" relative to early-game treasures. The exact coin value appears in Zora Beckett's sell menu when you hand it over — it is one of the easier early windfalls, and worth going back for if you almost walked past it.
 
-### What is the Bone-Saw Scalpel in Hellraiser: Revival?
+### Is Bruno's Scalpel missable?
 
-It is Bruno Keller's signature one-handed sharp weapon, carried into inventory as the **Bone-Saw Scalpel** and searched for by most players under the name **Bruno's Scalpel**. It is classified as a B-tier specialist tool rather than a primary damage dealer: fast swings, high bleed buildup, and instant silent executions, traded against a Low (3/10) stagger rating.
+It stays on the arena floor after the fight rather than being auto-added to your inventory, so it is easy to leave behind as you head toward the Statue's Missing Part objective. Pick it up before exiting the room.
 
-### Is Bruno's Scalpel worth using?
+### Does Bruno's Scalpel have durability or a tier rating?
 
-Yes, as a specialist pick rather than a main weapon. Its instant silent executions kill unarmored cultists without consuming firearm ammunition or raising an alarm, which is the strongest argument for carrying it; its weaknesses — 12 durability hits, double penalties on armor, and a Low (3/10) stagger rating — mean it should never be your first swing in a fair fight.
+No. Durability and tier ratings apply to weapons you actually wield. Bruno's Scalpel is a sellable collectible; for real melee durability numbers, see the [weapons tier list and durability guide](/guide/weapons-tier-list-durability/).
 
-### How do you repair Bruno's Scalpel?
+### Who is Bruno Keller?
 
-Sharpen it at a Scarlet Church maintenance workbench using **Scrap Metal** and **Grindstone Oil**, the same consumables that restore other melee tools. Because it degrades on non-flesh impacts, repair it after a clean stealth route rather than after a brawl, and use our [keypad and safe codes directory](/guide/all-keypad-codes-safes-lockers/) to reach the locked doors behind which spare repair kits are stashed.
+Bruno Keller is the Scarlet Church's surgeon-prophet — the "Picasso with a scalpel" — and a recurring antagonist. His full boss strategy, attack patterns, and rewards are covered in the [Bruno Keller boss guide](/guide/bruno-keller-boss-guide/).
 
-## Related Tactical Dossiers & Weapons
+---
 
-* **Full Armory Rankings**: Compare base damage, stagger rates, and durability across all melee and ranged gear in the [Hellraiser Revival weapons tier list](/guide/weapons-tier-list-durability/).
-* **Boss Combat Tactics**: Review weak point timing, winch traps, and phase transitions in the [Bruno Keller boss encounter dossier](/guide/bruno-keller-boss-guide/).
-* **Occult Complements**: Discover how kinetic repulsion complements close-quarters blade fighting in the [Genesis Configuration puzzle box guide](/guide/genesis-configuration-puzzle-guide/).
+## Related Dossiers
+
+* **Boss Strategy**: Beat Bruno Keller and trigger the scalpel drop in the [Bruno Keller boss guide](/guide/bruno-keller-boss-guide/).
+* **Real Melee Arsenal**: Compare the actual bladed and blunt weapons in the [weapons tier list and durability guide](/guide/weapons-tier-list-durability/).
+* **Spend the Coins Wisely**: Lockpicks and spare caches are covered in the [all keypad and safe codes directory](/guide/all-keypad-codes-safes-lockers/).

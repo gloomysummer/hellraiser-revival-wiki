@@ -73,7 +73,7 @@ Complementing weapon caches with occult abilities is essential for survival — 
 * **Loot**: Pistol Extended Magazine Release attachment, Handgun Ammo x3.
 
 ### 4. Bruno's Music Room Cabinet (Code: 1966)
-* **Location**: Standing along the wood-paneled wall inside Bruno Keller's personal rehearsal chamber. Keller dual-wields the Bone-Saw Scalpel as his signature weapon — stats and boss-phase tactics are covered in the [Bruno's Scalpel weapon guide](/guide/brunos-scalpel-weapon-guide/).
+* **Location**: Standing along the wood-paneled wall inside Bruno Keller's personal rehearsal chamber. Keller's boss fight — and the [Bruno's Scalpel](/guide/brunos-scalpel-weapon-guide/) Treasure drop you can sell to Zora Beckett afterwards — is covered in the dedicated drop guide.
 * **Combination**: **`1966`**
 * **Clue**: The canvas above the organ is dated 1666; an adjacent journal entry instructs adding 300 years to reach the final cipher (1666 + 300 = 1966).
 * **Loot**: Handgun Ammo x2, Gunpowder x2, Chemicals x1.

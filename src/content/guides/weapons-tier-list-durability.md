@@ -37,10 +37,9 @@ Combat in *Clive Barker's Hellraiser: Revival* is brutal, tactile, and deliberat
 | **A** | **Rusty Fireaxe** | Two-Handed Sharp | 18 hits | High (8/10) | Slicing through unarmored fanatics and limbs |
 | **A** | **Service Revolver (.38)** | Firearm (Handgun) | Infinite (Ammo based) | Moderate (6/10) | Precise headshots against ranged cult snipers |
 | **B** | **Heavy Tire Iron** | One-Handed Blunt | 32 hits | Moderate (5/10) | Early-game scouting and breaking padlocks |
-| **B** | [**Bone-Saw Scalpel (Bruno's Scalpel)**](/guide/brunos-scalpel-weapon-guide/) | One-Handed Sharp | 12 hits | Low (3/10) | Fast stealth executions from behind |
 | **C** | **Wrenched Pipe** | One-Handed Blunt | 15 hits | Low (4/10) | Emergency improvised backup tool |
 
-Durability is only half the equation — the [Genesis Configuration puzzle box guide](/guide/genesis-configuration-puzzle-guide/) explains the supernatural abilities that complement each weapon class. Low-durability entries such as [Bruno's Scalpel](/guide/brunos-scalpel-weapon-guide/) reward disciplined target selection: its full stat breakdown, boss-phase behavior, and sharpening loop are covered in the dedicated weapon guide.
+Durability is only half the equation — the [Genesis Configuration puzzle box guide](/guide/genesis-configuration-puzzle-guide/) explains the supernatural abilities that complement each weapon class. Low-durability melee entries reward disciplined target selection, and repairs are covered in the durability section below. Not every blade you find is a weapon, though: [Bruno's Scalpel](/guide/brunos-scalpel-weapon-guide/), dropped by Bruno Keller, is a Treasure item you sell to Zora rather than equip — it has no durability rating because it was never a usable weapon.
 
 ## Weapon Durability & Repair Mechanics
 
@@ -61,6 +60,6 @@ To avoid running completely empty-handed during early exploration:
 ## Armor Penetration vs. Flesh Damage Rule
 
 * **Blunt Weapons (Hammers, Pipes, Crowbars)**: Deliver concussive force through leather vests, bone armor, and steel plates. Always use blunt tools first to strip enemy armor before finishing with sharp blades.
-* **Sharp Weapons (Machetes, Scalpels, Axes)**: Deal extreme bleed and dismemberment damage against exposed flesh, but suffer triple durability penalty when striking armored targets.
+* **Sharp Weapons (Machetes, Cleavers, Messers)**: Deal extreme bleed and dismemberment damage against exposed flesh, but suffer triple durability penalty when striking armored targets.
 
 Weapon choice only matters if you survive the hunt — the [Cenobite weaknesses guide](/guide/all-cenobites-weaknesses-guide/) breaks down what each entity punishes.
