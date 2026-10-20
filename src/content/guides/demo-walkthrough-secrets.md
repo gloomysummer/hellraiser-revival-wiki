@@ -12,8 +12,10 @@ tags:
 - secrets
 - puzzle-solutions
 evidence:
-- claim: Steam public demo build gameplay steps verified by hands-on testing.
-  level: Personal in-game test
+- claim: A public demo build of the game exists on Steam, released on September 17, 2026.
+  level: Community-reported
+  sourceUrl: https://steamcommunity.com/app/5184670
+  exactQuote: 'Release Date: 17 Sep, 2026'
 guide_video:
   id: "Iu2qKieTnSo"
   title: "Clive Barker's Hellraiser: Revival - Official Scarlet Church Trailer"

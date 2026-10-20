@@ -1,0 +1,6 @@
+# 旧 slug 301（R83/R84 优化页改名/合并后旧 URL 曾 404，curl 2026-10-20 实测）
+# Cloudflare Pages 从此文件返回真实 HTTP 301。
+/guide/release-time-when-does-hellraiser-come-out/ /guide/release-time-unlock-times-guide/ 301
+/guide/release-time-when-does-hellraiser-come-out /guide/release-time-unlock-times-guide/ 301
+/codes/keypad-codes-and-safe-combinations/ /guide/all-keypad-codes-safes-lockers/ 301
+/codes/keypad-codes-and-safe-combinations /guide/all-keypad-codes-safes-lockers/ 301
