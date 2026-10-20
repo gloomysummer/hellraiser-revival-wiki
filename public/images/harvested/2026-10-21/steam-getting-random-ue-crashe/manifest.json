@@ -1,0 +1,27 @@
+{
+  "topic_slug": "steam-getting-random-ue-crashe",
+  "source_url": "https://steamcommunity.com/app/1551980/discussions/0/574929940135461499/",
+  "page_title": "Getting random UE Crashes.. :: Clive Barker's Hellraiser: Revival General Discussions",
+  "harvested_at": "2026-10-21T04:40:21.081842",
+  "authenticated": false,
+  "verified": false,
+  "verification_notes": "Forum URL detected: Bypassing webpage screenshot to prevent forum UI pollution.",
+  "images": [],
+  "text_preview": "STORE\nCOMMUNITY\nGORDON\nCHAT\nSUPPORT\nInstall Steam \n Gordon\nHK$ 40.00\n \nStore Page\nClive Barker's Hellraiser: Revival\nAll\nDiscussions\nScreenshots\nArtwork\nBroadcasts\nVideos\nNews\nGuides\nReviews\nClive Barker's Hellraiser: Revival > General Discussions > Topic Details\nzzala\n18 Oct @ 10:35am\nGetting rando",
+  "clue_verification": {
+    "clue_title": "【Steam】Getting random UE Crashes",
+    "source_url": "https://steamcommunity.com/app/1551980/discussions/0/574929940135461499/",
+    "fetched_page_title": "Getting random UE Crashes.. :: Clive Barker's Hellraiser: Revival General Discussions",
+    "relevance_ok": true,
+    "matched_keywords": [
+      "getting",
+      "random",
+      "crashes"
+    ],
+    "missing_keywords": [],
+    "required_hits": 2,
+    "score": "3/3",
+    "reason": "matched 3/3 clue keywords (required 2)",
+    "verified_at": "2026-10-21T04:40:21.082221"
+  }
+}

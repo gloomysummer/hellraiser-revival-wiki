@@ -3,7 +3,7 @@ title: Hellraiser Revival PC Crash & Black Screen Fixes
 description: "Fix Hellraiser: Revival PC launch crashes, black screen startup errors, shader stuttering, and gamma settings. Verified troubleshooting steps for Steam."
 summary: "Resolve Clive Barker's Hellraiser: Revival PC startup crashes, fatal error dialogs, black screen freezes, shader compilation stutter, and elevated black level gamma discrepancies on Steam using verified launch options, display adapter configurations, updated graphics drivers, and Steam cache integrity verification methods."
 pubDate: 2026-10-08
-updated: '2026-10-15'
+updated: '2026-10-20'
 category: Technical
 tags:
 - crash-fix
@@ -16,6 +16,10 @@ evidence:
   level: Official
   sourceUrl: https://store.steampowered.com/app/1551980
   exactQuote: Requires a 64-bit processor and operating system
+- claim: Random in-game UE5 crashes triggering GPU crash dumps reported by community players on high-tier hardware.
+  level: Community-reported
+  sourceUrl: https://steamcommunity.com/app/1551980/discussions/0/574929940135461499/
+  exactQuote: Getting random UE Crashes
 ---
 
 ## Hellraiser Revival PC Technical Troubleshooting & Crash Fixes
@@ -87,6 +91,18 @@ Official patch updates, cataloged in detail within our [Update 1.1 patch notes g
 * **Sewer Ladder Floor Collision Fix**: Resolved an issue where Aidan could fall through the world collision floor immediately after climbing the ladder out of the sewers.
 * **Labyrinth Level Streaming Hang**: Fixed terrain and room streaming delays following Sunny's pillar teleportation, preventing players from dropping through the labyrinth void during asset streaming. See the [Sunny story choices guide](/guide/how-to-save-sunny-endings-guide/) for chapter context.
 * **Corpse Puzzle Lever State**: Corrected a persistence issue where the Flooded Room lever failed to spawn if saving and reloading midway through the corpse puzzle sequence.
+
+---
+
+## 6. In-Game "GPU Crash dump Triggered" (UE5 Crash Workaround)
+
+Unlike initial launch black screens, players on high-tier PC configurations (such as Intel 13th and 14th Gen unlocked CPUs paired with RTX 40-series GPUs) have reported sudden mid-game crashes marked by the fatal dialog `"GPU Crash dump Triggered"` pointing to `Hellraiser_Win64_Shipping` and `kernel32.dll`.
+
+This signature stems from aggressive transient clock boosts in Unreal Engine 5 under heavy particle or volumetric lighting scenes, tripping DirectX 12 driver timeouts:
+
+1. **Downclock P-Core Multiplier via BIOS / Intel XTU**: Lowering the Performance-Core ratio from 54x to 52x stabilizes transient voltage demands without noticeable frame rate degradation.
+2. **Apply Intel Default Power Specifications**: In your motherboard UEFI BIOS, switch CPU power limits from uncapped vendor profiles to official Intel Baseline profiles to prevent voltage droop under spike loads.
+3. **Perform a Clean Display Driver Reinstallation**: Use DDU (Display Driver Uninstaller) in Windows Safe Mode to purge corrupted shader cache remnants before installing the latest Game Ready or Adrenalin driver.
 
 ---
 

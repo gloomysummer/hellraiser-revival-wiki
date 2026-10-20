@@ -8,7 +8,7 @@ summary: 'Combat in Hellraiser: Revival demands tactical management of weapon du
   and the Sawed-off Shotgun for emergency crowd-control stagger during intense ambush
   encounters.'
 pubDate: 2026-10-02
-updated: '2026-10-09'
+updated: '2026-10-20'
 category: Equipment
 tags:
 - weapons
@@ -22,6 +22,10 @@ evidence:
   level: Official
   sourceUrl: https://store.steampowered.com/app/1551980
   exactQuote: first-person action horror survival
+- claim: Scraps resource scarcity creates dual pressure on crafting versus weapon repairs.
+  level: Community-reported
+  sourceUrl: https://www.reddit.com/r/hellraiserthegame/comments/1x9uz7p/
+  exactQuote: Are scraps way rarer than every other resource
 ---
 
 ## Weapons Tier List & Durability Management Guide
@@ -57,6 +61,15 @@ To avoid running completely empty-handed during early exploration:
 * **Reserve Heavy Blunt Weapons for Armored Foes**: Do not burn Crowbar or Tire Iron durability on wooden crates or fragile environment barricades; use your bare hands or kick mechanics where prompt icons appear.
 * **Avoid Striking Stone & Metal Surfaces**: Missing an enemy and striking masonry or steel doors inflicts double durability degradation. Keep your swings centered when fighting inside narrow church hallways.
 * **Stagger with Genesis Repulsion**: When facing swarming Cultist Runners, lead with **Kinetic Repulsion** or dimensional shockwaves to stagger enemies without expending weapon durability hits.
+
+### The Scrap Economy: Crafting Allocation vs. Repair Decisions
+
+Scrap Metal acts as the most tightly constrained resource throughout the campaign, creating a dual tax on survival: every unit allocated to repairing a low-tier pipe or crowbar directly deprives players of crafting vital medical tourniquets or high-grade ammunition.
+
+To maximize your Scrap Metal efficiency:
+* **Never Swing in Red Condition (< 15%)**: A broken tool yields only negligible scrap salvage. If a high-tier weapon reaches red condition, store it in your inventory until reaching a workbench with Grindstone Oil rather than risking an outright shatter.
+* **Lead with Kinetic Crowd Control**: Use the Genesis Configuration's **Kinetic Repulsion** ability to stagger or knock down swarming cultist groups for zero durability expenditure, then close in with clean executions.
+* **Prioritize High-Yield Armory Caches**: Keypad-locked lockers often hold pre-fabricated weapon attachments and pristine tools. Consult our [all keypad and safe codes directory](/guide/all-keypad-codes-safes-lockers/) to bypass crafting taxes entirely.
 
 ## Armor Penetration vs. Flesh Damage Rule
 

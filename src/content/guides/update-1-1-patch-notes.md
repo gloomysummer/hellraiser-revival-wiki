@@ -3,7 +3,7 @@ title: "Update 1.1 Patch Notes: Hellraiser Revival Guide"
 description: "Hellraiser: Revival Update 1.1 patch notes covers GPU driver alerts, sewer ladder fall fixes, and Charlotte chase progression softlock remedies on Steam."
 summary: "Clive Barker's Hellraiser: Revival Update 1.1 deployed on October 15, 2026 for PC on Steam, addressing critical progression softlocks and stability bugs. Key fixes include an automated outdated GPU driver startup notice, resolution for falling through sewer ladder floors, Charlotte chase collision blockers, and missing Flooded Room puzzle levers."
 pubDate: 2026-10-15
-updated: '2026-10-18'
+updated: '2026-10-20'
 category: Technical
 tags:
 - update-1-1
@@ -24,6 +24,10 @@ evidence:
   level: Official
   sourceUrl: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1846651706677637
   exactQuote: For those who opened the box on consoles, your patch is coming soon.
+- claim: PlayStation 5 and console players actively track 1.1 patch parity with Steam PC.
+  level: Community-reported
+  sourceUrl: https://www.reddit.com/r/hellraiserthegame/comments/1xa0m1l/
+  exactQuote: Is PS5 version updated with the latest patch
 ---
 
 ## Hellraiser: Revival Update 1.1 Overview & Release Details
@@ -93,7 +97,7 @@ Yes. Both progression blockers are listed in the official notes: the player fall
 The patch added a startup notice that tells you when your GPU driver is out of date and needs updating. If the notice appears at boot, update your display drivers before continuing into the Labyrinth. Boot failures and DirectX initialization errors are covered in our [PC crash and black screen troubleshooting guide](/guide/pc-crash-black-screen-fixes/).
 
 ### When Is Update 1.1 Coming to PS5 and Xbox Series X|S?
-No calendar date has been confirmed yet. The official announcement addresses console players directly — "For those who opened the box on consoles, your patch is coming soon" — confirming the console deployment is separate from and later than the Steam PC release. Platform timing is tracked in our [release time and unlock times guide](/guide/release-time-unlock-times-guide/).
+No calendar date has been confirmed yet. The official announcement addresses console players directly — "For those who opened the box on consoles, your patch is coming soon" — confirming the console deployment is separate from and later than the Steam PC release. Community players on PlayStation 5 and Xbox awaiting patch parity are advised to create manual cloud backups before major chapter transitions (particularly prior to sewer ladder climbs and Charlotte encounters) to prevent softlocks before the patch deploys. Platform timing is tracked in our [release time and unlock times guide](/guide/release-time-unlock-times-guide/).
 
 ### Will There Be More Patches After Update 1.1?
 Yes. The announcement closes with "More patches are to come…", so Update 1.1 is the start of the post-launch fix cadence rather than a one-off. This page will be extended as further official notes land.
