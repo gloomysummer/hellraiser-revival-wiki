@@ -1,9 +1,9 @@
 ---
-title: 'Bruno Keller Boss Guide: 2 Phases & Weak Points'
-description: 'Bruno Keller''s 2-phase fight in Scarlet Church: bait his scalpel lunge, shatter his armored apron with blunt weapons, and hit his 2 weak points. Full strategy.'
+title: "Bruno Keller: How to Beat, 2 Phases & Weak Points"
+description: "Beat Bruno Keller in 2 phases: bait his lunges, break the armored apron with blunt weapons, then hit his nape and head weak points. Full Scarlet Church guide."
 summary: 'Bruno Keller, the sadistic surgeon known as the Picasso of the Scalpel, is the primary human boss inside the Scarlet Church. Defeat him in 2 phases: bait his wide lunge attacks, utilize heavy blunt weapons to shatter his armored apron, exploit his 2 weak points (nape and head), and stay clear of hanging flesh traps.'
 pubDate: 2026-10-02
-updated: '2026-10-09'
+updated: '2026-10-20'
 category: Bosses
 tags:
 - bruno-keller
@@ -28,6 +28,8 @@ guide_video:
 ---
 
 ## How to Beat Bruno Keller (The Picasso of the Scalpel)
+
+> **TL;DR — How to beat Bruno Keller:** Defeat Bruno Keller in 2 phases by baiting his wide lunge attacks, using heavy blunt weapons to shatter his armored apron, and targeting his nape and head weak points while dodging his dual [Bruno's Scalpel](/guide/brunos-scalpel-weapon-guide/) strikes.
 
 Within the fanatical hierarchy of the **Scarlet Church**, few figures are as terrifying as **Bruno Keller**. Revering bodily mutilation as sacred art, Keller stalks the player through a labyrinth of hanging flesh hooks, operating tables, and blood-soaked dissection wards.
 
