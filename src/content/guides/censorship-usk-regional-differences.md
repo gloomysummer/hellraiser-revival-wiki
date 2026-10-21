@@ -3,7 +3,7 @@ title: "Hellraiser Revival Uncut: USK 18 & Uncensored FAQ"
 description: "Verified: Hellraiser: Revival ships 100% uncut with USK 18 — all cutscenes, extreme gore, and campaign walkthrough sequences remain completely uncensored."
 summary: "Clive Barker's Hellraiser: Revival is 100% uncut globally with a USK 18 rating, featuring fully uncensored campaign walkthrough scenes, unaltered narrative cutscenes, and extreme body horror gore across all platforms without requiring external uncut patches, while providing an optional in-game streamer mode toggle for public broadcasts."
 pubDate: 2026-10-02
-updated: '2026-10-18'
+updated: '2026-10-21'
 category: FAQ
 tags:
 - usk
@@ -48,10 +48,13 @@ Developer Saber Interactive maintained strict adherence to Clive Barker's uncomp
 
 ---
 
-## Uncensored Walkthrough & Story Cutscene FAQs
+## Uncensored Walkthrough, Cutscenes & Playthrough FAQs
 
-### Are Any Story Cutscenes or Campaign Sequences Censored?
-No. Every regional edition and digital storefront version (Steam, PlayStation 5, Xbox Series X|S) provides the exact same master build. All narrative cutscenes—including Aidan's encounters with the Cenobites, Marlowe's ceremonies, and the intense climax in our [Sunny all endings guide](/guide/how-to-save-sunny-endings-guide/)—are completely intact and uncensored.
+### Is the Hellraiser Revival Walkthrough or Playthrough Uncensored?
+Yes. Every standard Hellraiser Revival walkthrough or full campaign playthrough is completely uncut and uncensored across all chapters and regional editions. Players encounter all physical damage states, body horrors, and environment gore out of the box without content omissions.
+
+### Are All Cutscenes Completely Uncensored in Every Region?
+Yes. All narrative cutscenes across Steam, PlayStation 5, and Xbox Series X|S editions—including Aidan's encounters with the Cenobites, Marlowe's ceremonies, and the intense climax in our [Sunny all endings guide](/guide/how-to-save-sunny-endings-guide/)—are completely intact and uncensored.
 
 ### Is an External "Uncensored Patch" Needed for Full Gore?
 No third-party patch, community mod, or regional unlocker is required. Unlike older horror releases that received edited cuts in Germany or Australia, *Hellraiser: Revival* secured full adult classifications (USK 18 and ACB R18+) for its raw cut without cuts. Players following our [demo walkthrough and secrets guide](/guide/demo-walkthrough-secrets/) or playing through the full release experience the uncompromised artistic vision out of the box.

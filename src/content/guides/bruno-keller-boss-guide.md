@@ -3,7 +3,7 @@ title: "Bruno Keller: How to Beat, 2 Phases & Weak Points"
 description: "Beat Bruno Keller in 2 phases: bait his lunges, break the armored apron with blunt weapons, then hit his nape and head weak points. Full Scarlet Church guide."
 summary: 'Bruno Keller, the sadistic surgeon known as the Picasso of the Scalpel, is the primary human boss inside the Scarlet Church. Defeat him in 2 phases: bait his wide lunge attacks, utilize heavy blunt weapons to shatter his armored apron, exploit his 2 weak points (nape and head), and stay clear of hanging flesh traps.'
 pubDate: 2026-10-02
-updated: '2026-10-20'
+updated: '2026-10-21'
 category: Bosses
 tags:
 - bruno-keller
@@ -32,6 +32,9 @@ guide_video:
 > **TL;DR — How to beat Bruno Keller:** Defeat Bruno Keller in 2 phases by baiting his wide lunge attacks, using heavy blunt weapons to shatter his armored apron, and targeting his nape and head weak points while dodging his dual [Bruno's Scalpel](/guide/brunos-scalpel-weapon-guide/) strikes.
 
 Within the fanatical hierarchy of the **Scarlet Church**, few figures are as terrifying as **Bruno Keller**. Revering bodily mutilation as sacred art, Keller stalks the player through a labyrinth of hanging flesh hooks, operating tables, and blood-soaked dissection wards.
+
+> [!TIP] **Struggling with Boss Tankiness? Enable Boss Health Bars**
+> If Bruno Keller or other major encounters feel like insurmountable damage sponges, check your settings under **Options > Interface** and toggle **Boss Health Bar** to **Enabled**. By default, this display is turned off across all difficulties, leaving players unable to confirm whether their heavy blunt strikes are cracking armor or deflecting. Enabling the bar displays both armor posture threshold and remaining vitality.
 
 ## Boss Profile: Bruno Keller
 
@@ -64,4 +67,4 @@ Once reduced below 50% health, Keller douses his scalpels in adrenaline and retr
 
 Defeating Bruno Keller unlocks the **Dissection Key**, access to the embalming wing's weapon upgrade bench, and drops rare crafting materials for upgraded trauma kits.
 
-This fight is one encounter in a larger roster — the [all Cenobites weaknesses guide](/guide/all-cenobites-weaknesses-guide/) covers every entity's evasion patterns.
+This fight is one encounter in a larger roster — the [all Cenobites weaknesses guide](/guide/all-cenobites-weaknesses-guide/) covers every entity's evasion patterns. If you experience performance hitches or stuttering during the arena phase, ensure your hardware meets the [PC system requirements](/guide/system-requirements-pc-specs/) and verify the fixes documented in our [Update 1.1 patch notes](/guide/update-1-1-patch-notes/).
