@@ -1,9 +1,9 @@
 ---
-title: "Hellraiser Revival Codes: Safes, Keypads & Lockers"
-description: "All 10 verified Hellraiser: Revival codes — keypad combinations, safe solutions, locker clues, container loot & the Codebreaker achievement walkthrough."
+title: "Hellraiser Revival Keypad Codes & Safe Combinations"
+description: "All 10 verified Hellraiser: Revival safe combinations & keypad codes — locker solutions, clue locations & the Codebreaker achievement walkthrough."
 summary: "Hellraiser: Revival contains 10 progression keypad codes for locked cupboards, safes, and security doors across the campaign, with opening 5 unlocking the Codebreaker achievement. The first hallway cabinet features two community variants (0199 or 9901). Below is the verified breakdown of combinations, clues, and container contents."
 pubDate: 2026-10-09
-updated: '2026-10-18'
+updated: '2026-10-21'
 category: Mechanics
 tags:
 - keypad-codes
@@ -28,7 +28,7 @@ evidence:
   exactQuote: The first cabinet has two reported combinations, 9901 and 0199.
 ---
 
-## All 10 Keypad Codes
+## All 10 Keypad Codes & Safe Combinations
 
 Locked keypad doors, lockers, and cupboards in *Clive Barker's Hellraiser: Revival* protect vital crafting items, weapon attachments, and ammunition. Opening any five locked containers awards the **Codebreaker** achievement.
 
