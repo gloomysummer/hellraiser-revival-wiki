@@ -1,14 +1,13 @@
 ---
-title: Hellraiser Revival Weapons Tier List & Durability
-description: 'Complete weapons tier list and durability guide for Hellraiser: Revival.
-  Compare blunt armor-breaking tools, sharp blades, and firearms damage.'
+title: Hellraiser Best Weapons Tier List & Durability
+description: 'Best weapons tier list for Hellraiser: Revival — S-tier Heavy Sledgehammer survives 24 hits while C-tier Wrenched Pipe breaks at 15.'
 summary: 'Combat in Hellraiser: Revival demands tactical management of weapon durability
   between concussive blunt tools and slicing blades. Top-tier weapons include the
   Sledgehammer for shattering heavy cultist armor, the Fireaxe for lethal decapitations,
   and the Sawed-off Shotgun for emergency crowd-control stagger during intense ambush
   encounters.'
 pubDate: 2026-10-02
-updated: '2026-10-21'
+updated: '2026-10-22'
 category: Equipment
 tags:
 - weapons
@@ -16,6 +15,19 @@ tags:
 - durability
 - combat
 - crafting
+tier_snapshot:
+- tier: S
+  weapon: "Heavy Sledgehammer · Sawed-off Shotgun"
+  durability: "Sledgehammer: 24 hits; Shotgun: infinite (ammo-based)"
+- tier: A
+  weapon: "Rusty Fireaxe · Service Revolver (.38)"
+  durability: "Fireaxe: 18 hits; Revolver: infinite (ammo-based)"
+- tier: B
+  weapon: "Heavy Tire Iron · Bone-Saw Scalpel"
+  durability: "Tire Iron: 32 hits; Scalpel: 12 hits"
+- tier: C
+  weapon: "Wrenched Pipe"
+  durability: "15 hits"
 evidence:
 - claim: Gameplay mechanics confirm durability degradation, blunt armor-break, and
     firearm ammo constraints.

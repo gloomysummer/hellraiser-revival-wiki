@@ -1,0 +1,78 @@
+---
+interface TierItem {
+  tier: "S" | "A" | "B" | "C";
+  weapon: string;
+  durability: string;
+}
+
+interface Props {
+  items: TierItem[];
+}
+
+const { items } = Astro.props;
+---
+<section class="tier-snapshot" aria-label="Best weapons tier list quick look">
+  <h2 id="best-weapons-tier-snapshot">Best Weapons Tier List — Quick Look</h2>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Tier</th>
+          <th>Representative Weapons</th>
+          <th>Durability</th>
+        </tr>
+      </thead>
+      <tbody>
+        {items.map((row) => (
+          <tr>
+            <td class={`tier-badge tier-${row.tier.toLowerCase()}`}>{row.tier}</td>
+            <td>{row.weapon}</td>
+            <td>{row.durability}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<style>
+  section {
+    margin: 1.25rem 0;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--line, #333);
+    border-radius: 6px;
+  }
+  section h2 {
+    font-size: 1.05rem;
+    margin: 0 0 0.75rem;
+    color: var(--text-heading, #fff);
+  }
+  .table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+  }
+  th, td {
+    padding: 8px 12px;
+    border: 1px solid var(--line, #333);
+    text-align: left;
+  }
+  th {
+    background: rgba(255, 255, 255, 0.05);
+    font-weight: 600;
+  }
+  .tier-badge {
+    font-weight: 700;
+    text-align: center;
+    width: 48px;
+  }
+  .tier-s { color: #f59e0b; }
+  .tier-a { color: #10b981; }
+  .tier-b { color: #3b82f6; }
+  .tier-c { color: #9ca3af; }
+</style>
