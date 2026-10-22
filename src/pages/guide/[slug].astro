@@ -2,6 +2,7 @@
 import { getCollection, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import QuickAnswer from "../../components/QuickAnswer.astro";
+import TierSnapshot from "../../components/TierSnapshot.astro";
 import VideoEmbed from "../../components/VideoEmbed.astro";
 import AdSlot from "../../components/AdSlot.astro";
 import { siteConfig } from "../../config/site.config";
@@ -150,6 +151,8 @@ const jsonLd = [
         </div>
 
         <QuickAnswer summary={data.summary} />
+
+        {data.tier_snapshot && <TierSnapshot items={data.tier_snapshot} />}
 
         {/* ── 广告位 1（首屏直答下方黄金位，2026-10-13 提收重构）──
             桌面端：将全站单价王 728x90（实测 CPM $10.11）从页脚谷底提拔至 QuickAnswer 正下方；

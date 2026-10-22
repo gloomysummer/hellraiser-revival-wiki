@@ -54,6 +54,17 @@ const guides = defineCollection({
         description: z.string().optional(),
       })
       .optional(),
+    tier_snapshot: z
+      .array(
+        z.object({
+          tier: z.enum(["S", "A", "B", "C"]),
+          weapon: z.string(),
+          durability: z.string(),
+        })
+      )
+      .min(4)
+      .max(4)
+      .optional(),
     draft: z.boolean().default(false),
   }),
 });
