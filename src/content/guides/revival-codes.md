@@ -1,5 +1,5 @@
 ---
-title: "Hellraiser Revival Codes: No Promo Codes Exist"
+title: "All Hellraiser Revival Codes (No Promo Codes)"
 description: "Verified: Clive Barker's Hellraiser: Revival has no text-based promo codes. Pre-order and Deluxe skins unlock via store entitlement, while 10 safe codes exist."
 summary: "Clive Barker's Hellraiser: Revival does not feature any text-based promo or redemption codes. Pre-order bonus items, Deluxe Edition skins, and the 80s VHS visual filter unlock automatically through platform account entitlements. Players searching for progression combinations across the campaign should refer to the ten in-game puzzle keypad, safe, and locker codes."
 pubDate: 2026-10-23
@@ -71,6 +71,24 @@ If your search for 'Hellraiser Revival codes' was intended to bypass locked door
 * **Sewer Cabinet**: `1512` (Clue: Wall scoreboard tally)
 
 For complete step-by-step walkthroughs, container contents, and puzzle box mechanics, consult our dedicated [Hellraiser Revival Keypad Codes & Safe Combinations Guide](/guide/all-keypad-codes-safes-lockers/) and the [Genesis Configuration Puzzle Box Guide](/guide/genesis-configuration-puzzle-guide/).
+
+---
+
+## All Hellraiser Revival Codes: Complete Quick Reference
+
+Players searching for **all Hellraiser Revival codes** want a single, definitive list. Here is every code-type in the game, consolidated:
+
+| Code Type | Count | Status |
+| :--- | :---: | :--- |
+| **Promotional Redemption Codes** | **0** | Do not exist. No code entry screen, voucher system, or gift-code mechanic is implemented. |
+| **Pre-Order Bonus Entitlements** | **2** | Martyr Sawblade + Labyrinth Pistol — unlock automatically on license verification. |
+| **Deluxe Edition Entitlements** | **2** | 80s VHS Visual Filter + Brass Weapon Skins — toggle under Options > Gameplay > Visual Filters. |
+| **Campaign Keypad / Safe Codes** | **10** | Four-digit puzzle combinations for locked cabinets, safes, and doors (listed in the section above). |
+| **Demo-Only Codes** | **1** | Vestry Safe `0719` (Steam demo only; not in the full release). |
+
+**Total: 10 campaign keypad codes + 1 demo code + 4 automatic entitlements. No other codes exist.**
+
+Any third-party website advertising additional "working" promo codes, free currency generators, or unlock strings for Hellraiser: Revival is inaccurate. Saber Interactive has not implemented a text-based redemption system, and all DLC content is tied to your platform store entitlement rather than a manual code.
 
 ---
 
