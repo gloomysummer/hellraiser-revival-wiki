@@ -56,7 +56,7 @@ In the chapel nave, place the puzzle box upon the central obsidian pedestal:
 3. Align the lower quadrant **one notch counter-clockwise** until the bell chimes.
 4. The altar floor will recess, opening the subterranean staircase leading into the demo's final boss encounter chamber.
 
-The box you handle in the demo is the real deal — the [Genesis Configuration puzzle guide](/guide/genesis-configuration-puzzle-guide/) explains every facet and power it unlocks. If you are playing the full commercial campaign and looking for all 10 progression keypad doors, locker combinations, and safe codes, consult our complete breakdown: [Hellraiser Revival All Codes: Safes & Lockers](/guide/all-keypad-codes-safes-lockers/).
+The box you handle in the demo is the real deal — the [Genesis Configuration puzzle guide](/guide/genesis-configuration-puzzle-guide/) explains every facet and power it unlocks. If you are playing the full commercial campaign and looking for all 10 progression keypad doors, locker combinations, and safe codes, consult our complete breakdown: [Hellraiser Revival All Codes: Safes & Lockers](/guide/all-keypad-codes-safes-lockers/). The demo's Vestry Safe `0719` and every other code type across the full game — including why no promo codes exist — are consolidated in our [All Hellraiser Revival Codes](/guide/revival-codes/) guide.
 
 ## Section 4: Surviving the Chapel Ambush
 

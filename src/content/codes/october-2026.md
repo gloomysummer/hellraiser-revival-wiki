@@ -23,6 +23,8 @@ That matters for how you search: any site showing a "code list" for this game wi
 
 If you are searching for **in-game puzzle combinations, locker codes, and safe codes** to open locked containers across the campaign, refer directly to our full guide: [Hellraiser Revival All Codes: Safes & Lockers](/guide/all-keypad-codes-safes-lockers/).
 
+And if you arrived wondering whether Hellraiser: Revival has promo or gift codes at all, the [All Hellraiser Revival Codes guide](/guide/revival-codes/) explains why every reward unlocks automatically instead of requiring a string.
+
 ## How Deluxe & Pre-Order Rewards Unlock
 
 1. **Install and launch the game**: the release is live on PC via Steam, PlayStation 5, Xbox Series X|S and Nintendo Switch 2 — the entitlement shows up as soon as your account holds the license.
