@@ -1,9 +1,9 @@
 ---
-title: "Hellraiser Revival All Endings & How to Save Sunny"
-description: "Complete Hellraiser: Revival all endings guide. Compare every ending condition, Corruption meter choice, Scarlet Church bargain, and how to save Sunny."
+title: "Sunny in Hellraiser Revival: Save Her or Lose Her"
+description: "Yes — Sunny can be saved in Hellraiser: Revival: keep Corruption low, refuse blood offerings, and invert the Genesis Configuration in the finale."
 summary: "Rescuing Sunny in Clive Barker's Hellraiser: Revival depends strictly on keeping Aidan's corruption meter low and deciding how to wield the Genesis Configuration during the final confrontation with Pinhead. Key campaign endings range from Mortal Salvation and Cenobite Ascension to Eternal Damnation inside the Labyrinth."
 pubDate: 2026-10-02
-updated: '2026-10-09'
+updated: '2026-10-26'
 category: Story
 tags:
 - sunny
@@ -27,6 +27,8 @@ guide_video:
 ---
 
 ## Hellraiser: Revival All Endings & How to Save Sunny
+
+**Can you save Sunny? Yes** — keep Corruption low, refuse the Scarlet Church's blood offerings, and solve the inverted [Genesis Configuration](/guide/genesis-configuration-puzzle-guide/) at the finale; fail these and she is lost to the Labyrinth.
 
 The driving narrative core of *Clive Barker's Hellraiser: Revival* follows protagonist **Aidan** descending into the darkness after opening the **Genesis Configuration** puzzle box. With his beloved **Sunny** held beyond the threshold of Hell, every bargain struck with **Marlowe's Scarlet Church** and the **Cenobites** shapes the campaign's final resolution.
 
