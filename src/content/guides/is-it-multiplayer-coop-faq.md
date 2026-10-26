@@ -1,9 +1,9 @@
 ---
-title: "Is Hellraiser Revival Multiplayer? Co-op FAQ"
+title: "Single-Player Only: Hellraiser Revival Co-op FAQ"
 description: 'Is Hellraiser: Revival co-op or multiplayer? No — single-player only (1 player): no online co-op, no couch co-op, no PvP. Full mode table + why Saber went solo.'
 summary: 'Clive Barker''s Hellraiser: Revival is a single-player only game (1 player, no co-op or multiplayer). Developer Saber Interactive designed it as a solitary first-person survival horror experience. Full FAQ: why solo horror works, single-player tips, and co-op alternatives for horror fans.'
 pubDate: 2026-10-02
-updated: '2026-10-20'
+updated: '2026-10-26'
 category: FAQ
 tags:
 - multiplayer
