@@ -3,7 +3,7 @@ title: Hellraiser Revival Crash Fix & Black Screen Guide
 description: 'Hellraiser: Revival crashing or black screen? Outdated GPU drivers, corrupted game files and fullscreen display conflicts are the usual causes — verified fixes.'
 summary: "Hellraiser: Revival crashing or showing a black screen usually traces to corrupted game files, an outdated GPU driver, or fullscreen display conflicts. The three fastest fixes: verify Steam file integrity, update to the latest NVIDIA Game Ready (560.xx+) or AMD Adrenalin (24.x+) driver, and launch with -windowed -noborder."
 pubDate: 2026-10-08
-updated: '2026-10-22'
+updated: '2026-10-26'
 category: Technical
 tags:
 - crash-fix
@@ -109,6 +109,18 @@ This signature stems from aggressive transient clock boosts in Unreal Engine 5 u
 1. **Downclock P-Core Multiplier via BIOS / Intel XTU**: Lowering the Performance-Core ratio from 54x to 52x stabilizes transient voltage demands without noticeable frame rate degradation.
 2. **Apply Intel Default Power Specifications**: In your motherboard UEFI BIOS, switch CPU power limits from uncapped vendor profiles to official Intel Baseline profiles to prevent voltage droop under spike loads.
 3. **Perform a Clean Display Driver Reinstallation**: Use DDU (Display Driver Uninstaller) in Windows Safe Mode to purge corrupted shader cache remnants before installing the latest Game Ready or Adrenalin driver.
+
+---
+
+## 7. Post-Boss Cutscene Crash: 0xd8 Access Violation (Bruno Elevator)
+
+Following the boss fight against Bruno Keller in the Dissection Gallery, multiple players report an unrecoverable crash right as Aidan triggers the elevator or begins the subsequent Cenobite dialogue cutscene.
+
+The crash generates an `EXCEPTION_ACCESS_VIOLATION writing address 0x00000000000000d8` inside the Unreal Engine cinematic sequencer:
+* **Root Issue**: An active combat actor state or status trigger fails to cleanly dereference before the cinematic sequencer takes over the player camera, causing a null pointer write error.
+* **Workaround 1 (Restart Game & Steam)**: Perform a full restart of the game client and Steam before interacting with the elevator console to flush temporary memory buffers.
+* **Workaround 2 (Reload Checkpoint Prior to Bruno Fight)**: If loading the auto-save created immediately after Bruno Keller crashes consistently, reload the manual save right before the Bruno encounter. Defeating him cleanly and proceeding straight to the elevator without lingering in the gallery resets dirty sequencer flags.
+* **Workaround 3 (Submit Logs to Saber Support)**: Locate your local diagnostic logs at `%LOCALAPPDATA%\HellraiserRevival\Saved\Logs\` and attach `HellraiserRevival.log` to a [Saber Interactive support ticket](https://support.saber.games/hc/en/clive-barker-s-hellraiser-revival/contact-us).
 
 ---
 
