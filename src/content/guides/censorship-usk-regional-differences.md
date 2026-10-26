@@ -44,7 +44,7 @@ The German release will launch **100% Uncut (Keine Jugendfreigabe)**, matching i
 Developer Saber Interactive maintained strict adherence to Clive Barker's uncompromised artistic vision. The studio confirmed:
 * **Decapitation & Dismemberment**: Physics-based limb severance remains active across all platforms (PC, PS5, Xbox Series X|S, Nintendo Switch 2).
 * **BDSM & Piercing Motifs**: Authentic iconography, including hooked chains, skin flaying, and surgical mutilations depicted in the Scarlet Church, remain unaltered.
-* **Streamer & Content Creator Mode**: For streamers on Twitch and YouTube, an optional **"Streamer Safe" visual toggle** is provided in the options menu to blur explicit nudity and prevent copyright flag warnings.
+* **Streamer & Content Creator Mode**: For streamers on Twitch and YouTube, an optional **"Streamer Safe" visual toggle** is provided in the options menu to blur explicit nudity and prevent copyright flag warnings. For dedicated coverage of mature content settings, see our [Hellraiser Revival 18+ scenes and rating guide](/guide/18-plus-scenes-guide/).
 
 ---
 
@@ -71,3 +71,5 @@ The gore that these ratings confirm is produced by the melee moveset itself: the
 Regional cuts do not change the early game — the [demo walkthrough](/guide/demo-walkthrough-secrets/) reflects the same content rules across regions.
 
 Hardware planning is unaffected by regional cuts — check the [PC system requirements](/guide/system-requirements-pc-specs/) for the uncut build's official specs.
+
+For version differences and broadcast safe toggles, check our [18+ scenes and versions guide](/guide/18-plus-scenes-guide/).
