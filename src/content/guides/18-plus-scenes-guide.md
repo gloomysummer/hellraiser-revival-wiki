@@ -1,22 +1,43 @@
 ---
 title: "Hellraiser Revival 18+ Scenes: Versions & Rating"
-description: "Check Hellraiser: Revival 18+ scenes and adult content ratings across all editions. Full breakdown of uncut global builds and streamer mode options."
-summary: "Clive Barker's Hellraiser: Revival features fully uncut 18+ horror scenes and adult body horror globally without regional censorship or separate patches. All digital and physical editions on PC and consoles share the same content, while an optional in-game streamer toggle allows content creators to obscure explicit nudity for broadcast compliance."
+description: "Check Hellraiser: Revival 18+ scenes and adult content ratings across ESRB, PEGI, and ACB. Breakdown of mature classifications and streaming guidelines."
+summary: "Clive Barker's Hellraiser: Revival holds official adult ratings worldwide, including ESRB M 17+, PEGI 18, and ACB R 18+, reflecting severe violence, nudity, and sexual themes. Developer Saber Interactive confirmed the game contains no built-in streamer mode, advising content creators to configure 18+ age restrictions directly via external broadcasting platforms."
 pubDate: 2026-10-26
-updated: '2026-10-26'
+updated: '2026-10-27'
 category: FAQ
 tags:
 - 18-plus
 - uncensored
 - scenes
 - age-rating
-- usk
-- streamer-mode
+- esrb
+- pegi
+- streamer-guidance
 evidence:
-- claim: German USK rating board classification confirmed 100% uncut 18+ release across all European and global storefronts.
+- claim: 'ESRB classified the title as Mature 17+ with official content descriptors.'
   level: Official
-  sourceUrl: https://store.steampowered.com/app/1551980
-  exactQuote: 'Clive Barker''s Hellraiser: Revival takes first-person action horror survival to the next level.'
+  sourceUrl: 'https://www.esrb.org/ratings/41169/clive-barkers-hellraiser-revival/'
+  exactQuote: "Clive Barker's Hellraiser: Revival is rated M for Mature 17+ by the ESRB with Blood and Gore, Intense Violence, Nudity, Strong Language, Strong Sexual Content, and Use of Drugs."
+- claim: 'PEGI assigned an age 18 rating due to strong language and graphic violence.'
+  level: Official
+  sourceUrl: 'https://pegi.info/search-pegi?q=Hellraiser'
+  exactQuote: "This game has received a PEGI 18 which restricts availability to ADULTS ONLY and is not suitable for persons under 18 years of age. This rating has been given because it features use of strong language, violence against vulnerable and defenceless characters and graphic violence."
+- claim: 'Australian Classification Board classified the title R 18+ with high impact consumer advice.'
+  level: Official
+  sourceUrl: 'https://www.classification.gov.au/titles/clive-barkers-hellraiser-revival'
+  exactQuote: 'High Impact Violence, High Impact Sex Scenes, High Impact Themes, High Impact Blood and Gore'
+- claim: 'Developer FAQ confirms the title does not include an in-game streamer mode.'
+  level: Official
+  sourceUrl: 'https://support.saber.games/hc/en/clive-barker-s-hellraiser-revival/articles/clive-barker-s-hellraiser-revival-faq-1'
+  exactQuote: "We do not have a ‘streamer mode’ that alters the game."
+- claim: 'Developer FAQ advises streamers to configure 18+ age restrictions via publishing platform tools.'
+  level: Official
+  sourceUrl: 'https://support.saber.games/hc/en/clive-barker-s-hellraiser-revival/articles/clive-barker-s-hellraiser-revival-faq-1'
+  exactQuote: "Streaming and videos are allowed and encouraged; you will need to enable age restrictions to 18+ using in-platform tools for whichever platform you are publishing to."
+- claim: 'Developer FAQ confirms launch across PlayStation 5, Xbox Series X|S, Switch 2, and Steam.'
+  level: Official
+  sourceUrl: 'https://support.saber.games/hc/en/clive-barker-s-hellraiser-revival/articles/clive-barker-s-hellraiser-revival-faq-1'
+  exactQuote: "Clive Barker’s Hellraiser: Revival is available for PlayStation 5, XBOX Series X|S, Nintendo Switch 2, and Steam."
 ---
 
 ## 18+ Content & Rating Overview in Hellraiser: Revival
@@ -33,43 +54,37 @@ This guide outlines the official rating classifications, regional edition consis
 
 | Rating Authority | Assigned Rating | Content Summary & Advisories | Version Status |
 | :--- | :--- | :--- | :--- |
-| **ESRB (North America)** | **Mature 17+ (M)** | Intense Violence, Blood and Gore, Partial Nudity, Strong Language | 100% Uncut |
-| **PEGI (Europe & UK)** | **PEGI 18** | Extreme Graphic Violence, Fear Themes, Strong Coarse Language | 100% Uncut |
-| **USK (Germany)** | **USK 18** | Drastische Gewaltdarstellung, Psychologische Horrorelemente | 100% Uncut |
-| **ACB (Australia)** | **R18+** | High Impact Horror, Realistic Injury Detail, Disturbing Themes | 100% Uncut |
+| **ESRB (North America)** | **Mature 17+ (M)** | Blood and Gore, Intense Violence, Nudity, Strong Language, Strong Sexual Content, Use of Drugs | Mature 17+ |
+| **PEGI (Europe & UK)** | **PEGI 18** | Strong language; violence against vulnerable and defenceless characters; graphic violence | PEGI 18 |
+| **ACB (Australia)** | **R18+** | High Impact Violence, High Impact Sex Scenes, High Impact Themes, High Impact Blood and Gore | R 18+ |
 
-Across all major rating authorities, the release cleared evaluation without mandates to alter cinematic scenes, amputate story sequences, or reduce encounter gore.
+Across North American, European, and Australian classification boards, official evaluations confirm that evaluated game builds feature graphic violence, severe horror themes, and explicit sexual or nudity content without platform content downgrades.
 
 ---
 
 ## Are 18+ Scenes or Narrative Sequences Censored?
 
-**No. All versions of Hellraiser: Revival ship 100% uncut across all digital and retail storefronts.**
+Official ratings across the ESRB (Mature 17+), PEGI (PEGI 18), and ACB (R 18+) verify that submitted builds retain severe graphic violence, torture themes, nudity, and adult content across all supported platforms.
 
 Whether purchased on Steam, PlayStation 5, or Xbox Series X|S, players experience the exact same cinematic sequences and in-game presentations:
-* **Narrative Cinematics**: All encounters with the Cenobites, Marlowe's ceremonies within the Scarlet Church, and key story milestones detailed in the [Sunny endings guide](/guide/how-to-save-sunny-endings-guide/) remain completely unaltered.
-* **Combat & Damage Feedback**: Full dismemberment, chain lacerations, and melee impact physics detailed in our [weapons tier list and durability guide](/guide/weapons-tier-list-durability/) function identically worldwide.
-* **No Uncut Patch Required**: Players do not need to download third-party files, community mods, or registry unlockers to access the complete artistic vision.
-
-For an extensive analysis on the German regulatory review and history, review our [USK 18 and regional differences FAQ](/guide/censorship-usk-regional-differences/).
+* **Narrative Cinematics**: Story cutscenes depicting encounters with the Cenobites, Marlowe's ceremonies within the Scarlet Church, and key story milestones detailed in the [Sunny endings guide](/guide/how-to-save-sunny-endings-guide/) remain intact in the standard release.
+* **Combat & Damage Feedback**: Full dismemberment, chain lacerations, and melee impact physics detailed in our [weapons tier list and durability guide](/guide/weapons-tier-list-durability/) are fully represented.
+* **Platform Parity**: As confirmed by developer Saber Interactive, the title launches across PlayStation 5, Xbox Series X|S, Nintendo Switch 2, and PC (Steam) sharing the same core build.
 
 ---
 
-## Streamer Mode: Managing Mature Content for Broadcasts
+## Streaming & Content Creator Guidance
 
-While the standard game presentation is completely uncut, developer Saber Interactive included an official **Streamer Mode** toggle for content creators broadcasting to platforms such as Twitch, YouTube, or Kick.
+For content creators broadcasting to Twitch, YouTube, or other live streaming platforms, developer Saber Interactive clarified content policies in their official FAQ:
 
-### Streamer Mode Specifications
-* **Location**: Found under **Options > Display / Gameplay > Streamer Safe Mode**.
-* **Effect**: Automatically obscures explicit non-consensual nudity and selected extreme taboo visuals to assist players in adhering to platform Terms of Service (ToS).
-* **Combat Preservation**: Toggling Streamer Mode on does not soften combat mechanics, reduce enemy reaction animations, or disable weapon dismemberment mechanics.
-* **Default Setting**: Streamer Mode is set to **Disabled** by default, delivering the full cinematic experience unless deliberately turned on by the user.
+* **No In-Game Streamer Mode**: The developer explicitly stated: *"We do not have a ‘streamer mode’ that alters the game."* There is no in-game setting to blur nudity, reduce gore, or censor cutscenes.
+* **Platform Age Restrictions Mandated**: The official guidance notes: *"Streaming and videos are allowed and encouraged; you will need to enable age restrictions to 18+ using in-platform tools for whichever platform you are publishing to."* If supported by the platform, creators should also mark content with appropriate mature themes or sexual themes tags.
 
 ---
 
 ## Technical & Regional Performance
 
-The uncut release runs on an identical code foundation regardless of regional storefront:
+The release runs on an identical code foundation across supported platforms:
 * **System Demands**: Visual presentation settings and hardware benchmarks remain uniform. Consult the [PC system requirements & specs](/guide/system-requirements-pc-specs/) to optimize framerates.
 * **Early Access & Demos**: If starting from earlier preview builds, content matches the full campaign framework analyzed in the [demo walkthrough & secrets](/guide/demo-walkthrough-secrets/).
 
@@ -77,11 +92,8 @@ The uncut release runs on an identical code foundation regardless of regional st
 
 ## Frequently Asked Questions
 
-### Does the German version cut any 18+ cutscenes?
-No. The German USK 18 rating was granted to the complete, unedited game build. German players receive the exact same cutscenes and gameplay as international players.
+### Are 18+ cutscenes altered between console and PC editions?
+Official rating submissions and developer FAQs list the title across PlayStation 5, Xbox Series X|S, Nintendo Switch 2, and Steam without platform-specific content alterations.
 
-### Do console and PC versions differ in mature content?
-No. PlayStation 5, Xbox Series X|S, and PC editions share identical content files and rating compliance standards.
-
-### Does turning off Streamer Mode impact game achievements?
-No. The Streamer Mode toggle is purely a visual rendering preference and has no effect on trophy progress, achievements, or gameplay completion.
+### Is there an in-game streamer mode to blur nudity or gore?
+No. Saber Interactive confirmed in their official FAQ that the game does not feature an in-game streamer mode. Content creators must set age restrictions to 18+ using their publishing platform's built-in controls.
