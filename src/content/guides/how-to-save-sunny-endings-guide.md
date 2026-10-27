@@ -1,9 +1,9 @@
 ---
-title: "Sunny in Hellraiser Revival: Save Her or Lose Her"
-description: "Yes — Sunny can be saved in Hellraiser: Revival: keep Corruption low, refuse blood offerings, and invert the Genesis Configuration in the finale."
+title: "Hellraiser Revival All Endings: How to Save Sunny"
+description: "All Hellraiser: Revival endings explained: how to save Sunny in the true secret ending, avoid Cenobite ascension, and escape the Labyrinth alive."
 summary: "Rescuing Sunny in Clive Barker's Hellraiser: Revival depends strictly on keeping Aidan's corruption meter low and deciding how to wield the Genesis Configuration during the final confrontation with Pinhead. Key campaign endings range from Mortal Salvation and Cenobite Ascension to Eternal Damnation inside the Labyrinth."
 pubDate: 2026-10-02
-updated: '2026-10-26'
+updated: '2026-10-27'
 category: Story
 tags:
 - sunny
@@ -80,5 +80,16 @@ Because normal gameplay heavily tempts players to use the Genesis Configuration'
 * **Reject Every Blood Altar**: Decline every pact offered by Marlowe and his priests across the Scarlet Church.
 * **Preserve Aidan's Humanity**: Limit puzzle box Suffering harvesting and rely primarily on conventional firearms and melee weapons.
 * **Complete the Inverted Genesis Alignment**: In the final confrontation, inspect the reverse facet of the puzzle box to release the hidden ivory latch before Pinhead seals the chamber.
+
+---
+
+## The Flesh Price Covenant: Does Pinhead's Bargain Settle?
+
+Following the true Mortal Salvation ending, players frequently discuss whether Aidan's bargain with the Order of the Gash is permanently closed or leaves room for continuation.
+
+During the final sequence:
+* **The Arm Sacrifice**: Sealing the threshold demands a physical toll. Aidan voluntarily yields his right arm to the threshold hooks, formally settling the blood debt required by the Cenobite covenant and permitting Sunny's soul to cross back into the physical realm.
+* **The Eye Close-Up**: While both protagonists escape back into reality, the final cinematic shot frames Aidan's pupil contracting into an intricate amber geometric pattern identical to the Genesis Configuration's brass carvings — confirming that crossing the Labyrinth threshold leaves an indelible mark on the survivor.
+
 
 

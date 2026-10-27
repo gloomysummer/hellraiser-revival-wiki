@@ -3,7 +3,7 @@ title: "Bruno Keller: How to Beat, 2 Phases & Weak Points"
 description: 'How to beat Bruno Keller in Hellraiser: Revival: bait his lunging grabs, stagger him with heavy blunt weapons, destroy his armor apron, and exploit weak points.'
 summary: 'Bruno Keller, the sadistic surgeon known as the Picasso of the Scalpel, is the primary human boss inside the Scarlet Church. Defeat him in 2 phases: bait his wide lunge attacks, utilize heavy blunt weapons to shatter his armored apron, exploit his 2 weak points (nape and head), and stay clear of hanging flesh traps.'
 pubDate: 2026-10-02
-updated: '2026-10-26'
+updated: '2026-10-27'
 category: Bosses
 tags:
 - bruno-keller
@@ -29,7 +29,7 @@ guide_video:
 
 ## How to Beat Bruno Keller (The Picasso of the Scalpel)
 
-> **TL;DR — How to beat Bruno Keller:** Defeat Bruno Keller in 2 phases by baiting his wide lunge attacks, using heavy blunt weapons to shatter his armored apron, and targeting his nape and head weak points, then banish him to loot the [Bruno's Scalpel](/guide/brunos-scalpel-weapon-guide/) Treasure he leaves on the arena floor.
+> **TL;DR — How to beat Bruno Keller:** Defeat Bruno Keller in 2 phases by baiting his wide lunge attacks, using heavy blunt weapons to shatter his armored apron, and targeting his nape and head weak points, then banish him to loot the [boss floor drop](/guide/brunos-scalpel-weapon-guide/) he leaves behind.
 
 Within the fanatical hierarchy of the **Scarlet Church**, few figures are as terrifying as **Bruno Keller**. Revering bodily mutilation as sacred art, Keller stalks the player through a labyrinth of hanging flesh hooks, operating tables, and blood-soaked dissection wards.
 
@@ -42,7 +42,7 @@ Within the fanatical hierarchy of the **Scarlet Church**, few figures are as ter
 * **Primary Attacks**: Telegraphed slaps and punches, lunging grabs, blood-pool repositioning, and thrown bottles
 * **Damage Type**: Direct melee strikes and stagger-inducing grabs
 * **Recommended Weaponry**: Heavy Pipe / Sledgehammer (Blunt stagger), Shotgun (Close Range finish)
-* **Reward**: [Bruno's Scalpel](/guide/brunos-scalpel-weapon-guide/) — a Treasure item left on the arena floor after the banish; sell it to Zora Beckett.
+* **Reward**: [Post-fight Treasure drop](/guide/brunos-scalpel-weapon-guide/) — a valuable item left on the arena floor after the banish; sell it to Zora Beckett.
 
 ## Phase 1: Operating Room Stalker & Armor Stagger
 
@@ -51,7 +51,7 @@ During the opening phase, Keller relies on stealth and sudden lunges from behind
 1. **Avoid Frontal Armor Sponging**: Firing firearms or swinging light blades directly into Keller's reinforced leather and steel apron wastes precious ammunition. Keller's front torso deflects light damage with high damage reduction.
 2. **Environmental Chain Restraint Mechanic**: Interact with the heavy hanging winch chains stationed near the arena pillars. When Keller charges forward with his lunging grab, activate the winch release to drop hanging meat hooks and chains onto his path, entangling his limbs for 4–5 seconds.
 3. **Exposing the Nape & Spine Weak Point**: While entangled by environmental chains or staggered from behind, bypass his chest plate entirely by targeting the unarmored flesh at his nape and upper spine with heavy blunt strikes or shotgun blasts.
-4. **Bait His Single Strikes**: Keller's main damage comes from telegraphed slaps and punches plus lunging grabs. Time your dodge, then answer with a blunt swing — repeated blunt hits to the head stagger him quickly. What he leaves behind after the banish is covered in the [Bruno's Scalpel drop guide](/guide/brunos-scalpel-weapon-guide/).
+4. **Bait His Single Strikes**: Keller's main damage comes from telegraphed slaps and punches plus lunging grabs. Time your dodge, then answer with a blunt swing — repeated blunt hits to the head stagger him quickly. What he leaves behind after the banish is covered in the [post-boss drop breakdown](/guide/brunos-scalpel-weapon-guide/).
 5. **Recovery**: If Keller grabs you, mash R2/RT to break free, then create distance and heal with a Bandage before re-engaging.
 
 Before the fight, sanity-check your loadout against the [weapons tier list and durability guide](/guide/weapons-tier-list-durability/) — broken tools mid-boss are a run-killer.
