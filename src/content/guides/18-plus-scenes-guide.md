@@ -52,24 +52,24 @@ This guide outlines the official rating classifications, regional edition consis
 
 *Hellraiser: Revival* has received high-tier mature age ratings worldwide, reflecting its faithful adherence to dark psychological horror, sadomasochistic iconography, and visceral violence:
 
-| Rating Authority | Assigned Rating | Content Summary & Advisories | Version Status |
-| :--- | :--- | :--- | :--- |
-| **ESRB (North America)** | **Mature 17+ (M)** | Blood and Gore, Intense Violence, Nudity, Strong Language, Strong Sexual Content, Use of Drugs | Mature 17+ |
-| **PEGI (Europe & UK)** | **PEGI 18** | Strong language; violence against vulnerable and defenceless characters; graphic violence | PEGI 18 |
-| **ACB (Australia)** | **R18+** | High Impact Violence, High Impact Sex Scenes, High Impact Themes, High Impact Blood and Gore | R 18+ |
+| Rating Authority | Assigned Rating | Content Summary & Advisories |
+| :--- | :--- | :--- |
+| **ESRB (North America)** | **Mature 17+ (M)** | Blood and Gore, Intense Violence, Nudity, Strong Language, Strong Sexual Content, Use of Drugs |
+| **PEGI (Europe & UK)** | **PEGI 18** | Strong language; violence against vulnerable and defenceless characters; graphic violence |
+| **ACB (Australia)** | **R18+** | High Impact Violence, High Impact Sex Scenes, High Impact Themes, High Impact Blood and Gore |
 
-Across North American, European, and Australian classification boards, official evaluations confirm that evaluated game builds feature graphic violence, severe horror themes, and explicit sexual or nudity content without platform content downgrades.
+Across North American, European, and Australian classification boards, official evaluations confirm that evaluated game builds feature graphic violence, severe horror themes, and explicit sexual or nudity content.
 
 ---
 
 ## Are 18+ Scenes or Narrative Sequences Censored?
 
-Official ratings across the ESRB (Mature 17+), PEGI (PEGI 18), and ACB (R 18+) verify that submitted builds retain severe graphic violence, torture themes, nudity, and adult content across all supported platforms.
+Official ratings across the ESRB (Mature 17+), PEGI (PEGI 18), and ACB (R 18+) verify that submitted builds retain severe graphic violence, torture themes, nudity, and adult content.
 
 Whether purchased on Steam, PlayStation 5, or Xbox Series X|S, players experience the exact same cinematic sequences and in-game presentations:
 * **Narrative Cinematics**: Story cutscenes depicting encounters with the Cenobites, Marlowe's ceremonies within the Scarlet Church, and key story milestones detailed in the [Sunny endings guide](/guide/how-to-save-sunny-endings-guide/) remain intact in the standard release.
 * **Combat & Damage Feedback**: Full dismemberment, chain lacerations, and melee impact physics detailed in our [weapons tier list and durability guide](/guide/weapons-tier-list-durability/) are fully represented.
-* **Platform Parity**: As confirmed by developer Saber Interactive, the title launches across PlayStation 5, Xbox Series X|S, Nintendo Switch 2, and PC (Steam) sharing the same core build.
+* **Platform Availability**: Saber Interactive's official FAQ lists the game for PlayStation 5, Xbox Series X|S, Nintendo Switch 2, and Steam.
 
 ---
 
@@ -93,7 +93,7 @@ The release runs on an identical code foundation across supported platforms:
 ## Frequently Asked Questions
 
 ### Are 18+ cutscenes altered between console and PC editions?
-Official rating submissions and developer FAQs list the title across PlayStation 5, Xbox Series X|S, Nintendo Switch 2, and Steam without platform-specific content alterations.
+Saber Interactive's official FAQ confirms the game is available across PlayStation 5, Xbox Series X|S, Nintendo Switch 2, and Steam.
 
 ### Is there an in-game streamer mode to blur nudity or gore?
 No. Saber Interactive confirmed in their official FAQ that the game does not feature an in-game streamer mode. Content creators must set age restrictions to 18+ using their publishing platform's built-in controls.
