@@ -1,9 +1,9 @@
 ---
-title: "Hellraiser Revival Uncut: USK 18 & Uncensored FAQ"
-description: "Verified: Hellraiser: Revival ships 100% uncut with USK 18 — all cutscenes, extreme gore, and campaign walkthrough sequences remain completely uncensored."
-summary: "Clive Barker's Hellraiser: Revival is 100% uncut globally with a USK 18 rating, featuring fully uncensored campaign walkthrough scenes, unaltered narrative cutscenes, and extreme body horror gore across all platforms without requiring external uncut patches, while providing an optional in-game streamer mode toggle for public broadcasts."
+title: "Hellraiser Revival USK & Censorship Status FAQ"
+description: "Verified Hellraiser: Revival ratings: ESRB M 17+, PEGI 18 and ACB R 18+, with no USK entry published and no in-game streamer mode. Here is what the boards say."
+summary: "Hellraiser: Revival holds ESRB M 17+, PEGI 18, and ACB R 18+ ratings, whose official descriptors list graphic violence, nudity, and strong sexual content. The official USK database lists no entry for the game, so no German rating is cited here, and Saber Interactive confirms there is no in-game streamer mode."
 pubDate: 2026-10-02
-updated: '2026-10-21'
+updated: '2026-10-27'
 category: FAQ
 tags:
 - usk
@@ -11,65 +11,99 @@ tags:
 - age-rating
 - regional-differences
 - germany
-- uncensored
 - cutscenes
+- streamer-guidance
 evidence:
-- claim: German USK rating board classification confirmed 100% uncut 18+ release across
-    all European and global storefronts.
+- claim: 'ESRB rated the game Mature 17+ with Blood and Gore, Intense Violence, Nudity, Strong Language, Strong Sexual Content, and Use of Drugs.'
   level: Official
-  sourceUrl: https://store.steampowered.com/app/1551980
-  exactQuote: 'Clive Barker''s Hellraiser: Revival takes first-person action horror
-    survival to the next level.'
+  sourceUrl: 'https://www.esrb.org/ratings/41169/clive-barkers-hellraiser-revival/'
+  exactQuote: "Clive Barker's Hellraiser: Revival is rated M for Mature 17+ by the ESRB with Blood and Gore, Intense Violence, Nudity, Strong Language, Strong Sexual Content, and Use of Drugs."
+- claim: 'PEGI assigned PEGI 18 for strong language, violence against vulnerable and defenceless characters, and graphic violence.'
+  level: Official
+  sourceUrl: 'https://pegi.info/search-pegi?q=Hellraiser'
+  exactQuote: "This game has received a PEGI 18 which restricts availability to ADULTS ONLY and is not suitable for persons under 18 years of age. This rating has been given because it features use of strong language, violence against vulnerable and defenceless characters and graphic violence."
+- claim: 'The Australian Classification Board classified the game R 18+ on 23 October 2026 with high impact violence, sex scenes, themes, and blood and gore.'
+  level: Official
+  sourceUrl: 'https://www.classification.gov.au/titles/clive-barkers-hellraiser-revival'
+  exactQuote: 'High Impact Violence, High Impact Sex Scenes, High Impact Themes, High Impact Blood and Gore'
+- claim: 'The official USK database returns no entry for Hellraiser, so no German USK classification is published (checked 2026-10-27).'
+  level: Official
+  sourceUrl: 'https://usk.de/?s=Hellraiser'
+  exactQuote: 'Leider wurden zu Ihrem Suchbegriff weder Titel noch Artikel in unserer Datenbank gefunden.'
+- claim: 'The developer FAQ states the game has no streamer mode that alters the game.'
+  level: Official
+  sourceUrl: 'https://support.saber.games/hc/en/clive-barker-s-hellraiser-revival/articles/clive-barker-s-hellraiser-revival-faq-1'
+  exactQuote: "We do not have a ‘streamer mode’ that alters the game."
+- claim: 'The developer FAQ directs creators to enable 18+ age restrictions with in-platform tools.'
+  level: Official
+  sourceUrl: 'https://support.saber.games/hc/en/clive-barker-s-hellraiser-revival/articles/clive-barker-s-hellraiser-revival-faq-1'
+  exactQuote: "Streaming and videos are allowed and encouraged; you will need to enable age restrictions to 18+ using in-platform tools for whichever platform you are publishing to."
+- claim: 'The developer FAQ lists the game for PlayStation 5, Xbox Series X|S, Nintendo Switch 2, and Steam.'
+  level: Official
+  sourceUrl: 'https://support.saber.games/hc/en/clive-barker-s-hellraiser-revival/articles/clive-barker-s-hellraiser-revival-faq-1'
+  exactQuote: "Clive Barker’s Hellraiser: Revival is available for PlayStation 5, XBOX Series X|S, Nintendo Switch 2, and Steam."
 ---
 
-## Hellraiser: Revival USK Rating, Age Classifications & Censorship FAQ
+## Hellraiser: Revival Censorship & Regional Rating Overview
 
-Given the franchise's legendary pedigree of extreme body horror, sadomasochistic symbolism, and intense visceral violence, players worldwide—particularly in Germany and Australia—have raised questions regarding regional censorship for *Clive Barker's Hellraiser: Revival*.
-
-## Germany USK 18 Classification Status
-
-**Good News: The German USK (Unterhaltungssoftware Selbstkontrolle) has classified Hellraiser: Revival as USK 18 without requiring content censorship.**
-
-The German release will launch **100% Uncut (Keine Jugendfreigabe)**, matching identical gore levels, torture sequences, and narrative beats found in the North American and British versions.
-
-| Rating Board | Assigned Classification | Content Warnings Listed | Censored Status |
-| :--- | :--- | :--- | :--- |
-| **ESRB (North America)** | **Mature 17+ (M)** | Blood and Gore, Intense Violence, Partial Nudity, Strong Language | 100% Uncut |
-| **PEGI (Europe & UK)** | **PEGI 18** | Extreme Violence, Dread / Fear Imagery, Strong Language | 100% Uncut |
-| **USK (Germany)** | **USK 18** | Drastische Gewaltdarstellung, Psychologische Horrorelemente | 100% Uncut |
-| **ACB (Australia)** | **R18+** | High Impact Horror Themes, Realistic Blood Effects | 100% Uncut |
-
-## Are In-Game Gore or Adult Themes Censored?
-
-Developer Saber Interactive maintained strict adherence to Clive Barker's uncompromised artistic vision. The studio confirmed:
-* **Decapitation & Dismemberment**: Physics-based limb severance remains active across all platforms (PC, PS5, Xbox Series X|S, Nintendo Switch 2).
-* **BDSM & Piercing Motifs**: Authentic iconography, including hooked chains, skin flaying, and surgical mutilations depicted in the Scarlet Church, remain unaltered.
-* **Streamer & Content Creator Mode**: For streamers on Twitch and YouTube, an optional **"Streamer Safe" visual toggle** is provided in the options menu to blur explicit nudity and prevent copyright flag warnings. For dedicated coverage of mature content settings, see our [Hellraiser Revival 18+ scenes and rating guide](/guide/18-plus-scenes-guide/).
+*Clive Barker's Hellraiser: Revival* holds adult ratings from the ESRB, PEGI, and the Australian Classification Board, while the German USK database lists no entry for the game. This guide collects what those official sources publish about censorship, regional differences, and streaming, and it flags the questions that currently have no official answer.
 
 ---
 
-## Uncensored Walkthrough, Cutscenes & Playthrough FAQs
+## Is There a USK Rating for Hellraiser: Revival?
 
-### Is the Hellraiser Revival Walkthrough or Playthrough Uncensored?
-Yes. Every standard Hellraiser Revival walkthrough or full campaign playthrough is completely uncut and uncensored across all chapters and regional editions. Players encounter all physical damage states, body horrors, and environment gore out of the box without content omissions.
+A search of the official USK database at usk.de for "Hellraiser" returns **0 Titel und 0 Webpages** as of 2026-10-27, so USK has published no classification for the game. Because no German rating is public, this guide does not state a German age rating, and it does not claim that the German release is either modified or unmodified. Check usk.de directly for changes before relying on any German release information.
 
-### Are All Cutscenes Completely Uncensored in Every Region?
-Yes. All narrative cutscenes across Steam, PlayStation 5, and Xbox Series X|S editions—including Aidan's encounters with the Cenobites, Marlowe's ceremonies, and the intense climax in our [Sunny all endings guide](/guide/how-to-save-sunny-endings-guide/)—are completely intact and uncensored.
+---
 
-### Is an External "Uncensored Patch" Needed for Full Gore?
-No third-party patch, community mod, or regional unlocker is required. Unlike older horror releases that received edited cuts in Germany or Australia, *Hellraiser: Revival* secured full adult classifications (USK 18 and ACB R18+) for its raw cut without cuts. Players following our [demo walkthrough and secrets guide](/guide/demo-walkthrough-secrets/) or playing through the full release experience the uncompromised artistic vision out of the box.
+## Official Rating Classifications & Content Descriptors
 
-### Streamer Safe Mode vs. Full Uncut Presentation
-For content creators streaming a playthrough on Twitch or YouTube, the game includes a manual "Streamer Mode" under **Options > Display / Gameplay**. This toggle blurs explicit non-consensual nudity to comply with platform terms of service without altering visceral combat executions or dismemberment physics detailed in the [weapons tier list](/guide/weapons-tier-list-durability/).
+| Rating Authority | Assigned Rating | Official Content Advisories |
+| :--- | :--- | :--- |
+| **ESRB (North America)** | **Mature 17+ (M)** | Blood and Gore, Intense Violence, Nudity, Strong Language, Strong Sexual Content, Use of Drugs |
+| **PEGI (Europe & UK)** | **PEGI 18** | Strong language; violence against vulnerable and defenceless characters; graphic violence |
+| **ACB (Australia)** | **R 18+** | High Impact Violence, High Impact Sex Scenes, High Impact Themes, High Impact Blood and Gore |
+
+The Australian Classification Board entry is dated 23 October 2026 and lists the category as Computer Game - IARC Global Rating Tool.
+
+---
+
+## Are Gore or Adult Themes Censored?
+
+The published descriptors for the submitted builds list blood and gore, intense violence, nudity, strong language, strong sexual content, and use of drugs (ESRB); strong language, violence against vulnerable and defenceless characters, and graphic violence (PEGI); and high impact violence, sex scenes, themes, and blood and gore (ACB). No rating entry and no statement in Saber Interactive's FAQ describes a region-specific cut, so this guide makes no claim that any region receives a modified build.
+
+* **Combat & damage feedback**: melee executions, dismemberment, and bleed effects are part of the combat system catalogued in the [weapons tier list](/guide/weapons-tier-list-durability/).
+* **Narrative sequences**: Cenobite encounters, Marlowe's ceremonies in the Scarlet Church, and the story beats covered in the [Sunny endings guide](/guide/how-to-save-sunny-endings-guide/) are documented for the standard release.
+* **Platform availability**: Saber Interactive's FAQ lists PlayStation 5, Xbox Series X|S, Nintendo Switch 2, and Steam.
+
+---
+
+## Streaming & Content Creator Guidance
+
+Saber Interactive addresses broadcasting directly in its official FAQ:
+
+* **No in-game streamer mode**: the FAQ states, *"We do not have a ‘streamer mode’ that alters the game."* There is no in-game setting to blur nudity, reduce gore, or censor cutscenes.
+* **Age restrictions through platform tools**: the FAQ advises, *"Streaming and videos are allowed and encouraged; you will need to enable age restrictions to 18+ using in-platform tools for whichever platform you are publishing to."* Where a platform supports it, tag the broadcast with mature themes or sexual themes labels.
+
+---
+
+## Frequently Asked Questions
+
+### Does Hellraiser: Revival have a German USK rating?
+No USK entry is published. The official USK database returns 0 Titel und 0 Webpages for "Hellraiser" as of 2026-10-27, so there is no German classification to cite.
+
+### Is there an in-game streamer mode?
+No. Saber Interactive's FAQ states that the game does not have a streamer mode that alters the game. Creators should enable 18+ age restrictions with their publishing platform's tools.
+
+### Are cutscenes or gore censored in some regions?
+No official rating entry or developer statement reviewed for this guide describes a region-specific cut. The ESRB and PEGI descriptors for the submitted builds list nudity, strong sexual content, and graphic violence.
 
 ---
 
 ## Related Field Guides & Systems
 
-The gore that these ratings confirm is produced by the melee moveset itself: the backstab executions and bleed buildup of bladed weapons, catalogued in the [weapons tier list](/guide/weapons-tier-list-durability/), are among the physics-based effects left uncut in every region.
+Rating questions do not change the combat system: the backstab executions and bleed buildup of bladed weapons, catalogued in the [weapons tier list](/guide/weapons-tier-list-durability/), are part of the standard build.
 
-Regional cuts do not change the early game — the [demo walkthrough](/guide/demo-walkthrough-secrets/) reflects the same content rules across regions.
+The [demo walkthrough](/guide/demo-walkthrough-secrets/) covers the opening hours, and the [PC system requirements](/guide/system-requirements-pc-specs/) list the hardware needed to run the game.
 
-Hardware planning is unaffected by regional cuts — check the [PC system requirements](/guide/system-requirements-pc-specs/) for the uncut build's official specs.
-
-For version differences and broadcast safe toggles, check our [18+ scenes and versions guide](/guide/18-plus-scenes-guide/).
+For the full breakdown of adult content, official ratings, and version differences, see our [18+ scenes and versions guide](/guide/18-plus-scenes-guide/).
