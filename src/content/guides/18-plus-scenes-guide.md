@@ -1,7 +1,7 @@
 ---
 title: "Hellraiser Revival 18+ Scenes: Versions & Rating"
 description: "Check Hellraiser: Revival 18+ scenes and adult content ratings across ESRB, PEGI, and ACB. Breakdown of mature classifications and streaming guidelines."
-summary: "Clive Barker's Hellraiser: Revival holds official adult ratings worldwide, including ESRB M 17+, PEGI 18, and ACB R 18+, reflecting severe violence, nudity, and sexual themes. Developer Saber Interactive confirmed the game contains no built-in streamer mode, advising content creators to configure 18+ age restrictions directly via external broadcasting platforms."
+summary: "Clive Barker's Hellraiser: Revival holds official adult ratings in North America, Europe, and Australia, including ESRB M 17+, PEGI 18, and ACB R 18+, reflecting severe violence, nudity, and sexual themes. Developer Saber Interactive confirmed the game contains no built-in streamer mode, advising content creators to configure 18+ age restrictions directly via external broadcasting platforms."
 pubDate: 2026-10-26
 updated: '2026-10-27'
 category: FAQ
@@ -44,13 +44,13 @@ evidence:
 
 With Clive Barker's iconic universe returning in *Hellraiser: Revival*, players frequently inquire about the depiction of 18+ mature scenes, visceral body horror, and whether certain regional storefronts feature censored or modified cutscenes.
 
-This guide outlines the official rating classifications, regional edition consistency, and available content presentation settings across all platforms.
+This guide collects the official rating classifications for the game and the developer's published streaming guidance.
 
 ---
 
 ## Global Rating Classifications & Content Descriptors
 
-*Hellraiser: Revival* has received high-tier mature age ratings worldwide, reflecting its faithful adherence to dark psychological horror, sadomasochistic iconography, and visceral violence:
+*Hellraiser: Revival* has received high-tier mature age ratings in North America, Europe, and Australia, reflecting its faithful adherence to dark psychological horror, sadomasochistic iconography, and visceral violence:
 
 | Rating Authority | Assigned Rating | Content Summary & Advisories |
 | :--- | :--- | :--- |
@@ -66,7 +66,7 @@ Across North American, European, and Australian classification boards, official 
 
 Official ratings across the ESRB (Mature 17+), PEGI (PEGI 18), and ACB (R 18+) verify that submitted builds retain severe graphic violence, torture themes, nudity, and adult content.
 
-Whether purchased on Steam, PlayStation 5, or Xbox Series X|S, players experience the exact same cinematic sequences and in-game presentations:
+Saber Interactive's official FAQ lists the game for PlayStation 5, Xbox Series X|S, Nintendo Switch 2, and Steam. The content below is documented for the standard release:
 * **Narrative Cinematics**: Story cutscenes depicting encounters with the Cenobites, Marlowe's ceremonies within the Scarlet Church, and key story milestones detailed in the [Sunny endings guide](/guide/how-to-save-sunny-endings-guide/) remain intact in the standard release.
 * **Combat & Damage Feedback**: Full dismemberment, chain lacerations, and melee impact physics detailed in our [weapons tier list and durability guide](/guide/weapons-tier-list-durability/) are fully represented.
 * **Platform Availability**: Saber Interactive's official FAQ lists the game for PlayStation 5, Xbox Series X|S, Nintendo Switch 2, and Steam.
@@ -84,7 +84,7 @@ For content creators broadcasting to Twitch, YouTube, or other live streaming pl
 
 ## Technical & Regional Performance
 
-The release runs on an identical code foundation across supported platforms:
+Platform and hardware notes for the standard release:
 * **System Demands**: Visual presentation settings and hardware benchmarks remain uniform. Consult the [PC system requirements & specs](/guide/system-requirements-pc-specs/) to optimize framerates.
 * **Early Access & Demos**: If starting from earlier preview builds, content matches the full campaign framework analyzed in the [demo walkthrough & secrets](/guide/demo-walkthrough-secrets/).
 
