@@ -1,8 +1,8 @@
 ---
-title: Hellraiser Revival Codes & Rewards (October 2026)
-description: "Hellraiser: Revival codes and rewards for October 2026: no text codes exist, and Deluxe, Collector's Edition and pre-order bonuses unlock automatically."
+title: "Hellraiser Revival Promo Codes: October 2026"
+description: "Hellraiser: Revival promo codes and rewards for October 2026: no text codes exist, and Deluxe, Collector's Edition and pre-order bonuses unlock automatically."
 summary: 'Hellraiser: Revival launched on October 8, 2026, and there are still no text-based promo codes to redeem. Deluxe and Collector''s Edition rewards plus the Labyrinth Pistol and Martyr Sawblade pre-order skins unlock automatically through your Steam, PlayStation or Xbox account entitlement once the game is installed.'
-updated: 2026-10-09
+updated: 2026-10-28
 codes:
 - code: DELUXE-DLC-DIRECT
   reward: 80s VHS Filter & Brass Weapon Skins
