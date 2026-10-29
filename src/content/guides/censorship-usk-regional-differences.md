@@ -83,7 +83,7 @@ The published descriptors for the submitted builds list blood and gore, intense 
 Saber Interactive addresses broadcasting directly in its official FAQ:
 
 * **No in-game streamer mode**: the FAQ states, *"We do not have a ‘streamer mode’ that alters the game."* There is no in-game setting to blur nudity, reduce gore, or censor cutscenes.
-* **Age restrictions through platform tools**: the FAQ advises, *"Streaming and videos are allowed and encouraged; you will need to enable age restrictions to 18+ using in-platform tools for whichever platform you are publishing to."* Where a platform supports it, tag the broadcast with mature themes or sexual themes labels.
+* **Age restrictions through platform tools**: the FAQ advises, *"Streaming and videos are allowed and encouraged; you will need to enable age restrictions to 18+ using in-platform tools for whichever platform you are publishing to."* Where a platform supports it, tag the broadcast with mature themes or sexual themes labels. Broadcasters preparing age restriction tags can cross-reference our breakdown of verified [18+ scenes and censorship status](/guide/18-plus-scenes-guide/).
 
 ---
 
@@ -96,7 +96,7 @@ No USK entry is published. The official USK database returns 0 Titel und 0 Webpa
 No. Saber Interactive's FAQ states that the game does not have a streamer mode that alters the game. Creators should enable 18+ age restrictions with their publishing platform's tools.
 
 ### Are cutscenes or gore censored in some regions?
-No official rating entry or developer statement reviewed for this guide describes a region-specific cut. The ESRB and PEGI descriptors for the submitted builds list nudity, strong sexual content, and graphic violence.
+No official rating entry or developer statement reviewed for this guide describes a region-specific cut. The ESRB and PEGI descriptors for the submitted builds list nudity, strong sexual content, and graphic violence; players seeking specifics on uncut cinematics can consult our [adult scenes and version differences dossier](/guide/18-plus-scenes-guide/).
 
 ---
 
