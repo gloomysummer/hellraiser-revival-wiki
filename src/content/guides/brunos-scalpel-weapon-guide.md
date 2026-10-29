@@ -3,7 +3,7 @@ title: "Bruno's Scalpel: Hellraiser Revival Boss Drop"
 description: "Bruno's Scalpel in Hellraiser: Revival is a boss-drop Treasure item from Bruno Keller, not an equipable weapon. Pick it off the floor and sell it to Zora."
 summary: "Bruno's Scalpel in Clive Barker's Hellraiser: Revival is the Treasure item boss Bruno Keller leaves on the arena floor when you banish him in the cult compound basement fight. It cannot be equipped, swung, or repaired: its only purpose is to be sold to the merchant Zora Beckett for coins spent on ammo recipes, upgrades, and lockpicks."
 pubDate: 2026-10-17
-updated: '2026-10-19'
+updated: '2026-10-29'
 category: Equipment
 tags:
 - brunos-scalpel

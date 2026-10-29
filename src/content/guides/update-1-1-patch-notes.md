@@ -3,7 +3,7 @@ title: "Update 1.1 Patch Notes: Hellraiser Revival Guide"
 description: "Hellraiser: Revival Update 1.1 patch notes covers GPU driver alerts, sewer ladder fall fixes, and Charlotte chase progression softlock remedies on Steam."
 summary: "Clive Barker's Hellraiser: Revival Update 1.1 deployed on October 15, 2026 for PC on Steam, addressing critical progression softlocks and stability bugs. Key fixes include an automated outdated GPU driver startup notice, resolution for falling through sewer ladder floors, Charlotte chase collision blockers, and missing Flooded Room puzzle levers."
 pubDate: 2026-10-15
-updated: '2026-10-20'
+updated: '2026-10-29'
 category: Technical
 tags:
 - update-1-1
@@ -69,6 +69,15 @@ Every fix listed below has been verified against the official developer announce
 * **Bookshelf Interaction Animation** `[Official]`: Corrected a rare skeletal animation offset when manipulating interactive secret bookshelves.
 * **Geometry & Lighting Pop-In Reduction** `[Official]`: Reduced noticeable pop-in for level geometry and dynamic lights when backtracking through dungeon hallways, stairwells, and the Chatterer chase corridor.
 * **Labyrinth Window Placeholder Removal** `[Official]`: Removed unfinished placeholder text reading `"Burning House"` that erroneously displayed through a window in the Labyrinth.
+
+### 4. Build 25932925 Hotfix & Platform Maintenance
+
+Following the initial Steam rollout, developers deployed Build 25932925 with additional cross-platform stability updates:
+
+* **Handheld PC Audio Performance**: Optimized audio thread CPU scheduling for portable gaming PCs (including Steam Deck and ROG Ally) to eliminate micro-stuttering during intense horror sequences.
+* **VRR & VSync Defaults**: Aligned default vertical sync parameters with Variable Refresh Rate displays, preventing tearing on high-refresh-rate monitors.
+* **Combat & AI Polish**: Corrected animation glitches during Bruno Keller's submerged transitions and fixed edge-of-chase pathing loops for cultist pursuers.
+* **Demo Save Migration**: Hardened the save-import pipeline when transferring demo save files into the full commercial release.
 
 ---
 
