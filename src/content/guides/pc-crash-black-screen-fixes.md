@@ -3,7 +3,7 @@ title: Hellraiser Revival Crash Fix & Black Screen Guide
 description: 'Hellraiser: Revival crashing or black screen? Outdated GPU drivers, corrupted game files and fullscreen display conflicts are the usual causes — verified fixes.'
 summary: "Hellraiser: Revival crashing or showing a black screen usually traces to corrupted game files, an outdated GPU driver, or fullscreen display conflicts. The three fastest fixes: verify Steam file integrity, update to the latest NVIDIA Game Ready (560.xx+) or AMD Adrenalin (24.x+) driver, and launch with -windowed -noborder."
 pubDate: 2026-10-08
-updated: '2026-10-26'
+updated: '2026-10-30'
 category: Technical
 tags:
 - crash-fix
@@ -20,6 +20,10 @@ evidence:
   level: Community-reported
   sourceUrl: https://steamcommunity.com/app/1551980/discussions/0/574929940135461499/
   exactQuote: Getting random UE Crashes
+- claim: Community troubleshooting records game crashes on Steam remediated by display mode and file verification steps.
+  level: Community-reported
+  sourceUrl: https://www.youtube.com/watch?v=_xqF916sZeg
+  exactQuote: "How To Fix Clive Barker's Hellraiser: Revival Crashing On Steam"
 ---
 
 ## Hellraiser Revival PC Technical Troubleshooting & Crash Fixes
@@ -121,6 +125,23 @@ The crash generates an `EXCEPTION_ACCESS_VIOLATION writing address 0x00000000000
 * **Workaround 1 (Restart Game & Steam)**: Perform a full restart of the game client and Steam before interacting with the elevator console to flush temporary memory buffers.
 * **Workaround 2 (Reload Checkpoint Prior to Bruno Fight)**: If loading the auto-save created immediately after Bruno Keller crashes consistently, reload the manual save right before the Bruno encounter. Defeating him cleanly and proceeding straight to the elevator without lingering in the gallery resets dirty sequencer flags.
 * **Workaround 3 (Submit Logs to Saber Support)**: Locate your local diagnostic logs at `%LOCALAPPDATA%\HellraiserRevival\Saved\Logs\` and attach `HellraiserRevival.log` to a [Saber Interactive support ticket](https://support.saber.games/hc/en/clive-barker-s-hellraiser-revival/contact-us).
+
+---
+
+## 8. Motion Blur DX12 Crashes & Surface Sparkling Fixes
+
+Community players and technical benchmarks have identified specific post-processing settings that cause instability or graphical artifacts under DirectX 12:
+
+### Motion Blur Crash to Desktop (DirectX 12)
+* **Symptom**: Abrupt game crash to desktop without warning during rapid turning, combat chases, or corridor transitions.
+* **Remediation**: Open **Options > Graphics / Display** and switch **Motion Blur** to **Disabled**. In Unreal Engine 5's DirectX 12 pipeline, rapid velocity vector calculations can trigger driver timeouts on specific hardware.
+
+### Surface Shimmering & Sparkling Noise
+* **Symptom**: Wet surfaces, blood pools, and morgue tile floors show distracting white speckles or grain noise.
+* **Remediation**: Under **Options > Graphics**, reduce **Reflection Quality** from Epic to **High** or **Medium**, and cap your frame rate to match your display's native refresh rate (e.g., 60, 120, or 144 FPS).
+
+### In-Game HDR Calibration Status
+* **Status**: The game is calibrated for standard dynamic range (SDR) and does not provide a native in-game HDR calibration menu. Forcing Windows Auto-HDR may wash out dark shadow areas; calibrate your SDR gamma slider and ensure Full dynamic range is enabled in your GPU control panel instead.
 
 ---
 

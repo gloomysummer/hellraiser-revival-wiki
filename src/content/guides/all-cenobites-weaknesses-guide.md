@@ -3,7 +3,7 @@ title: "All Cenobites in Hellraiser: Revival — Full List"
 description: 'All Cenobites in Hellraiser: Revival: Pinhead, Chatterer, Butterball, Deepthroat. Full list, lore, sensory evasion tactics, and puzzle locks to repel them.'
 summary: 'The full list of Cenobites in Hellraiser: Revival cannot be eliminated with conventional firearms or melee weapons. Surviving players must exploit environmental sacred relics, acoustic audio distractions, and Genesis Configuration dimensional locks to repel Pinhead, the sightless Chatterer, the immovable Butterball, and the shrieking Deepthroat across the campaign.'
 pubDate: 2026-10-02
-updated: '2026-10-02'
+updated: '2026-10-30'
 category: Enemies
 tags:
 - cenobites
@@ -18,6 +18,10 @@ evidence:
   level: Official
   sourceUrl: https://store.steampowered.com/app/1551980
   exactQuote: survive your bargain with the infamous Pinhead.
+- claim: Official patch notes document Charlotte chase sequences and boss fight rock ledge collision fixes.
+  level: Official
+  sourceUrl: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1846651706677637
+  exactQuote: Fixed a collision issue that could stop you from finishing the Charlotte chase.
 guide_video:
   id: "5k7tg4eUaro"
   title: "Clive Barker's Hellraiser: Revival - Official Trailer"
@@ -59,6 +63,14 @@ Characterized by wires pulling open the flesh of her throat, she acts as a psych
 
 * **Behavior**: Employs sonic screeches that invert Aidan's camera controls and deplete stamina reserves.
 * **Evasion Strategy**: Equip acoustic ear plugs found in cultist storage boxes and utilize smoke grenades to disrupt her dimensional gaze.
+
+## 5. Charlotte (The Labyrinth Stalker)
+
+Encountered during the deeper descent through subterranean catacombs, Charlotte is a relentless multi-limbed pursuer who forces high-intensity chase sequences before confronting Aidan in her cavernous arena.
+
+* **Chase Mechanics**: During hallway pursuit sequences, Charlotte sprints aggressively across narrow rock corridors. Maintain sprint momentum, execute quick-turn cornering, and avoid backtracking or getting snared by floor debris.
+* **Fire Stagger Vulnerability**: In the arena encounter, Charlotte is heavily vulnerable to fire. Trigger red explosive canisters when she approaches, or unleash flame abilities from the [Genesis Configuration](/guide/genesis-configuration-puzzle-guide/) to break her posture.
+* **Stagger & Banishment Window**: Once staggered by continuous fire and point-blank shotgun blasts, Charlotte enters a stunned state emitting a distinctive blue aura. Approach promptly and interact to initiate the banishment sequence before she recovers.
 
 Choosing the right tool for each entity matters too — the [weapons tier list](/guide/weapons-tier-list-durability/) ranks which weapons hold up against specific Cenobite behaviors.
 
