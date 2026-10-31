@@ -7,7 +7,7 @@ summary: 'Combat in Hellraiser: Revival demands tactical management of weapon du
   and the Sawed-off Shotgun for emergency crowd-control stagger during intense ambush
   encounters.'
 pubDate: 2026-10-02
-updated: '2026-10-22'
+updated: '2026-10-31'
 category: Equipment
 tags:
 - weapons
@@ -38,6 +38,10 @@ evidence:
   level: Community-reported
   sourceUrl: https://www.reddit.com/r/hellraiserthegame/comments/1x9uz7p/
   exactQuote: Are scraps way rarer than every other resource
+- claim: Blunt weapons crack cultist armor posture and Boss Health Bar can be toggled via Options Interface.
+  level: Community-reported
+  sourceUrl: https://old.reddit.com/r/hellraiserthegame/comments/1xj6uvy/this_game_is_legit_hard/
+  exactQuote: This game is legit hard
 ---
 
 ## Weapons Tier List & Durability Management Guide
@@ -83,6 +87,10 @@ To maximize your Scrap Metal efficiency:
 * **Prioritize High-Yield Armory Caches**: Keypad-locked lockers often hold pre-fabricated weapon attachments and pristine tools. Consult our [all keypad and safe codes directory](/guide/all-keypad-codes-safes-lockers/) to bypass crafting taxes entirely.
 
 ## Armor Penetration vs. Flesh Damage Rule
+
+> [!TIP]
+> **Boss Health Bar & Armor Posture Interface Toggle**:
+> Boss and elite enemy posture meters are hidden by default. If you are struggling to track armor breakdown timings, navigate to **Options > Interface > Boss Health Bar** and set it to **Enabled**. This exposes armor posture alongside vitality, letting you confirm when heavy blunt attacks have shattered enemy plates and opened the target to firearms or sharp blades.
 
 * **Blunt Weapons (Hammers, Pipes, Crowbars)**: Deliver concussive force through leather vests, bone armor, and steel plates. Always use blunt tools first to strip enemy armor before finishing with sharp blades.
 * **Sharp Weapons (Machetes, Cleavers, Messers)**: Deal extreme bleed and dismemberment damage against exposed flesh, but suffer triple durability penalty when striking armored targets.

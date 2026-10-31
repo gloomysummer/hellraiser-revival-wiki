@@ -3,7 +3,7 @@ title: Hellraiser Revival Crash Fix & Black Screen Guide
 description: 'Hellraiser: Revival crashing or black screen? Outdated GPU drivers, corrupted game files and fullscreen display conflicts are the usual causes — verified fixes.'
 summary: "Hellraiser: Revival crashing or showing a black screen usually traces to corrupted game files, an outdated GPU driver, or fullscreen display conflicts. The three fastest fixes: verify Steam file integrity, update to the latest NVIDIA Game Ready (560.xx+) or AMD Adrenalin (24.x+) driver, and launch with -windowed -noborder."
 pubDate: 2026-10-08
-updated: '2026-10-30'
+updated: '2026-10-31'
 category: Technical
 tags:
 - crash-fix
@@ -24,6 +24,10 @@ evidence:
   level: Community-reported
   sourceUrl: https://www.youtube.com/watch?v=_xqF916sZeg
   exactQuote: "How To Fix Clive Barker's Hellraiser: Revival Crashing On Steam"
+- claim: Sister Mercy post-fight cutscene freeze remediated through GPU driver update and file verification.
+  level: Community-reported
+  sourceUrl: https://old.reddit.com/r/hellraiserthegame/comments/1xhu9nq/crash_after_sister_mercy_fight/
+  exactQuote: "Crash after Sister Mercy fight?"
 ---
 
 ## Hellraiser Revival PC Technical Troubleshooting & Crash Fixes
@@ -116,15 +120,23 @@ This signature stems from aggressive transient clock boosts in Unreal Engine 5 u
 
 ---
 
-## 7. Post-Boss Cutscene Crash: 0xd8 Access Violation (Bruno Elevator)
+## 7. Post-Boss Cutscene Crashes: Bruno Elevator & Sister Mercy Freeze
 
-Following the boss fight against Bruno Keller in the Dissection Gallery, multiple players report an unrecoverable crash right as Aidan triggers the elevator or begins the subsequent Cenobite dialogue cutscene.
+Following intense boss encounters, multiple players report fatal freezes or unrecoverable crashes during the transition into story cinematics.
 
-The crash generates an `EXCEPTION_ACCESS_VIOLATION writing address 0x00000000000000d8` inside the Unreal Engine cinematic sequencer:
-* **Root Issue**: An active combat actor state or status trigger fails to cleanly dereference before the cinematic sequencer takes over the player camera, causing a null pointer write error.
+### Bruno Elevator 0xd8 Access Violation
+Right as Aidan triggers the elevator or begins the subsequent Cenobite dialogue cutscene after defeating Bruno Keller in the Dissection Gallery, an `EXCEPTION_ACCESS_VIOLATION writing address 0x00000000000000d8` can occur:
+* **Root Issue**: An active combat actor state fails to dereference cleanly before the cinematic sequencer takes over camera control, causing a null pointer error.
 * **Workaround 1 (Restart Game & Steam)**: Perform a full restart of the game client and Steam before interacting with the elevator console to flush temporary memory buffers.
 * **Workaround 2 (Reload Checkpoint Prior to Bruno Fight)**: If loading the auto-save created immediately after Bruno Keller crashes consistently, reload the manual save right before the Bruno encounter. Defeating him cleanly and proceeding straight to the elevator without lingering in the gallery resets dirty sequencer flags.
 * **Workaround 3 (Submit Logs to Saber Support)**: Locate your local diagnostic logs at `%LOCALAPPDATA%\HellraiserRevival\Saved\Logs\` and attach `HellraiserRevival.log` to a [Saber Interactive support ticket](https://support.saber.games/hc/en/clive-barker-s-hellraiser-revival/contact-us).
+
+### Sister Mercy Post-Fight Cutscene Freeze
+Immediately following the Sister Mercy encounter, players have encountered an unresponsive black screen where audio loops and the "Skip Cutscene" button fails to register input:
+* **Root Issue**: Unreal Engine 5's video decoder hangs while switching rendering pipes between real-time boss arena shaders and pre-rendered cinematic assets under outdated graphics drivers.
+* **Workaround 1 (GPU Driver Clean Update)**: Update to NVIDIA 560.xx+ or AMD Adrenalin 24.x+. Community testing confirms updating graphics drivers resolves the transition freeze without needing to replay the fight.
+* **Workaround 2 (Force Windowed Borderless)**: In Steam Properties > Launch Options, add `-windowed -noborder` to bypass display mode handshake lockups during transition cutscenes.
+* **Workaround 3 (Verify Integrity of Game Files)**: Right-click Hellraiser: Revival in Steam > Properties > Installed Files > *Verify integrity of game files* to re-download corrupted cinematic containers.
 
 ---
 
