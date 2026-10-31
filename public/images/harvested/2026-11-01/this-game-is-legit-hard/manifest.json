@@ -1,0 +1,26 @@
+{
+  "topic_slug": "this-game-is-legit-hard",
+  "source_url": "https://old.reddit.com/r/hellraiserthegame/comments/1xj6uvy/this_game_is_legit_hard/",
+  "page_title": "This game is legit hard : hellraiserthegame",
+  "harvested_at": "2026-11-01T04:40:12.496572",
+  "authenticated": false,
+  "verified": false,
+  "verification_notes": "Forum URL detected: Bypassing webpage screenshot to prevent forum UI pollution.",
+  "images": [],
+  "text_preview": "jump to content\nGET NEW REDDIT\nMY SUBREDDITS\nHOME-POPULAR-ALL-USERS | GRAVEYARDKEEPER-SANDUSTRYGAME-SCAVLAND-GRAVEYARDKEEPER2 | ASKREDDIT-PICS-FUNNY-MOVIES-GAMING-WORLDNEWS-NEWS-TODAYILEARNED-NOTTHEONION-EXPLAINLIKEIMFIVE-MILDLYINTERESTING-DIY-VIDEOS-OLDSCHOOLCOOL-TWOXCHROMOSOMES-TIFU-MUSIC-BOOKS-LI",
+  "clue_verification": {
+    "clue_title": "\"This game is legit hard\"",
+    "source_url": "https://old.reddit.com/r/hellraiserthegame/comments/1xj6uvy/this_game_is_legit_hard/",
+    "fetched_page_title": "This game is legit hard : hellraiserthegame",
+    "relevance_ok": true,
+    "matched_keywords": [
+      "legit",
+      "hard"
+    ],
+    "missing_keywords": [],
+    "required_hits": 1,
+    "score": "2/2",
+    "reason": "matched 2/2 clue keywords (required 1)",
+    "verified_at": "2026-11-01T04:40:12.497158"
+  }
+}

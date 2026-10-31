@@ -1,0 +1,22 @@
+{
+  "clue_title": "\"To the guy who commented on another post here about how to use blunt weapons properly - you're a genius.\"",
+  "source_url": "https://old.reddit.com/r/hellraiserthegame/comments/1xj2boo/to_the_guy_who_commented_on_another_post_here/",
+  "fetched_page_title": "To the guy who commented on another post here about how to use blunt weapons properly - you're a genius. : hellraiserthegame",
+  "relevance_ok": true,
+  "matched_keywords": [
+    "guy",
+    "commented",
+    "another",
+    "use",
+    "blunt",
+    "weapons",
+    "properly",
+    "you're",
+    "genius"
+  ],
+  "missing_keywords": [],
+  "required_hits": 5,
+  "score": "9/9",
+  "reason": "matched 9/9 clue keywords (required 5)",
+  "verified_at": "2026-11-01T04:40:20.771467"
+}

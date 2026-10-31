@@ -1,0 +1,33 @@
+{
+  "topic_slug": "to-the-guy-who-commented-on-an",
+  "source_url": "https://old.reddit.com/r/hellraiserthegame/comments/1xj2boo/to_the_guy_who_commented_on_another_post_here/",
+  "page_title": "To the guy who commented on another post here about how to use blunt weapons properly - you're a genius. : hellraiserthegame",
+  "harvested_at": "2026-11-01T04:40:20.753949",
+  "authenticated": false,
+  "verified": false,
+  "verification_notes": "Forum URL detected: Bypassing webpage screenshot to prevent forum UI pollution.",
+  "images": [],
+  "text_preview": "jump to content\nGET NEW REDDIT\nMY SUBREDDITS\nHOME-POPULAR-ALL-USERS | GRAVEYARDKEEPER-SANDUSTRYGAME-SCAVLAND-GRAVEYARDKEEPER2 | ASKREDDIT-PICS-FUNNY-MOVIES-GAMING-WORLDNEWS-NEWS-TODAYILEARNED-NOTTHEONION-EXPLAINLIKEIMFIVE-MILDLYINTERESTING-DIY-VIDEOS-OLDSCHOOLCOOL-TWOXCHROMOSOMES-TIFU-MUSIC-BOOKS-LI",
+  "clue_verification": {
+    "clue_title": "\"To the guy who commented on another post here about how to use blunt weapons properly - you're a genius.\"",
+    "source_url": "https://old.reddit.com/r/hellraiserthegame/comments/1xj2boo/to_the_guy_who_commented_on_another_post_here/",
+    "fetched_page_title": "To the guy who commented on another post here about how to use blunt weapons properly - you're a genius. : hellraiserthegame",
+    "relevance_ok": true,
+    "matched_keywords": [
+      "guy",
+      "commented",
+      "another",
+      "use",
+      "blunt",
+      "weapons",
+      "properly",
+      "you're",
+      "genius"
+    ],
+    "missing_keywords": [],
+    "required_hits": 5,
+    "score": "9/9",
+    "reason": "matched 9/9 clue keywords (required 5)",
+    "verified_at": "2026-11-01T04:40:20.771467"
+  }
+}
