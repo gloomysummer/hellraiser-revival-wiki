@@ -8,7 +8,7 @@ summary: 'The Genesis Configuration serves as both an extradimensional puzzle bo
   chain summoning against hostile cultists while demanding careful sanity meter management
   throughout exploration.'
 pubDate: 2026-10-02
-updated: '2026-10-09'
+updated: '2026-11-01'
 category: Mechanics
 tags:
 - genesis-configuration
@@ -21,6 +21,10 @@ evidence:
   level: Official
   sourceUrl: https://store.steampowered.com/app/1551980
   exactQuote: Wield the powers of the Genesis Configuration puzzle box to survive your bargain with the infamous Pinhead.
+- claim: Official patch notes confirm 3D diamond puzzle controller auto-rotate fixes.
+  level: Official
+  sourceUrl: https://store.steampowered.com/app/1551980
+  exactQuote: Fixed an auto-rotate on the 3D diamond puzzle with a controller.
 - claim: Genesis Configuration Chapter 1 rotational alignment and Scarlet Church structural manipulation steps verified by community reports.
   level: Community-reported
   sourceUrl: https://steamcommunity.com/app/1551980/discussions/0/484427498993214591
@@ -40,6 +44,10 @@ In *Clive Barker's Hellraiser: Revival*, the iconic puzzle box motif receives a 
 ## How the Genesis Configuration Works
 
 The Genesis Configuration is held in first-person view, allowing players to rotate geometric plates, align intricate brass engravings, and trigger occult mechanisms.
+
+### Title Menu 3D Inspection & Controller Mechanics
+* **Main Menu 3D Preview**: On the primary launch screen, players can freely rotate and inspect a detailed 3D model of the Genesis Configuration. While manipulating the title screen artifact does not award achievements or alter campaign progression, it allows players to familiarize themselves with plate seams, brass lattices, and geometric turning axes before entering live encounters.
+* **Controller Diamond Puzzle Alignment**: When solving the 3D diamond puzzle facets using an analog gamepad, developers resolved an issue where aggressive auto-rotation could throw off manual alignment. Use subtle stick adjustments when aligning the diamond corners to trigger the locking mechanism cleanly.
 
 ### Core Puzzle Phases & Alignment Steps
 

@@ -7,7 +7,7 @@ summary: 'Combat in Hellraiser: Revival demands tactical management of weapon du
   and the Sawed-off Shotgun for emergency crowd-control stagger during intense ambush
   encounters.'
 pubDate: 2026-10-02
-updated: '2026-10-31'
+updated: '2026-11-01'
 category: Equipment
 tags:
 - weapons
@@ -42,6 +42,10 @@ evidence:
   level: Community-reported
   sourceUrl: https://old.reddit.com/r/hellraiserthegame/comments/1xj6uvy/this_game_is_legit_hard/
   exactQuote: This game is legit hard
+- claim: Official patch notes verify combat knife pickup and stealth takedown tutorial sequence.
+  level: Official
+  sourceUrl: https://store.steampowered.com/app/1551980
+  exactQuote: Fixed a popping shadow near the knife pickup before the takedown tutorial.
 ---
 
 ## Weapons Tier List & Durability Management Guide
@@ -58,6 +62,7 @@ Combat in *Clive Barker's Hellraiser: Revival* is brutal, tactile, and deliberat
 | **A** | **Service Revolver (.38)** | Firearm (Handgun) | Infinite (Ammo based) | Moderate (6/10) | Precise headshots against ranged cult snipers |
 | **B** | **Heavy Tire Iron** | One-Handed Blunt | 32 hits | Moderate (5/10) | Early-game scouting and breaking padlocks |
 | **C** | **Wrenched Pipe** | One-Handed Blunt | 15 hits | Low (4/10) | Emergency improvised backup tool |
+| **Utility** | **Aidan's Combat Knife** | One-Handed Sharp | Infinite (Unbreakable) | Low (2/10) | Silent stealth backstabs & takedowns |
 
 Durability is only half the equation — the [Genesis Configuration puzzle box guide](/guide/genesis-configuration-puzzle-guide/) explains the supernatural abilities that complement each weapon class. Low-durability melee entries reward disciplined target selection, and repairs are covered in the durability section below. Not every blade you find is a weapon, though: [Bruno's Scalpel](/guide/brunos-scalpel-weapon-guide/), dropped by Bruno Keller, is a Treasure item you sell to Zora rather than equip — it has no durability rating because it was never a usable weapon.
 
@@ -73,6 +78,7 @@ Every melee hit directly degrades your weapon's structural integrity:
 Scattered throughout the Scarlet Church compound are maintenance workbenches and temporary salvage stations. Players can consume **Scrap Metal** and **Grindstone Oil** to restore weapon condition back to pristine status before challenging boss territories. Spare scrap materials and high-tier ammunition can frequently be scavenged from locked caches detailed in our [all keypad and safe codes guide](/guide/all-keypad-codes-safes-lockers/) and our [codes archive](/codes/).
 
 To avoid running completely empty-handed during early exploration:
+* **Prioritize Stealth Knife Takedowns**: Aidan's combat knife is the only melee tool that never degrades or breaks. Always prioritize crouched stealth approaches to execute patrolling cultists with knife takedowns, saving sledgehammer and fireaxe durability strictly for armored enforcers.
 * **Reserve Heavy Blunt Weapons for Armored Foes**: Do not burn Crowbar or Tire Iron durability on wooden crates or fragile environment barricades; use your bare hands or kick mechanics where prompt icons appear.
 * **Avoid Striking Stone & Metal Surfaces**: Missing an enemy and striking masonry or steel doors inflicts double durability degradation. Keep your swings centered when fighting inside narrow church hallways.
 * **Stagger with Genesis Repulsion**: When facing swarming Cultist Runners, lead with **Kinetic Repulsion** or dimensional shockwaves to stagger enemies without expending weapon durability hits.

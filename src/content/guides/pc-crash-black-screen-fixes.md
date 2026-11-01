@@ -3,7 +3,7 @@ title: Hellraiser Revival Crash Fix & Black Screen Guide
 description: 'Hellraiser: Revival crashing or black screen? Outdated GPU drivers, corrupted game files and fullscreen display conflicts are the usual causes — verified fixes.'
 summary: "Hellraiser: Revival crashing or showing a black screen usually traces to corrupted game files, an outdated GPU driver, or fullscreen display conflicts. The three fastest fixes: verify Steam file integrity, update to the latest NVIDIA Game Ready (560.xx+) or AMD Adrenalin (24.x+) driver, and launch with -windowed -noborder."
 pubDate: 2026-10-08
-updated: '2026-10-31'
+updated: '2026-11-01'
 category: Technical
 tags:
 - crash-fix
@@ -151,6 +151,14 @@ Community players and technical benchmarks have identified specific post-process
 ### Surface Shimmering & Sparkling Noise
 * **Symptom**: Wet surfaces, blood pools, and morgue tile floors show distracting white speckles or grain noise.
 * **Remediation**: Under **Options > Graphics**, reduce **Reflection Quality** from Epic to **High** or **Medium**, and cap your frame rate to match your display's native refresh rate (e.g., 60, 120, or 144 FPS).
+
+### AMD Radeon RX 7000 & RDNA3 Loading Screen Crashes
+* **Symptom**: System hangs or crashes to desktop during the initial loading screen or chapter transitions on high-end AMD hardware (such as RX 7900 XTX / 7800X3D). Disabling Windows Multi-Plane Overlay (MPO) alone often fails to resolve the stall.
+* **Remediation**: In **Options > Graphics**, lower **Reflection Quality** and disable hardware ray tracing features before loading heavy campaign checkpoints. Additionally, open AMD Software: Adrenalin Edition, navigate to Gaming > Graphics > Advanced, and perform a **Reset Shader Cache** to clear corrupted pipeline caches.
+
+### Head Bob & Motion Sickness Slider
+* **Symptom**: Player nausea or motion sickness caused by dramatic camera bobbing during narrow corridor exploration and sprint chases.
+* **Remediation**: Open **Options > Gameplay / Accessibility** and reduce the **Head Bob** slider to its minimum setting. Combining this reduction with disabled Motion Blur provides the most stable first-person perspective.
 
 ### In-Game HDR Calibration Status
 * **Status**: The game is calibrated for standard dynamic range (SDR) and does not provide a native in-game HDR calibration menu. Forcing Windows Auto-HDR may wash out dark shadow areas; calibrate your SDR gamma slider and ensure Full dynamic range is enabled in your GPU control panel instead.
