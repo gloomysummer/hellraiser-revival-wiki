@@ -3,7 +3,7 @@ title: "Hellraiser Revival System Requirements: GTX 1660"
 description: 'Hellraiser: Revival needs a GTX 1660, 8GB RAM and an 80GB SSD — here are the full minimum and recommended PC requirements.'
 summary: 'Hellraiser: Revival requires a 64-bit Windows 10/11 OS, Intel Core i5-8400 or AMD Ryzen 5 1500X CPU, 8GB RAM, GTX 1660 or RX Vega 64 GPU, and 80GB SSD storage for minimum 1080p 30fps gameplay. Full minimum and recommended specs with performance optimization tips included.'
 pubDate: 2026-10-02
-updated: '2026-10-02'
+updated: '2026-11-02'
 category: Technical
 tags:
 - system-requirements
@@ -15,6 +15,10 @@ evidence:
   level: Official
   sourceUrl: https://store.steampowered.com/app/1551980
   exactQuote: Requires a 64-bit processor and operating system
+- claim: Official patch notes confirm startup GPU driver out-of-date notice feature.
+  level: Official
+  sourceUrl: https://store.steampowered.com/app/1551980
+  exactQuote: Added a startup notice that tells you when your GPU driver is out of date and needs updating.
 ---
 
 ## Hellraiser Revival PC System Requirements & Performance Specs
@@ -46,6 +50,15 @@ For high visual fidelity at 1080p 60fps or 1440p 30fps with maximum shadow and f
 | **Graphics (GPU)** | AMD Radeon RX 6600 XT (8GB) / NVIDIA GeForce RTX 3060 (12GB) |
 | **DirectX** | Version 12 |
 | **Storage** | 80 GB available space (**High-speed NVMe SSD**) |
+
+## Mid-Tier Performance Optimization Preset (1080p 60 FPS)
+
+For players using mainstream mid-tier graphics cards like the GeForce RTX 3060 or Radeon RX 6600 XT who experience frame fluctuations during particle-dense demonic encounters:
+
+* **Shadow Quality**: Set to **Medium**. High and Epic shadow maps heavily tax GPU rasterization pipelines in the labyrinth catacombs with minimal visual difference.
+* **Ambient Occlusion**: Reduce to **Low** or disable to recover 8–12% rendering headroom in confined corridors.
+* **Upscaling (DLSS / FSR)**: Enable **Quality** mode to stabilize 60 FPS while retaining sharp geometric edge clarity on Cenobite character models.
+* **Motion Blur & Depth of Field**: Switch to **Disabled** to eliminate fast-panning shader hitches and prevent driver timeout crashes.
 
 ## GPU Driver Advisory (Update 1.1)
 

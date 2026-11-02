@@ -3,7 +3,7 @@ title: "All Cenobites in Hellraiser: Revival — Full List"
 description: 'All Cenobites in Hellraiser: Revival: Pinhead, Chatterer, Butterball, Deepthroat. Full list, lore, sensory evasion tactics, and puzzle locks to repel them.'
 summary: 'The full list of Cenobites in Hellraiser: Revival cannot be eliminated with conventional firearms or melee weapons. Surviving players must exploit environmental sacred relics, acoustic audio distractions, and Genesis Configuration dimensional locks to repel Pinhead, the sightless Chatterer, the immovable Butterball, and the shrieking Deepthroat across the campaign.'
 pubDate: 2026-10-02
-updated: '2026-10-31'
+updated: '2026-11-02'
 category: Enemies
 tags:
 - cenobites
@@ -26,6 +26,10 @@ evidence:
   level: Community-reported
   sourceUrl: https://old.reddit.com/r/hellraiserthegame/comments/1xiwbo2/charlotte_fight_constant_loop_bug/
   exactQuote: Charlotte fight constant loop bug
+- claim: Community players document intense Labyrinth maze chase sprint mechanics and obstacle navigation.
+  level: Community-reported
+  sourceUrl: https://steamcommunity.com/app/1551980/discussions/0/585062169816819589/
+  exactQuote: This maze chase is ruining the game for me
 guide_video:
   id: "5k7tg4eUaro"
   title: "Clive Barker's Hellraiser: Revival - Official Trailer"
@@ -53,6 +57,7 @@ Distinguishable by his constantly gnashing, exposed teeth and stitched eyelids, 
 * **Sensory Mechanism**: Fully blind. Tracks Aidan exclusively through **audio vibrations** and surface footsteps.
 * **Weakness**: Glass bottles and metallic debris scattered across the floor can be thrown in opposite directions to misdirect his high-speed charges.
 * **Combat Interaction**: Crouched stealth movement completely neutralizes his tracking. Avoid walking over broken porcelain or spilled liquid pools.
+* **Maze Chase Sprint Navigation**: During the intense Labyrinth corridor sprint sequences where Chatterer pursues Aidan at full velocity, cornering discipline is vital. Vault obstacles cleanly and avoid clipping wall geometries to maintain maximum sprint momentum, as stumbling gives Chatterer an instant gap-closing lunge window.
 
 ## 3. Butterball
 

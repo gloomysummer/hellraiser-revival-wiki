@@ -3,7 +3,7 @@ title: Hellraiser Revival Crash Fix & Black Screen Guide
 description: 'Hellraiser: Revival crashing or black screen? Outdated GPU drivers, corrupted game files and fullscreen display conflicts are the usual causes — verified fixes.'
 summary: "Hellraiser: Revival crashing or showing a black screen usually traces to corrupted game files, an outdated GPU driver, or fullscreen display conflicts. The three fastest fixes: verify Steam file integrity, update to the latest NVIDIA Game Ready (560.xx+) or AMD Adrenalin (24.x+) driver, and launch with -windowed -noborder."
 pubDate: 2026-10-08
-updated: '2026-11-01'
+updated: '2026-11-02'
 category: Technical
 tags:
 - crash-fix
@@ -57,6 +57,11 @@ If the game hangs before displaying the main menu or intro logos:
    -windowed -noborder
    ```
 4. Relaunch the title to bypass fullscreen mode negotiation conflicts with high-refresh monitors.
+
+### Direct3D 12 Device Error (0x887A0006 / DXGI_ERROR_DEVICE_REMOVED)
+If the executable immediately halts upon boot with error code `0x887A0006: DXGI_ERROR_DEVICE_REMOVED`, the engine failed to initialize the DirectX 12 graphics adapter pipeline:
+1. In Steam Properties > General > Launch Options, add `-dx11` to force the legacy DirectX 11 fallback pipeline.
+2. Confirm your GPU drivers are updated to the current Game Ready or Adrenalin branch, and disconnect secondary virtual displays or remote desktop adapters.
 
 ### Verify Windows OS & DirectX 12 Feature Level
 The game strictly requires a 64-bit environment on Windows 10 (version 22H2 or later) or Windows 11. Systems running outdated builds may fail during Direct3D 12 device creation. Confirm your GPU drivers (NVIDIA 560.xx+ or AMD Adrenalin 24.x+) are current, as day-one patches rely on updated driver profiles.
