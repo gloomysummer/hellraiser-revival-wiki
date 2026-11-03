@@ -3,7 +3,7 @@ title: "Update 1.1 Patch Notes: Hellraiser Revival Guide"
 description: "Hellraiser: Revival Update 1.1 patch notes covers GPU driver alerts, sewer ladder fall fixes, and Charlotte chase progression softlock remedies on Steam."
 summary: "Clive Barker's Hellraiser: Revival Update 1.1 deployed on October 15, 2026 for PC on Steam, addressing critical progression softlocks and stability bugs. Key fixes include an automated outdated GPU driver startup notice, resolution for falling through sewer ladder floors, Charlotte chase collision blockers, and missing Flooded Room puzzle levers."
 pubDate: 2026-10-15
-updated: '2026-10-29'
+updated: '2026-11-03'
 category: Technical
 tags:
 - update-1-1
@@ -20,11 +20,11 @@ evidence:
   level: Official
   sourceUrl: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1846651706677637
   exactQuote: Fixed an issue that caused the player to fall through the floor after climbing the ladder out of the sewers.
-- claim: Console players receive the patch in a separate deployment the developers describe as coming soon.
+- claim: Official Update 1.2 patch notes deployed on Steam with frame generation and flooded room corpse search fixes.
   level: Official
-  sourceUrl: https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1846651706677637
-  exactQuote: For those who opened the box on consoles, your patch is coming soon.
-- claim: PlayStation 5 and console players actively track 1.1 patch parity with Steam PC.
+  sourceUrl: https://store.steampowered.com/app/1551980
+  exactQuote: Fixed the lever not appearing after saving and reloading, which blocked progress during the corpse search in the flooded room late in the game
+- claim: PlayStation 5 and console players actively track patch parity with Steam PC.
   level: Community-reported
   sourceUrl: https://www.reddit.com/r/hellraiserthegame/comments/1xa0m1l/
   exactQuote: Is PS5 version updated with the latest patch
@@ -34,7 +34,7 @@ evidence:
 
 On **October 15, 2026**, Saber Interactive and Boss Team Games deployed **Update 1.1** for *Clive Barker's Hellraiser: Revival* on PC via Steam. 
 
-This post-launch maintenance update targets critical softlocks, level-streaming geometry failures, and automated driver health checks. Console releases for PlayStation 5 and Xbox Series X|S will follow in a separate deployment.
+This post-launch maintenance update targets critical softlocks, level-streaming geometry failures, and automated driver health checks. Following the PC launch, console editions for PlayStation 5 and Xbox Series X|S received the 1.1 patch on **October 22, 2026**, succeeded by **Update 1.2** on **November 3, 2026**.
 
 ---
 
@@ -105,11 +105,11 @@ Yes. Both progression blockers are listed in the official notes: the player fall
 ### What Does the GPU Driver Warning in Update 1.1 Mean?
 The patch added a startup notice that tells you when your GPU driver is out of date and needs updating. If the notice appears at boot, update your display drivers before continuing into the Labyrinth. Boot failures and DirectX initialization errors are covered in our [PC crash and black screen troubleshooting guide](/guide/pc-crash-black-screen-fixes/).
 
-### When Is Update 1.1 Coming to PS5 and Xbox Series X|S?
-No calendar date has been confirmed yet. The official announcement addresses console players directly — "For those who opened the box on consoles, your patch is coming soon" — confirming the console deployment is separate from and later than the Steam PC release. Community players on PlayStation 5 and Xbox awaiting patch parity are advised to create manual cloud backups before major chapter transitions (particularly prior to sewer ladder climbs and Charlotte encounters) to prevent softlocks before the patch deploys. Platform timing is tracked in our [release time and unlock times guide](/guide/release-time-unlock-times-guide/).
+### When Did Update 1.1 Deploy on PS5 and Xbox Series X|S?
+Console editions on PlayStation 5 and Xbox Series X|S received the 1.1 update on **October 22, 2026**, delivering platform parity for critical quest collision blockers, Chatterer chase load errors, and automatic save flashlight bugs. Platform deployment timing is tracked in our [release time and unlock times guide](/guide/release-time-unlock-times-guide/).
 
-### Will There Be More Patches After Update 1.1?
-Yes. The announcement closes with "More patches are to come…", so Update 1.1 is the start of the post-launch fix cadence rather than a one-off. This page will be extended as further official notes land.
+### What Major Fixes Arrived in Update 1.2?
+On **November 3, 2026**, Saber Interactive released **Update 1.2** on Steam PC. Update 1.2 introduces native frame generation (DLSS, FSR, and XeSS), makes sliding movements emit audible noise detectable by enemies, and resolves residual Flooded Room lever issues during late-game corpse searches alongside second-battle Bruno collision fixes.
 
 ---
 

@@ -7,7 +7,7 @@ summary: 'Combat in Hellraiser: Revival demands tactical management of weapon du
   and the Sawed-off Shotgun for emergency crowd-control stagger during intense ambush
   encounters.'
 pubDate: 2026-10-02
-updated: '2026-11-01'
+updated: '2026-11-03'
 category: Equipment
 tags:
 - weapons
@@ -46,6 +46,10 @@ evidence:
   level: Official
   sourceUrl: https://store.steampowered.com/app/1551980
   exactQuote: Fixed a popping shadow near the knife pickup before the takedown tutorial.
+- claim: Official Update 1.2 patch notes document sliding acoustic noise detection and takedown audio balance.
+  level: Official
+  sourceUrl: https://store.steampowered.com/app/1551980
+  exactQuote: Sliding now makes noise that enemies can detect.
 ---
 
 ## Weapons Tier List & Durability Management Guide
@@ -79,6 +83,7 @@ Scattered throughout the Scarlet Church compound are maintenance workbenches and
 
 To avoid running completely empty-handed during early exploration:
 * **Prioritize Stealth Knife Takedowns**: Aidan's combat knife is the only melee tool that never degrades or breaks. Always prioritize crouched stealth approaches to execute patrolling cultists with knife takedowns, saving sledgehammer and fireaxe durability strictly for armored enforcers.
+* **Stealth Sound Propagation & Sliding Discipline (Update 1.2)**: In Update 1.2, sprint-sliding emits audible friction noise that alerts nearby cultists, and enemies investigate takedown audio far more consistently. Avoid sliding into assassinations; maintain crouched pacing to secure clean, silent takedowns without aggroing entire rooms.
 * **Reserve Heavy Blunt Weapons for Armored Foes**: Do not burn Crowbar or Tire Iron durability on wooden crates or fragile environment barricades; use your bare hands or kick mechanics where prompt icons appear.
 * **Avoid Striking Stone & Metal Surfaces**: Missing an enemy and striking masonry or steel doors inflicts double durability degradation. Keep your swings centered when fighting inside narrow church hallways.
 * **Stagger with Genesis Repulsion**: When facing swarming Cultist Runners, lead with **Kinetic Repulsion** or dimensional shockwaves to stagger enemies without expending weapon durability hits.
