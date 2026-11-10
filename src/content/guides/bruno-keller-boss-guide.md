@@ -29,7 +29,7 @@ guide_video:
 
 ## How to Beat Bruno Keller (The Picasso of the Scalpel)
 
-> **TL;DR — How to beat Bruno Keller:** Defeat Bruno Keller in 2 phases by baiting his wide lunge attacks, using heavy blunt weapons to shatter his armored apron, and targeting his nape and head weak points, then banish him to loot the [boss floor drop](/guide/brunos-scalpel-weapon-guide/) he leaves behind.
+> **TL;DR — How to beat Bruno Keller:** Defeat Bruno Keller in 2 phases by baiting his wide lunge attacks, using heavy blunt weapons to shatter his armored apron, and targeting his nape and head weak points, then banish him to loot the [Bruno's Scalpel Treasure drop](/guide/brunos-scalpel/) he leaves behind.
 
 Within the fanatical hierarchy of the **Scarlet Church**, few figures are as terrifying as **Bruno Keller**. Revering bodily mutilation as sacred art, Keller stalks the player through a labyrinth of hanging flesh hooks, operating tables, and blood-soaked dissection wards.
 
@@ -42,7 +42,7 @@ Within the fanatical hierarchy of the **Scarlet Church**, few figures are as ter
 * **Primary Attacks**: Telegraphed slaps and punches, lunging grabs, blood-pool repositioning, and thrown bottles
 * **Damage Type**: Direct melee strikes and stagger-inducing grabs
 * **Recommended Weaponry**: Heavy Pipe / Sledgehammer (Blunt stagger), Shotgun (Close Range finish)
-* **Reward**: [Post-fight Treasure drop](/guide/brunos-scalpel-weapon-guide/) — a valuable item left on the arena floor after the banish; sell it to Zora Beckett.
+* **Reward**: [Bruno's Scalpel Treasure drop](/guide/brunos-scalpel/) — a valuable item left on the arena floor after the banish; sell it to Zora Beckett for 450–500 coins.
 
 ## Phase 1: Operating Room Stalker & Armor Stagger
 
@@ -51,10 +51,10 @@ During the opening phase, Keller relies on stealth and sudden lunges from behind
 1. **Avoid Frontal Armor Sponging**: Firing firearms or swinging light blades directly into Keller's reinforced leather and steel apron wastes precious ammunition. Keller's front torso deflects light damage with high damage reduction.
 2. **Environmental Chain Restraint Mechanic**: Interact with the heavy hanging winch chains stationed near the arena pillars. When Keller charges forward with his lunging grab, activate the winch release to drop hanging meat hooks and chains onto his path, entangling his limbs for 4–5 seconds.
 3. **Exposing the Nape & Spine Weak Point**: While entangled by environmental chains or staggered from behind, bypass his chest plate entirely by targeting the unarmored flesh at his nape and upper spine with heavy blunt strikes or shotgun blasts.
-4. **Bait His Single Strikes**: Keller's main damage comes from telegraphed slaps and punches plus lunging grabs. Time your dodge, then answer with a blunt swing — repeated blunt hits to the head stagger him quickly. What he leaves behind after the banish is covered in the [post-boss drop breakdown](/guide/brunos-scalpel-weapon-guide/).
+4. **Bait His Single Strikes**: Keller's main damage comes from telegraphed slaps and punches plus lunging grabs. Time your dodge, then answer with a blunt swing — repeated blunt hits to the head stagger him quickly. What he leaves behind after the banish is covered in the [post-boss drop breakdown](/guide/brunos-scalpel/).
 5. **Recovery**: If Keller grabs you, mash R2/RT to break free, then create distance and heal with a Bandage before re-engaging.
 
-Before the fight, sanity-check your loadout against the [weapons tier list and durability guide](/guide/weapons-tier-list-durability/) — broken tools mid-boss are a run-killer.
+Before the fight, sanity-check your loadout against the [weapons tier list and durability guide](/guide/weapons-tier-list-durability/) — broken tools mid-boss are a run-killer. Early infiltration weapons can also be gathered in our [demo walkthrough](/guide/demo-walkthrough-secrets/).
 
 ## Phase 2: Berserk Frenzy & Syringe Throwing
 
@@ -66,6 +66,6 @@ Once his health is low, the fight becomes a straight damage race: a shotgun or p
 
 ## Key Encounter Rewards
 
-Defeating Bruno Keller unlocks the **Dissection Key**, access to the embalming wing's weapon upgrade bench, and drops rare crafting materials for upgraded trauma kits.
+Defeating Bruno Keller unlocks the **Dissection Key**, access to the embalming wing's weapon upgrade bench, and leaves his post-fight Treasure pickup on the floor (covered in our dedicated [Bruno's Scalpel item guide](/guide/brunos-scalpel/)).
 
-This fight is one encounter in a larger roster — the [all Cenobites weaknesses guide](/guide/all-cenobites-weaknesses-guide/) covers every entity's evasion patterns. If you experience performance hitches or stuttering during the arena phase, ensure your hardware meets the [PC system requirements](/guide/system-requirements-pc-specs/) and verify the fixes documented in our [Update 1.1 patch notes](/guide/update-1-1-patch-notes/).
+This fight is one encounter in a larger roster — the [all Cenobites weaknesses guide](/guide/all-cenobites-weaknesses-guide/) covers every entity's evasion patterns. If you experience performance hitches or stuttering during the arena phase, ensure your hardware meets the [PC system requirements](/guide/system-requirements-pc-specs/) and verify the fixes documented in our [Update 1.1 patch notes](/guide/update-1-1-patch-notes/). You can also verify promotional item claims in our [active Revival codes list](/guide/revival-codes/).

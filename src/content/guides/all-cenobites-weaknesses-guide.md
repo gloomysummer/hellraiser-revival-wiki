@@ -84,4 +84,4 @@ Encountered during the deeper descent through subterranean catacombs, Charlotte 
 
 Choosing the right tool for each entity matters too — the [weapons tier list](/guide/weapons-tier-list-durability/) ranks which weapons hold up against specific Cenobite behaviors.
 
-For a focused breakdown of the Scarlet Church's first major foe, see the dedicated [Bruno Keller boss guide](/guide/bruno-keller-boss-guide/) — including the [Bruno's Scalpel](/guide/brunos-scalpel-weapon-guide/) Treasure drop you can grab off the floor after the fight.
+For a focused breakdown of the Scarlet Church's first major foe, see the dedicated [Bruno Keller boss guide](/guide/bruno-keller-boss-guide/) — including the [Bruno's Scalpel](/guide/brunos-scalpel/) Treasure drop you can grab off the floor after the fight.

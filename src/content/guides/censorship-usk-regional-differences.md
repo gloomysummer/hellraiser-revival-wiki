@@ -102,8 +102,8 @@ No official rating entry or developer statement reviewed for this guide describe
 
 ## Related Field Guides & Systems
 
-Rating questions do not change the combat system: the backstab executions and bleed buildup of bladed weapons, catalogued in the [weapons tier list](/guide/weapons-tier-list-durability/), are part of the standard build.
+Rating questions do not change the combat system: the backstab executions and bleed buildup of bladed weapons, catalogued in the [weapons tier list](/guide/weapons-tier-list-durability/), are part of the standard build. Boss encounters such as the [Bruno Keller confrontation](/guide/bruno-keller-boss-guide/) and its [Bruno's Scalpel drop](/guide/brunos-scalpel/) feature full uncensored gore animations across all versions.
 
-The [demo walkthrough](/guide/demo-walkthrough-secrets/) covers the opening hours, and the [PC system requirements](/guide/system-requirements-pc-specs/) list the hardware needed to run the game.
+The [demo walkthrough](/guide/demo-walkthrough-secrets/) covers the opening hours, while our [multiplayer and co-op FAQ](/guide/is-it-multiplayer-coop-faq/) clarifies region-free lobby status and the [PC system requirements](/guide/system-requirements-pc-specs/) list the hardware needed to run the game. Promotional DLC and regional items are tracked in our [active Revival codes list](/guide/revival-codes/).
 
 For the full breakdown of adult content, official ratings, and version differences, see our [18+ scenes and versions guide](/guide/18-plus-scenes-guide/).

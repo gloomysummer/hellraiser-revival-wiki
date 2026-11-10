@@ -65,10 +65,11 @@ Combat in *Clive Barker's Hellraiser: Revival* is brutal, tactile, and deliberat
 | **A** | **Rusty Fireaxe** | Two-Handed Sharp | 18 hits | High (8/10) | Slicing through unarmored fanatics and limbs |
 | **A** | **Service Revolver (.38)** | Firearm (Handgun) | Infinite (Ammo based) | Moderate (6/10) | Precise headshots against ranged cult snipers |
 | **B** | **Heavy Tire Iron** | One-Handed Blunt | 32 hits | Moderate (5/10) | Early-game scouting and breaking padlocks |
+| **B (Note)** | [**Bone-Saw Scalpel (Bruno's Scalpel)**](/guide/brunos-scalpel/) | Non-Weapon Treasure | 0 hits (Unusable) | N/A | Boss drop to sell for coins; see dedicated [Bruno's Scalpel item guide](/guide/brunos-scalpel/) |
 | **C** | **Wrenched Pipe** | One-Handed Blunt | 15 hits | Low (4/10) | Emergency improvised backup tool |
 | **Utility** | **Aidan's Combat Knife** | One-Handed Sharp | Infinite (Unbreakable) | Low (2/10) | Silent stealth backstabs & takedowns |
 
-Durability is only half the equation — the [Genesis Configuration puzzle box guide](/guide/genesis-configuration-puzzle-guide/) explains the supernatural abilities that complement each weapon class. Low-durability melee entries reward disciplined target selection, and repairs are covered in the durability section below. Not every blade you find is a weapon, though: [Bruno's Scalpel](/guide/brunos-scalpel-weapon-guide/), dropped by Bruno Keller, is a Treasure item you sell to Zora rather than equip — it has no durability rating because it was never a usable weapon.
+Durability is only half the equation — the [Genesis Configuration puzzle box guide](/guide/genesis-configuration-puzzle-guide/) explains the supernatural abilities that complement each weapon class. Low-durability melee entries reward disciplined target selection, and repairs are covered in the durability section below. While players frequently search for a "Bone-Saw Scalpel" weapon in Tier B, [Bruno's Scalpel](/guide/brunos-scalpel/) dropped by boss [Bruno Keller](/guide/bruno-keller-boss-guide/) is actually a Treasure item sold to Zora Beckett rather than an equippable weapon. For early-game weapon scavenging, check the [demo walkthrough](/guide/demo-walkthrough-secrets/) and redeem pre-order tool skins in our [active Revival codes list](/guide/revival-codes/).
 
 ## Weapon Durability & Repair Mechanics
 

@@ -181,4 +181,7 @@ Community players and technical benchmarks have identified specific post-process
 * **Hardware Verification**: Review minimum vs recommended specifications in the [PC system requirements and specs guide](/guide/system-requirements-pc-specs/).
 * **Mechanical Solutions**: Once inside the game client, master puzzle manipulation with our [Genesis Configuration puzzle box guide](/guide/genesis-configuration-puzzle-guide/).
 * **Campaign Survival**: Encountering heavy boss aggression? Check the [Bruno Keller boss strategy dossier](/guide/bruno-keller-boss-guide/) for combat weak points.
-* **Weapon Dossiers**: How to grab [Bruno's Scalpel](/guide/brunos-scalpel-weapon-guide/) — the Treasure item Bruno Keller leaves on the floor after his boss fight — is detailed in the dedicated drop guide.
+* **Item Dossiers**: How to safely loot [Bruno's Scalpel](/guide/brunos-scalpel/) — the 450–500 coin Treasure item Bruno Keller leaves on the floor after his boss fight — is detailed in our dedicated item guide.
+* **Tutorial Verification**: If experiencing loading stalls during the prologue, cross-reference chapter triggers in the [demo walkthrough and secrets guide](/guide/demo-walkthrough-secrets/).
+* **Online Stability**: Players checking whether network crashes relate to multiplayer matchmaking can consult our [multiplayer and co-op FAQ](/guide/is-it-multiplayer-coop-faq/).
+* **Promotional Unlocks**: Verify that crash fixes don't conflict with bonus key redemptions in our [active Revival codes list](/guide/revival-codes/).
